@@ -6,6 +6,7 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 
 public class ServerProxy implements IProxy 
 {
+	
 	public void preInit(FMLPreInitializationEvent event) {
 
 	}
