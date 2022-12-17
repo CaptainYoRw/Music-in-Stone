@@ -2,6 +2,6 @@
      "parent": "block/cube_all", 
      "textures": 
      { 
-         "all": "musicinstone:blocks/granite_bricks_large" 
+         "all": "musicinstone:blocks/grey_sand" 
      } 
  } 

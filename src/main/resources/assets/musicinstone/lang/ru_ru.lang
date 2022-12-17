@@ -1,3 +1,11 @@
+Вкладки Креатива
+
+itemGroup.musicinstone.misc=Разное
+
+Предметы
+
+item.musicinstone.arch_tools.name=Инструменты Архитектора
+
 Блоки
 
-tile.granite_bricks_large.name=Крупные гранитные кирпичи
+tile.musicinstone.grey_sand.name=Серый Песок

@@ -1,0 +1,12 @@
+{
+    "variants": 
+    {
+        "normal": 
+        [
+            { "model": "musicinstone:grey_sand" },
+            { "model": "musicinstone:grey_sand", "y": 90 },
+            { "model": "musicinstone:grey_sand", "y": 180 },
+            { "model": "musicinstone:grey_sand", "y": 270 }
+        ]
+    }
+}

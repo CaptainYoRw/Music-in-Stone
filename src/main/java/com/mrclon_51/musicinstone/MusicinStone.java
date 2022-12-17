@@ -1,8 +1,10 @@
-package com.mrclon_51.musicinstone.main;
+package com.mrclon_51.musicinstone;
 
-import com.mrclon_51.musicinstone.init.ModBlocks;
+
+import com.mrclon_51.musicinstone.creative_tabs.Misc;
 import com.mrclon_51.musicinstone.proxy.IProxy;
 
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -11,19 +13,21 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid = Main.MODID, name = Main.NAME, version = Main.VERSION, acceptedMinecraftVersions = Main.MC_VERSION)
-public class Main 
+@Mod(modid = MusicinStone.MODID, name = MusicinStone.NAME, version = MusicinStone.VERSION, acceptedMinecraftVersions = MusicinStone.MC_VERSION)
+public class MusicinStone 
 {
 	
 	public static final String MODID = "musicinstone";
 	public static final String NAME = "Music in Stone";
 	public static final String VERSION = "0.1 alpha";
 	public static final String MC_VERSION = "1.12.2";
+	
+	public static final CreativeTabs MISC = new Misc();
 
 	@Instance
-	public static Main instance;
+	public static MusicinStone instance;
 
-	@SidedProxy(clientSide = Main.CLIENT, serverSide = Main.SERVER)
+	@SidedProxy(clientSide = MusicinStone.CLIENT, serverSide = MusicinStone.SERVER)
 	public static IProxy proxy;
 
 	public static final String CLIENT = "com.mrclon_51.musicinstone.proxy.ClientProxy";
@@ -32,20 +36,19 @@ public class Main
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) 
 	{
-		System.out.println(Main.MODID + ":preInit");
-		ModBlocks.init();
+		System.out.println(MusicinStone.MODID + ":preInit");
 	}
 
 	@EventHandler
 	public void init(FMLInitializationEvent event) 
 	{
-		System.out.println(Main.MODID + ":Init");
+		System.out.println(MusicinStone.MODID + ":Init");
 	}
 
 	@EventHandler
 	public void postInit(FMLPostInitializationEvent event) 
 	{
-		System.out.println(Main.MODID + ":postInit");
+		System.out.println(MusicinStone.MODID + ":postInit");
 	}
 
 }

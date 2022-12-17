@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+    <booleanAttribute key="org.eclipse.debug.core.ATTR_FORCE_SYSTEM_CONSOLE_ENCODING" value="false"/>
     <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
         <listEntry value="/musicinstone"/>
     </listAttribute>
@@ -10,23 +11,19 @@
         <mapEntry key="FORGE_GROUP" value="net.minecraftforge"/>
         <mapEntry key="FORGE_VERSION" value="14.23.5.2854"/>
         <mapEntry key="MCP_MAPPINGS" value="snapshot_20171003-1.12"/>
-        <mapEntry key="MCP_TO_SRG" value="D:\Program Files (x86)\minecraft_modding\musicinstone\build\createSrgToMcp\output.srg"/>
+        <mapEntry key="MCP_TO_SRG" value="E:\Captain_YoRw_E\minecraft_modding\musicinstone\build\createSrgToMcp\output.srg"/>
         <mapEntry key="MC_VERSION" value="1.12.2"/>
-        <mapEntry key="MOD_CLASSES" value="D:\Program Files (x86)\minecraft_modding\musicinstone\bin\main;D:\Program Files (x86)\minecraft_modding\musicinstone\bin\main"/>
+        <mapEntry key="MOD_CLASSES" value="E:\Captain_YoRw_E\minecraft_modding\musicinstone\bin\main;E:\Captain_YoRw_E\minecraft_modding\musicinstone\bin\main"/>
         <mapEntry key="assetDirectory" value="C:\Users\Captain_YoRw\.gradle\caches\forge_gradle\assets"/>
         <mapEntry key="assetIndex" value="1.12"/>
         <mapEntry key="mainClass" value="net.minecraft.launchwrapper.Launch"/>
-        <mapEntry key="nativesDirectory" value="D:\Program Files (x86)\minecraft_modding\musicinstone\build\natives"/>
+        <mapEntry key="nativesDirectory" value="E:\Captain_YoRw_E\minecraft_modding\musicinstone\build\natives"/>
         <mapEntry key="tweakClass" value="net.minecraftforge.fml.common.launcher.FMLTweaker"/>
     </mapAttribute>
-    <booleanAttribute key="org.eclipse.jdt.launching.ATTR_ATTR_USE_ARGFILE" value="false"/>
-    <booleanAttribute key="org.eclipse.jdt.launching.ATTR_SHOW_CODEDETAILS_IN_EXCEPTION_MESSAGES" value="true"/>
-    <booleanAttribute key="org.eclipse.jdt.launching.ATTR_USE_CLASSPATH_ONLY_JAR" value="false"/>
     <stringAttribute key="org.eclipse.jdt.launching.CLASSPATH_PROVIDER" value="org.eclipse.buildship.core.classpathprovider"/>
-    <stringAttribute key="org.eclipse.jdt.launching.JRE_CONTAINER" value="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre1.8.0_321/"/>
     <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="net.minecraftforge.legacydev.MainClient"/>
     <stringAttribute key="org.eclipse.jdt.launching.MODULE_NAME" value="musicinstone"/>
     <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="musicinstone"/>
     <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Dforge.logging.console.level=debug -Dforge.logging.markers=SCAN,REGISTRIES,REGISTRYDUMP"/>
-    <stringAttribute key="org.eclipse.jdt.launching.WORKING_DIRECTORY" value="D:\Program Files (x86)\minecraft_modding\musicinstone\run"/>
+    <stringAttribute key="org.eclipse.jdt.launching.WORKING_DIRECTORY" value="E:\Captain_YoRw_E\minecraft_modding\musicinstone\run"/>
 </launchConfiguration>

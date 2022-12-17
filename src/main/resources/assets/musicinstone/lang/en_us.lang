@@ -1,3 +1,11 @@
+Creative Tabs
+
+itemGroup.musicinstone.misc=Miscellaneous
+
+Items
+
+item.musicinstone.arch_tools.name=Architect's Tools
+
 Blocks
 
-tile.granite_bricks_large.name=Large Granite Bricks
+tile.musicinstone.grey_sand.name=Grey Sand
