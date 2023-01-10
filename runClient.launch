@@ -23,6 +23,7 @@
     <stringAttribute key="org.eclipse.jdt.launching.CLASSPATH_PROVIDER" value="org.eclipse.buildship.core.classpathprovider"/>
     <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="net.minecraftforge.legacydev.MainClient"/>
     <stringAttribute key="org.eclipse.jdt.launching.MODULE_NAME" value="musicinstone"/>
+    <stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="--username mrclon_51 --uuid mrclon_51"/>
     <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="musicinstone"/>
     <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Dforge.logging.console.level=debug -Dforge.logging.markers=SCAN,REGISTRIES,REGISTRYDUMP"/>
     <stringAttribute key="org.eclipse.jdt.launching.WORKING_DIRECTORY" value="E:\Captain_YoRw_E\minecraft_modding\musicinstone\run"/>

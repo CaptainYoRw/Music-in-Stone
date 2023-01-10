@@ -1,6 +1,11 @@
+/*
 package com.mrclon_51.musicinstone.blocks;
 
 import java.util.Locale;
+
+import javax.annotation.Nonnull;
+
+import com.mrclon_51.musicinstone.MusicinStone;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
@@ -13,7 +18,7 @@ import net.minecraft.util.IStringSerializable;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 
-public class GreySandstone extends Block
+public class GreySandstone extends BlockBase
 {
 	
 	public enum StoneType implements IStringSerializable
@@ -50,13 +55,11 @@ public class GreySandstone extends Block
         }
     }
 	
-	public GreySandstone()
+	public GreySandstone(@Nonnull final String name)
     {
         super(Material.ROCK);
-        this.setHardness(0.8F);
-        this.setSoundType(SoundType.STONE);
-        this.setHarvestLevel("pickaxe", 0);
-        this.setDefaultState( this.blockState.getBaseState().withProperty(VARIANT, StoneType.DEFAULT) );
+        setHarvestLevel("pickaxe", 0);
+        setDefaultState( this.blockState.getBaseState().withProperty(VARIANT, StoneType.DEFAULT) );
     }
 	@Override
 	public MapColor getMapColor(IBlockState state, IBlockAccess world, BlockPos pos)
@@ -65,3 +68,4 @@ public class GreySandstone extends Block
 	}
 	
 }
+*/

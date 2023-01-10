@@ -1,6 +1,8 @@
 package com.mrclon_51.musicinstone;
 
 
+import org.apache.logging.log4j.Logger;
+
 import com.mrclon_51.musicinstone.creative_tabs.Misc;
 import com.mrclon_51.musicinstone.proxy.IProxy;
 
@@ -22,6 +24,8 @@ public class MusicinStone
 	public static final String VERSION = "0.1 alpha";
 	public static final String MC_VERSION = "1.12.2";
 	
+	public static Logger logger;
+	
 	public static final CreativeTabs MISC = new Misc();
 
 	@Instance
@@ -37,6 +41,8 @@ public class MusicinStone
 	public void preInit(FMLPreInitializationEvent event) 
 	{
 		System.out.println(MusicinStone.MODID + ":preInit");
+		
+		logger = event.getModLog();
 	}
 
 	@EventHandler

@@ -1,5 +1,10 @@
 package com.mrclon_51.musicinstone.blocks;
 
+import javax.annotation.Nonnull;
+
+import com.mrclon_51.musicinstone.MusicinStone;
+import com.mrclon_51.musicinstone.util.RegistryUtil;
+
 import net.minecraft.block.BlockFalling;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.MapColor;
@@ -13,12 +18,15 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 public class GreySand extends BlockFalling
 {
 	
-	public GreySand()
+	public GreySand(@Nonnull final String name)
 	{
 		super(Material.SAND);
-		this.setHardness(0.5F);
-		this.setHarvestLevel("shovel", 0);
-		this.setSoundType(SoundType.SAND);
+		RegistryUtil.setBlockName(this, name);
+		setCreativeTab(MusicinStone.MISC);
+		setHardness(10.0f);
+		setSoundType(SoundType.SAND);
+        setHarvestLevel("Shovel", 0);
+        setResistance(100);
 	}	
 	
 	@Override

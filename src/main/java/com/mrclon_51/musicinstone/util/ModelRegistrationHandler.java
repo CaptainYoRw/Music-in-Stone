@@ -1,5 +1,6 @@
-package com.mrclon_51.musicinstone;
+package com.mrclon_51.musicinstone.util;
 
+import com.mrclon_51.musicinstone.MusicinStone;
 import com.mrclon_51.musicinstone.init.MusicinStoneBlocks;
 import com.mrclon_51.musicinstone.init.MusicinStoneItems;
 
@@ -21,9 +22,10 @@ public class ModelRegistrationHandler
 		registerModel(MusicinStoneItems.ARCH_TOOLS, 0);
 		
 		registerModel(Item.getItemFromBlock(MusicinStoneBlocks.GREY_SAND), 0);
-		registerModel(Item.getItemFromBlock(MusicinStoneBlocks.GREY_SANDSTONE), 0);
-		registerModel(Item.getItemFromBlock(MusicinStoneBlocks.GREY_SANDSTONE), 1);
-		registerModel(Item.getItemFromBlock(MusicinStoneBlocks.GREY_SANDSTONE), 2);
+		//registerModel(Item.getItemFromBlock(MusicinStoneBlocks.GREY_SANDSTONE), 0);
+		//registerModel(Item.getItemFromBlock(MusicinStoneBlocks.GREY_SANDSTONE), 1);
+		//registerModel(Item.getItemFromBlock(MusicinStoneBlocks.GREY_SANDSTONE), 2);
+		registerModel(Item.getItemFromBlock(MusicinStoneBlocks.MYSTICAL_WISE_TREE), 0);
 	}
 	
 	private static void registerModel(Item item, int meta) 
