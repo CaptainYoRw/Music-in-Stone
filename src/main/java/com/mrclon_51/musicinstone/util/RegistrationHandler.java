@@ -19,7 +19,7 @@ public class RegistrationHandler
     public static void registerBlocks(RegistryEvent.Register<Block> event) 
     {
         event.getRegistry().registerAll(MusicinStoneBlocks.GREY_SAND);
-        //event.getRegistry().registerAll(MusicinStoneBlocks.GREY_SANDSTONE);
+        ////event.getRegistry().registerAll(MusicinStoneBlocks.GREY_SANDSTONE);
         event.getRegistry().registerAll(MusicinStoneBlocks.MYSTICAL_WISE_TREE);
     }
 
