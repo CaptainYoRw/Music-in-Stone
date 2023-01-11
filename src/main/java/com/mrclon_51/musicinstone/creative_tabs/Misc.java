@@ -14,7 +14,7 @@ public class Misc extends CreativeTabs
 	public Misc()
 	{
 		super(MusicinStone.MODID + "." + "misc");
-		setBackgroundImageName("misc");
+		setBackgroundImageName("misc.png");
 		hasSearchBar();
 	}
 	
