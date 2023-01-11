@@ -14,6 +14,8 @@ public class Misc extends CreativeTabs
 	public Misc()
 	{
 		super(MusicinStone.MODID + "." + "misc");
+		setBackgroundImageName("misc");
+		hasSearchBar();
 	}
 	
 	@SideOnly(Side.CLIENT)
@@ -22,5 +24,11 @@ public class Misc extends CreativeTabs
 	{
 		return new ItemStack(MusicinStoneItems.ARCH_TOOLS);
 	}
-
+	
+	@Override
+	public boolean hasSearchBar() 
+	{
+	    return true;
+	}
+	
 }
