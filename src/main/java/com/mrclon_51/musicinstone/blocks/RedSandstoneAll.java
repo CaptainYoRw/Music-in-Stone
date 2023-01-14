@@ -13,10 +13,10 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 
-public class GreySandstone extends Block
+public class RedSandstoneAll extends Block
 {
         
-        public GreySandstone(@Nonnull final String name)
+        public RedSandstoneAll(@Nonnull final String name)
         {
             super(Material.ROCK);
             RegistryUtil.setBlockName(this, name);
@@ -29,6 +29,6 @@ public class GreySandstone extends Block
         @Override
         public MapColor getMapColor(IBlockState state, IBlockAccess world, BlockPos pos)
         {
-            return MapColor.SILVER_STAINED_HARDENED_CLAY;
+            return MapColor.ADOBE;
         }
 }

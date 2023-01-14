@@ -37,7 +37,7 @@ public class MysticalWiseTree extends Block
 	{
         super.addInformation(stack, worldIn, tooltip, flagIn);
 
-        tooltip.add(I18n.format("Test Subject of [REDACTED]"));
+        tooltip.add(I18n.format("tooltip.musicinstone.mystical_wise_tree"));
     }
 	
 	public Block setBurning() 

@@ -1,12 +1,23 @@
-������� ��������
+Вкладки Креатива
 
-itemGroup.musicinstone.misc=������
+itemGroup.musicinstone.misc=§fРазное
 
-��������
+Предметы
 
-item.musicinstone.arch_tools.name=����������� �����������
+item.musicinstone.arch_tools.name=Инструменты архитектора
 
-�����
+Блоки
 
-tile.musicinstone.grey_sand.name=����� �����
-tile.musicinstone.mystical_wise_tree.name=���� ��������� ������� ������������ �����
+tile.musicinstone.grey_sand.name=Серый песок
+tile.musicinstone.grey_sandstone.name=Серый песчаник
+tile.musicinstone.grey_sandstone_smooth.name=Гладкий серый песчаник
+tile.musicinstone.grey_sandstone_chiseled.name=Резной серый песчаник
+tile.musicinstone.grey_sandstone_all.name=Полированный серый песчаник
+tile.musicinstone.mystical_wise_tree.name=Блок тестового мудрого мистического древа
+
+tile.musicinstone.sandstone_all.name=Полированный песчаник
+tile.musicinstone.red_sandstone_all.name=Полированный красный песчаник
+
+Tooltips
+
+tooltip.musicinstone.mystical_wise_tree=Тестовый объект [УДАЛЕНО]

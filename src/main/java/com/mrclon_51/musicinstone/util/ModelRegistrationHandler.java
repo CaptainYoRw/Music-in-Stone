@@ -22,9 +22,12 @@ public class ModelRegistrationHandler
 		registerModel(MusicinStoneItems.ARCH_TOOLS, 0);
 		
 		registerModel(Item.getItemFromBlock(MusicinStoneBlocks.GREY_SAND), 0);
-		//registerModel(Item.getItemFromBlock(MusicinStoneBlocks.GREY_SANDSTONE), 0);
-		//registerModel(Item.getItemFromBlock(MusicinStoneBlocks.GREY_SANDSTONE), 1);
-		//registerModel(Item.getItemFromBlock(MusicinStoneBlocks.GREY_SANDSTONE), 2);
+		registerModel(Item.getItemFromBlock(MusicinStoneBlocks.GREY_SANDSTONE), 0);
+		registerModel(Item.getItemFromBlock(MusicinStoneBlocks.GREY_SANDSTONE_SMOOTH), 0);
+		registerModel(Item.getItemFromBlock(MusicinStoneBlocks.GREY_SANDSTONE_CHISELED), 0);
+		registerModel(Item.getItemFromBlock(MusicinStoneBlocks.GREY_SANDSTONE_ALL), 0);
+		registerModel(Item.getItemFromBlock(MusicinStoneBlocks.SANDSTONE_ALL), 0);
+		registerModel(Item.getItemFromBlock(MusicinStoneBlocks.RED_SANDSTONE_ALL), 0);
 		registerModel(Item.getItemFromBlock(MusicinStoneBlocks.MYSTICAL_WISE_TREE), 0);
 	}
 	

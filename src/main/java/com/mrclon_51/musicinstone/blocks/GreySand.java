@@ -23,10 +23,8 @@ public class GreySand extends BlockFalling
 		super(Material.SAND);
 		RegistryUtil.setBlockName(this, name);
 		setCreativeTab(MusicinStone.MISC);
-		setHardness(10.0f);
+		setHardness(0.5f);
 		setSoundType(SoundType.SAND);
-        setHarvestLevel("Shovel", 0);
-        setResistance(100);
 	}	
 	
 	@Override

@@ -1,9 +1,6 @@
 {
     "variants": 
     {
-        "normal": 
-        [
-            { "model": "musicinstone:mystical_wise_tree" }
-        ]
+        "normal": { "model": "musicinstone:mystical_wise_tree" }
     }
 }

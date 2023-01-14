@@ -13,10 +13,10 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 
-public class GreySandstone extends Block
+public class GreySandstoneAll extends Block
 {
         
-        public GreySandstone(@Nonnull final String name)
+        public GreySandstoneAll(@Nonnull final String name)
         {
             super(Material.ROCK);
             RegistryUtil.setBlockName(this, name);
