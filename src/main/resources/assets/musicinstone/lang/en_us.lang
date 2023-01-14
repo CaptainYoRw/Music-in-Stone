@@ -13,6 +13,11 @@ tile.musicinstone.grey_sandstone.name=Grey Sandstone
 tile.musicinstone.grey_sandstone_smooth.name=Smooth Grey Sandstone
 tile.musicinstone.grey_sandstone_chiseled.name=Chiseled Grey Sandstone
 tile.musicinstone.grey_sandstone_polished.name=Polished Grey Sandstone
+tile.musicinstone.pink_sandstone.name=Pink Sandstone
+tile.musicinstone.pink_sandstone_smooth.name=Smooth Pink Sandstone
+tile.musicinstone.pink_sandstone_chiseled.name=Chiseled Pink Sandstone
+tile.musicinstone.pink_sandstone_polished.name=Polished Pink Sandstone
+
 tile.musicinstone.mystical_wise_tree.name=Wise Mystical Tree Test Block
 
 tile.musicinstone.sandstone_polished.name=Polished Sandstone

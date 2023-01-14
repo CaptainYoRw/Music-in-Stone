@@ -13,6 +13,11 @@ tile.musicinstone.grey_sandstone.name=Серый песчаник
 tile.musicinstone.grey_sandstone_smooth.name=Гладкий серый песчаник
 tile.musicinstone.grey_sandstone_chiseled.name=Резной серый песчаник
 tile.musicinstone.grey_sandstone_all.name=Полированный серый песчаник
+tile.musicinstone.grey_sandstone.name=Розовый песчаник
+tile.musicinstone.grey_sandstone_smooth.name=Гладкий розовый песчаник
+tile.musicinstone.grey_sandstone_chiseled.name=Резной розовый песчаник
+tile.musicinstone.grey_sandstone_all.name=Полированный розовый песчаник
+
 tile.musicinstone.mystical_wise_tree.name=Блок тестового мудрого мистического древа
 
 tile.musicinstone.sandstone_all.name=Полированный песчаник

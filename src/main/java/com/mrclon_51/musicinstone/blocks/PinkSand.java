@@ -15,10 +15,10 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class GreySand extends BlockFalling
+public class PinkSand extends BlockFalling
 {
 	
-	public GreySand(@Nonnull final String name)
+	public PinkSand(@Nonnull final String name)
 	{
 		super(Material.SAND);
 		RegistryUtil.setBlockName(this, name);
@@ -30,14 +30,14 @@ public class GreySand extends BlockFalling
 	@Override
     public MapColor getMapColor(IBlockState state, IBlockAccess world, BlockPos pos)
     {
-        return MapColor.SILVER_STAINED_HARDENED_CLAY;
+        return MapColor.PINK_STAINED_HARDENED_CLAY;
     }
 
     @SideOnly(Side.CLIENT)
     @Override
     public int getDustColor(IBlockState state)
     {
-        return 11115143;
+        return 13271929;
     }
 	
 }

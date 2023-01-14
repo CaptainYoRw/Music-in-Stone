@@ -9,6 +9,11 @@ import com.mrclon_51.musicinstone.blocks.GreySandstoneAll;
 import com.mrclon_51.musicinstone.blocks.GreySandstoneChiseled;
 import com.mrclon_51.musicinstone.blocks.GreySandstoneSmooth;
 import com.mrclon_51.musicinstone.blocks.MysticalWiseTree;
+import com.mrclon_51.musicinstone.blocks.PinkSand;
+import com.mrclon_51.musicinstone.blocks.PinkSandstone;
+import com.mrclon_51.musicinstone.blocks.PinkSandstoneAll;
+import com.mrclon_51.musicinstone.blocks.PinkSandstoneChiseled;
+import com.mrclon_51.musicinstone.blocks.PinkSandstoneSmooth;
 import com.mrclon_51.musicinstone.blocks.RedSandstoneAll;
 import com.mrclon_51.musicinstone.blocks.SandstoneAll;
 
@@ -27,6 +32,12 @@ public class MusicinStoneBlocks
 	public static final Block GREY_SANDSTONE_ALL = new GreySandstoneAll("grey_sandstone_all");
 	public static final Block SANDSTONE_ALL = new SandstoneAll("sandstone_all");
 	public static final Block RED_SANDSTONE_ALL = new RedSandstoneAll("red_sandstone_all");
+	public static final Block PINK_SAND = new PinkSand("pink_sand");
+	public static final Block PINK_SANDSTONE = new PinkSandstone("pink_sandstone");
+    public static final Block PINK_SANDSTONE_SMOOTH = new PinkSandstoneSmooth("pink_sandstone_smooth");
+	public static final Block PINK_SANDSTONE_CHISELED = new PinkSandstoneChiseled("pink_sandstone_chiseled");
+	public static final Block PINK_SANDSTONE_ALL = new PinkSandstoneAll("pink_sandstone_all");
+	
 	public static final Block MYSTICAL_WISE_TREE = new MysticalWiseTree("mystical_wise_tree");
 	
 }

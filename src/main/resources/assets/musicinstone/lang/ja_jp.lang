@@ -13,6 +13,11 @@ tile.musicinstone.grey_sandstone.name=灰色砂岩
 tile.musicinstone.grey_sandstone_smooth.name=滑らかな灰色砂岩
 tile.musicinstone.grey_sandstone_chiseled.name=模様入りの灰色砂岩
 tile.musicinstone.grey_sandstone_all.name=磨かれた灰色砂岩
+tile.musicinstone.grey_sandstone.name=ピンク砂岩
+tile.musicinstone.grey_sandstone_smooth.name=滑らかなピンク砂岩
+tile.musicinstone.grey_sandstone_chiseled.name=模様入りのピンク砂岩
+tile.musicinstone.grey_sandstone_all.name=磨かれたピンク砂岩
+
 tile.musicinstone.mystical_wise_tree.name=ワイズ・ミスチカル・ツリーテストブロック
 
 tile.musicinstone.sandstone_all.name=磨かれた砂岩
