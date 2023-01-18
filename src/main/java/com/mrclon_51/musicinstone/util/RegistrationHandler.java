@@ -30,6 +30,10 @@ public class RegistrationHandler
         event.getRegistry().registerAll(MusicinStoneBlocks.PINK_SANDSTONE_SMOOTH);
         event.getRegistry().registerAll(MusicinStoneBlocks.PINK_SANDSTONE_CHISELED);
         event.getRegistry().registerAll(MusicinStoneBlocks.PINK_SANDSTONE_ALL);
+        event.getRegistry().registerAll(MusicinStoneBlocks.STONE_ALL);
+        event.getRegistry().registerAll(MusicinStoneBlocks.SLATE_CRUSHED);
+        event.getRegistry().registerAll(MusicinStoneBlocks.SLATE);
+        event.getRegistry().registerAll(MusicinStoneBlocks.SLATE_POLISHED);
         
         event.getRegistry().registerAll(MusicinStoneBlocks.MYSTICAL_WISE_TREE);
     }
@@ -49,6 +53,10 @@ public class RegistrationHandler
         event.getRegistry().registerAll(new ItemBlock(MusicinStoneBlocks.PINK_SANDSTONE_SMOOTH).setRegistryName(MusicinStoneBlocks.PINK_SANDSTONE_SMOOTH.getRegistryName()));
         event.getRegistry().registerAll(new ItemBlock(MusicinStoneBlocks.PINK_SANDSTONE_CHISELED).setRegistryName(MusicinStoneBlocks.PINK_SANDSTONE_CHISELED.getRegistryName()));
         event.getRegistry().registerAll(new ItemBlock(MusicinStoneBlocks.PINK_SANDSTONE_ALL).setRegistryName(MusicinStoneBlocks.PINK_SANDSTONE_ALL.getRegistryName()));
+        event.getRegistry().registerAll(new ItemBlock(MusicinStoneBlocks.STONE_ALL).setRegistryName(MusicinStoneBlocks.STONE_ALL.getRegistryName()));
+        event.getRegistry().registerAll(new ItemBlock(MusicinStoneBlocks.SLATE_CRUSHED).setRegistryName(MusicinStoneBlocks.SLATE_CRUSHED.getRegistryName()));
+        event.getRegistry().registerAll(new ItemBlock(MusicinStoneBlocks.SLATE).setRegistryName(MusicinStoneBlocks.SLATE.getRegistryName()));
+        event.getRegistry().registerAll(new ItemBlock(MusicinStoneBlocks.SLATE_POLISHED).setRegistryName(MusicinStoneBlocks.SLATE_POLISHED.getRegistryName()));
         
         event.getRegistry().registerAll(new ItemBlock(MusicinStoneBlocks.MYSTICAL_WISE_TREE).setRegistryName(MusicinStoneBlocks.MYSTICAL_WISE_TREE.getRegistryName()));
         

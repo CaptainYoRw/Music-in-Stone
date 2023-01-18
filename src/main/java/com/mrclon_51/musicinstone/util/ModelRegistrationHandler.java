@@ -33,6 +33,10 @@ public class ModelRegistrationHandler
         registerModel(Item.getItemFromBlock(MusicinStoneBlocks.PINK_SANDSTONE_SMOOTH), 0);
         registerModel(Item.getItemFromBlock(MusicinStoneBlocks.PINK_SANDSTONE_CHISELED), 0);
         registerModel(Item.getItemFromBlock(MusicinStoneBlocks.PINK_SANDSTONE_ALL), 0);
+        registerModel(Item.getItemFromBlock(MusicinStoneBlocks.STONE_ALL), 0);
+        registerModel(Item.getItemFromBlock(MusicinStoneBlocks.SLATE_CRUSHED), 0);
+        registerModel(Item.getItemFromBlock(MusicinStoneBlocks.SLATE), 0);
+        registerModel(Item.getItemFromBlock(MusicinStoneBlocks.SLATE_POLISHED), 0);
 		
 		registerModel(Item.getItemFromBlock(MusicinStoneBlocks.MYSTICAL_WISE_TREE), 0);
 	}
