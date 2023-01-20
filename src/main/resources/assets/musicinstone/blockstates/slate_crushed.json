@@ -1,6 +1,12 @@
 {
     "variants": 
     {
-        "normal": { "model": "musicinstone:slate_crushed" }
+        "normal": 
+		[
+		    { "model": "musicinstone:slate_crushed" },
+			{ "model": "musicinstone:slate_crushed", "y": 90, "x": 90, "z": 90 },
+			{ "model": "musicinstone:slate_crushed", "y": 180, "x": 180, "z": 180 },
+			{ "model": "musicinstone:slate_crushed", "y": 270, "x": 270, "z": 270 }
+		]
     }
 }

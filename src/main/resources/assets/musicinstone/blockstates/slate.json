@@ -1,6 +1,8 @@
 {
-    "variants": {
-        "normal": [
+    "variants": 
+	{
+        "normal": 
+		[
             { "model": "musicinstone:slate" },
             { "model": "musicinstone:slate_mirrored" },
             { "model": "musicinstone:slate", "y": 180 },

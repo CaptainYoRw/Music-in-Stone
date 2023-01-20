@@ -31,16 +31,16 @@ public class MusicinStoneBlocks
     
 	public static final Block GREY_SAND = new GreySand("grey_sand");
 	public static final Block GREY_SANDSTONE = new GreySandstone("grey_sandstone");
-	public static final Block GREY_SANDSTONE_SMOOTH = new GreySandstoneSmooth("grey_sandstone_smooth");
 	public static final Block GREY_SANDSTONE_CHISELED = new GreySandstoneChiseled("grey_sandstone_chiseled");
+	public static final Block GREY_SANDSTONE_SMOOTH = new GreySandstoneSmooth("grey_sandstone_smooth");
 	public static final Block GREY_SANDSTONE_ALL = new GreySandstoneAll("grey_sandstone_all");
-	public static final Block SANDSTONE_ALL = new SandstoneAll("sandstone_all");
-	public static final Block RED_SANDSTONE_ALL = new RedSandstoneAll("red_sandstone_all");
 	public static final Block PINK_SAND = new PinkSand("pink_sand");
 	public static final Block PINK_SANDSTONE = new PinkSandstone("pink_sandstone");
-    public static final Block PINK_SANDSTONE_SMOOTH = new PinkSandstoneSmooth("pink_sandstone_smooth");
 	public static final Block PINK_SANDSTONE_CHISELED = new PinkSandstoneChiseled("pink_sandstone_chiseled");
+    public static final Block PINK_SANDSTONE_SMOOTH = new PinkSandstoneSmooth("pink_sandstone_smooth");
 	public static final Block PINK_SANDSTONE_ALL = new PinkSandstoneAll("pink_sandstone_all");
+	public static final Block SANDSTONE_ALL = new SandstoneAll("sandstone_all");
+	public static final Block RED_SANDSTONE_ALL = new RedSandstoneAll("red_sandstone_all");
 	public static final Block STONE_ALL = new StoneAll("stone_all");
     public static final Block SLATE_CRUSHED = new SlateCrushed("slate_crushed");
 	public static final Block SLATE = new Slate("slate");

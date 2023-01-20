@@ -23,16 +23,16 @@ public class ModelRegistrationHandler
 		
 		registerModel(Item.getItemFromBlock(MusicinStoneBlocks.GREY_SAND), 0);
 		registerModel(Item.getItemFromBlock(MusicinStoneBlocks.GREY_SANDSTONE), 0);
+	    registerModel(Item.getItemFromBlock(MusicinStoneBlocks.GREY_SANDSTONE_CHISELED), 0);
 		registerModel(Item.getItemFromBlock(MusicinStoneBlocks.GREY_SANDSTONE_SMOOTH), 0);
-		registerModel(Item.getItemFromBlock(MusicinStoneBlocks.GREY_SANDSTONE_CHISELED), 0);
 		registerModel(Item.getItemFromBlock(MusicinStoneBlocks.GREY_SANDSTONE_ALL), 0);
-		registerModel(Item.getItemFromBlock(MusicinStoneBlocks.SANDSTONE_ALL), 0);
-		registerModel(Item.getItemFromBlock(MusicinStoneBlocks.RED_SANDSTONE_ALL), 0);
 		registerModel(Item.getItemFromBlock(MusicinStoneBlocks.PINK_SAND), 0);
 		registerModel(Item.getItemFromBlock(MusicinStoneBlocks.PINK_SANDSTONE), 0);
-        registerModel(Item.getItemFromBlock(MusicinStoneBlocks.PINK_SANDSTONE_SMOOTH), 0);
         registerModel(Item.getItemFromBlock(MusicinStoneBlocks.PINK_SANDSTONE_CHISELED), 0);
+        registerModel(Item.getItemFromBlock(MusicinStoneBlocks.PINK_SANDSTONE_SMOOTH), 0);
         registerModel(Item.getItemFromBlock(MusicinStoneBlocks.PINK_SANDSTONE_ALL), 0);
+        registerModel(Item.getItemFromBlock(MusicinStoneBlocks.SANDSTONE_ALL), 0);
+        registerModel(Item.getItemFromBlock(MusicinStoneBlocks.RED_SANDSTONE_ALL), 0);
         registerModel(Item.getItemFromBlock(MusicinStoneBlocks.STONE_ALL), 0);
         registerModel(Item.getItemFromBlock(MusicinStoneBlocks.SLATE_CRUSHED), 0);
         registerModel(Item.getItemFromBlock(MusicinStoneBlocks.SLATE), 0);

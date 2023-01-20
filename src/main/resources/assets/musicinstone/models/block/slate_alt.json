@@ -1,6 +1,7 @@
 {
     "parent": "block/cube_all",
-    "textures": {
+    "textures": 
+	{
         "all": "musicinstone:blocks/slate_alt"
     }
 }
