@@ -49,7 +49,6 @@ public class ModelRegistrationHandler
         registerModel(Item.getItemFromBlock(MusicinStoneBlocks.DIABASE_POLISHED), 0);
 		
 		registerModel(Item.getItemFromBlock(MusicinStoneBlocks.MYSTICAL_WISE_TREE), 0);
-		registerModel(Item.getItemFromBlock(MusicinStoneBlocks.NELIPERAL), 0);
 	}
 	
 	private static void registerModel(Item item, int meta) 
