@@ -15,20 +15,19 @@ import net.minecraft.world.IBlockAccess;
 
 public class PinkSandstone extends Block
 {
-        
-        public PinkSandstone(@Nonnull final String name)
-        {
-            super(Material.ROCK);
-            RegistryUtil.setBlockName(this, name);
-            setCreativeTab(MusicinStone.MISC);
-            setHardness(0.8f);
-            setSoundType(SoundType.STONE);
-            setHarvestLevel("Pickaxe", 0);
-        }   
-        
-        @Override
-        public MapColor getMapColor(IBlockState state, IBlockAccess world, BlockPos pos)
-        {
-            return MapColor.PINK_STAINED_HARDENED_CLAY;
-        }
+    public PinkSandstone(@Nonnull final String name)
+    {
+        super(Material.ROCK);
+        RegistryUtil.setBlockName(this, name);
+        setCreativeTab(MusicinStone.MISC);
+        setHardness(0.8f);
+        setSoundType(SoundType.STONE);
+        setHarvestLevel("Pickaxe", 0);
+    }  
+    
+    @Override
+    public MapColor getMapColor(IBlockState state, IBlockAccess world, BlockPos pos)
+    {
+        return MapColor.PINK_STAINED_HARDENED_CLAY;
+    }
 }

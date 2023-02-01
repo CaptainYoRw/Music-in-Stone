@@ -21,6 +21,17 @@ public class ModelRegistrationHandler
 	{
 		registerModel(MusicinStoneItems.ARCH_TOOLS, 0);
 		
+		registerModel(Item.getItemFromBlock(MusicinStoneBlocks.SANDSTONE_ALL), 0);
+        registerModel(Item.getItemFromBlock(MusicinStoneBlocks.RED_SANDSTONE_ALL), 0);
+        registerModel(Item.getItemFromBlock(MusicinStoneBlocks.STONE_SLAB_HALF), 0);
+        registerModel(Item.getItemFromBlock(MusicinStoneBlocks.STONE_STAIRS), 0);
+        registerModel(Item.getItemFromBlock(MusicinStoneBlocks.STONE_WALL), 0);
+        registerModel(Item.getItemFromBlock(MusicinStoneBlocks.STONE_ALL), 0);
+        registerModel(Item.getItemFromBlock(MusicinStoneBlocks.STONE_TILES_REGULAR), 0);
+        registerModel(Item.getItemFromBlock(MusicinStoneBlocks.STONE_TILES_IRREGULAR), 0);
+        registerModel(Item.getItemFromBlock(MusicinStoneBlocks.STONE_STAIRS_POLISHED), 0);
+        registerModel(Item.getItemFromBlock(MusicinStoneBlocks.STONE_WALL_POLISHED), 0);
+		
 		registerModel(Item.getItemFromBlock(MusicinStoneBlocks.GREY_SAND), 0);
 		registerModel(Item.getItemFromBlock(MusicinStoneBlocks.GREY_SANDSTONE), 0);
 	    registerModel(Item.getItemFromBlock(MusicinStoneBlocks.GREY_SANDSTONE_CHISELED), 0);
@@ -31,12 +42,11 @@ public class ModelRegistrationHandler
         registerModel(Item.getItemFromBlock(MusicinStoneBlocks.PINK_SANDSTONE_CHISELED), 0);
         registerModel(Item.getItemFromBlock(MusicinStoneBlocks.PINK_SANDSTONE_SMOOTH), 0);
         registerModel(Item.getItemFromBlock(MusicinStoneBlocks.PINK_SANDSTONE_ALL), 0);
-        registerModel(Item.getItemFromBlock(MusicinStoneBlocks.SANDSTONE_ALL), 0);
-        registerModel(Item.getItemFromBlock(MusicinStoneBlocks.RED_SANDSTONE_ALL), 0);
-        registerModel(Item.getItemFromBlock(MusicinStoneBlocks.STONE_ALL), 0);
         registerModel(Item.getItemFromBlock(MusicinStoneBlocks.SLATE_CRUSHED), 0);
         registerModel(Item.getItemFromBlock(MusicinStoneBlocks.SLATE), 0);
         registerModel(Item.getItemFromBlock(MusicinStoneBlocks.SLATE_POLISHED), 0);
+        registerModel(Item.getItemFromBlock(MusicinStoneBlocks.DIABASE), 0);
+        registerModel(Item.getItemFromBlock(MusicinStoneBlocks.DIABASE_POLISHED), 0);
 		
 		registerModel(Item.getItemFromBlock(MusicinStoneBlocks.MYSTICAL_WISE_TREE), 0);
 	}

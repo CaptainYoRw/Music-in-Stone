@@ -15,21 +15,20 @@ import net.minecraft.world.IBlockAccess;
 
 public class SlatePolished extends Block
 {
-        
-        public SlatePolished(@Nonnull final String name)
-        {
-            super(Material.ROCK);
-            RegistryUtil.setBlockName(this, name);
-            setCreativeTab(MusicinStone.MISC);
-            setHardness(1.5f);
-            setResistance(8.0F);
-            setSoundType(SoundType.STONE);
-            setHarvestLevel("Pickaxe", 0);
-        }   
-        
-        @Override
-        public MapColor getMapColor(IBlockState state, IBlockAccess world, BlockPos pos)
-        {
-            return MapColor.OBSIDIAN;
-        }
+    public SlatePolished(@Nonnull final String name)
+    {
+        super(Material.ROCK);
+        RegistryUtil.setBlockName(this, name);
+        setCreativeTab(MusicinStone.MISC);
+        setHardness(1.25f);
+        setResistance(8.0F);
+        setSoundType(SoundType.STONE);
+        setHarvestLevel("Pickaxe", 0);
+    }
+    
+    @Override
+    public MapColor getMapColor(IBlockState state, IBlockAccess world, BlockPos pos)
+    {
+        return MapColor.OBSIDIAN;
+    }
 }

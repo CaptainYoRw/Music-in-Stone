@@ -15,21 +15,20 @@ import net.minecraft.world.IBlockAccess;
 
 public class StoneAll extends Block
 {
-        
-        public StoneAll(@Nonnull final String name)
-        {
-            super(Material.ROCK);
-            RegistryUtil.setBlockName(this, name);
-            setCreativeTab(MusicinStone.MISC);
-            setHardness(2.0f);
-            setResistance(10.0F);
-            setSoundType(SoundType.STONE);
-            setHarvestLevel("Pickaxe", 0);
-        }   
-        
-        @Override
-        public MapColor getMapColor(IBlockState state, IBlockAccess world, BlockPos pos)
-        {
-            return MapColor.STONE;
-        }
+    public StoneAll(@Nonnull final String name)
+    {
+        super(Material.ROCK);
+        RegistryUtil.setBlockName(this, name);
+        setCreativeTab(MusicinStone.MISC);
+        setHardness(2.0f);
+        setResistance(10.0F);
+        setSoundType(SoundType.STONE);
+        setHarvestLevel("Pickaxe", 0);
+    }
+    
+    @Override
+    public MapColor getMapColor(IBlockState state, IBlockAccess world, BlockPos pos)
+    {
+        return MapColor.STONE;
+    }
 }

@@ -23,12 +23,12 @@ public class MysticalWiseTree extends Block
 	{
 	    super(Material.WOOD);
 	    RegistryUtil.setBlockName(this, name);
-        setCreativeTab(MusicinStone.MISC);
-        setHardness(10.0f);
-        setSoundType(SoundType.SNOW);
-        setHarvestLevel("Axe", 3);
-        setResistance(100);
-        setBurning();
+	    setCreativeTab(MusicinStone.MISC);
+	    setHardness(10.0f);
+	    setSoundType(SoundType.SNOW);
+	    setHarvestLevel("Axe", 3);
+	    setResistance(100);
+	    setBurning();
         
 	}
 	

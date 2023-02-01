@@ -8,18 +8,19 @@ item.musicinstone.arch_tools.name=Architect's Tools
 
 Blocks
 
+tile.musicinstone.sandstone_all.name=Polished Sandstone
+tile.musicinstone.red_sandstone_all.name=Polished Red Sandstone
+tile.musicinstone.stone_all.name=Polished Stone
+
 tile.musicinstone.grey_sand.name=Grey Sand
 tile.musicinstone.grey_sandstone.name=Grey Sandstone
 tile.musicinstone.grey_sandstone_smooth.name=Smooth Grey Sandstone
 tile.musicinstone.grey_sandstone_chiseled.name=Chiseled Grey Sandstone
 tile.musicinstone.grey_sandstone_all.name=Polished Grey Sandstone
-tile.musicinstone.sandstone_all.name=Polished Sandstone
-tile.musicinstone.red_sandstone_all.name=Polished Red Sandstone
 tile.musicinstone.pink_sandstone.name=Pink Sandstone
 tile.musicinstone.pink_sandstone_smooth.name=Smooth Pink Sandstone
 tile.musicinstone.pink_sandstone_chiseled.name=Chiseled Pink Sandstone
 tile.musicinstone.pink_sandstone_all.name=Polished Pink Sandstone
-tile.musicinstone.stone_all.name=Polished Stone
 tile.musicinstone.slate.name=Slate
 tile.musicinstone.slate_crushed.name=Crushed Slate
 tile.musicinstone.slate_polished.name=Polished Slate
