@@ -12,6 +12,7 @@ import com.mrclon_51.musicinstone.blocks.GreySandstoneAll;
 import com.mrclon_51.musicinstone.blocks.GreySandstoneChiseled;
 import com.mrclon_51.musicinstone.blocks.GreySandstoneSmooth;
 import com.mrclon_51.musicinstone.blocks.MysticalWiseTree;
+import com.mrclon_51.musicinstone.blocks.Neliperal;
 import com.mrclon_51.musicinstone.blocks.PinkSand;
 import com.mrclon_51.musicinstone.blocks.PinkSandstone;
 import com.mrclon_51.musicinstone.blocks.PinkSandstoneAll;
@@ -104,5 +105,6 @@ public class MusicinStoneBlocks
     
 	**/
 	//Test objects
-	public static final Block MYSTICAL_WISE_TREE = new MysticalWiseTree("mystical_wise_tree");	
+	public static final Block MYSTICAL_WISE_TREE = new MysticalWiseTree("mystical_wise_tree");
+	public static final Block NELIPERAL = new Neliperal("neliperal");
 }
