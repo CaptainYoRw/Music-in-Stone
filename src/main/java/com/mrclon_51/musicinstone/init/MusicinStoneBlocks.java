@@ -33,6 +33,7 @@ import com.mrclon_51.musicinstone.blocks.StoneWall;
 import com.mrclon_51.musicinstone.blocks.StoneWallPolished;
 
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockFalling;
 import net.minecraft.block.BlockSlab;
 import net.minecraft.block.BlockStairs;
 import net.minecraft.block.material.Material;
@@ -56,12 +57,12 @@ public class MusicinStoneBlocks
     public static final BlockStairs STONE_STAIRS_POLISHED = new StoneStairsPolished("stone_stairs_polished", Blocks.STONE_SLAB);
     public static final BlockWallBase STONE_WALL_POLISHED = new StoneWallPolished("stone_wall_polished");
     //Original blocks
-    public static final Block GREY_SAND = new GreySand("grey_sand");
+    public static final BlockFalling GREY_SAND = new GreySand("grey_sand");
 	public static final Block GREY_SANDSTONE = new GreySandstone("grey_sandstone");
 	public static final Block GREY_SANDSTONE_CHISELED = new GreySandstoneChiseled("grey_sandstone_chiseled");
 	public static final Block GREY_SANDSTONE_SMOOTH = new GreySandstoneSmooth("grey_sandstone_smooth");
 	public static final Block GREY_SANDSTONE_ALL = new GreySandstoneAll("grey_sandstone_all");
-	public static final Block PINK_SAND = new PinkSand("pink_sand");
+	public static final BlockFalling PINK_SAND = new PinkSand("pink_sand");
 	public static final Block PINK_SANDSTONE = new PinkSandstone("pink_sandstone");
 	public static final Block PINK_SANDSTONE_CHISELED = new PinkSandstoneChiseled("pink_sandstone_chiseled");
     public static final Block PINK_SANDSTONE_SMOOTH = new PinkSandstoneSmooth("pink_sandstone_smooth");
