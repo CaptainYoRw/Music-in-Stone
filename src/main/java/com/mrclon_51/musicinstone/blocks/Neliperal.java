@@ -49,5 +49,4 @@ public class Neliperal extends BlockFalling
         Blocks.FIRE.setFireInfo(this, 30, 60);
         return this;
     }
-    //Sosy
 }
