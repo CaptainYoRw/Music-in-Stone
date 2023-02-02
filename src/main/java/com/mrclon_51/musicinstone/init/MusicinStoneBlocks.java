@@ -3,7 +3,7 @@ package com.mrclon_51.musicinstone.init;
 import javax.annotation.ParametersAreNonnullByDefault;
 
 import com.mrclon_51.musicinstone.MusicinStone;
-import com.mrclon_51.musicinstone.blocks.BlockWallBase;
+import com.mrclon_51.musicinstone.blocks.BlockWallMiS;
 import com.mrclon_51.musicinstone.blocks.Diabase;
 import com.mrclon_51.musicinstone.blocks.DiabasePolished;
 import com.mrclon_51.musicinstone.blocks.GreySand;
@@ -34,6 +34,7 @@ import com.mrclon_51.musicinstone.blocks.StoneWallPolished;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockFalling;
+import net.minecraft.block.BlockRotatedPillar;
 import net.minecraft.block.BlockSlab;
 import net.minecraft.block.BlockStairs;
 import net.minecraft.block.material.Material;
@@ -50,12 +51,12 @@ public class MusicinStoneBlocks
     public static final BlockSlab STONE_SLAB_HALF = new StoneSlab.Half("stone_slab_half");
     public static final BlockSlab STONE_SLAB_DOUBLE = new StoneSlab.Double("stone_slab_double", Material.ROCK);
     public static final BlockStairs STONE_STAIRS = new StoneStairs("stone_stairs", Blocks.STONE);
-    public static final BlockWallBase STONE_WALL = new StoneWall("stone_wall");
+    public static final BlockWallMiS STONE_WALL = new StoneWall("stone_wall");
     public static final Block STONE_ALL = new StoneAll("stone_all");
     public static final Block STONE_TILES_REGULAR = new StoneTilesRegular("stone_tiles_regular");
     public static final Block STONE_TILES_IRREGULAR = new StoneTilesIrregular("stone_tiles_irregular");
     public static final BlockStairs STONE_STAIRS_POLISHED = new StoneStairsPolished("stone_stairs_polished", Blocks.STONE_SLAB);
-    public static final BlockWallBase STONE_WALL_POLISHED = new StoneWallPolished("stone_wall_polished");
+    public static final BlockWallMiS STONE_WALL_POLISHED = new StoneWallPolished("stone_wall_polished");
     //Original blocks
     public static final BlockFalling GREY_SAND = new GreySand("grey_sand");
 	public static final Block GREY_SANDSTONE = new GreySandstone("grey_sandstone");
@@ -68,7 +69,7 @@ public class MusicinStoneBlocks
     public static final Block PINK_SANDSTONE_SMOOTH = new PinkSandstoneSmooth("pink_sandstone_smooth");
 	public static final Block PINK_SANDSTONE_ALL = new PinkSandstoneAll("pink_sandstone_all");
     public static final Block SLATE_CRUSHED = new SlateCrushed("slate_crushed");
-	public static final Block SLATE = new Slate("slate");
+	public static final BlockRotatedPillar SLATE = new Slate("slate");
 	public static final Block SLATE_POLISHED = new SlatePolished("slate_polished");
 	public static final Block DIABASE = new Diabase("diabase");
 	public static final Block DIABASE_POLISHED = new DiabasePolished("diabase_polished");

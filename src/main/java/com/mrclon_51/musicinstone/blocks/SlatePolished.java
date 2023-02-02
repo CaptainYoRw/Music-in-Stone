@@ -20,7 +20,7 @@ public class SlatePolished extends Block
         super(Material.ROCK);
         RegistryUtil.setBlockName(this, name);
         setCreativeTab(MusicinStone.MISC);
-        setHardness(1.25f);
+        setHardness(3.5f);
         setResistance(8.0F);
         setSoundType(SoundType.STONE);
         setHarvestLevel("Pickaxe", 0);

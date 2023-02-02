@@ -1,16 +1,38 @@
 {
-    "variants": 
-	{
-        "normal": 
-		[
-            { "model": "musicinstone:slate" },
-            { "model": "musicinstone:slate_mirrored" },
-            { "model": "musicinstone:slate", "y": 180 },
-            { "model": "musicinstone:slate_mirrored", "y": 180 },
-			{ "model": "musicinstone:slate_alt" },
-            { "model": "musicinstone:slate_mirrored_alt" },
-            { "model": "musicinstone:slate_alt", "y": 180 },
-            { "model": "musicinstone:slate_mirrored_alt", "y": 180 }
-        ]
-    }
+  "variants": 
+  {
+    "axis=x": 
+	[
+      { "model": "musicinstone:slate", "x": 90, "y": 90 },
+      { "model": "musicinstone:slate_mirrored", "x": 90,"y": 90 },
+      { "model": "musicinstone:slate", "x": 90, "y": 90 },
+      { "model": "musicinstone:slate_mirrored", "x": 90, "y": 90 },
+	  { "model": "musicinstone:slate_alt", "x": 90, "y": 90 },
+      { "model": "musicinstone:slate_mirrored_alt", "x": 90,"y": 90 },
+      { "model": "musicinstone:slate_alt", "x": 90, "y": 90 },
+      { "model": "musicinstone:slate_mirrored_alt", "x": 90, "y": 90 }
+    ],
+    "axis=y": 
+	[
+      { "model": "musicinstone:slate"},
+      { "model": "musicinstone:slate_mirrored" },
+      { "model": "musicinstone:slate", "y": 180 },
+      { "model": "musicinstone:slate_mirrored", "y": 180 },
+	  { "model": "musicinstone:slate_alt"},
+      { "model": "musicinstone:slate_mirrored_alt" },
+      { "model": "musicinstone:slate_alt", "y": 180 },
+      { "model": "musicinstone:slate_mirrored_alt", "y": 180 }
+    ],
+    "axis=z": 
+	[
+      { "model": "musicinstone:slate", "x": 90 },
+      { "model": "musicinstone:slate_mirrored", "x": 90 },
+      { "model": "musicinstone:slate", "x": 90, "y": 180 },
+      { "model": "musicinstone:slate_mirrored", "x": 90, "y": 180 },
+	  { "model": "musicinstone:slate_alt", "x": 90 },
+      { "model": "musicinstone:slate_mirrored_alt", "x": 90 },
+      { "model": "musicinstone:slate_alt", "x": 90, "y": 180 },
+      { "model": "musicinstone:slate_mirrored_alt", "x": 90, "y": 180 }
+    ]
+  }
 }

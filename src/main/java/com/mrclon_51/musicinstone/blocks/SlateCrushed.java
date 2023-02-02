@@ -20,7 +20,7 @@ public class SlateCrushed extends Block
         super(Material.ROCK);
         RegistryUtil.setBlockName(this, name);
         setCreativeTab(MusicinStone.MISC);
-        setHardness(1.0f);
+        setHardness(3.0f);
         setResistance(5.0F);
         setSoundType(SoundType.STONE);
         setHarvestLevel("Pickaxe", 0);

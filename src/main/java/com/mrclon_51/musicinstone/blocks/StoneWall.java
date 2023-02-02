@@ -12,7 +12,7 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 
-public class StoneWall extends BlockWallBase
+public class StoneWall extends BlockWallMiS
 {
 
     public StoneWall(@Nonnull final String name)
