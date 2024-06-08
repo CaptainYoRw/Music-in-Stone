@@ -55,11 +55,12 @@ public class BlockLayersMiS extends Block
     {
         return face == EnumFacing.DOWN ? BlockFaceShape.SOLID : BlockFaceShape.UNDEFINED;
     }
-
+  
     @Nullable
+    @SuppressWarnings("unused")
     public AxisAlignedBB getCollisionBoundingBox(IBlockState blockState, IBlockAccess worldIn, BlockPos pos)
     {
-        int i = ((Integer)blockState.getValue(LAYERS)).intValue() - 1;
+        int i = ((Integer)blockState.getValue(LAYERS)).intValue() - 1;   
         float f = 0.125F;
         AxisAlignedBB axisalignedbb = blockState.getBoundingBox(worldIn, pos);
         return new AxisAlignedBB(axisalignedbb.minX, axisalignedbb.minY, axisalignedbb.minZ, axisalignedbb.maxX, (double)((float)i * 0.125F), axisalignedbb.maxZ);
@@ -73,24 +74,6 @@ public class BlockLayersMiS extends Block
     public boolean isFullCube(IBlockState state)
     {
         return false;
-    }
-
-    public void neighborChanged(IBlockState state, World worldIn, BlockPos pos, Block blockIn, BlockPos fromPos)
-    {
-        this.checkAndDropBlock(worldIn, pos, state);
-    }
-
-    private boolean checkAndDropBlock(World worldIn, BlockPos pos, IBlockState state)
-    {
-        if (!this.canPlaceBlockAt(worldIn, pos))
-        {
-            worldIn.setBlockToAir(pos);
-            return false;
-        }
-        else
-        {
-            return true;
-        }
     }
 
     public void harvestBlock(World worldIn, EntityPlayer player, BlockPos pos, IBlockState state, @Nullable TileEntity te, ItemStack stack)
@@ -112,6 +95,7 @@ public class BlockLayersMiS extends Block
         }
     }
 
+    @SuppressWarnings("deprecation")
     @SideOnly(Side.CLIENT)
     public boolean shouldSideBeRendered(IBlockState blockState, IBlockAccess blockAccess, BlockPos pos, EnumFacing side)
     {

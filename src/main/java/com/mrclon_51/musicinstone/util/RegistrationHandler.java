@@ -77,7 +77,6 @@ public class RegistrationHandler
         event.getRegistry().registerAll(new ItemBlock(MusicinStoneBlocks.PINK_SANDSTONE_CHISELED).setRegistryName(MusicinStoneBlocks.PINK_SANDSTONE_CHISELED.getRegistryName()));
         event.getRegistry().registerAll(new ItemBlock(MusicinStoneBlocks.PINK_SANDSTONE_SMOOTH).setRegistryName(MusicinStoneBlocks.PINK_SANDSTONE_SMOOTH.getRegistryName()));
         event.getRegistry().registerAll(new ItemBlock(MusicinStoneBlocks.PINK_SANDSTONE_ALL).setRegistryName(MusicinStoneBlocks.PINK_SANDSTONE_ALL.getRegistryName()));
-        
         event.getRegistry().registerAll(new ItemBlock(MusicinStoneBlocks.SLATE_CRUSHED).setRegistryName(MusicinStoneBlocks.SLATE_CRUSHED.getRegistryName()));
         event.getRegistry().registerAll(new ItemBlock(MusicinStoneBlocks.SLATE).setRegistryName(MusicinStoneBlocks.SLATE.getRegistryName()));
         event.getRegistry().registerAll(new ItemBlock(MusicinStoneBlocks.SLATE_POLISHED).setRegistryName(MusicinStoneBlocks.SLATE_POLISHED.getRegistryName()));

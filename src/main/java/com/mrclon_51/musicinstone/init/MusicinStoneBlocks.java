@@ -104,7 +104,6 @@ public class MusicinStoneBlocks
     public static final Block RED_MARBLE_POLISHED = new RedMarblePolished("red_marble_polished");
     public static final Block BLACK_MARBLE = new BlackMarble("black_marble");
     public static final Block BLACK_MARBLE_POLISHED = new BlackMarblePolished("marble_polished");
-    
 	**/
 	//Test objects
 	public static final Block MYSTICAL_WISE_TREE = new MysticalWiseTree("mystical_wise_tree");
