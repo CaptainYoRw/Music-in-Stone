@@ -21,7 +21,7 @@ public class MusicinStone
 	
 	public static final String MODID = "musicinstone";
 	public static final String NAME = "Music in Stone";
-	public static final String VERSION = "0.1 alpha";
+	public static final String VERSION = "0.1 pre-alpha";
 	public static final String MC_VERSION = "1.12.2";
 	
 	public static Logger logger;
