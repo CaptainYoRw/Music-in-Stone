@@ -48,7 +48,7 @@ public class RegistrationHandler
         event.getRegistry().registerAll(MusicinStoneBlocks.DIABASE_POLISHED);
         
         event.getRegistry().registerAll(MusicinStoneBlocks.MYSTICAL_WISE_TREE);
-        event.getRegistry().registerAll(MusicinStoneBlocks.NELIPERAL);
+        //event.getRegistry().registerAll(MusicinStoneBlocks.NELIPERAL);
     }
 
     @SubscribeEvent 
@@ -84,7 +84,7 @@ public class RegistrationHandler
         event.getRegistry().registerAll(new ItemBlock(MusicinStoneBlocks.DIABASE_POLISHED).setRegistryName(MusicinStoneBlocks.DIABASE_POLISHED.getRegistryName()));
         
         event.getRegistry().registerAll(new ItemBlock(MusicinStoneBlocks.MYSTICAL_WISE_TREE).setRegistryName(MusicinStoneBlocks.MYSTICAL_WISE_TREE.getRegistryName()));
-        event.getRegistry().registerAll(new ItemBlock(MusicinStoneBlocks.NELIPERAL).setRegistryName(MusicinStoneBlocks.NELIPERAL.getRegistryName()));
+        //event.getRegistry().registerAll(new ItemBlock(MusicinStoneBlocks.NELIPERAL).setRegistryName(MusicinStoneBlocks.NELIPERAL.getRegistryName()));
     }
         
 }
