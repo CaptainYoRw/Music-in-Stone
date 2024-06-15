@@ -3,6 +3,7 @@ package com.mrclon_51.musicinstone.init;
 import javax.annotation.ParametersAreNonnullByDefault;
 
 import com.mrclon_51.musicinstone.MusicinStone;
+import com.mrclon_51.musicinstone.blocks.BlockCutter;
 import com.mrclon_51.musicinstone.blocks.BlockWallMiS;
 import com.mrclon_51.musicinstone.blocks.Diabase;
 import com.mrclon_51.musicinstone.blocks.DiabasePolished;
@@ -73,6 +74,8 @@ public class MusicinStoneBlocks
 	public static final Block SLATE_POLISHED = new SlatePolished("slate_polished");
 	public static final Block DIABASE = new Diabase("diabase");
 	public static final Block DIABASE_POLISHED = new DiabasePolished("diabase_polished");
+	//Functional blocks
+	public static final Block BLOCKCUTTER = new BlockCutter("blockcutter");
 	/**
 	public static final Block RUBBLESTONE = new Rubblestone("rubblestone");
 	public static final Block RUBBLESTONE_WALL = new RubblestoneWall("rubblestone_wall");
@@ -107,5 +110,5 @@ public class MusicinStoneBlocks
 	**/
 	//Test objects
 	public static final Block MYSTICAL_WISE_TREE = new MysticalWiseTree("mystical_wise_tree");
-	public static final Block NELIPERAL = new Neliperal("neliperal");
+	//public static final Block NELIPERAL = new Neliperal("neliperal");
 }
