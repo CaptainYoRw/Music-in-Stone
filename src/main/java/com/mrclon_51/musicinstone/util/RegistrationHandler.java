@@ -57,6 +57,7 @@ public class RegistrationHandler
     public static void registerItemsBlocks(RegistryEvent.Register<Item> event)
     {
         event.getRegistry().registerAll(MusicinStoneItems.ARCH_TOOLS);
+        //event.getRegistry().registerAll(MusicinStoneItems.));
         
         event.getRegistry().registerAll(new ItemBlock(MusicinStoneBlocks.SANDSTONE_ALL).setRegistryName(MusicinStoneBlocks.SANDSTONE_ALL.getRegistryName()));
         event.getRegistry().registerAll(new ItemBlock(MusicinStoneBlocks.RED_SANDSTONE_ALL).setRegistryName(MusicinStoneBlocks.RED_SANDSTONE_ALL.getRegistryName()));
