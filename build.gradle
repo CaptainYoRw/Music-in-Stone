@@ -12,9 +12,9 @@ buildscript {
 
 apply plugin: "net.minecraftforge.gradle.forge"
 
-version = "1.0"
-group = "com.yourname.modid"
-archivesBaseName = "modid"
+version = "0.1 pre-alpha"
+group = "com.mrclon51.musicinstone"
+archivesBaseName = "MusicinStone"
 sourceCompatibility = targetCompatibility = "1.8"
 
 minecraft {
@@ -28,4 +28,19 @@ repositories {
     maven {url="https://bmclapi2.bangbang93.com/maven/"}   //Ещё одно зеркало
     maven {url="https://maven.minecraftforge.net"}
     mavenCentral()
+}
+
+
+jar {
+    manifest {
+        attributes([
+            "Specification-Title": "examplemod",
+            "Specification-Vendor": "examplemodsareus",
+            "Specification-Version": "1", // We are version 1 of ourselves
+            "Implementation-Title": project.name,
+            "Implementation-Version": "${version}",
+            "Implementation-Vendor" :"examplemodsareus",
+            "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
+        ])
+    }
 }
