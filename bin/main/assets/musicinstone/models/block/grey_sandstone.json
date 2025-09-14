@@ -1,0 +1,9 @@
+{
+    "parent": "block/cube_bottom_top",
+    "textures": 
+	{
+        "bottom": "musicinstone:blocks/grey_sandstone_bottom",
+        "top": "musicinstone:blocks/grey_sandstone_top",
+        "side": "musicinstone:blocks/grey_sandstone_normal"
+    }
+}
