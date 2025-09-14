@@ -17,7 +17,6 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class GreySand extends BlockFalling
 {
-	
 	public GreySand(@Nonnull final String name)
 	{
 		super(Material.SAND);
