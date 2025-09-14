@@ -1,8 +1,0 @@
-{
-    "parent": "musicinstone:block/cube_column_mirrored",
-    "textures": 
-	{
-		"end": "musicinstone:blocks/slate_top_m",
-        "side": "musicinstone:blocks/slate"
-    }
-}
