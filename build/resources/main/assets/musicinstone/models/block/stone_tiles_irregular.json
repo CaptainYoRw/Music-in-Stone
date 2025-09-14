@@ -1,0 +1,7 @@
+{ 
+     "parent": "block/cube_all", 
+     "textures": 
+     { 
+         "all": "musicinstone:blocks/stone_tiles_irregular" 
+     } 
+ } 

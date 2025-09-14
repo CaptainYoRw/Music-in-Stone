@@ -1,0 +1,24 @@
+{
+  "variants": 
+  {
+    "facing=east": 
+	{
+      "model": "musicinstone:blockcutter",
+      "y": 90
+    },
+    "facing=north": 
+	{
+      "model": "musicinstone:blockcutter"
+    },
+    "facing=south": 
+	{
+      "model": "musicinstone:blockcutter",
+      "y": 180
+    },
+    "facing=west": 
+	{
+      "model": "musicinstone:blockcutter",
+      "y": 270
+    }
+  }
+}

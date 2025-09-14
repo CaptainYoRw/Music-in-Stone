@@ -1,0 +1,9 @@
+{
+    "variants": 
+    {
+        "normal": 
+        [
+            { "model": "musicinstone:stone_tiles_irregular" }
+        ]
+    }
+}
