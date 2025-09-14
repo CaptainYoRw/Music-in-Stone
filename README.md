@@ -1,2 +1,2 @@
-Creating majestic architectural blocks and items for ya. 
+Creating majestic architectural blocks and items for your creativity. 
 
