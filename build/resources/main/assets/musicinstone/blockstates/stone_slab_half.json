@@ -1,7 +1,0 @@
-{
-    "variants": 
-	{
-        "half=bottom,variant=default": { "model": "musicinstone:stone_slab_lower" },
-        "half=top,variant=default": { "model": "musicinstone:stone_slab_upper" }
-    }
-}

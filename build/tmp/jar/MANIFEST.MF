@@ -1,9 +1,0 @@
-Manifest-Version: 1.0
-Implementation-Title: 1.12.2_musicinstone
-Implementation-Version: 0.1 pre-alpha
-Specification-Vendor: examplemodsareus
-Specification-Title: examplemod
-Implementation-Timestamp: 2025-09-14T14:21:28+0300
-Specification-Version: 1
-Implementation-Vendor: examplemodsareus
-
