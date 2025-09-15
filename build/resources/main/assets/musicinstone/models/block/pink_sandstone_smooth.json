@@ -1,8 +1,0 @@
-{
-    "parent": "block/cube_column",
-    "textures": 
-	{
-        "end": "musicinstone:blocks/pink_sandstone_top",
-        "side": "musicinstone:blocks/pink_sandstone_smooth"
-    }
-}
