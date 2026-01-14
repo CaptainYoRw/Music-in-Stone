@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "musicinstone:block/thick_brick_arch" },
+    "facing=south": { "model": "musicinstone:block/thick_brick_arch", "y": 180 },
+    "facing=east":  { "model": "musicinstone:block/thick_brick_arch", "y": 90 },
+    "facing=west":  { "model": "musicinstone:block/thick_brick_arch", "y": 270 }
+  }
+}
