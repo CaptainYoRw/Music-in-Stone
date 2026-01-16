@@ -1,15 +1,14 @@
 {
   "loader": "forge:obj",
-  "model": "musicinstone:models/block/thick_brick_arch.obj",
   "flip_v": true,
-  "ambientocclusion": false,
+  "mtl_override": "musicinstone:models/block/thick_arch_bricks.mtl",
+  "model": "musicinstone:models/block/thick_arch.obj",
   "textures":
   {
-    "texture0": "minecraft:block/bricks",
     "particle": "minecraft:block/bricks"
   },
-  "display": {
-
+  "display":
+  {
     "thirdperson_righthand":
     {
       "rotation": [75, 45, 0],
@@ -45,6 +44,12 @@
       "rotation": [30, 225, 0],
       "translation": [0, 0, 0],
       "scale": [0.625, 0.625, 0.625]
+    },
+    "head":
+    {
+      "rotation": [0, 0, 0],
+      "translation": [0, 0, 0],
+      "scale": [1, 1, 1]
     },
     "fixed":
     {

@@ -1,13 +1,12 @@
-package com.mrclon_51.musicinstone.item;
+package com.mrclon_51.musicinstone;
 
-import com.mrclon_51.musicinstone.MusicinStone;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
-public class ModItems
+public class ItemsInit
 {
     public static final DeferredRegister<Item> ITEMS=
                 DeferredRegister.create(ForgeRegistries.ITEMS, MusicinStone.MODID);

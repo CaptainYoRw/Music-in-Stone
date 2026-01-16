@@ -1,8 +1,6 @@
 package com.mrclon_51.musicinstone;
 
 import com.mojang.logging.LogUtils;
-import com.mrclon_51.musicinstone.block.ModBlocks;
-import com.mrclon_51.musicinstone.item.ModItems;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -28,10 +26,10 @@ public class MusicinStone
     {
         IEventBus modEventBus = context.getModEventBus();
 
-        ModCreativeTab.register(modEventBus);
+        CreativeTabInit.register(modEventBus);
 
-        ModBlocks.register(modEventBus);
-        ModItems.register(modEventBus);
+        BlocksInit.register(modEventBus);
+        ItemsInit.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);

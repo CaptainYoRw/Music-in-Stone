@@ -1,0 +1,37 @@
+{
+  "multipart":
+  [
+    {
+      "when": { "facing": "north", "half": "bottom" },
+      "apply": { "model": "musicinstone:block/thick_arch_bricks", "x": 180}
+    },
+    {
+      "when": { "facing": "east", "half": "bottom" },
+      "apply": { "model": "musicinstone:block/thick_arch_bricks", "x": 180, "y": 90 }
+    },
+    {
+      "when": { "facing": "south", "half": "bottom" },
+      "apply": { "model": "musicinstone:block/thick_arch_bricks", "x": 180, "y": 180 }
+    },
+    {
+      "when": { "facing": "west", "half": "bottom" },
+      "apply": { "model": "musicinstone:block/thick_arch_bricks", "x": 180, "y": 270 }
+    },
+    {
+      "when": { "facing": "north", "half": "top" },
+      "apply": { "model": "musicinstone:block/thick_arch_bricks", "uvlock": true }
+    },
+    {
+      "when": { "facing": "east", "half": "top" },
+      "apply": { "model": "musicinstone:block/thick_arch_bricks", "y": 90, "uvlock": true }
+    },
+    {
+      "when": { "facing": "south", "half": "top" },
+      "apply": { "model": "musicinstone:block/thick_arch_bricks", "y": 180, "uvlock": true }
+    },
+    {
+      "when": { "facing": "west", "half": "top" },
+      "apply": { "model": "musicinstone:block/thick_arch_bricks", "y": 270, "uvlock": true }
+    }
+  ]
+}
