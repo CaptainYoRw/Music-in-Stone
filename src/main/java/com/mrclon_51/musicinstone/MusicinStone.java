@@ -26,10 +26,10 @@ public class MusicinStone
     {
         IEventBus modEventBus = context.getModEventBus();
 
-        CreativeTabInit.register(modEventBus);
+        CreativeTabRegistry.register(modEventBus);
 
-        BlocksInit.register(modEventBus);
-        ItemsInit.register(modEventBus);
+        BlocksRegistry.register(modEventBus);
+        ItemsRegistry.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);

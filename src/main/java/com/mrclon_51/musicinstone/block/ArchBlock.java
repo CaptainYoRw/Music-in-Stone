@@ -2,8 +2,14 @@ package com.mrclon_51.musicinstone.block;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SimpleWaterloggedBlock;
@@ -12,6 +18,7 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.*;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
+import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
@@ -22,6 +29,11 @@ public class ArchBlock extends Block implements SimpleWaterloggedBlock
     public static final EnumProperty<Half> HALF = BlockStateProperties.HALF;
     public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
+    protected static final VoxelShape BOTTOM_SHAPE = Block.box(0, 0, 0, 16, 4, 16);
+    protected static final VoxelShape TOP_SHAPE = Block.box(0, 12, 0, 16, 16, 16);
+
+    public static final IntegerProperty OFFSET = IntegerProperty.create("offset", 0, 2);
+
     public ArchBlock(Properties properties)
     {
 
@@ -29,8 +41,24 @@ public class ArchBlock extends Block implements SimpleWaterloggedBlock
         // Set the default state (what the block is when you first get it)
         this.registerDefaultState(this.stateDefinition.any()
                 .setValue(FACING, Direction.NORTH)
-                .setValue(HALF, Half.BOTTOM)
-                .setValue(WATERLOGGED, false));
+                .setValue(HALF, Half.TOP)
+                .setValue(WATERLOGGED, false)
+                .setValue(OFFSET, 0));
+    }
+
+    @Override
+    public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit)
+    {
+        ItemStack stack = player.getItemInHand(hand);
+        // Replace Items.STICK with your wrench item
+        if (stack.getItem() == Items.STONE_AXE && !level.isClientSide)
+        {
+            int current = state.getValue(OFFSET);
+            int next = (current + 1) % 3; // Cycle 0->1->2->0
+            level.setBlock(pos, state.setValue(OFFSET, next), 3);
+            return InteractionResult.SUCCESS;
+        }
+        return InteractionResult.PASS;
     }
 
     // This controls PHYSICS (walking into it).
@@ -40,33 +68,33 @@ public class ArchBlock extends Block implements SimpleWaterloggedBlock
         return Shapes.empty();
     }
 
-    // This controls the BLACK OUTLINE (selection).
-    // If you want to see the outline when you look at it, DELETE this entire function.
-    // If you want it to be totally un-selectable (ghost), keep this as Shapes.empty().
     @Override
-    public VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
-        // currently standard full block outline. Change to Shapes.empty() to make it invisible to mouse.
-        return super.getShape(state, level, pos, context);
+    public VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context)
+    {
+        // Get the current HALF (Top or Bottom)
+        Half half = state.getValue(HALF);
+
+        // Return the correct shape
+        if (half == Half.TOP) {
+            return BOTTOM_SHAPE;
+        } else {
+            return TOP_SHAPE;
+        }
     }
 
-    // 3. Logic for placing the block (checking player rotation & click height)
+    // Logic for placing the block (checking player rotation & click height)
 
     @Override
     public BlockState getStateForPlacement(BlockPlaceContext ctx)
     {
         BlockPos pos = ctx.getClickedPos();
         FluidState fluidState = ctx.getLevel().getFluidState(pos);
+        Direction face = ctx.getClickedFace();
 
         // Determine if we are placing the "Top" or "Bottom" half
         Direction direction = ctx.getClickedFace();
-        Half half;
-        if (direction == Direction.DOWN || (direction != Direction.UP && ctx.getClickLocation().y - (double)pos.getY() > 0.5D))
-        {
-            half = Half.TOP;
-        } else
-        {
-            half = Half.BOTTOM;
-        }
+        Half half = (face == Direction.DOWN || (face != Direction.UP && ctx.getClickLocation().y - pos.getY() > 0.5))
+                ? Half.BOTTOM : Half.TOP;
 
         return this.defaultBlockState()
                 .setValue(FACING, ctx.getHorizontalDirection().getOpposite()) // Face player
@@ -98,7 +126,7 @@ public class ArchBlock extends Block implements SimpleWaterloggedBlock
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder)
     {
-        builder.add(FACING, HALF, WATERLOGGED);
+        builder.add(FACING, HALF, WATERLOGGED, OFFSET);
     }
 }
 
