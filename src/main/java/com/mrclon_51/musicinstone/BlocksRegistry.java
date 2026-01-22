@@ -18,7 +18,22 @@ public class BlocksRegistry
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, MusicinStone.MODID);
 
-
+    public static final RegistryObject<Block> BRICKS_FANCY = registerBlock("bricks_fancy",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BRICKS)));
+    public static final RegistryObject<Block> BRICKS_LONG = registerBlock("bricks_long",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BRICKS)));
+    public static final RegistryObject<Block> BRICKS_LONG_STACK = registerBlock("bricks_long_stack",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BRICKS)));
+    public static final RegistryObject<Block> BRICKS_ROMAN = registerBlock("bricks_roman",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BRICKS)));
+    public static final RegistryObject<Block> BRICKS_ROMAN_STACK = registerBlock("bricks_roman_stack",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BRICKS)));
+    public static final RegistryObject<Block> BRICKS_ROMAN_STONE = registerBlock("bricks_roman_stone",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BRICKS)));
+    public static final RegistryObject<Block> BRICKS_TILES = registerBlock("bricks_tiles",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BRICKS)));
+    public static final RegistryObject<Block> BRICKS_TILES_STACK = registerBlock("bricks_tiles_stack",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BRICKS)));
     public static final RegistryObject<Block> WIDE_ARCH_BRICKS = registerBlock("wide_arch_bricks",
         () -> new ArchBlock(BlockBehaviour.Properties.copy(Blocks.BRICKS).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
     public static final RegistryObject<Block> SMALL_ARCH_BRICKS = registerBlock("small_arch_bricks",
