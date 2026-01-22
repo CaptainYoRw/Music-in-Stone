@@ -2,8 +2,8 @@
   "loader": "forge:obj",
   "gui_light": "front",
   "flip_v": true,
-  "mtl_override": "musicinstone:models/block/wide_arch_bricks.mtl",
-  "model": "musicinstone:models/block/wide_arch.obj",
+  "mtl_override": "musicinstone:models/block/object/wide_arch_bricks.mtl",
+  "model": "musicinstone:models/block/object/wide_arch.obj",
   "textures": { "particle": "#arch_mat" },
   "transform":
   {

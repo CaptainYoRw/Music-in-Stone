@@ -1,5 +1,6 @@
 package com.mrclon_51.musicinstone.block;
 
+import com.mrclon_51.musicinstone.ItemsRegistry;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.InteractionHand;
@@ -51,7 +52,7 @@ public class ArchBlock extends Block implements SimpleWaterloggedBlock
     {
         ItemStack stack = player.getItemInHand(hand);
         // Replace Items.STICK with your wrench item
-        if (stack.getItem() == Items.STONE_AXE && !level.isClientSide)
+        if (stack.getItem() == ItemsRegistry.TEST_ITEM.get() && !level.isClientSide)
         {
             int current = state.getValue(OFFSET);
             int next = (current + 1) % 3; // Cycle 0->1->2->0
