@@ -11,6 +11,8 @@
     "musicinstone:bricks_bricks_roman",
     "musicinstone:bricks_bricks_roman_stack",
     "musicinstone:bricks_bricks_roman_stone",
-    "musicinstone:bricks_fancy"
+    "musicinstone:bricks_fancy",
+    "musicinstone:segmental_arch_bricks",
+    "musicinstone:large_arch_bricks"
   ]
 }

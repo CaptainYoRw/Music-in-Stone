@@ -7,7 +7,6 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
@@ -65,7 +64,8 @@ public class ArchBlock extends Block implements SimpleWaterloggedBlock
     // This controls PHYSICS (walking into it).
     // Returning Shapes.empty() means you can walk right through it (Phantom block).
     @Override
-    public VoxelShape getCollisionShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
+    public VoxelShape getCollisionShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context)
+    {
         return Shapes.empty();
     }
 
@@ -76,9 +76,11 @@ public class ArchBlock extends Block implements SimpleWaterloggedBlock
         Half half = state.getValue(HALF);
 
         // Return the correct shape
-        if (half == Half.TOP) {
+        if (half == Half.TOP)
+        {
             return BOTTOM_SHAPE;
-        } else {
+        } else
+        {
             return TOP_SHAPE;
         }
     }
@@ -103,7 +105,7 @@ public class ArchBlock extends Block implements SimpleWaterloggedBlock
                 .setValue(WATERLOGGED, fluidState.getType() == Fluids.WATER); // Handle placing IN water
     }
 
-    // 4. Handle water physics (flowing)
+    // Handle water physics (flowing)
     @SuppressWarnings("deprecation")
     @Override
     public FluidState getFluidState(BlockState state)
@@ -111,7 +113,7 @@ public class ArchBlock extends Block implements SimpleWaterloggedBlock
         return state.getValue(WATERLOGGED) ? Fluids.WATER.getSource(false) : super.getFluidState(state);
     }
 
-    // 5. Update shape when neighbors change (crucial for water flow updates)
+    // Update shape when neighbors change (crucial for water flow updates)
     @SuppressWarnings("deprecation")
     @Override
     public BlockState updateShape(BlockState state, Direction direction, BlockState neighborState, LevelAccessor level, BlockPos currentPos, BlockPos neighborPos)
@@ -123,7 +125,7 @@ public class ArchBlock extends Block implements SimpleWaterloggedBlock
         return super.updateShape(state, direction, neighborState, level, currentPos, neighborPos);
     }
 
-    // 6. Register the properties so the game knows they exist
+    // Register the properties so the game knows they exist
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder)
     {

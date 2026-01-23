@@ -1,6 +1,7 @@
 package com.mrclon_51.musicinstone;
 
 import com.mrclon_51.musicinstone.block.ArchBlock;
+import com.mrclon_51.musicinstone.block.HalfArchBlock;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -38,6 +39,10 @@ public class BlocksRegistry
         () -> new ArchBlock(BlockBehaviour.Properties.copy(Blocks.BRICKS).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
     public static final RegistryObject<Block> SMALL_ARCH_BRICKS = registerBlock("small_arch_bricks",
             () -> new ArchBlock(BlockBehaviour.Properties.copy(Blocks.BRICKS).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> SEGMENTAL_ARCH_BRICKS = registerBlock("segmental_arch_bricks",
+            () -> new ArchBlock(BlockBehaviour.Properties.copy(Blocks.BRICKS).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> LARGE_ARCH_BRICKS = registerBlock("large_arch_bricks",
+            () -> new HalfArchBlock(BlockBehaviour.Properties.copy(Blocks.BRICKS).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block)
     {

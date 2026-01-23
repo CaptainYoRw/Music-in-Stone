@@ -1,0 +1,33 @@
+{
+  "multipart": [
+    { "when": { "facing": "north", "half": "bottom", "offset": "0" }, "apply": { "model": "musicinstone:block/segmental_arch_bricks" } },
+    { "when": { "facing": "east", "half": "bottom", "offset": "0" }, "apply": { "model": "musicinstone:block/segmental_arch_bricks", "y": 90 } },
+    { "when": { "facing": "south", "half": "bottom", "offset": "0" }, "apply": { "model": "musicinstone:block/segmental_arch_bricks", "y": 180 } },
+    { "when": { "facing": "west", "half": "bottom", "offset": "0" }, "apply": { "model": "musicinstone:block/segmental_arch_bricks", "y": 270 } },
+
+    { "when": { "facing": "north", "half": "top", "offset": "0" }, "apply": { "model": "musicinstone:block/segmental_arch_bricks", "x": 180, "uvlock": true } },
+    { "when": { "facing": "east", "half": "top", "offset": "0" }, "apply": { "model": "musicinstone:block/segmental_arch_bricks", "y": 90, "x": 180, "uvlock": true } },
+    { "when": { "facing": "south", "half": "top", "offset": "0" }, "apply": { "model": "musicinstone:block/segmental_arch_bricks", "y": 180, "x": 180, "uvlock": true } },
+    { "when": { "facing": "west", "half": "top", "offset": "0" }, "apply": { "model": "musicinstone:block/segmental_arch_bricks", "y": 270, "x": 180, "uvlock": true } },
+
+    { "when": { "facing": "north", "half": "bottom", "offset": "1" }, "apply": { "model": "musicinstone:block/template/segmental_arch_1_bottom" } },
+    { "when": { "facing": "east", "half": "bottom", "offset": "1" }, "apply": { "model": "musicinstone:block/template/segmental_arch_1_bottom", "y": 90 } },
+    { "when": { "facing": "south", "half": "bottom", "offset": "1" }, "apply": { "model": "musicinstone:block/template/segmental_arch_1_bottom", "y": 180 } },
+    { "when": { "facing": "west", "half": "bottom", "offset": "1" }, "apply": { "model": "musicinstone:block/template/segmental_arch_1_bottom", "y": 270 } },
+
+    { "when": { "facing": "north", "half": "top", "offset": "1" }, "apply": { "model": "musicinstone:block/template/segmental_arch_1_top", "x": 180 } },
+    { "when": { "facing": "east", "half": "top", "offset": "1" }, "apply": { "model": "musicinstone:block/template/segmental_arch_1_top", "y": 90, "x": 180 } },
+    { "when": { "facing": "south", "half": "top", "offset": "1" }, "apply": { "model": "musicinstone:block/template/segmental_arch_1_top", "y": 180, "x": 180 } },
+    { "when": { "facing": "west", "half": "top", "offset": "1" }, "apply": { "model": "musicinstone:block/template/segmental_arch_1_top", "y": 270, "x": 180 } },
+
+    { "when": { "facing": "north", "half": "bottom", "offset": "2" }, "apply": { "model": "musicinstone:block/template/segmental_arch_2_bottom" } },
+    { "when": { "facing": "east", "half": "bottom", "offset": "2" }, "apply": { "model": "musicinstone:block/template/segmental_arch_2_bottom", "y": 90 } },
+    { "when": { "facing": "south", "half": "bottom", "offset": "2" }, "apply": { "model": "musicinstone:block/template/segmental_arch_2_bottom", "y": 180 } },
+    { "when": { "facing": "west", "half": "bottom", "offset": "2" }, "apply": { "model": "musicinstone:block/template/segmental_arch_2_bottom", "y": 270 } },
+
+    { "when": { "facing": "north", "half": "top", "offset": "2" }, "apply": { "model": "musicinstone:block/template/segmental_arch_2_top", "x": 180 } },
+    { "when": { "facing": "east", "half": "top", "offset": "2" }, "apply": { "model": "musicinstone:block/template/segmental_arch_2_top", "y": 90, "x": 180 } },
+    { "when": { "facing": "south", "half": "top", "offset": "2" }, "apply": { "model": "musicinstone:block/template/segmental_arch_2_top", "y": 180, "x": 180 } },
+    { "when": { "facing": "west", "half": "top", "offset": "2" }, "apply": { "model": "musicinstone:block/template/segmental_arch_2_top", "y": 270, "x": 180 } }
+  ]
+}
