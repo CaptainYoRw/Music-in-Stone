@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient":
+  {
+    "item": "minecraft:bricks"
+  },
+  "result": "musicinstone:jack_arch_bricks",
+  "count": 2
+}

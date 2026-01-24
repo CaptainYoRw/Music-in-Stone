@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient":
+  {
+    "item": "minecraft:bricks"
+  },
+  "result": "musicinstone:rowlock_arch_bricks",
+  "count": 1
+}

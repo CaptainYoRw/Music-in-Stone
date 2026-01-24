@@ -2,8 +2,8 @@
   "loader": "forge:obj",
   "gui_light": "front",
   "flip_v": true,
-  "mtl_override": "musicinstone:models/block/object/large_arch_bricks.mtl",
-  "model": "musicinstone:models/block/object/large_arch.obj",
+  "mtl_override": "musicinstone:models/block/object/rowlock_arch_bricks.mtl",
+  "model": "musicinstone:models/block/object/rowlock_arch.obj",
   "textures":
   {
     "particle": "minecraft:block/bricks"

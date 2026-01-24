@@ -16,24 +16,42 @@ import net.minecraft.world.level.block.state.properties.StairsShape;
 public class HalfArchBlock extends ArchBlock
 {
     public static final EnumProperty<StairsShape> SHAPE = BlockStateProperties.STAIRS_SHAPE;
+    public static final EnumProperty<ModBlockProperties.SideHalf> SIDE = EnumProperty.create("side", ModBlockProperties.SideHalf.class);
 
     public HalfArchBlock(Properties properties)
     {
         super(properties);
 
         this.registerDefaultState(this.stateDefinition.any()
-                .setValue(SHAPE, StairsShape.STRAIGHT));
+                .setValue(SHAPE, StairsShape.STRAIGHT)
+                .setValue(SIDE, ModBlockProperties.SideHalf.LEFT));
     }
 
     @Override
     public BlockState getStateForPlacement(BlockPlaceContext context)
     {
-        // Сначала просим родителя вычислить его данные (направление, воду, половину)
+        // Сначала просим "родительский" класс вычислить его данные (направление, воду, половину)
         BlockState state = super.getStateForPlacement(context);
         if (state == null) return null;
 
-        // А теперь "наслаиваем" сверху расчет формы ступенек
-        return state.setValue(SHAPE, getStairsShape(state, context.getLevel(), context.getClickedPos()));
+        Direction facing = context.getHorizontalDirection();
+
+        // Get the hit location relative to the block (0.0 to 1.0)
+        double hitX = context.getClickLocation().x - (double)context.getClickedPos().getX();
+        double hitZ = context.getClickLocation().z - (double)context.getClickedPos().getZ();
+
+        boolean isRightSide = false;
+
+        // Determine "Right" vs "Left" based on which way the player faces
+        switch (facing) {
+            case NORTH -> isRightSide = hitX < 0.5;
+            case SOUTH -> isRightSide = hitX > 0.5;
+            case WEST ->  isRightSide = hitZ > 0.5;
+            case EAST ->  isRightSide = hitZ < 0.5;
+        }
+
+        return state.setValue(SHAPE, getStairsShape(state, context.getLevel(), context.getClickedPos()))
+                    .setValue(SIDE, isRightSide ? ModBlockProperties.SideHalf.LEFT : ModBlockProperties.SideHalf.RIGHT);
     }
 
     private static StairsShape getStairsShape(BlockState state, BlockGetter level, BlockPos pos)
@@ -95,6 +113,6 @@ public class HalfArchBlock extends ArchBlock
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder)
     {
-        builder.add(FACING, HALF, WATERLOGGED, OFFSET, SHAPE);
+        builder.add(FACING, HALF, WATERLOGGED, OFFSET, SHAPE, SIDE);
     }
 }

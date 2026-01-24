@@ -3,10 +3,10 @@
   "gui_light": "front",
   "flip_v": true,
   "mtl_override": "musicinstone:models/block/object/large_arch_bricks.mtl",
-  "model": "musicinstone:models/block/object/large_arch.obj",
+  "model": "musicinstone:models/block/object/large_arch_right.obj",
   "textures": { "particle": "#arch_mat" },
   "transform":
   {
-    "translation": [0, 0, 0.5]
+    "translation": [0, 0, -0.5]
   }
 }

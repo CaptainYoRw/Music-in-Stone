@@ -34,7 +34,9 @@ public class CreativeTabRegistry
                         output.accept(BlocksRegistry.BRICKS_LONG.get());
                         output.accept(BlocksRegistry.BRICKS_LONG_STACK.get());
                         output.accept(BlocksRegistry.SEGMENTAL_ARCH_BRICKS.get());
+                        output.accept(BlocksRegistry.JACK_ARCH_BRICKS.get());
                         output.accept(BlocksRegistry.SMALL_ARCH_BRICKS.get());
+                        output.accept(BlocksRegistry.ROWLOCK_ARCH_BRICKS.get());
                         output.accept(BlocksRegistry.WIDE_ARCH_BRICKS.get());
                         output.accept(BlocksRegistry.LARGE_ARCH_BRICKS.get());
 
