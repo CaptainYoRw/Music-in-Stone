@@ -24,15 +24,23 @@ public class CreativeTabRegistry
                     .title(Component.translatable("creativetab.musicinstone_tab"))
                     .displayItems((parameters, output) ->
                     {
+                        output.accept(Blocks.BRICKS);
+                        output.accept(BlocksRegistry.BRICKS_FANCY.get());
                         output.accept(BlocksRegistry.BRICKS_TILES.get());
                         output.accept(BlocksRegistry.BRICKS_TILES_STACK.get());
                         output.accept(BlocksRegistry.BRICKS_ROMAN.get());
                         output.accept(BlocksRegistry.BRICKS_ROMAN_STACK.get());
                         output.accept(BlocksRegistry.BRICKS_ROMAN_STONE.get());
-                        output.accept(Blocks.BRICKS);
-                        output.accept(BlocksRegistry.BRICKS_FANCY.get());
                         output.accept(BlocksRegistry.BRICKS_LONG.get());
                         output.accept(BlocksRegistry.BRICKS_LONG_STACK.get());
+
+                        output.accept(Blocks.BRICK_SLAB);
+                        output.accept(BlocksRegistry.BRICK_FANCY_SLAB.get());
+                        output.accept(Blocks.BRICK_STAIRS);
+                        output.accept(BlocksRegistry.BRICK_FANCY_STAIRS.get());
+                        output.accept(Blocks.BRICK_WALL);
+                        output.accept(BlocksRegistry.BRICK_FANCY_WALL.get());
+
                         output.accept(BlocksRegistry.SEGMENTAL_ARCH_BRICKS.get());
                         output.accept(BlocksRegistry.JACK_ARCH_BRICKS.get());
                         output.accept(BlocksRegistry.SMALL_ARCH_BRICKS.get());
