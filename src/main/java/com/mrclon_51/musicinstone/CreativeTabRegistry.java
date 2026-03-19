@@ -48,7 +48,8 @@ public class CreativeTabRegistry
                         output.accept(BlocksRegistry.WIDE_ARCH_BRICKS.get());
                         output.accept(BlocksRegistry.LARGE_ARCH_BRICKS.get());
 
-
+                        output.accept(BlocksRegistry.TEST_COLUMN_A.get());
+                        output.accept(BlocksRegistry.TEST_COLUMN_B.get());
 
                         output.accept(ItemsRegistry.TEST_ITEM.get());
                     })

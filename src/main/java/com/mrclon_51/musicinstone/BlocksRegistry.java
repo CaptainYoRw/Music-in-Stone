@@ -52,6 +52,10 @@ public class BlocksRegistry
             () -> new StairBlock(() -> BlocksRegistry.BRICKS_FANCY.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.BRICKS)));
     public static final RegistryObject<Block> BRICK_FANCY_WALL = registerBlock("brick_fancy_wall",
             () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.BRICK_WALL)));
+    public static final RegistryObject<Block> TEST_COLUMN_A = registerBlock("test_column_a",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).noOcclusion()));
+    public static final RegistryObject<Block> TEST_COLUMN_B = registerBlock("test_column_b",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).noOcclusion()));
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block)
     {
