@@ -1,6 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "musicinstone:block/bricks_roman_stone"
-  }
-}

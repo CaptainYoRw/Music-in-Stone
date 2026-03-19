@@ -24,13 +24,14 @@ public class CreativeTabRegistry
                     .title(Component.translatable("creativetab.musicinstone_tab"))
                     .displayItems((parameters, output) ->
                     {
+                        output.accept(ItemsRegistry.TEST_ITEM.get());
+
                         output.accept(Blocks.BRICKS);
                         output.accept(BlocksRegistry.BRICKS_FANCY.get());
                         output.accept(BlocksRegistry.BRICKS_TILES.get());
                         output.accept(BlocksRegistry.BRICKS_TILES_STACK.get());
                         output.accept(BlocksRegistry.BRICKS_ROMAN.get());
                         output.accept(BlocksRegistry.BRICKS_ROMAN_STACK.get());
-                        output.accept(BlocksRegistry.BRICKS_ROMAN_STONE.get());
                         output.accept(BlocksRegistry.BRICKS_LONG.get());
                         output.accept(BlocksRegistry.BRICKS_LONG_STACK.get());
 
@@ -50,8 +51,6 @@ public class CreativeTabRegistry
 
                         output.accept(BlocksRegistry.TEST_COLUMN_A.get());
                         output.accept(BlocksRegistry.TEST_COLUMN_B.get());
-
-                        output.accept(ItemsRegistry.TEST_ITEM.get());
                     })
                     .build());
 

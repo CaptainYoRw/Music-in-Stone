@@ -28,8 +28,6 @@ public class BlocksRegistry
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.BRICKS)));
     public static final RegistryObject<Block> BRICKS_ROMAN_STACK = registerBlock("bricks_roman_stack",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.BRICKS)));
-    public static final RegistryObject<Block> BRICKS_ROMAN_STONE = registerBlock("bricks_roman_stone",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BRICKS)));
     public static final RegistryObject<Block> BRICKS_TILES = registerBlock("bricks_tiles",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.BRICKS)));
     public static final RegistryObject<Block> BRICKS_TILES_STACK = registerBlock("bricks_tiles_stack",
