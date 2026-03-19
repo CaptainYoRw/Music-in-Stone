@@ -1,6 +1,7 @@
 package com.mrclon_51.musicinstone;
 
 import com.mrclon_51.musicinstone.block.ArchBlock;
+import com.mrclon_51.musicinstone.block.ColumnBaseBlock;
 import com.mrclon_51.musicinstone.block.HalfArchBlock;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -51,7 +52,7 @@ public class BlocksRegistry
     public static final RegistryObject<Block> BRICK_FANCY_WALL = registerBlock("brick_fancy_wall",
             () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.BRICK_WALL)));
     public static final RegistryObject<Block> TEST_COLUMN_A = registerBlock("test_column_a",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).noOcclusion()));
+            () -> new ColumnBaseBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).noOcclusion()));
     public static final RegistryObject<Block> TEST_COLUMN_B = registerBlock("test_column_b",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).noOcclusion()));
 

@@ -50,7 +50,7 @@ public class ArchBlock extends Block implements SimpleWaterloggedBlock
     public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit)
     {
         ItemStack stack = player.getItemInHand(hand);
-        // Replace Items.STICK with your wrench item
+        // Replaces Items.STICK with my own item
         if (stack.getItem() == ItemsRegistry.TEST_ITEM.get() && !level.isClientSide)
         {
             int current = state.getValue(OFFSET);
