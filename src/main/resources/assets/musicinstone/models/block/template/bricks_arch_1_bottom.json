@@ -2,9 +2,9 @@
   "loader": "forge:obj",
   "gui_light": "front",
   "flip_v": true,
-  "mtl_override": "musicinstone:models/block/object/wide_arch_bricks.mtl",
+  "mtl_override": "musicinstone:models/block/object/jack_arch_bricks.mtl",
   "model": "musicinstone:models/block/object/wide_arch.obj",
-  "textures": { "particle": "#arch_mat" },
+  "textures": { "particle": "minecraft:block/bricks" },
   "transform":
   {
     "translation": [0, 0, 0.5]

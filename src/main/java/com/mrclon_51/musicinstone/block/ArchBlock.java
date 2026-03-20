@@ -36,7 +36,6 @@ public class ArchBlock extends Block implements SimpleWaterloggedBlock
 
     public ArchBlock(Properties properties)
     {
-
         super(properties);
         // Set the default state (what the block is when you first get it)
         this.registerDefaultState(this.stateDefinition.any()
