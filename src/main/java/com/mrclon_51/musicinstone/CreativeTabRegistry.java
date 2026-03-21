@@ -42,15 +42,15 @@ public class CreativeTabRegistry
                         output.accept(Blocks.BRICK_WALL);
                         output.accept(BlocksRegistry.BRICK_FANCY_WALL.get());
 
-                        output.accept(BlocksRegistry.SEGMENTAL_ARCH_BRICKS.get());
-                        output.accept(BlocksRegistry.JACK_ARCH_BRICKS.get());
-                        output.accept(BlocksRegistry.SMALL_ARCH_BRICKS.get());
-                        output.accept(BlocksRegistry.ROWLOCK_ARCH_BRICKS.get());
-                        output.accept(BlocksRegistry.WIDE_ARCH_BRICKS.get());
-                        output.accept(BlocksRegistry.LARGE_ARCH_BRICKS.get());
+                        output.accept(BlocksRegistry.BRICKS_SEGMENTAL_ARCH.get());
+                        output.accept(BlocksRegistry.BRICKS_JACK_ARCH.get());
+                        output.accept(BlocksRegistry.BRICKS_SMALL_ARCH.get());
+                        output.accept(BlocksRegistry.BRICKS_ROWLOCK_ARCH.get());
+                        output.accept(BlocksRegistry.BRICKS_WIDE_ARCH.get());
+                        output.accept(BlocksRegistry.BRICKS_LARGE_ARCH.get());
 
-                        output.accept(BlocksRegistry.TEST_COLUMN_A.get());
-                        output.accept(BlocksRegistry.TEST_COLUMN_B.get());
+                        //output.accept(BlocksRegistry.TEST_COLUMN_A.get());
+                        //output.accept(BlocksRegistry.TEST_COLUMN_B.get());
                     })
                     .build());
 

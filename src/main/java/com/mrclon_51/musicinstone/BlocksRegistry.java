@@ -1,7 +1,6 @@
 package com.mrclon_51.musicinstone;
 
 import com.mrclon_51.musicinstone.block.ArchBlock;
-import com.mrclon_51.musicinstone.block.ColumnBaseBlock;
 import com.mrclon_51.musicinstone.block.HalfArchBlock;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -33,17 +32,17 @@ public class BlocksRegistry
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.BRICKS)));
     public static final RegistryObject<Block> BRICKS_TILES_STACK = registerBlock("bricks_tiles_stack",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.BRICKS)));
-    public static final RegistryObject<Block> WIDE_ARCH_BRICKS = registerBlock("wide_arch_bricks",
+    public static final RegistryObject<Block> BRICKS_WIDE_ARCH = registerBlock("bricks_wide_arch",
         () -> new ArchBlock(BlockBehaviour.Properties.copy(Blocks.BRICKS).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
-    public static final RegistryObject<Block> SMALL_ARCH_BRICKS = registerBlock("small_arch_bricks",
+    public static final RegistryObject<Block> BRICKS_SMALL_ARCH = registerBlock("bricks_small_arch",
             () -> new ArchBlock(BlockBehaviour.Properties.copy(Blocks.BRICKS).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
-    public static final RegistryObject<Block> SEGMENTAL_ARCH_BRICKS = registerBlock("segmental_arch_bricks",
+    public static final RegistryObject<Block> BRICKS_SEGMENTAL_ARCH = registerBlock("bricks_segmental_arch",
             () -> new ArchBlock(BlockBehaviour.Properties.copy(Blocks.BRICKS).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
-    public static final RegistryObject<Block> LARGE_ARCH_BRICKS = registerBlock("large_arch_bricks",
+    public static final RegistryObject<Block> BRICKS_LARGE_ARCH = registerBlock("bricks_large_arch",
             () -> new HalfArchBlock(BlockBehaviour.Properties.copy(Blocks.BRICKS).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
-    public static final RegistryObject<Block> JACK_ARCH_BRICKS = registerBlock("jack_arch_bricks",
+    public static final RegistryObject<Block> BRICKS_JACK_ARCH = registerBlock("bricks_jack_arch",
             () -> new ArchBlock(BlockBehaviour.Properties.copy(Blocks.BRICKS).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
-    public static final RegistryObject<Block> ROWLOCK_ARCH_BRICKS = registerBlock("rowlock_arch_bricks",
+    public static final RegistryObject<Block> BRICKS_ROWLOCK_ARCH = registerBlock("bricks_rowlock_arch",
             () -> new ArchBlock(BlockBehaviour.Properties.copy(Blocks.BRICKS).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
     public static final RegistryObject<Block> BRICK_FANCY_SLAB = registerBlock("brick_fancy_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.BRICK_SLAB)));
@@ -51,10 +50,10 @@ public class BlocksRegistry
             () -> new StairBlock(() -> BlocksRegistry.BRICKS_FANCY.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.BRICKS)));
     public static final RegistryObject<Block> BRICK_FANCY_WALL = registerBlock("brick_fancy_wall",
             () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.BRICK_WALL)));
-    public static final RegistryObject<Block> TEST_COLUMN_A = registerBlock("test_column_a",
-            () -> new ColumnBaseBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).noOcclusion()));
-    public static final RegistryObject<Block> TEST_COLUMN_B = registerBlock("test_column_b",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).noOcclusion()));
+    //public static final RegistryObject<Block> TEST_COLUMN_A = registerBlock("test_column_a",
+    //        () -> new ColumnBaseBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).noOcclusion()));
+    // static final RegistryObject<Block> TEST_COLUMN_B = registerBlock("test_column_b",
+    //       () -> new Block(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).noOcclusion()));
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block)
     {
