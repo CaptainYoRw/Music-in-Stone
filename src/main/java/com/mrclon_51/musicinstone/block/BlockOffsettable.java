@@ -23,7 +23,7 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
-public class ArchBlock extends Block implements SimpleWaterloggedBlock
+public class BlockOffsettable extends Block implements SimpleWaterloggedBlock
 {
     public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
     public static final EnumProperty<Half> HALF = BlockStateProperties.HALF;
@@ -34,7 +34,7 @@ public class ArchBlock extends Block implements SimpleWaterloggedBlock
 
     public static final IntegerProperty OFFSET = IntegerProperty.create("offset", 0, 2);
 
-    public ArchBlock(Properties properties)
+    public BlockOffsettable(Properties properties)
     {
         super(properties);
         // Set the default state (what the block is when you first get it)

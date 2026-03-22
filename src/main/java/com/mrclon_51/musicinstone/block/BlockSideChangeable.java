@@ -13,12 +13,12 @@ import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.level.block.state.properties.StairsShape;
 
-public class HalfArchBlock extends ArchBlock
+public class BlockSideChangeable extends BlockOffsettable
 {
     public static final EnumProperty<StairsShape> SHAPE = BlockStateProperties.STAIRS_SHAPE;
     public static final EnumProperty<ModBlockProperties.SideHalf> SIDE = EnumProperty.create("side", ModBlockProperties.SideHalf.class);
 
-    public HalfArchBlock(Properties properties)
+    public BlockSideChangeable(Properties properties)
     {
         super(properties);
 
