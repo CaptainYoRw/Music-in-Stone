@@ -32,8 +32,10 @@ public class CreativeTabRegistry
                         output.accept(BlocksRegistry.BRICKS_TILES_STACK.get());
                         output.accept(BlocksRegistry.BRICKS_ROMAN.get());
                         output.accept(BlocksRegistry.BRICKS_ROMAN_STACK.get());
+                        output.accept(BlocksRegistry.BRICKS_ROMAN_TRIPLE.get());
                         output.accept(BlocksRegistry.BRICKS_LONG.get());
                         output.accept(BlocksRegistry.BRICKS_LONG_STACK.get());
+                        output.accept(BlocksRegistry.BRICKS_CLINKER.get());
 
                         output.accept(Blocks.BRICK_SLAB);
                         output.accept(BlocksRegistry.BRICK_FANCY_SLAB.get());

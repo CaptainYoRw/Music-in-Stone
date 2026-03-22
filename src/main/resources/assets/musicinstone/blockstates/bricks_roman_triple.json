@@ -1,0 +1,8 @@
+{
+  "variants":
+  {
+    "state_index=0": { "model": "musicinstone:block/bricks_roman_bottom" },
+    "state_index=1": { "model": "musicinstone:block/bricks_roman_middle" },
+    "state_index=2": { "model": "musicinstone:block/bricks_roman_top" }
+  }
+}

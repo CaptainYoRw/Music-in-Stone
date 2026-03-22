@@ -2,6 +2,7 @@ package com.mrclon_51.musicinstone;
 
 import com.mrclon_51.musicinstone.block.BlockOffsettable;
 import com.mrclon_51.musicinstone.block.BlockSideChangeable;
+import com.mrclon_51.musicinstone.block.BlockTripleRepeatable;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
@@ -50,6 +51,10 @@ public class BlocksRegistry
             () -> new StairBlock(() -> BlocksRegistry.BRICKS_FANCY.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.BRICKS)));
     public static final RegistryObject<Block> BRICK_FANCY_WALL = registerBlock("brick_fancy_wall",
             () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.BRICK_WALL)));
+    public static final RegistryObject<Block> BRICKS_ROMAN_TRIPLE = registerBlock("bricks_roman_triple",
+            () -> new BlockTripleRepeatable(BlockBehaviour.Properties.copy(Blocks.BRICKS)));
+    public static final RegistryObject<Block> BRICKS_CLINKER = registerBlock("bricks_clinker",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BRICKS)));
     //public static final RegistryObject<Block> TEST_COLUMN_A = registerBlock("test_column_a",
     //        () -> new BlockColumnBase(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).noOcclusion()));
     // static final RegistryObject<Block> TEST_COLUMN_B = registerBlock("test_column_b",
