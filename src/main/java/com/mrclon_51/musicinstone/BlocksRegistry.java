@@ -55,6 +55,15 @@ public class BlocksRegistry
             () -> new BlockTripleRepeatable(BlockBehaviour.Properties.copy(Blocks.BRICKS)));
     public static final RegistryObject<Block> BRICKS_CLINKER = registerBlock("bricks_clinker",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.BRICKS)));
+    public static final RegistryObject<Block> BRICK_FLORENTINE_ARCH = registerBlock("brick_florentine_arch",
+            () -> new BlockOffsettable(BlockBehaviour.Properties.copy(Blocks.BRICKS).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> BRICK_FLORENTINE_POINTED_ARCH = registerBlock("brick_florentine_pointed_arch",
+            () -> new BlockOffsettable(BlockBehaviour.Properties.copy(Blocks.BRICKS).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> BRICK_LARGE_FLORENTINE_ARCH = registerBlock("brick_large_florentine_arch",
+            () -> new BlockSideChangeable(BlockBehaviour.Properties.copy(Blocks.BRICKS).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> BRICK_LARGE_FLORENTINE_POINTED_ARCH = registerBlock("brick_large_florentine_pointed_arch",
+            () -> new BlockSideChangeable(BlockBehaviour.Properties.copy(Blocks.BRICKS).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+
     //public static final RegistryObject<Block> TEST_COLUMN_A = registerBlock("test_column_a",
     //        () -> new BlockColumnBase(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).noOcclusion()));
     // static final RegistryObject<Block> TEST_COLUMN_B = registerBlock("test_column_b",

@@ -1,6 +1,6 @@
 # Blender 5.0.1
 # www.blender.org
-mtllib arch_brick.mtl
+mtllib brick.mtl
 o Cube
 usemtl arch_mat
 v 0.000000 0.499834 -0.005000

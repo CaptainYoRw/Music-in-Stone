@@ -40,7 +40,8 @@ public class BlockColumnBase extends Block
     }
 
     @Override
-    public int getLightBlock(BlockState state, BlockGetter world, BlockPos pos) {
+    public int getLightBlock(BlockState state, BlockGetter world, BlockPos pos)
+    {
         return 0; // Ensures light passes through the block's "air" space correctly
     }
 

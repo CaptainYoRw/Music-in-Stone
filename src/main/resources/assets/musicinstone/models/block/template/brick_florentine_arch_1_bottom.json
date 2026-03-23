@@ -3,8 +3,8 @@
   "gui_light": "front",
   "flip_v": true,
   "mtl_override": "musicinstone:models/block/object/brick.mtl",
-  "model": "musicinstone:models/block/object/large_arch_right.obj",
-  "textures": { "particle": "#arch_mat" },
+  "model": "musicinstone:models/block/object/florentine_arch.obj",
+  "textures": { "particle": "minecraft:block/bricks" },
   "transform":
   {
     "translation": [0, 0, 0.5]

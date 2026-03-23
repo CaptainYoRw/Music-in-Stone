@@ -29,8 +29,8 @@ public class BlockOffsettable extends Block implements SimpleWaterloggedBlock
     public static final EnumProperty<Half> HALF = BlockStateProperties.HALF;
     public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
-    protected static final VoxelShape BOTTOM_SHAPE = Block.box(0, 0, 0, 16, 4, 16);
-    protected static final VoxelShape TOP_SHAPE = Block.box(0, 12, 0, 16, 16, 16);
+    protected static final VoxelShape BOTTOM_SHAPE = Block.box(1, 0, 1, 15, 4, 15);
+    protected static final VoxelShape TOP_SHAPE = Block.box(1, 12, 1, 15, 16, 15);
 
     public static final IntegerProperty OFFSET = IntegerProperty.create("offset", 0, 2);
 
