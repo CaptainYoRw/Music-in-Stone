@@ -1,0 +1,12 @@
+{
+  "loader": "forge:obj",
+  "gui_light": "front",
+  "flip_v": true,
+  "mtl_override": "musicinstone:models/block/object/brick.mtl",
+  "model": "musicinstone:models/block/object/large_florentine_pointed_arch_right.obj",
+  "textures": { "particle": "#arch_mat" },
+  "transform":
+  {
+    "translation": [0, 0, 1.0]
+  }
+}
