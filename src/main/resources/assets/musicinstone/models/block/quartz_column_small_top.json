@@ -1,0 +1,62 @@
+{
+  "loader": "forge:obj",
+  "gui_light": "front",
+  "flip_v": true,
+  "mtl_override": "musicinstone:models/block/object/quartz_pillar.mtl",
+  "model": "musicinstone:models/block/object/small_column_up.obj",
+  "textures":
+  {
+    "particle": "minecraft:block/quartz_pillar"
+  },
+  "display":
+  {
+    "thirdperson_righthand":
+    {
+      "rotation": [75, 45, 0],
+      "translation": [0, 2.5, 0],
+      "scale": [0.3, 0.3, 0.3]
+    },
+    "thirdperson_lefthand":
+    {
+      "rotation": [75, 45, 0],
+      "translation": [0, 2.5, 0],
+      "scale": [0.3, 0.3, 0.3]
+    },
+    "firstperson_righthand":
+    {
+      "rotation": [0, 45, 0],
+      "translation": [0, 0, 0],
+      "scale": [0.3, 0.3, 0.3]
+    },
+    "firstperson_lefthand":
+    {
+      "rotation": [0, 225, 0],
+      "translation": [0, 0, 0],
+      "scale": [0.3, 0.3, 0.3]
+    },
+    "ground":
+    {
+      "rotation": [0, 0, 0],
+      "translation": [0, 3, 0],
+      "scale": [0.14, 0.14, 0.14]
+    },
+    "gui":
+    {
+      "rotation": [30, 225, 0],
+      "translation": [0, -4, 0],
+      "scale": [0.4, 0.4, 0.4]
+    },
+    "head":
+    {
+      "rotation": [0, 0, 0],
+      "translation": [0, 0, 0],
+      "scale": [1, 1, 1]
+    },
+    "fixed":
+    {
+      "rotation": [0, 0, 0],
+      "translation": [0, 0, 0],
+      "scale": [0.5, 0.5, 0.5]
+    }
+  }
+}

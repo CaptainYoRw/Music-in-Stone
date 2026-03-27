@@ -1,8 +1,6 @@
 package com.mrclon_51.musicinstone;
 
-import com.mrclon_51.musicinstone.block.BlockOffsettable;
-import com.mrclon_51.musicinstone.block.BlockSideChangeable;
-import com.mrclon_51.musicinstone.block.BlockTripleRepeatable;
+import com.mrclon_51.musicinstone.block.*;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
@@ -63,6 +61,16 @@ public class BlocksRegistry
             () -> new BlockSideChangeable(BlockBehaviour.Properties.copy(Blocks.BRICKS).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
     public static final RegistryObject<Block> BRICK_LARGE_FLORENTINE_POINTED_ARCH = registerBlock("brick_large_florentine_pointed_arch",
             () -> new BlockSideChangeable(BlockBehaviour.Properties.copy(Blocks.BRICKS).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> QUARTZ_COLUMN_SMALL = registerBlock("quartz_column_small",
+            () -> new BlockColumnSmall(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> QUARTZ_CAPITAL_SMALL = registerBlock("quartz_ionic_capital_small",
+            () -> new BlockColumnCapital(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> QUARTZ_BASE_SMALL = registerBlock("quartz_ionic_base_small",
+            () -> new BlockColumnBase(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> SANDSTONE_BASE_SMALL = registerBlock("sandstone_ionic_base_small",
+            () -> new BlockColumnBase(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> SANDSTONE_CAPITAL_SMALL = registerBlock("sandstone_ionic_capital_small",
+            () -> new BlockColumnCapital(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
 
     //public static final RegistryObject<Block> TEST_COLUMN_A = registerBlock("test_column_a",
     //        () -> new BlockColumnBase(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).noOcclusion()));

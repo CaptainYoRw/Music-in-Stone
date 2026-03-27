@@ -1,0 +1,9 @@
+{
+  "variants":
+  {
+    "facing=north": { "model": "musicinstone:block/sandstone_ionic_capital_small" },
+    "facing=south": { "model": "musicinstone:block/sandstone_ionic_capital_small" },
+    "facing=east":  { "model": "musicinstone:block/sandstone_ionic_capital_small", "y": 90 },
+    "facing=west":  { "model": "musicinstone:block/sandstone_ionic_capital_small", "y": 90 }
+  }
+}

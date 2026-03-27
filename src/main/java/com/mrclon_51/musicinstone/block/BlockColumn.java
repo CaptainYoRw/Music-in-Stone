@@ -1,10 +1,16 @@
 package com.mrclon_51.musicinstone.block;
 
+import com.mrclon_51.musicinstone.TagsRegistry;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.tags.TagKey;
+import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
@@ -15,28 +21,28 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
-public class BlockColumnBase extends Block
+public class BlockColumn extends Block
 {
+    public static final BooleanProperty CONNECTED_UP = BooleanProperty.create("up");
+    public static final BooleanProperty CONNECTED_DOWN = BooleanProperty.create("down");
+
     public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
-    private static final VoxelShape SHAPE = Shapes.or
-            (
-                Block.box(0, 0, 0, 16, 3, 16),   // Lower Base (The large square bottom)
-            Block.box(3, 3, 3, 13, 16, 13)  // The Shaft (The main vertical part)
-            );
-
-    public BlockColumnBase(Properties properties)
+    public BlockColumn(BlockBehaviour.Properties properties)
     {
         super(properties);
         this.registerDefaultState(this.stateDefinition.any()
-        .setValue(WATERLOGGED, false));
+                .setValue(WATERLOGGED, false)
+                .setValue(CONNECTED_UP, false)
+                .setValue(CONNECTED_DOWN, false));
     }
 
     @Override
-    public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context)
+    public BlockState getStateForPlacement(BlockPlaceContext context)
     {
-        // This returns a tiny box in the center or a full box that doesn't trigger culling
-        return SHAPE;
+        return this.defaultBlockState()
+                .setValue(CONNECTED_UP, isCapital(context.getLevel(), context.getClickedPos()))
+                .setValue(CONNECTED_DOWN, isBase(context.getLevel(), context.getClickedPos()));
     }
 
     @Override
@@ -58,6 +64,14 @@ public class BlockColumnBase extends Block
         return state.getValue(WATERLOGGED) ? Fluids.WATER.getSource(false) : super.getFluidState(state);
     }
 
+    private boolean isBase(LevelReader level, BlockPos pos) {
+        return level.getBlockState(pos.below()).is(TagsRegistry.Blocks.COLUMN_BASE);
+    }
+
+    private boolean isCapital(LevelReader level, BlockPos pos) {
+        return level.getBlockState(pos.above()).is(TagsRegistry.Blocks.COLUMN_CAPITAL);
+    }
+
     // Update shape when neighbors change (crucial for water flow updates)
     @SuppressWarnings("deprecation")
     @Override
@@ -67,6 +81,14 @@ public class BlockColumnBase extends Block
         {
             level.scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickDelay(level));
         }
+        if (direction == Direction.UP)
+        {
+            return state.setValue(CONNECTED_UP, isCapital(level, currentPos));
+        }
+        if (direction == Direction.DOWN)
+        {
+            return state.setValue(CONNECTED_DOWN, isBase(level, currentPos));
+        }
         return super.updateShape(state, direction, neighborState, level, currentPos, neighborPos);
     }
 
@@ -74,7 +96,6 @@ public class BlockColumnBase extends Block
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder)
     {
-        builder.add(WATERLOGGED);
+        builder.add(CONNECTED_UP, CONNECTED_DOWN, WATERLOGGED);
     }
-
 }

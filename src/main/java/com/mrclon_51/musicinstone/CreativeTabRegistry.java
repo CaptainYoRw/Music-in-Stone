@@ -55,6 +55,13 @@ public class CreativeTabRegistry
                         output.accept(BlocksRegistry.BRICK_LARGE_FLORENTINE_ARCH.get());
                         output.accept(BlocksRegistry.BRICK_LARGE_FLORENTINE_POINTED_ARCH.get());
 
+                        output.accept(BlocksRegistry.SANDSTONE_BASE_SMALL.get());
+                        output.accept(BlocksRegistry.SANDSTONE_CAPITAL_SMALL.get());
+
+                        output.accept(BlocksRegistry.QUARTZ_BASE_SMALL.get());
+                        output.accept(BlocksRegistry.QUARTZ_COLUMN_SMALL.get());
+                        output.accept(BlocksRegistry.QUARTZ_CAPITAL_SMALL.get());
+
 
                         //output.accept(BlocksRegistry.TEST_COLUMN_A.get());
                         //output.accept(BlocksRegistry.TEST_COLUMN_B.get());

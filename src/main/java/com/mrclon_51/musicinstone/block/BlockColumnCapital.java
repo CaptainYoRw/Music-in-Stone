@@ -2,41 +2,48 @@ package com.mrclon_51.musicinstone.block;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.HorizontalDirectionalBlock;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
+import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
-import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
-public class BlockColumnBase extends Block
+public class BlockColumnCapital extends Block
 {
     public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
-    private static final VoxelShape SHAPE = Shapes.or
-            (
-                Block.box(0, 0, 0, 16, 3, 16),   // Lower Base (The large square bottom)
-            Block.box(3, 3, 3, 13, 16, 13)  // The Shaft (The main vertical part)
-            );
+    public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
-    public BlockColumnBase(Properties properties)
+    public BlockColumnCapital(BlockBehaviour.Properties properties)
     {
         super(properties);
         this.registerDefaultState(this.stateDefinition.any()
-        .setValue(WATERLOGGED, false));
+                .setValue(WATERLOGGED, false)
+                .setValue(FACING, Direction.NORTH));
     }
 
-    @Override
+    /* @Override
     public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context)
     {
         // This returns a tiny box in the center or a full box that doesn't trigger culling
         return SHAPE;
+    } */
+
+    @Override
+    public BlockState getStateForPlacement(BlockPlaceContext context)
+    {
+        // This makes the block face the player when placed
+        return this.defaultBlockState().setValue(FACING, context.getHorizontalDirection().getOpposite());
     }
 
     @Override
@@ -74,7 +81,6 @@ public class BlockColumnBase extends Block
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder)
     {
-        builder.add(WATERLOGGED);
+        builder.add(FACING, WATERLOGGED);
     }
-
 }

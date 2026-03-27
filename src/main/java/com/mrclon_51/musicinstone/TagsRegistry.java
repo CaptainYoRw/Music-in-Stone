@@ -11,8 +11,8 @@ public class TagsRegistry
 {
        public static class Blocks
        {
-           public static final TagKey<Block> COLUMN_BASE = tag("column_base");
-               public static final TagKey<Block> COLUMN_CAPITAL = tag("column_capital");
+               public static final TagKey<Block> COLUMN_BASE = tag("bases");
+               public static final TagKey<Block> COLUMN_CAPITAL = tag("capitals");
 
            private static TagKey<Block> tag(String name)
            {
