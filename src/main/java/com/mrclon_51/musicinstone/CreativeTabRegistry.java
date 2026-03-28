@@ -35,7 +35,7 @@ public class CreativeTabRegistry
                         output.accept(BlocksRegistry.BRICKS_ROMAN_TRIPLE.get());
                         output.accept(BlocksRegistry.BRICKS_LONG.get());
                         output.accept(BlocksRegistry.BRICKS_LONG_STACK.get());
-                        output.accept(BlocksRegistry.BRICKS_CLINKER.get());
+                        output.accept(BlocksRegistry.BRICKS_ROAD.get());
 
                         output.accept(Blocks.BRICK_SLAB);
                         output.accept(BlocksRegistry.BRICK_FANCY_SLAB.get());
@@ -43,6 +43,8 @@ public class CreativeTabRegistry
                         output.accept(BlocksRegistry.BRICK_FANCY_STAIRS.get());
                         output.accept(Blocks.BRICK_WALL);
                         output.accept(BlocksRegistry.BRICK_FANCY_WALL.get());
+                        output.accept(BlocksRegistry.BRICK_FINIAL.get());
+                        output.accept(BlocksRegistry.BRICK_PEDESTAL.get());
 
                         output.accept(BlocksRegistry.BRICKS_JACK_ARCH.get());
                         output.accept(BlocksRegistry.BRICKS_SEGMENTAL_ARCH.get());

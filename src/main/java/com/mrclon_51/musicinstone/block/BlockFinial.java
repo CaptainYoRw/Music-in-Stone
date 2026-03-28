@@ -13,24 +13,19 @@ import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.phys.shapes.CollisionContext;
-import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
-public class BlockColumnBase extends Block implements SimpleWaterloggedBlock
+public class BlockFinial extends Block implements SimpleWaterloggedBlock
 {
     public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
-    private static final VoxelShape SHAPE = Shapes.or
-            (
-                Block.box(0, 0, 0, 16, 3, 16),   // Lower Base (The large square bottom)
-            Block.box(3, 3, 3, 13, 16, 13)  // The Shaft (The main vertical part)
-            );
+    protected static final VoxelShape SHAPE = Block.box(1.0D, 0.0D, 1.0D, 15.0D, 16.0D, 15.0D);
 
-    public BlockColumnBase(Properties properties)
+    public BlockFinial(Properties pProperties)
     {
-        super(properties);
+        super(pProperties);
         this.registerDefaultState(this.stateDefinition.any()
-        .setValue(WATERLOGGED, false));
+                .setValue(WATERLOGGED, false));
     }
 
     @Override
@@ -41,26 +36,11 @@ public class BlockColumnBase extends Block implements SimpleWaterloggedBlock
     }
 
     @Override
-    public int getLightBlock(BlockState state, BlockGetter world, BlockPos pos)
-    {
-        return 0; // Ensures light passes through the block's "air" space correctly
-    }
-
-    @Override
-    public VoxelShape getOcclusionShape(BlockState state, BlockGetter world, BlockPos pos) {
-        return Shapes.empty();
-    }
-
-    // Handle water physics (flowing)
-    @SuppressWarnings("deprecation")
-    @Override
     public FluidState getFluidState(BlockState state)
     {
         return state.getValue(WATERLOGGED) ? Fluids.WATER.getSource(false) : super.getFluidState(state);
     }
 
-    // Update shape when neighbors change (crucial for water flow updates)
-    @SuppressWarnings("deprecation")
     @Override
     public BlockState updateShape(BlockState state, Direction direction, BlockState neighborState, LevelAccessor level, BlockPos currentPos, BlockPos neighborPos)
     {
@@ -71,11 +51,9 @@ public class BlockColumnBase extends Block implements SimpleWaterloggedBlock
         return super.updateShape(state, direction, neighborState, level, currentPos, neighborPos);
     }
 
-    // Register the properties so the game knows they exist
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder)
     {
         builder.add(WATERLOGGED);
     }
-
 }

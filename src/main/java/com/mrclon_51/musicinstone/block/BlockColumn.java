@@ -10,6 +10,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SimpleWaterloggedBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
@@ -21,7 +22,7 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
-public class BlockColumn extends Block
+public class BlockColumn extends Block implements SimpleWaterloggedBlock
 {
     public static final BooleanProperty CONNECTED_UP = BooleanProperty.create("up");
     public static final BooleanProperty CONNECTED_DOWN = BooleanProperty.create("down");
@@ -40,9 +41,13 @@ public class BlockColumn extends Block
     @Override
     public BlockState getStateForPlacement(BlockPlaceContext context)
     {
+        BlockPos pos = context.getClickedPos();
+        FluidState fluidState = context.getLevel().getFluidState(pos);
+
         return this.defaultBlockState()
                 .setValue(CONNECTED_UP, isCapital(context.getLevel(), context.getClickedPos()))
-                .setValue(CONNECTED_DOWN, isBase(context.getLevel(), context.getClickedPos()));
+                .setValue(CONNECTED_DOWN, isBase(context.getLevel(), context.getClickedPos()))
+                .setValue(WATERLOGGED, fluidState.getType() == Fluids.WATER); // Handle placing IN water
     }
 
     @Override
@@ -64,11 +69,13 @@ public class BlockColumn extends Block
         return state.getValue(WATERLOGGED) ? Fluids.WATER.getSource(false) : super.getFluidState(state);
     }
 
-    private boolean isBase(LevelReader level, BlockPos pos) {
+    private boolean isBase(LevelReader level, BlockPos pos)
+    {
         return level.getBlockState(pos.below()).is(TagsRegistry.Blocks.COLUMN_BASE);
     }
 
-    private boolean isCapital(LevelReader level, BlockPos pos) {
+    private boolean isCapital(LevelReader level, BlockPos pos)
+    {
         return level.getBlockState(pos.above()).is(TagsRegistry.Blocks.COLUMN_CAPITAL);
     }
 

@@ -7,8 +7,8 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.HorizontalDirectionalBlock;
+import net.minecraft.world.level.block.Rotation;
 import net.minecraft.world.level.block.SimpleWaterloggedBlock;
-import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
@@ -20,63 +20,51 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
-public class BlockColumnCapital extends Block implements SimpleWaterloggedBlock
+public class BlockPedestal extends Block implements SimpleWaterloggedBlock
 {
-    private static final VoxelShape SHAPE = Shapes.or
-            (
-                    Block.box(0, 11, 0, 16, 16, 16),
-                    Block.box(3, 0, 3, 13, 11, 13)
-
-            );
-
     public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
     public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
+    private static final VoxelShape BASE = Block.box(2.0D, 0.0D, 2.0D, 14.0D, 4.0D, 14.0D);
+    private static final VoxelShape X_LEG1 = Block.box(3.0D, 4.0D, 4.0D, 13.0D, 5.0D, 12.0D);
+    private static final VoxelShape X_LEG2 = Block.box(4.0D, 5.0D, 6.0D, 12.0D, 10.0D, 10.0D);
+    private static final VoxelShape X_TOP = Block.box(0.0D, 10.0D, 3.0D, 16.0D, 16.0D, 13.0D);
+    private static final VoxelShape Z_LEG1 = Block.box(4.0D, 4.0D, 3.0D, 12.0D, 5.0D, 13.0D);
+    private static final VoxelShape Z_LEG2 = Block.box(6.0D, 5.0D, 4.0D, 10.0D, 10.0D, 12.0D);
+    private static final VoxelShape Z_TOP = Block.box(3.0D, 10.0D, 0.0D, 13.0D, 16.0D, 16.0D);
+    private static final VoxelShape X_AXIS_AABB = Shapes.or(BASE, X_LEG1, X_LEG2, X_TOP);
+    private static final VoxelShape Z_AXIS_AABB = Shapes.or(BASE, Z_LEG1, Z_LEG2, Z_TOP);
 
-    public BlockColumnCapital(BlockBehaviour.Properties properties)
+    public BlockPedestal(Properties pProperties)
     {
-        super(properties);
+        super(pProperties);
         this.registerDefaultState(this.stateDefinition.any()
-                .setValue(WATERLOGGED, false)
-                .setValue(FACING, Direction.NORTH));
+                .setValue(FACING, Direction.NORTH)
+                .setValue(WATERLOGGED, false));
     }
 
-    @Override
-    public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context)
+    public BlockState getStateForPlacement(BlockPlaceContext pContext)
     {
-        // This returns a tiny box in the center or a full box that doesn't trigger culling
-        return SHAPE;
+        return this.defaultBlockState().setValue(FACING, pContext.getHorizontalDirection().getClockWise());
     }
 
-    @Override
-    public BlockState getStateForPlacement(BlockPlaceContext context)
+    public VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext)
     {
-        // This makes the block face the player when placed
-        return this.defaultBlockState().setValue(FACING, context.getHorizontalDirection().getOpposite());
+        Direction direction = pState.getValue(FACING);
+        return direction.getAxis() == Direction.Axis.X ? X_AXIS_AABB : Z_AXIS_AABB;
     }
 
-    @Override
-    public int getLightBlock(BlockState state, BlockGetter world, BlockPos pos)
+    public BlockState rotate(BlockState pState, Rotation pRot)
     {
-        return 0; // Ensures light passes through the block's "air" space correctly
+        return pState.setValue(FACING, pRot.rotate(pState.getValue(FACING)));
     }
 
-    @Override
-    public VoxelShape getOcclusionShape(BlockState state, BlockGetter world, BlockPos pos) {
-        return Shapes.empty();
-    }
-
-    // Handle water physics (flowing)
-    @SuppressWarnings("deprecation")
     @Override
     public FluidState getFluidState(BlockState state)
     {
         return state.getValue(WATERLOGGED) ? Fluids.WATER.getSource(false) : super.getFluidState(state);
     }
 
-    // Update shape when neighbors change (crucial for water flow updates)
-    @SuppressWarnings("deprecation")
-    @Override
     public BlockState updateShape(BlockState state, Direction direction, BlockState neighborState, LevelAccessor level, BlockPos currentPos, BlockPos neighborPos)
     {
         if (state.getValue(WATERLOGGED))
@@ -86,10 +74,11 @@ public class BlockColumnCapital extends Block implements SimpleWaterloggedBlock
         return super.updateShape(state, direction, neighborState, level, currentPos, neighborPos);
     }
 
-    // Register the properties so the game knows they exist
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder)
     {
         builder.add(FACING, WATERLOGGED);
     }
+
+
 }

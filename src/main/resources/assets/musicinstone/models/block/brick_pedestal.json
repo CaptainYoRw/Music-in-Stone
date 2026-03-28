@@ -1,0 +1,8 @@
+{
+  "parent": "musicinstone:block/pedestal",
+  "textures": {
+    "particle": "minecraft:block/bricks",
+    "body": "minecraft:block/bricks",
+    "top": "minecraft:block/bricks"
+  }
+}

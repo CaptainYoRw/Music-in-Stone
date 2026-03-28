@@ -51,7 +51,7 @@ public class BlocksRegistry
             () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.BRICK_WALL)));
     public static final RegistryObject<Block> BRICKS_ROMAN_TRIPLE = registerBlock("bricks_roman_triple",
             () -> new BlockTripleRepeatable(BlockBehaviour.Properties.copy(Blocks.BRICKS)));
-    public static final RegistryObject<Block> BRICKS_CLINKER = registerBlock("bricks_clinker",
+    public static final RegistryObject<Block> BRICKS_ROAD = registerBlock("bricks_road",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.BRICKS)));
     public static final RegistryObject<Block> BRICK_FLORENTINE_ARCH = registerBlock("brick_florentine_arch",
             () -> new BlockOffsettable(BlockBehaviour.Properties.copy(Blocks.BRICKS).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
@@ -71,6 +71,11 @@ public class BlocksRegistry
             () -> new BlockColumnBase(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
     public static final RegistryObject<Block> SANDSTONE_CAPITAL_SMALL = registerBlock("sandstone_ionic_capital_small",
             () -> new BlockColumnCapital(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> BRICK_FINIAL = registerBlock("brick_finial",
+            () -> new BlockFinial(BlockBehaviour.Properties.copy(Blocks.BRICKS).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> BRICK_PEDESTAL = registerBlock("brick_pedestal",
+            () -> new BlockPedestal(BlockBehaviour.Properties.copy(Blocks.BRICKS).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+
 
     //public static final RegistryObject<Block> TEST_COLUMN_A = registerBlock("test_column_a",
     //        () -> new BlockColumnBase(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).noOcclusion()));

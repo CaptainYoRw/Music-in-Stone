@@ -10,13 +10,18 @@ import net.minecraft.world.level.block.StairBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
+import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.level.block.state.properties.StairsShape;
+import net.minecraft.world.level.material.FluidState;
+import net.minecraft.world.level.material.Fluids;
 
 public class BlockSideChangeable extends BlockOffsettable
 {
     public static final EnumProperty<StairsShape> SHAPE = BlockStateProperties.STAIRS_SHAPE;
     public static final EnumProperty<ModBlockProperties.SideHalf> SIDE = EnumProperty.create("side", ModBlockProperties.SideHalf.class);
+
+    public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
     public BlockSideChangeable(Properties properties)
     {
@@ -24,7 +29,8 @@ public class BlockSideChangeable extends BlockOffsettable
 
         this.registerDefaultState(this.stateDefinition.any()
                 .setValue(SHAPE, StairsShape.STRAIGHT)
-                .setValue(SIDE, ModBlockProperties.SideHalf.LEFT));
+                .setValue(SIDE, ModBlockProperties.SideHalf.LEFT)
+                .setValue(WATERLOGGED, false));
     }
 
     @Override
@@ -52,6 +58,12 @@ public class BlockSideChangeable extends BlockOffsettable
 
         return state.setValue(SHAPE, getStairsShape(state, context.getLevel(), context.getClickedPos()))
                     .setValue(SIDE, isRightSide ? ModBlockProperties.SideHalf.LEFT : ModBlockProperties.SideHalf.RIGHT);
+    }
+
+    @Override
+    public FluidState getFluidState(BlockState state)
+    {
+        return state.getValue(WATERLOGGED) ? Fluids.WATER.getSource(false) : super.getFluidState(state);
     }
 
     private static StairsShape getStairsShape(BlockState state, BlockGetter level, BlockPos pos)
@@ -100,6 +112,11 @@ public class BlockSideChangeable extends BlockOffsettable
     public BlockState updateShape(BlockState state, Direction facing, BlockState facingState, LevelAccessor level, BlockPos currentPos, BlockPos facingPos) {
         // Сначала даем родителю обновить его данные (например, логику воды)
         BlockState updatedState = super.updateShape(state, facing, facingState, level, currentPos, facingPos);
+
+        if (state.getValue(WATERLOGGED))
+        {
+            level.scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickDelay(level));
+        }
 
         // Если обновление пришло сбоку, пересчитываем форму соединения
         if (facing.getAxis().isHorizontal())

@@ -1,0 +1,6 @@
+{
+  "parent": "musicinstone:block/finial",
+  "textures": {
+    "texture": "minecraft:block/bricks"
+  }
+}
