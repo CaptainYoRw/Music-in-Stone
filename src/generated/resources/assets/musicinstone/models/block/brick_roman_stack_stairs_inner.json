@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "musicinstone:block/bricks_roman_stack",
+    "side": "musicinstone:block/bricks_roman_stack",
+    "top": "musicinstone:block/bricks_roman_stack"
+  }
+}

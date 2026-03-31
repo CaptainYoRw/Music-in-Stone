@@ -1,0 +1,21 @@
+{
+  "values": [
+    "musicinstone:brick_fancy_wall",
+    "musicinstone:gilded_blackstone_wall",
+    "musicinstone:purpur_wall",
+    "musicinstone:brick_tiles_stack_wall",
+    "musicinstone:smooth_quartz_wall",
+    "musicinstone:quartz_brick_wall",
+    "musicinstone:brick_tiles_wall",
+    "musicinstone:dark_prismarine_wall",
+    "musicinstone:prismarine_brick_wall",
+    "musicinstone:stone_wall",
+    "musicinstone:polished_granite_wall",
+    "musicinstone:polished_diorite_wall",
+    "musicinstone:polished_andesite_wall",
+    "musicinstone:brick_roman_wall",
+    "musicinstone:brick_roman_stack_wall",
+    "musicinstone:brick_long_wall",
+    "musicinstone:brick_long_stack_wall"
+  ]
+}

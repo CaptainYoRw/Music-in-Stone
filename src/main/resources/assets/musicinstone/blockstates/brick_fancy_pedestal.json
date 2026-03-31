@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "musicinstone:block/brick_fancy_pedestal",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "musicinstone:block/brick_fancy_pedestal",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "musicinstone:block/brick_fancy_pedestal"
+    },
+    "facing=west": {
+      "model": "musicinstone:block/brick_fancy_pedestal",
+      "y": 90
+    }
+  }
+}

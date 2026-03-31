@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "musicinstone:block/bricks_long",
+    "side": "musicinstone:block/bricks_long",
+    "top": "musicinstone:block/bricks_long"
+  }
+}

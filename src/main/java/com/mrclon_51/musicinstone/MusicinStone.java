@@ -1,10 +1,15 @@
 package com.mrclon_51.musicinstone;
 
 import com.mojang.logging.LogUtils;
+import com.mrclon_51.musicinstone.datagen.ModBlockstateProvider;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraft.data.DataGenerator;
+import net.minecraft.data.PackOutput;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.data.event.GatherDataEvent;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -74,4 +79,17 @@ public class MusicinStone
 
         }
     }
+
+    @SubscribeEvent
+    public static void gatherData(GatherDataEvent event)
+    {
+        DataGenerator generator = event.getGenerator();
+        PackOutput packOutput = generator.getPackOutput();
+        ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
+
+        generator.addProvider(event.includeClient(),
+                new ModBlockstateProvider(packOutput, existingFileHelper));
+    }
+
+
 }

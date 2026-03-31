@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "musicinstone:block/brick_tiles_stack_slab"
+    },
+    "type=double": {
+      "model": "musicinstone:block/bricks_tiles_stack"
+    },
+    "type=top": {
+      "model": "musicinstone:block/brick_tiles_stack_slab_top"
+    }
+  }
+}

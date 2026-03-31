@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "musicinstone:bricks_tiles_stack"
+  },
+  "result": "musicinstone:brick_tiles_stack_stairs"
+}

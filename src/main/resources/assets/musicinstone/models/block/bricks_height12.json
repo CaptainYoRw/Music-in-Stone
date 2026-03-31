@@ -1,0 +1,6 @@
+{
+  "parent": "musicinstone:block/template_height12",
+  "textures": {
+    "texture": "minecraft:block/bricks"
+  }
+}

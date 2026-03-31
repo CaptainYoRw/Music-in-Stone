@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient":
-  {
-    "item": "minecraft:bricks"
-  },
-  "result": "musicinstone:brick_fancy_wall",
-  "count": 1
-}

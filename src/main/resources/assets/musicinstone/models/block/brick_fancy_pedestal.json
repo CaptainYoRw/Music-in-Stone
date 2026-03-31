@@ -1,0 +1,7 @@
+{
+  "parent": "musicinstone:block/template_pedestal",
+  "textures":
+  {
+    "texture": "musicinstone:block/bricks_fancy"
+  }
+}

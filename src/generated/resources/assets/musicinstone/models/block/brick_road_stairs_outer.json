@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "musicinstone:block/bricks_road",
+    "side": "musicinstone:block/bricks_road",
+    "top": "musicinstone:block/bricks_road"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "musicinstone:bricks_long_stack"
+  },
+  "result": "musicinstone:brick_long_stack_slab"
+}

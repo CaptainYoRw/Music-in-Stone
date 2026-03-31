@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "musicinstone:block/bricks_long_stack"
+  }
+}
