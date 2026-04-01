@@ -2,17 +2,19 @@
   "loader": "forge:obj",
   "gui_light": "front",
   "flip_v": true,
-  "model": "musicinstone:models/block/object/arrowslit.obj",
+  "model": "musicinstone:models/block/object/small_ionic_capital.obj",
   "textures":
   {
     "particle": "#texture",
-    "texture_all": "#texture"
+    "texture_all": "#texture",
+    "ionic_small":"#ionic",
+    "volute_small":"#volute"
   },
   "display":
   {
     "gui":
     {
-      "rotation": [ 30, 45, 0 ],
+      "rotation": [ 30, 225, 0 ],
       "translation": [ 0, 0, 0 ],
       "scale": [ 0.625, 0.625, 0.625 ]
     },

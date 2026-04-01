@@ -3,15 +3,11 @@ package com.mrclon_51.musicinstone;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
-
-import java.util.List;
 
 public class CreativeTabRegistry
 {
@@ -181,14 +177,15 @@ public class CreativeTabRegistry
                         output.accept(Blocks.SMOOTH_SANDSTONE);
                         output.accept(Blocks.SMOOTH_SANDSTONE_STAIRS);
                         output.accept(Blocks.SMOOTH_SANDSTONE_SLAB);
-                        //output.accept(BlocksRegistry.SMOOTH_SANDSTONE_WALL);
-                        output.accept(BlocksRegistry.SANDSTONE_BASE_SMALL.get());
-                        output.accept(BlocksRegistry.SANDSTONE_CAPITAL_SMALL.get());
+                        //output.accept(BlocksRegistry.SMOOTH_SANDSTONE_WALL.get());
+                        output.accept(BlocksRegistry.SANDSTONE_IONIC_BASE_SMALL.get());
+                        output.accept(BlocksRegistry.SANDSTONE_COLUMN_SMALL.get());
+                        output.accept(BlocksRegistry.SANDSTONE_IONIC_CAPITAL_SMALL.get());
 
                         output.accept(Blocks.SMOOTH_RED_SANDSTONE);
                         output.accept(Blocks.SMOOTH_RED_SANDSTONE_STAIRS);
                         output.accept(Blocks.SMOOTH_RED_SANDSTONE_SLAB);
-                        //output.accept(BlocksRegistry.SMOOTH_RED_SANDSTONE_WALL);
+                        //output.accept(BlocksRegistry.SMOOTH_RED_SANDSTONE_WALL.get());
 
                         output.accept(Blocks.PRISMARINE_BRICKS);
                         output.accept(Blocks.PRISMARINE_BRICK_STAIRS);
@@ -211,9 +208,9 @@ public class CreativeTabRegistry
                         output.accept(Blocks.RED_NETHER_BRICK_WALL);
 
                         output.accept(Blocks.POLISHED_BASALT);
-                        //output.accept(BlocksRegistry.POLISHED_BASALT_STAIRS);
-                        //output.accept(BlocksRegistry.POLISHED_BASALT_SLAB);
-                        //output.accept(BlocksRegistry.POLISHED_BASALT_WALL);
+                        output.accept(BlocksRegistry.POLISHED_BASALT_STAIRS.get());
+                        output.accept(BlocksRegistry.POLISHED_BASALT_SLAB.get());
+                        output.accept(BlocksRegistry.POLISHED_BASALT_WALL.get());
 
                         output.accept(Blocks.BLACKSTONE);
                         output.accept(Blocks.BLACKSTONE_STAIRS);
@@ -236,6 +233,8 @@ public class CreativeTabRegistry
                         output.accept(BlocksRegistry.GILDED_BLACKSTONE_WALL.get());
                         output.accept(BlocksRegistry.GILDED_BLACKSTONE_FINIAL.get());
                         output.accept(BlocksRegistry.GILDED_BLACKSTONE_PEDESTAL.get());
+                        output.accept(BlocksRegistry.GILDED_BLACKSTONE_LAYER.get());
+                        output.accept(BlocksRegistry.GILDED_BLACKSTONE_ARROWSLIT.get());
 
                         output.accept(Blocks.END_STONE_BRICKS);
                         output.accept(Blocks.END_STONE_BRICK_STAIRS);
@@ -255,9 +254,9 @@ public class CreativeTabRegistry
                         output.accept(Blocks.SMOOTH_QUARTZ_STAIRS);
                         output.accept(Blocks.SMOOTH_QUARTZ_SLAB);
                         output.accept(BlocksRegistry.SMOOTH_QUARTZ_WALL.get());
-                        output.accept(BlocksRegistry.QUARTZ_BASE_SMALL.get());
+                        output.accept(BlocksRegistry.QUARTZ_IONIC_BASE_SMALL.get());
                         output.accept(BlocksRegistry.QUARTZ_COLUMN_SMALL.get());
-                        output.accept(BlocksRegistry.QUARTZ_CAPITAL_SMALL.get());
+                        output.accept(BlocksRegistry.QUARTZ_IONIC_CAPITAL_SMALL.get());
 
                         output.accept(ItemsRegistry.TEST_ITEM.get());
                     })

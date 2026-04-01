@@ -60,17 +60,20 @@ public class BlocksRegistry
     public static final RegistryObject<Block> BRICK_LARGE_FLORENTINE_ARCH = registerBlock("brick_large_florentine_arch",
             () -> new BlockSideChangeable(BlockBehaviour.Properties.copy(Blocks.BRICKS).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
     public static final RegistryObject<Block> BRICK_LARGE_FLORENTINE_POINTED_ARCH = registerBlock("brick_large_florentine_pointed_arch",
+
             () -> new BlockSideChangeable(BlockBehaviour.Properties.copy(Blocks.BRICKS).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
     public static final RegistryObject<Block> QUARTZ_COLUMN_SMALL = registerBlock("quartz_column_small",
             () -> new BlockColumnSmall(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
-    public static final RegistryObject<Block> QUARTZ_CAPITAL_SMALL = registerBlock("quartz_ionic_capital_small",
+    public static final RegistryObject<Block> QUARTZ_IONIC_CAPITAL_SMALL = registerBlock("quartz_ionic_capital_small",
             () -> new BlockColumnCapital(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
-    public static final RegistryObject<Block> QUARTZ_BASE_SMALL = registerBlock("quartz_ionic_base_small",
+    public static final RegistryObject<Block> QUARTZ_IONIC_BASE_SMALL = registerBlock("quartz_ionic_base_small",
             () -> new BlockColumnBase(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
-    public static final RegistryObject<Block> SANDSTONE_BASE_SMALL = registerBlock("sandstone_ionic_base_small",
+
+    public static final RegistryObject<Block> SANDSTONE_IONIC_BASE_SMALL = registerBlock("sandstone_ionic_base_small",
             () -> new BlockColumnBase(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
-    public static final RegistryObject<Block> SANDSTONE_CAPITAL_SMALL = registerBlock("sandstone_ionic_capital_small",
+    public static final RegistryObject<Block> SANDSTONE_IONIC_CAPITAL_SMALL = registerBlock("sandstone_ionic_capital_small",
             () -> new BlockColumnCapital(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+
     public static final RegistryObject<Block> BRICK_FINIAL = registerBlock("brick_finial",
             () -> new BlockFinial(BlockBehaviour.Properties.copy(Blocks.BRICKS).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
     public static final RegistryObject<Block> BRICK_PEDESTAL = registerBlock("brick_pedestal",
@@ -219,6 +222,22 @@ public class BlocksRegistry
             () -> new SnowLayerBlock(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
     public static final RegistryObject<Block> COBBLESTONE_ARROWSLIT = registerBlock("cobblestone_arrowslit",
             () -> new BlockArrowslit(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+
+    public static final RegistryObject<Block> GILDED_BLACKSTONE_LAYER = registerBlock("gilded_blackstone_layer",
+            () -> new SnowLayerBlock(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> GILDED_BLACKSTONE_ARROWSLIT = registerBlock("gilded_blackstone_arrowslit",
+            () -> new BlockArrowslit(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+
+    public static final RegistryObject<SlabBlock> POLISHED_BASALT_SLAB = registerBlock("polished_basalt_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.POLISHED_BASALT)));
+    public static final RegistryObject<StairBlock> POLISHED_BASALT_STAIRS = registerBlock("polished_basalt_stairs",
+            () -> new StairBlock(() -> Blocks.POLISHED_BASALT.defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.BRICKS)));
+    public static final RegistryObject<WallBlock> POLISHED_BASALT_WALL = registerBlock("polished_basalt_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.POLISHED_BASALT)));
+
+    public static final RegistryObject<Block> SANDSTONE_COLUMN_SMALL = registerBlock("quartz_column_small",
+            () -> new BlockColumnSmall(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+
 
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block)

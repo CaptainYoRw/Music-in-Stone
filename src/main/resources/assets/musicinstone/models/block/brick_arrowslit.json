@@ -6,7 +6,7 @@
   "textures":
   {
     "particle": "minecraft:block/bricks",
-    "textureall": "minecraft:block/bricks"
+    "texture_all": "minecraft:block/bricks"
   },
   "display":
   {

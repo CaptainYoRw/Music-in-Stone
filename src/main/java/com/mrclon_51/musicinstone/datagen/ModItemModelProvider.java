@@ -34,6 +34,7 @@ public class ModItemModelProvider extends ItemModelProvider
         registerWallItem(BlocksRegistry.BRICK_LONG_WALL.get(), BlocksRegistry.BRICKS_LONG.get());
         registerWallItem(BlocksRegistry.BRICK_LONG_STACK_WALL.get(), BlocksRegistry.BRICKS_LONG_STACK.get());
 
+
         // 3. Use your registerBlockItem for everything else
         registerBlockItem(BlocksRegistry.BRICK_TILES_SLAB.get());
         registerBlockItem(BlocksRegistry.BRICK_TILES_STAIRS.get());
@@ -57,6 +58,8 @@ public class ModItemModelProvider extends ItemModelProvider
 
         registerBlockItem(BlocksRegistry.GILDED_BLACKSTONE_PEDESTAL.get());
         registerBlockItem(BlocksRegistry.GILDED_BLACKSTONE_FINIAL.get());
+        registerLayerItem(BlocksRegistry.GILDED_BLACKSTONE_LAYER.get());
+        registerObjItemModel(BlocksRegistry.GILDED_BLACKSTONE_ARROWSLIT.get());
 
         registerBlockItem(BlocksRegistry.BRICK_LONG_SLAB.get());
         registerBlockItem(BlocksRegistry.BRICK_LONG_STAIRS.get());
@@ -84,6 +87,11 @@ public class ModItemModelProvider extends ItemModelProvider
         registerBlockItem(BlocksRegistry.COBBLESTONE_PEDESTAL.get());
         registerLayerItem(BlocksRegistry.COBBLESTONE_LAYER.get());
         registerObjItemModel(BlocksRegistry.COBBLESTONE_ARROWSLIT.get());
+
+        registerObjItemModel(BlocksRegistry.SANDSTONE_IONIC_BASE_SMALL.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_COLUMN_SMALL.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_IONIC_CAPITAL_SMALL.get());
+
 
     }
 

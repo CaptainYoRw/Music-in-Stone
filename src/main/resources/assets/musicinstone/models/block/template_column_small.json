@@ -2,11 +2,12 @@
   "loader": "forge:obj",
   "gui_light": "front",
   "flip_v": true,
-  "mtl_override": "musicinstone:models/block/object/sandstone_block.mtl",
-  "model": "musicinstone:models/block/object/small_ionic_base.obj",
+  "model": "musicinstone:models/block/object/small_column.obj",
   "textures":
   {
-    "particle": "minecraft:block/sandstone_top"
+    "particle": "#side",
+    "column_side": "#side",
+    "column_top": "#top"
   },
   "display":
   {

@@ -18,7 +18,8 @@ public class ModBlockTagsProvider extends BlockTagsProvider
     }
 
     @Override
-    protected void addTags(HolderLookup.Provider provider) {
+    protected void addTags(HolderLookup.Provider provider)
+    {
         // This is the magic line that adds walls to the 'walls' tag
         this.tag(BlockTags.WALLS)
                 .add(BlocksRegistry.BRICK_FANCY_WALL.get())

@@ -2,8 +2,6 @@ package com.mrclon_51.musicinstone.datagen;
 
 import com.mrclon_51.musicinstone.MusicinStone;
 import com.mrclon_51.musicinstone.BlocksRegistry;
-import com.mrclon_51.musicinstone.block.BlockArrowslit;
-import net.minecraft.core.Direction;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.*;
@@ -23,12 +21,13 @@ public class ModBlockstateProvider extends BlockStateProvider
     protected void registerStatesAndModels()
     {
         // Example: Manual control over specific blocks
-        generateStoneVariants(BlocksRegistry.BRICKS_TILES, BlocksRegistry.BRICK_TILES_SLAB, BlocksRegistry.BRICK_TILES_STAIRS, BlocksRegistry.BRICK_TILES_WALL);
-        generateStoneVariants(BlocksRegistry.BRICKS_TILES_STACK, BlocksRegistry.BRICK_TILES_STACK_SLAB, BlocksRegistry.BRICK_TILES_STACK_STAIRS, BlocksRegistry.BRICK_TILES_STACK_WALL);
-        generateStoneVariants(BlocksRegistry.BRICKS_ROMAN, BlocksRegistry.BRICK_ROMAN_SLAB, BlocksRegistry.BRICK_ROMAN_STAIRS, BlocksRegistry.BRICK_ROMAN_WALL);
-        generateStoneVariants(BlocksRegistry.BRICKS_ROMAN_STACK, BlocksRegistry.BRICK_ROMAN_STACK_SLAB, BlocksRegistry.BRICK_ROMAN_STACK_STAIRS, BlocksRegistry.BRICK_ROMAN_STACK_WALL);
-        generateStoneVariants(BlocksRegistry.BRICKS_LONG, BlocksRegistry.BRICK_LONG_SLAB, BlocksRegistry.BRICK_LONG_STAIRS, BlocksRegistry.BRICK_LONG_WALL);
-        generateStoneVariants(BlocksRegistry.BRICKS_LONG_STACK, BlocksRegistry.BRICK_LONG_STACK_SLAB, BlocksRegistry.BRICK_LONG_STACK_STAIRS, BlocksRegistry.BRICK_LONG_STACK_WALL);
+        generateStoneVariants(BlocksRegistry.BRICKS_TILES.get(), BlocksRegistry.BRICK_TILES_SLAB, BlocksRegistry.BRICK_TILES_STAIRS, BlocksRegistry.BRICK_TILES_WALL);
+        generateStoneVariants(BlocksRegistry.BRICKS_TILES_STACK.get(), BlocksRegistry.BRICK_TILES_STACK_SLAB, BlocksRegistry.BRICK_TILES_STACK_STAIRS, BlocksRegistry.BRICK_TILES_STACK_WALL);
+        generateStoneVariants(BlocksRegistry.BRICKS_ROMAN.get(), BlocksRegistry.BRICK_ROMAN_SLAB, BlocksRegistry.BRICK_ROMAN_STAIRS, BlocksRegistry.BRICK_ROMAN_WALL);
+        generateStoneVariants(BlocksRegistry.BRICKS_ROMAN_STACK.get(), BlocksRegistry.BRICK_ROMAN_STACK_SLAB, BlocksRegistry.BRICK_ROMAN_STACK_STAIRS, BlocksRegistry.BRICK_ROMAN_STACK_WALL);
+        generateStoneVariants(BlocksRegistry.BRICKS_LONG.get(), BlocksRegistry.BRICK_LONG_SLAB, BlocksRegistry.BRICK_LONG_STAIRS, BlocksRegistry.BRICK_LONG_WALL);
+        generateStoneVariants(BlocksRegistry.BRICKS_LONG_STACK.get(), BlocksRegistry.BRICK_LONG_STACK_SLAB, BlocksRegistry.BRICK_LONG_STACK_STAIRS, BlocksRegistry.BRICK_LONG_STACK_WALL);
+
 
 
         // Custom Shapes using existing templates
@@ -72,50 +71,37 @@ public class ModBlockstateProvider extends BlockStateProvider
         generateLayerCustomShape(BlocksRegistry.BRICK_LONG_STACK_LAYER.get(), BlocksRegistry.BRICKS_LONG_STACK.get());
         generateLayerCustomShape(BlocksRegistry.BRICK_ROAD_LAYER.get(), BlocksRegistry.BRICKS_ROAD.get());
         generateLayerCustomShape(BlocksRegistry.COBBLESTONE_LAYER.get(), Blocks.COBBLESTONE);
+        generateLayerCustomShape(BlocksRegistry.GILDED_BLACKSTONE_LAYER.get(), Blocks.GILDED_BLACKSTONE);
 
-        generateObjHorizontalShape(BlocksRegistry.COBBLESTONE_ARROWSLIT.get(), mcLoc("block/cobblestone"));
+        generateHorizontalCustomShape(BlocksRegistry.COBBLESTONE_ARROWSLIT, "template_arrowslit", Blocks.COBBLESTONE);
+        generateHorizontalCustomShape(BlocksRegistry.GILDED_BLACKSTONE_ARROWSLIT, "template_arrowslit", Blocks.GILDED_BLACKSTONE);
 
-    }
+        generateDefaultCustomShape(BlocksRegistry.SANDSTONE_IONIC_BASE_SMALL, "template_ionic_base_small", mcLoc("block/sandstone_top"));
 
-    public void generateObjHorizontalShape(Block block, ResourceLocation vanillaTexture)
-    {
-        String blockName = ForgeRegistries.BLOCKS.getKey(block).getPath();
 
-        // Just create a simple model that points to your manual template
-        ModelFile objModel = models().withExistingParent(blockName, modLoc("block/template_arrowslit"))
-                .texture("texture", vanillaTexture);
-
-        getVariantBuilder(block).forAllStates(state ->
-        {
-            Direction dir = state.getValue(BlockArrowslit.FACING);
-            int rotationY = (int) (dir.get2DDataValue() * 90) % 360;
-
-            return ConfiguredModel.builder()
-                    .modelFile(objModel)
-                    .rotationY(rotationY)
-                    .build();
-        });
     }
 
     private void generateSingleBlockVariant(Block baseBlock, Block variantBlock)
     {
         ResourceLocation texture = blockTexture(baseBlock);
 
-        if (variantBlock instanceof SlabBlock) {
+        if (variantBlock instanceof SlabBlock)
+        {
             slabBlock((SlabBlock) variantBlock, texture, texture);
         }
-        else if (variantBlock instanceof StairBlock) {
+        else if (variantBlock instanceof StairBlock)
+        {
             stairsBlock((StairBlock) variantBlock, texture);
         }
-        else if (variantBlock instanceof WallBlock) {
+        else if (variantBlock instanceof WallBlock)
+        {
             wallBlock((WallBlock) variantBlock, texture);
         }
-        // You can add more cases here for different block types!
     }
 
-    private void generateStoneVariants(RegistryObject<Block> base, RegistryObject<SlabBlock> slab, RegistryObject<StairBlock> stairs, RegistryObject<WallBlock> wall)
+    private void generateStoneVariants(Block baseBlock, RegistryObject<SlabBlock> slab, RegistryObject<StairBlock> stairs, RegistryObject<WallBlock> wall)
     {
-        ResourceLocation tex = blockTexture(base.get());
+        ResourceLocation tex = blockTexture(baseBlock);
 
         slabBlock(slab.get(), tex, tex);
         stairsBlock(stairs.get(), tex);
@@ -133,7 +119,13 @@ public class ModBlockstateProvider extends BlockStateProvider
                 .texture("texture", tex)); // "texture" must match the key inside your template JSON
     }
 
-
+    private void generateDefaultCustomShape(RegistryObject<Block> block, String templateName, ResourceLocation manualTexture) {
+        // This creates the model for the specific block that "inherits" from your template
+        // and applies the passed-in texture to it.
+        simpleBlock(block.get(), models().withExistingParent(block.getId().getPath(),
+                        new ResourceLocation(MusicinStone.MODID, "block/" + templateName))
+                .texture("texture", manualTexture));
+    }
 
     private void generateHorizontalCustomShape(RegistryObject<Block> block, String templateName, Block textureSource)
     {

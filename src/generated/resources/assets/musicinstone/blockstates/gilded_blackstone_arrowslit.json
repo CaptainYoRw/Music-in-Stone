@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "musicinstone:block/gilded_blackstone_arrowslit",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "musicinstone:block/gilded_blackstone_arrowslit",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "musicinstone:block/gilded_blackstone_arrowslit"
+    },
+    "facing=west": {
+      "model": "musicinstone:block/gilded_blackstone_arrowslit",
+      "y": 90
+    }
+  }
+}

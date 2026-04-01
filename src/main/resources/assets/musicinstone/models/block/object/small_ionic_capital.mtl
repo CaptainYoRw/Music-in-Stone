@@ -9,7 +9,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 0.000000
 d 1.000000
 illum 1
-map_Kd minecraft:block/sandstone_top
+map_Kd #texture_all
 
 newmtl ionic_egg
 Ns 0.000000
@@ -19,7 +19,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 0.000000
 d 1.000000
 illum 1
-map_Kd minecraft:block/sandstone_top
+map_Kd #ionic_small
 
 newmtl ionic_volute
 Ns 0.000000
@@ -29,4 +29,4 @@ Ke 0.000000 0.000000 0.000000
 Ni 0.000000
 d 1.000000
 illum 1
-map_Kd minecraft:block/sandstone_top
+map_Kd #volute_small

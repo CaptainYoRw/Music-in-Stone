@@ -2,11 +2,11 @@
   "loader": "forge:obj",
   "gui_light": "front",
   "flip_v": true,
-  "mtl_override": "musicinstone:models/block/object/sandstone_ionic.mtl",
-  "model": "musicinstone:models/block/object/small_ionic_capital.obj",
+  "model": "musicinstone:models/block/object/small_ionic_base.obj",
   "textures":
   {
-    "particle": "minecraft:block/sandstone_top"
+    "particle": "#texture",
+    "texture_all": "#texture"
   },
   "display":
   {
