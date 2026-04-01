@@ -38,5 +38,17 @@ public class ModBlockTagsProvider extends BlockTagsProvider
                 .add(BlocksRegistry.BRICK_ROMAN_STACK_WALL.get())
                 .add(BlocksRegistry.BRICK_LONG_WALL.get())
                 .add(BlocksRegistry.BRICK_LONG_STACK_WALL.get());
+
+        //this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
+           //     .add()
+
+        //this.tag(BlockTags.NEEDS_STONE_TOOL)
+                //.add()
+
+        //this.tag(BlockTags.NEEDS_IRON_TOOL)
+                //.add()
+
+        //this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
+                //.add()
     }
 }

@@ -17,36 +17,6 @@ public class ModItemModelProvider extends ItemModelProvider
         super(output, MusicinStone.MODID, existingFileHelper);
     }
 
-    private void registerWallItem(Block wallBlock, Block textureSource)
-    {
-        // Get the Registry IDs (e.g., "minecraft:dark_prismarine" or "musicinstone:brick_tiles")
-        ResourceLocation sourceKey = ForgeRegistries.BLOCKS.getKey(textureSource);
-        ResourceLocation wallKey = ForgeRegistries.BLOCKS.getKey(wallBlock);
-
-        // This part makes it universal: it uses the source's own namespace (minecraft or yours)
-        ResourceLocation texturePath = new ResourceLocation(sourceKey.getNamespace(), "block/" + sourceKey.getPath());
-
-        // Registers the wall inventory model using that dynamic path
-        wallInventory(wallKey.getPath(), texturePath);
-    }
-
-    private void registerBlockItem(Block block)
-    {
-        // ForgeRegistries is the standard way to get the ID for a block in 1.20.1
-        String name = ForgeRegistries.BLOCKS.getKey(block).getPath();
-
-        withExistingParent(name,
-                new ResourceLocation(MusicinStone.MODID, "block/" + name));
-    }
-
-    private void registerLayerItem(Block block) {
-        String name = ForgeRegistries.BLOCKS.getKey(block).getPath();
-
-        // Points the item icon to the 2-pixel-high model (height1)
-        // that we created in the BlockStateProvider
-        withExistingParent(name, new ResourceLocation(MusicinStone.MODID, "block/" + name + "_height1"));
-    }
-
     @Override
     protected void registerModels() {
 
@@ -110,5 +80,45 @@ public class ModItemModelProvider extends ItemModelProvider
         registerLayerItem(BlocksRegistry.BRICK_LONG_STACK_LAYER.get());
         registerLayerItem(BlocksRegistry.BRICK_ROAD_LAYER.get());
 
+        registerBlockItem(BlocksRegistry.COBBLESTONE_FINIAL.get());
+        registerBlockItem(BlocksRegistry.COBBLESTONE_PEDESTAL.get());
+        registerLayerItem(BlocksRegistry.COBBLESTONE_LAYER.get());
+        registerObjItemModel(BlocksRegistry.COBBLESTONE_ARROWSLIT.get());
+
+    }
+
+    public void registerObjItemModel(Block block) {
+        String name = ForgeRegistries.BLOCKS.getKey(block).getPath();
+        withExistingParent(name, modLoc("block/" + name));
+    }
+
+    private void registerWallItem(Block wallBlock, Block textureSource)
+    {
+        // Get the Registry IDs (e.g., "minecraft:dark_prismarine" or "musicinstone:brick_tiles")
+        ResourceLocation sourceKey = ForgeRegistries.BLOCKS.getKey(textureSource);
+        ResourceLocation wallKey = ForgeRegistries.BLOCKS.getKey(wallBlock);
+
+        // This part makes it universal: it uses the source's own namespace (minecraft or yours)
+        ResourceLocation texturePath = new ResourceLocation(sourceKey.getNamespace(), "block/" + sourceKey.getPath());
+
+        // Registers the wall inventory model using that dynamic path
+        wallInventory(wallKey.getPath(), texturePath);
+    }
+
+    private void registerBlockItem(Block block)
+    {
+        // ForgeRegistries is the standard way to get the ID for a block in 1.20.1
+        String name = ForgeRegistries.BLOCKS.getKey(block).getPath();
+
+        withExistingParent(name,
+                new ResourceLocation(MusicinStone.MODID, "block/" + name));
+    }
+
+    private void registerLayerItem(Block block) {
+        String name = ForgeRegistries.BLOCKS.getKey(block).getPath();
+
+        // Points the item icon to the 2-pixel-high model (height1)
+        // that we created in the BlockStateProvider
+        withExistingParent(name, new ResourceLocation(MusicinStone.MODID, "block/" + name + "_height1"));
     }
 }

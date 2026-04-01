@@ -208,6 +208,19 @@ public class BlocksRegistry
     public static final RegistryObject<Block> BRICK_ROAD_LAYER = registerBlock("brick_road_layer",
             () -> new SnowLayerBlock(BlockBehaviour.Properties.copy(Blocks.BRICKS).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
 
+    public static final RegistryObject<Block> BRICK_ARROWSLIT = registerBlock("brick_arrowslit",
+            () -> new BlockArrowslit(BlockBehaviour.Properties.copy(Blocks.BRICKS).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+
+    public static final RegistryObject<Block> COBBLESTONE_FINIAL = registerBlock("cobblestone_finial",
+            () -> new BlockFinial(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> COBBLESTONE_PEDESTAL = registerBlock("cobblestone_pedestal",
+            () -> new BlockPedestal(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> COBBLESTONE_LAYER = registerBlock("cobblestone_layer",
+            () -> new SnowLayerBlock(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> COBBLESTONE_ARROWSLIT = registerBlock("cobblestone_arrowslit",
+            () -> new BlockArrowslit(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+
+
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block)
     {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

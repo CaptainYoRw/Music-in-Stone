@@ -2,12 +2,12 @@ package com.mrclon_51.musicinstone.datagen;
 
 import com.mrclon_51.musicinstone.MusicinStone;
 import com.mrclon_51.musicinstone.BlocksRegistry;
+import com.mrclon_51.musicinstone.block.BlockArrowslit;
+import net.minecraft.core.Direction;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.*;
-import net.minecraftforge.client.model.generators.BlockStateProvider;
-import net.minecraftforge.client.model.generators.ConfiguredModel;
-import net.minecraftforge.client.model.generators.ItemModelProvider;
+import net.minecraftforge.client.model.generators.*;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -31,7 +31,7 @@ public class ModBlockstateProvider extends BlockStateProvider
         generateStoneVariants(BlocksRegistry.BRICKS_LONG_STACK, BlocksRegistry.BRICK_LONG_STACK_SLAB, BlocksRegistry.BRICK_LONG_STACK_STAIRS, BlocksRegistry.BRICK_LONG_STACK_WALL);
 
 
-        // Custom Shapes using your existing templates
+        // Custom Shapes using existing templates
         generateDefaultCustomShape(BlocksRegistry.BRICK_TILES_FINIAL, "template_finial", BlocksRegistry.BRICKS_TILES.get());
         generateHorizontalCustomShape(BlocksRegistry.BRICK_TILES_PEDESTAL, "template_pedestal", BlocksRegistry.BRICKS_TILES.get());
         generateDefaultCustomShape(BlocksRegistry.BRICK_TILES_STACK_FINIAL, "template_finial", BlocksRegistry.BRICKS_TILES_STACK.get());
@@ -45,6 +45,8 @@ public class ModBlockstateProvider extends BlockStateProvider
         generateDefaultCustomShape(BlocksRegistry.BRICK_LONG_FINIAL, "template_finial", BlocksRegistry.BRICKS_LONG.get());
         generateHorizontalCustomShape(BlocksRegistry.BRICK_LONG_PEDESTAL, "template_pedestal", BlocksRegistry.BRICKS_LONG.get());
 
+        generateDefaultCustomShape(BlocksRegistry.COBBLESTONE_FINIAL, "template_finial", Blocks.COBBLESTONE);
+        generateHorizontalCustomShape(BlocksRegistry.COBBLESTONE_PEDESTAL, "template_pedestal", Blocks.COBBLESTONE);
 
         generateDefaultCustomShape(BlocksRegistry.GILDED_BLACKSTONE_FINIAL, "template_finial", Blocks.GILDED_BLACKSTONE);
         generateHorizontalCustomShape(BlocksRegistry.GILDED_BLACKSTONE_PEDESTAL, "template_pedestal", Blocks.GILDED_BLACKSTONE);
@@ -56,6 +58,7 @@ public class ModBlockstateProvider extends BlockStateProvider
         generateSingleBlockVariant(Blocks.STONE, BlocksRegistry.STONE_WALL.get());
         generateSingleBlockVariant(Blocks.POLISHED_DIORITE, BlocksRegistry.POLISHED_DIORITE_WALL.get());
         generateSingleBlockVariant(Blocks.POLISHED_GRANITE, BlocksRegistry.POLISHED_GRANITE_WALL.get());
+
         generateSingleBlockVariant(BlocksRegistry.BRICKS_ROAD.get(), BlocksRegistry.BRICK_ROAD_SLAB.get());
         generateSingleBlockVariant(BlocksRegistry.BRICKS_ROAD.get(), BlocksRegistry.BRICK_ROAD_STAIRS.get());
 
@@ -68,7 +71,30 @@ public class ModBlockstateProvider extends BlockStateProvider
         generateLayerCustomShape(BlocksRegistry.BRICK_LONG_LAYER.get(), BlocksRegistry.BRICKS_LONG.get());
         generateLayerCustomShape(BlocksRegistry.BRICK_LONG_STACK_LAYER.get(), BlocksRegistry.BRICKS_LONG_STACK.get());
         generateLayerCustomShape(BlocksRegistry.BRICK_ROAD_LAYER.get(), BlocksRegistry.BRICKS_ROAD.get());
+        generateLayerCustomShape(BlocksRegistry.COBBLESTONE_LAYER.get(), Blocks.COBBLESTONE);
 
+        generateObjHorizontalShape(BlocksRegistry.COBBLESTONE_ARROWSLIT.get(), mcLoc("block/cobblestone"));
+
+    }
+
+    public void generateObjHorizontalShape(Block block, ResourceLocation vanillaTexture)
+    {
+        String blockName = ForgeRegistries.BLOCKS.getKey(block).getPath();
+
+        // Just create a simple model that points to your manual template
+        ModelFile objModel = models().withExistingParent(blockName, modLoc("block/template_arrowslit"))
+                .texture("texture", vanillaTexture);
+
+        getVariantBuilder(block).forAllStates(state ->
+        {
+            Direction dir = state.getValue(BlockArrowslit.FACING);
+            int rotationY = (int) (dir.get2DDataValue() * 90) % 360;
+
+            return ConfiguredModel.builder()
+                    .modelFile(objModel)
+                    .rotationY(rotationY)
+                    .build();
+        });
     }
 
     private void generateSingleBlockVariant(Block baseBlock, Block variantBlock)
@@ -153,4 +179,6 @@ public class ModBlockstateProvider extends BlockStateProvider
             return ConfiguredModel.builder().modelFile(model).build();
         });
     }
+
+
 }

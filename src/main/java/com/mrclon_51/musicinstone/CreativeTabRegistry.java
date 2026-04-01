@@ -24,12 +24,15 @@ public class CreativeTabRegistry
                     .title(Component.translatable("creativetab.musicinstone_tab"))
                     .displayItems((parameters, output) ->
                     {
-                        output.accept(ItemsRegistry.TEST_ITEM.get());
 
                         output.accept(Blocks.COBBLESTONE);
                         output.accept(Blocks.COBBLESTONE_STAIRS);
                         output.accept(Blocks.COBBLESTONE_SLAB);
                         output.accept(Blocks.COBBLESTONE_WALL);
+                        output.accept(BlocksRegistry.COBBLESTONE_FINIAL.get());
+                        output.accept(BlocksRegistry.COBBLESTONE_PEDESTAL.get());
+                        output.accept(BlocksRegistry.COBBLESTONE_LAYER.get());
+                        output.accept(BlocksRegistry.COBBLESTONE_ARROWSLIT.get());
 
                         output.accept(Blocks.STONE);
                         output.accept(Blocks.STONE_STAIRS);
@@ -93,6 +96,8 @@ public class CreativeTabRegistry
                         output.accept(BlocksRegistry.BRICK_FINIAL.get());
                         output.accept(BlocksRegistry.BRICK_PEDESTAL.get());
                         output.accept(BlocksRegistry.BRICK_LAYER.get());
+                        output.accept(BlocksRegistry.BRICK_ARROWSLIT.get());
+
 
                         output.accept(BlocksRegistry.BRICKS_FANCY.get());
                         output.accept(BlocksRegistry.BRICK_FANCY_SLAB.get());
@@ -253,6 +258,8 @@ public class CreativeTabRegistry
                         output.accept(BlocksRegistry.QUARTZ_BASE_SMALL.get());
                         output.accept(BlocksRegistry.QUARTZ_COLUMN_SMALL.get());
                         output.accept(BlocksRegistry.QUARTZ_CAPITAL_SMALL.get());
+
+                        output.accept(ItemsRegistry.TEST_ITEM.get());
                     })
                     .build());
 

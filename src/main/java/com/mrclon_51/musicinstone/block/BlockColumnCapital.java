@@ -26,7 +26,6 @@ public class BlockColumnCapital extends Block implements SimpleWaterloggedBlock
             (
                     Block.box(0, 11, 0, 16, 16, 16),
                     Block.box(3, 0, 3, 13, 11, 13)
-
             );
 
     public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
