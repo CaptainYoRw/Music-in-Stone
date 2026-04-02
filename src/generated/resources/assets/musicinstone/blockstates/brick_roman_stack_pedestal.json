@@ -2,33 +2,33 @@
   "variants": {
     "facing=east,waterlogged=false": {
       "model": "musicinstone:block/brick_roman_stack_pedestal",
-      "y": 270
+      "y": 90
     },
     "facing=east,waterlogged=true": {
       "model": "musicinstone:block/brick_roman_stack_pedestal",
-      "y": 270
+      "y": 90
     },
     "facing=north,waterlogged=false": {
-      "model": "musicinstone:block/brick_roman_stack_pedestal",
-      "y": 180
+      "model": "musicinstone:block/brick_roman_stack_pedestal"
     },
     "facing=north,waterlogged=true": {
+      "model": "musicinstone:block/brick_roman_stack_pedestal"
+    },
+    "facing=south,waterlogged=false": {
       "model": "musicinstone:block/brick_roman_stack_pedestal",
       "y": 180
     },
-    "facing=south,waterlogged=false": {
-      "model": "musicinstone:block/brick_roman_stack_pedestal"
-    },
     "facing=south,waterlogged=true": {
-      "model": "musicinstone:block/brick_roman_stack_pedestal"
+      "model": "musicinstone:block/brick_roman_stack_pedestal",
+      "y": 180
     },
     "facing=west,waterlogged=false": {
       "model": "musicinstone:block/brick_roman_stack_pedestal",
-      "y": 90
+      "y": 270
     },
     "facing=west,waterlogged=true": {
       "model": "musicinstone:block/brick_roman_stack_pedestal",
-      "y": 90
+      "y": 270
     }
   }
 }

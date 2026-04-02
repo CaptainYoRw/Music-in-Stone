@@ -222,6 +222,8 @@ public class BlocksRegistry
             () -> new SnowLayerBlock(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
     public static final RegistryObject<Block> COBBLESTONE_ARROWSLIT = registerBlock("cobblestone_arrowslit",
             () -> new BlockArrowslit(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> COBBLESTONE_CROSS_ARROWSLIT = registerBlock("cobblestone_cross_arrowslit",
+            () -> new BlockCrossArrowslit(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
 
     public static final RegistryObject<Block> GILDED_BLACKSTONE_LAYER = registerBlock("gilded_blackstone_layer",
             () -> new SnowLayerBlock(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
@@ -235,9 +237,30 @@ public class BlocksRegistry
     public static final RegistryObject<WallBlock> POLISHED_BASALT_WALL = registerBlock("polished_basalt_wall",
             () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.POLISHED_BASALT)));
 
-    public static final RegistryObject<Block> SANDSTONE_COLUMN_SMALL = registerBlock("quartz_column_small",
+    public static final RegistryObject<Block> SANDSTONE_COLUMN_SMALL = registerBlock("sandstone_column_small",
             () -> new BlockColumnSmall(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
 
+    public static final RegistryObject<Block> STONE_FINIAL = registerBlock("stone_finial",
+            () -> new BlockFinial(BlockBehaviour.Properties.copy(Blocks.STONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> STONE_PEDESTAL = registerBlock("stone_pedestal",
+            () -> new BlockPedestal(BlockBehaviour.Properties.copy(Blocks.STONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> STONE_LAYER = registerBlock("stone_layer",
+            () -> new SnowLayerBlock(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> STONE_ARROWSLIT = registerBlock("stone_arrowslit",
+            () -> new BlockArrowslit(BlockBehaviour.Properties.copy(Blocks.STONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> STONE_CROSS_ARROWSLIT = registerBlock("stone_cross_arrowslit",
+            () -> new BlockCrossArrowslit(BlockBehaviour.Properties.copy(Blocks.STONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+
+    public static final RegistryObject<Block> STONE_BRICK_FINIAL = registerBlock("stone_brick_finial",
+            () -> new BlockFinial(BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> STONE_BRICK_PEDESTAL = registerBlock("stone_brick_pedestal",
+            () -> new BlockPedestal(BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> STONE_BRICK_LAYER = registerBlock("stone_brick_layer",
+            () -> new SnowLayerBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> STONE_BRICK_ARROWSLIT = registerBlock("stone_brick_arrowslit",
+            () -> new BlockArrowslit(BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> STONE_BRICK_CROSS_ARROWSLIT = registerBlock("stone_brick_cross_arrowslit",
+            () -> new BlockCrossArrowslit(BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
 
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block)

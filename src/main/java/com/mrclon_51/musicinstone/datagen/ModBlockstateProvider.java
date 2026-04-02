@@ -2,9 +2,13 @@ package com.mrclon_51.musicinstone.datagen;
 
 import com.mrclon_51.musicinstone.MusicinStone;
 import com.mrclon_51.musicinstone.BlocksRegistry;
+import com.mrclon_51.musicinstone.block.BlockColumnCapital;
+import com.mrclon_51.musicinstone.block.BlockColumnSmall;
+import net.minecraft.core.Direction;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.block.state.properties.Property;
 import net.minecraftforge.client.model.generators.*;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -47,6 +51,18 @@ public class ModBlockstateProvider extends BlockStateProvider
         generateDefaultCustomShape(BlocksRegistry.COBBLESTONE_FINIAL, "template_finial", Blocks.COBBLESTONE);
         generateHorizontalCustomShape(BlocksRegistry.COBBLESTONE_PEDESTAL, "template_pedestal", Blocks.COBBLESTONE);
 
+        generateDefaultCustomShape(BlocksRegistry.STONE_FINIAL, "template_finial", Blocks.STONE);
+        generateHorizontalCustomShape(BlocksRegistry.STONE_PEDESTAL, "template_pedestal", Blocks.STONE);
+        generateLayerCustomShape(BlocksRegistry.STONE_LAYER.get(), Blocks.STONE);
+        generateHorizontalCustomShape(BlocksRegistry.STONE_ARROWSLIT, "template_arrowslit", Blocks.STONE);
+        generateHorizontalCustomShape(BlocksRegistry.STONE_CROSS_ARROWSLIT, "template_cross_arrowslit", Blocks.STONE);
+
+        generateDefaultCustomShape(BlocksRegistry.STONE_BRICK_FINIAL, "template_finial", Blocks.STONE_BRICKS);
+        generateHorizontalCustomShape(BlocksRegistry.STONE_BRICK_PEDESTAL, "template_pedestal", Blocks.STONE_BRICKS);
+        generateLayerCustomShape(BlocksRegistry.STONE_BRICK_LAYER.get(), Blocks.STONE_BRICKS);
+        generateHorizontalCustomShape(BlocksRegistry.STONE_BRICK_ARROWSLIT, "template_arrowslit", Blocks.STONE_BRICKS);
+        generateHorizontalCustomShape(BlocksRegistry.STONE_BRICK_CROSS_ARROWSLIT, "template_cross_arrowslit", Blocks.STONE_BRICKS);
+
         generateDefaultCustomShape(BlocksRegistry.GILDED_BLACKSTONE_FINIAL, "template_finial", Blocks.GILDED_BLACKSTONE);
         generateHorizontalCustomShape(BlocksRegistry.GILDED_BLACKSTONE_PEDESTAL, "template_pedestal", Blocks.GILDED_BLACKSTONE);
 
@@ -75,9 +91,11 @@ public class ModBlockstateProvider extends BlockStateProvider
 
         generateHorizontalCustomShape(BlocksRegistry.COBBLESTONE_ARROWSLIT, "template_arrowslit", Blocks.COBBLESTONE);
         generateHorizontalCustomShape(BlocksRegistry.GILDED_BLACKSTONE_ARROWSLIT, "template_arrowslit", Blocks.GILDED_BLACKSTONE);
+        generateHorizontalCustomShape(BlocksRegistry.COBBLESTONE_CROSS_ARROWSLIT, "template_cross_arrowslit", Blocks.COBBLESTONE);
 
         generateDefaultCustomShape(BlocksRegistry.SANDSTONE_IONIC_BASE_SMALL, "template_ionic_base_small", mcLoc("block/sandstone_top"));
-
+        generateColumn(BlocksRegistry.SANDSTONE_COLUMN_SMALL, "template_column_small", modLoc("block/sandstone_pillar"), modLoc("block/sandstone_pillar_top"));
+        generate90DegThreeTex(BlocksRegistry.SANDSTONE_IONIC_CAPITAL_SMALL, "template_ionic_capital_small", mcLoc("block/sandstone_top"), modLoc("block/sandstone_ionic"), modLoc("block/sandstone_volute"));
 
     }
 
@@ -131,14 +149,53 @@ public class ModBlockstateProvider extends BlockStateProvider
     {
         ResourceLocation tex = blockTexture(textureSource);
 
-        // 1. Create the Model (pointing to your template)
+        // 1. Create the Model (pointing to template)
         var model = models().withExistingParent(block.getId().getPath(),
                         new ResourceLocation(MusicinStone.MODID, "block/" + templateName))
                 .texture("texture", tex); // Ensure "texture" matches the key in your JSON template
 
         // 2. Apply Horizontal Rotation (Anvil-style)
         // This assumes your Block class in BlocksRegistry extends HorizontalDirectionalBlock
-        horizontalBlock(block.get(), model, 0);
+        horizontalBlock(block.get(), model);
+    }
+
+    // Helper to get the registry path of the block
+    private String name(Block block) {
+        return ForgeRegistries.BLOCKS.getKey(block).getPath();
+    }
+
+    // 1. The "Shortcut" version - uses a base Block to guess the 3 textures
+    private void generate90DegThreeTex(RegistryObject<Block> block, String template, Block base) {
+        String path = ForgeRegistries.BLOCKS.getKey(base).getPath();
+        generate90DegThreeTex(block, template,
+                mcLoc("block/" + path),                       // main texture
+                modLoc("block/" + path + "_ionic"),           // ionic texture
+                modLoc("block/" + path + "_volute")           // volute texture
+        );
+    }
+
+    // 2. The "Manual" version - total control over all 3 textures
+    private void generate90DegThreeTex(RegistryObject<Block> block, String template,
+                                       ResourceLocation tex, ResourceLocation ionic, ResourceLocation volute) {
+
+        // Create the model pointing to your multi-texture template
+        var model = models().withExistingParent(block.getId().getPath(), modLoc("block/" + template))
+                .texture("texture", tex)
+                .texture("ionic", ionic)
+                .texture("volute", volute);
+
+        // Apply the 90-degree logic based on facing
+        getVariantBuilder(block.get()).forAllStates(state -> {
+            Direction dir = state.getValue(BlockColumnCapital.FACING);
+
+            // If North/South -> 0 deg. If East/West -> 90 deg.
+            int rotationY = (dir == Direction.NORTH || dir == Direction.SOUTH) ? 0 : 90;
+
+            return ConfiguredModel.builder()
+                    .modelFile(model)
+                    .rotationY(rotationY)
+                    .build();
+        });
     }
 
     private void generateLayerCustomShape(Block layeredBlock, Block textureSource)
@@ -172,5 +229,33 @@ public class ModBlockstateProvider extends BlockStateProvider
         });
     }
 
+    private void generateColumn(RegistryObject<Block> block, String baseTemplate,
+                                      ResourceLocation sideTex, ResourceLocation topTex) {
+
+        // 1. Create the four models based on your templates
+        // We point to the specific templates for each height state
+        ModelFile modelNone = models().withExistingParent(block.getId().getPath(),
+                        modLoc("block/" + baseTemplate))
+                .texture("side", sideTex).texture("top", topTex);
+
+        ModelFile modelBottom = models().withExistingParent(block.getId().getPath() + "_bottom",
+                        modLoc("block/" + baseTemplate + "_bottom"))
+                .texture("side", sideTex).texture("top", topTex);
+
+        ModelFile modelTop = models().withExistingParent(block.getId().getPath() + "_top",
+                        modLoc("block/" + baseTemplate + "_top"))
+                .texture("side", sideTex).texture("top", topTex);
+
+        ModelFile modelBoth = models().withExistingParent(block.getId().getPath() + "_both",
+                        modLoc("block/" + baseTemplate + "_both"))
+                .texture("side", sideTex).texture("top", topTex);
+
+        // 2. Map the variants to the boolean properties 'up' and 'down'
+        getVariantBuilder(block.get())
+                .partialState().with(BlockColumnSmall.CONNECTED_UP, false).with(BlockColumnSmall.CONNECTED_DOWN, false).setModels(new ConfiguredModel(modelNone))
+                .partialState().with(BlockColumnSmall.CONNECTED_UP, false).with(BlockColumnSmall.CONNECTED_DOWN, true).setModels(new ConfiguredModel(modelBottom))
+                .partialState().with(BlockColumnSmall.CONNECTED_UP, true).with(BlockColumnSmall.CONNECTED_DOWN, false).setModels(new ConfiguredModel(modelTop))
+                .partialState().with(BlockColumnSmall.CONNECTED_UP, true).with(BlockColumnSmall.CONNECTED_DOWN, true).setModels(new ConfiguredModel(modelBoth));
+    }
 
 }

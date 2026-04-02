@@ -87,12 +87,23 @@ public class ModItemModelProvider extends ItemModelProvider
         registerBlockItem(BlocksRegistry.COBBLESTONE_PEDESTAL.get());
         registerLayerItem(BlocksRegistry.COBBLESTONE_LAYER.get());
         registerObjItemModel(BlocksRegistry.COBBLESTONE_ARROWSLIT.get());
+        registerObjItemModel(BlocksRegistry.COBBLESTONE_CROSS_ARROWSLIT.get());
 
         registerObjItemModel(BlocksRegistry.SANDSTONE_IONIC_BASE_SMALL.get());
         registerObjItemModel(BlocksRegistry.SANDSTONE_COLUMN_SMALL.get());
         registerObjItemModel(BlocksRegistry.SANDSTONE_IONIC_CAPITAL_SMALL.get());
 
+        registerBlockItem(BlocksRegistry.STONE_FINIAL.get());
+        registerBlockItem(BlocksRegistry.STONE_PEDESTAL.get());
+        registerLayerItem(BlocksRegistry.STONE_LAYER.get());
+        registerObjItemModel(BlocksRegistry.STONE_ARROWSLIT.get());
+        registerObjItemModel(BlocksRegistry.STONE_CROSS_ARROWSLIT.get());
 
+        registerBlockItem(BlocksRegistry.STONE_BRICK_FINIAL.get());
+        registerBlockItem(BlocksRegistry.STONE_BRICK_PEDESTAL.get());
+        registerLayerItem(BlocksRegistry.STONE_BRICK_LAYER.get());
+        registerObjItemModel(BlocksRegistry.STONE_BRICK_ARROWSLIT.get());
+        registerObjItemModel(BlocksRegistry.STONE_BRICK_CROSS_ARROWSLIT.get());
     }
 
     public void registerObjItemModel(Block block) {

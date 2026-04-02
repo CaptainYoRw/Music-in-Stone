@@ -29,16 +29,27 @@ public class CreativeTabRegistry
                         output.accept(BlocksRegistry.COBBLESTONE_PEDESTAL.get());
                         output.accept(BlocksRegistry.COBBLESTONE_LAYER.get());
                         output.accept(BlocksRegistry.COBBLESTONE_ARROWSLIT.get());
+                        output.accept(BlocksRegistry.COBBLESTONE_CROSS_ARROWSLIT.get());
 
                         output.accept(Blocks.STONE);
                         output.accept(Blocks.STONE_STAIRS);
                         output.accept(Blocks.STONE_SLAB);
                         output.accept(BlocksRegistry.STONE_WALL.get());
+                        output.accept(BlocksRegistry.STONE_FINIAL.get());
+                        output.accept(BlocksRegistry.STONE_PEDESTAL.get());
+                        output.accept(BlocksRegistry.STONE_LAYER.get());
+                        output.accept(BlocksRegistry.STONE_ARROWSLIT.get());
+                        output.accept(BlocksRegistry.STONE_CROSS_ARROWSLIT.get());
 
                         output.accept(Blocks.STONE_BRICKS);
                         output.accept(Blocks.STONE_BRICK_STAIRS);
                         output.accept(Blocks.STONE_BRICK_SLAB);
                         output.accept(Blocks.STONE_BRICK_WALL);
+                        output.accept(BlocksRegistry.STONE_BRICK_FINIAL.get());
+                        output.accept(BlocksRegistry.STONE_BRICK_PEDESTAL.get());
+                        output.accept(BlocksRegistry.STONE_BRICK_LAYER.get());
+                        output.accept(BlocksRegistry.STONE_BRICK_ARROWSLIT.get());
+                        output.accept(BlocksRegistry.STONE_BRICK_CROSS_ARROWSLIT.get());
 
                         output.accept(Blocks.GRANITE);
                         output.accept(Blocks.GRANITE_STAIRS);

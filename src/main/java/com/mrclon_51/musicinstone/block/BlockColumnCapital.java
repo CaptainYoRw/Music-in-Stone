@@ -51,7 +51,7 @@ public class BlockColumnCapital extends Block implements SimpleWaterloggedBlock
     public BlockState getStateForPlacement(BlockPlaceContext context)
     {
         // This makes the block face the player when placed
-        return this.defaultBlockState().setValue(FACING, context.getHorizontalDirection().getOpposite());
+        return this.defaultBlockState().setValue(FACING, context.getHorizontalDirection());
     }
 
     @Override
