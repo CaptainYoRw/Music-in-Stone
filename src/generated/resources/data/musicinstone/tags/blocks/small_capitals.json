@@ -1,0 +1,18 @@
+{
+  "values": [
+    "musicinstone:quartz_ionic_capital_small",
+    "musicinstone:sandstone_ionic_capital_small",
+    "musicinstone:quartz_doric_capital_small",
+    "musicinstone:sandstone_doric_capital_small",
+    "musicinstone:quartz_corner_ionic_capital_small",
+    "musicinstone:sandstone_corner_ionic_capital_small",
+    "musicinstone:quartz_roman_ionic_capital_small",
+    "musicinstone:sandstone_roman_ionic_capital_small",
+    "musicinstone:quartz_scamozzi_ionic_capital_small",
+    "musicinstone:sandstone_scamozzi_ionic_capital_small",
+    "musicinstone:gold_ionic_capital_small",
+    "musicinstone:gold_corner_ionic_capital_small",
+    "musicinstone:gold_roman_ionic_capital_small",
+    "musicinstone:gold_scamozzi_ionic_capital_small"
+  ]
+}

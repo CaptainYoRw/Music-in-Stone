@@ -1,0 +1,6 @@
+{
+  "parent": "musicinstone:block/template_arrowslit",
+  "textures": {
+    "texture": "minecraft:block/granite"
+  }
+}

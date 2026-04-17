@@ -1,0 +1,6 @@
+{
+  "parent": "musicinstone:block/template_ionic_base_small",
+  "textures": {
+    "texture": "musicinstone:block/seamless_gold_block"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "musicinstone:block/template_finial",
+  "textures": {
+    "texture": "minecraft:block/andesite"
+  }
+}

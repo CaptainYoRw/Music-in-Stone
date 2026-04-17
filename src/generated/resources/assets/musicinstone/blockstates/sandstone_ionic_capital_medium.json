@@ -1,0 +1,32 @@
+{
+  "variants": {
+    "facing=east,waterlogged=false": {
+      "model": "musicinstone:block/sandstone_ionic_capital_medium",
+      "y": 90
+    },
+    "facing=east,waterlogged=true": {
+      "model": "musicinstone:block/sandstone_ionic_capital_medium",
+      "y": 90
+    },
+    "facing=north,waterlogged=false": {
+      "model": "musicinstone:block/sandstone_ionic_capital_medium"
+    },
+    "facing=north,waterlogged=true": {
+      "model": "musicinstone:block/sandstone_ionic_capital_medium"
+    },
+    "facing=south,waterlogged=false": {
+      "model": "musicinstone:block/sandstone_ionic_capital_medium"
+    },
+    "facing=south,waterlogged=true": {
+      "model": "musicinstone:block/sandstone_ionic_capital_medium"
+    },
+    "facing=west,waterlogged=false": {
+      "model": "musicinstone:block/sandstone_ionic_capital_medium",
+      "y": 90
+    },
+    "facing=west,waterlogged=true": {
+      "model": "musicinstone:block/sandstone_ionic_capital_medium",
+      "y": 90
+    }
+  }
+}

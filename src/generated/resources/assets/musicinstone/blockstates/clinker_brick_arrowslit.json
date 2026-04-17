@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "musicinstone:block/clinker_brick_arrowslit",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "musicinstone:block/clinker_brick_arrowslit"
+    },
+    "facing=south": {
+      "model": "musicinstone:block/clinker_brick_arrowslit",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "musicinstone:block/clinker_brick_arrowslit",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "musicinstone:block/template_roman_ionic_capital_small",
+  "textures": {
+    "ionic": "musicinstone:block/gold_ionic",
+    "texture": "musicinstone:block/seamless_gold_block",
+    "volute": "musicinstone:block/gold_volute"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "musicinstone:block/template_greek_corinthian_capital_small",
+  "textures": {
+    "corinthian": "musicinstone:block/gold_corinthian",
+    "texture": "musicinstone:block/seamless_gold_block",
+    "volute": "musicinstone:block/gold_volute"
+  }
+}

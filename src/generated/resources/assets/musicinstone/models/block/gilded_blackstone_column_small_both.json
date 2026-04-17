@@ -1,0 +1,7 @@
+{
+  "parent": "musicinstone:block/template_column_small_both",
+  "textures": {
+    "side": "minecraft:block/gilded_blackstone",
+    "top": "minecraft:block/blackstone"
+  }
+}

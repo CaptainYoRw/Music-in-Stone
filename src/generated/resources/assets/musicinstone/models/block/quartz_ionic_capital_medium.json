@@ -1,0 +1,8 @@
+{
+  "parent": "musicinstone:block/template_ionic_capital_medium",
+  "textures": {
+    "ionic": "musicinstone:block/quartz_ionic",
+    "texture": "minecraft:block/quartz_block_bottom",
+    "volute": "musicinstone:block/quartz_volute"
+  }
+}

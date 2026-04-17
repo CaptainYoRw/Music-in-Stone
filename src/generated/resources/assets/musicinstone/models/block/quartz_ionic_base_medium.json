@@ -1,0 +1,6 @@
+{
+  "parent": "musicinstone:block/template_ionic_base_medium",
+  "textures": {
+    "texture": "minecraft:block/quartz_block_bottom"
+  }
+}

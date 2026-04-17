@@ -1,0 +1,64 @@
+{
+  "variants": {
+    "down=false,facing=east,up=false": {
+      "model": "musicinstone:block/quartz_fluted_column_giant",
+      "y": 270
+    },
+    "down=false,facing=east,up=true": {
+      "model": "musicinstone:block/quartz_fluted_column_giant_top",
+      "y": 270
+    },
+    "down=false,facing=north,up=false": {
+      "model": "musicinstone:block/quartz_fluted_column_giant",
+      "y": 180
+    },
+    "down=false,facing=north,up=true": {
+      "model": "musicinstone:block/quartz_fluted_column_giant_top",
+      "y": 180
+    },
+    "down=false,facing=south,up=false": {
+      "model": "musicinstone:block/quartz_fluted_column_giant"
+    },
+    "down=false,facing=south,up=true": {
+      "model": "musicinstone:block/quartz_fluted_column_giant_top"
+    },
+    "down=false,facing=west,up=false": {
+      "model": "musicinstone:block/quartz_fluted_column_giant",
+      "y": 90
+    },
+    "down=false,facing=west,up=true": {
+      "model": "musicinstone:block/quartz_fluted_column_giant_top",
+      "y": 90
+    },
+    "down=true,facing=east,up=false": {
+      "model": "musicinstone:block/quartz_fluted_column_giant_bottom",
+      "y": 270
+    },
+    "down=true,facing=east,up=true": {
+      "model": "musicinstone:block/quartz_fluted_column_giant_both",
+      "y": 270
+    },
+    "down=true,facing=north,up=false": {
+      "model": "musicinstone:block/quartz_fluted_column_giant_bottom",
+      "y": 180
+    },
+    "down=true,facing=north,up=true": {
+      "model": "musicinstone:block/quartz_fluted_column_giant_both",
+      "y": 180
+    },
+    "down=true,facing=south,up=false": {
+      "model": "musicinstone:block/quartz_fluted_column_giant_bottom"
+    },
+    "down=true,facing=south,up=true": {
+      "model": "musicinstone:block/quartz_fluted_column_giant_both"
+    },
+    "down=true,facing=west,up=false": {
+      "model": "musicinstone:block/quartz_fluted_column_giant_bottom",
+      "y": 90
+    },
+    "down=true,facing=west,up=true": {
+      "model": "musicinstone:block/quartz_fluted_column_giant_both",
+      "y": 90
+    }
+  }
+}
