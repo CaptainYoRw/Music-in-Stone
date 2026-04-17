@@ -2,6 +2,7 @@ package com.mrclon_51.musicinstone.datagen;
 
 import com.mrclon_51.musicinstone.BlocksRegistry;
 import com.mrclon_51.musicinstone.MusicinStone;
+import com.mrclon_51.musicinstone.TagsRegistry;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
@@ -39,6 +40,52 @@ public class ModBlockTagsProvider extends BlockTagsProvider
                 .add(BlocksRegistry.BRICK_ROMAN_STACK_WALL.get())
                 .add(BlocksRegistry.BRICK_LONG_WALL.get())
                 .add(BlocksRegistry.BRICK_LONG_STACK_WALL.get());
+
+        this.tag(TagsRegistry.Blocks.COLUMN_BASE_SMALL)
+                .add(BlocksRegistry.QUARTZ_IONIC_BASE_SMALL.get())
+                .add(BlocksRegistry.SANDSTONE_IONIC_BASE_SMALL.get())
+                .add(BlocksRegistry.GOLD_IONIC_BASE_SMALL.get())
+                .add(BlocksRegistry.SANDSTONE_ROMAN_IONIC_BASE_SMALL.get());
+
+        this.tag(TagsRegistry.Blocks.COLUMN_CAPITAL_SMALL)
+                .add(BlocksRegistry.QUARTZ_IONIC_CAPITAL_SMALL.get())
+                .add(BlocksRegistry.SANDSTONE_IONIC_CAPITAL_SMALL.get())
+                .add(BlocksRegistry.QUARTZ_DORIC_CAPITAL_SMALL.get())
+                .add(BlocksRegistry.SANDSTONE_DORIC_CAPITAL_SMALL.get())
+                .add(BlocksRegistry.QUARTZ_CORNER_IONIC_CAPITAL_SMALL.get())
+                .add(BlocksRegistry.SANDSTONE_CORNER_IONIC_CAPITAL_SMALL.get())
+                .add(BlocksRegistry.QUARTZ_ROMAN_IONIC_CAPITAL_SMALL.get())
+                .add(BlocksRegistry.SANDSTONE_ROMAN_IONIC_CAPITAL_SMALL.get())
+                .add(BlocksRegistry.QUARTZ_SCAMOZZI_IONIC_CAPITAL_SMALL.get())
+                .add(BlocksRegistry.SANDSTONE_SCAMOZZI_IONIC_CAPITAL_SMALL.get())
+                .add(BlocksRegistry.GOLD_IONIC_CAPITAL_SMALL.get())
+                .add(BlocksRegistry.GOLD_CORNER_IONIC_CAPITAL_SMALL.get())
+                .add(BlocksRegistry.GOLD_ROMAN_IONIC_CAPITAL_SMALL.get())
+                .add(BlocksRegistry.GOLD_SCAMOZZI_IONIC_CAPITAL_SMALL.get());
+
+        this.tag(TagsRegistry.Blocks.COLUMN_BASE_MEDIUM)
+                .add(BlocksRegistry.QUARTZ_IONIC_BASE_MEDIUM.get())
+                .add(BlocksRegistry.SANDSTONE_IONIC_BASE_MEDIUM.get())
+                .add(BlocksRegistry.SANDSTONE_ROMAN_IONIC_BASE_MEDIUM.get());
+
+        this.tag(TagsRegistry.Blocks.COLUMN_CAPITAL_MEDIUM)
+                .add(BlocksRegistry.QUARTZ_IONIC_CAPITAL_MEDIUM.get())
+                .add(BlocksRegistry.SANDSTONE_IONIC_CAPITAL_MEDIUM.get());
+
+        this.tag(TagsRegistry.Blocks.COLUMN_BASE_LARGE)
+                .add(BlocksRegistry.QUARTZ_IONIC_BASE_LARGE.get())
+                .add(BlocksRegistry.SANDSTONE_IONIC_BASE_LARGE.get())
+                .add(BlocksRegistry.SANDSTONE_ROMAN_IONIC_BASE_LARGE.get());
+
+        this.tag(TagsRegistry.Blocks.COLUMN_CAPITAL_LARGE)
+                .add(BlocksRegistry.QUARTZ_IONIC_CAPITAL_LARGE.get())
+                .add(BlocksRegistry.SANDSTONE_IONIC_CAPITAL_LARGE.get());
+
+        //this.tag(TagsRegistry.Blocks.COLUMN_BASE_GIANT)
+                //.add(BlocksRegistry.SANDSTONE_IONIC_BASE_GIANT.get());
+
+        this.tag(TagsRegistry.Blocks.COLUMN_CAPITAL_GIANT)
+                .add(BlocksRegistry.SANDSTONE_IONIC_CAPITAL_GIANT.get());
 
         //this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
            //     .add()

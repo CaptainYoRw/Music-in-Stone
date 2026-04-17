@@ -62,17 +62,12 @@ public class BlocksRegistry
     public static final RegistryObject<Block> BRICK_LARGE_FLORENTINE_POINTED_ARCH = registerBlock("brick_large_florentine_pointed_arch",
 
             () -> new BlockSideChangeable(BlockBehaviour.Properties.copy(Blocks.BRICKS).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
-    public static final RegistryObject<Block> QUARTZ_COLUMN_SMALL = registerBlock("quartz_column_small",
+    public static final RegistryObject<Block> QUARTZ_FLUTED_COLUMN_SMALL = registerBlock("quartz_fluted_column_small",
             () -> new BlockColumnSmall(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
     public static final RegistryObject<Block> QUARTZ_IONIC_CAPITAL_SMALL = registerBlock("quartz_ionic_capital_small",
-            () -> new BlockColumnCapital(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+            () -> new BlockIonicCapitalSmall(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
     public static final RegistryObject<Block> QUARTZ_IONIC_BASE_SMALL = registerBlock("quartz_ionic_base_small",
-            () -> new BlockColumnBase(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
-
-    public static final RegistryObject<Block> SANDSTONE_IONIC_BASE_SMALL = registerBlock("sandstone_ionic_base_small",
-            () -> new BlockColumnBase(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
-    public static final RegistryObject<Block> SANDSTONE_IONIC_CAPITAL_SMALL = registerBlock("sandstone_ionic_capital_small",
-            () -> new BlockColumnCapital(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+            () -> new BlockColumnBaseSmall(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
 
     public static final RegistryObject<Block> BRICK_FINIAL = registerBlock("brick_finial",
             () -> new BlockFinial(BlockBehaviour.Properties.copy(Blocks.BRICKS).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
@@ -81,7 +76,7 @@ public class BlocksRegistry
     public static final RegistryObject<SlabBlock> QUARTZ_BRICK_SLAB = registerBlock("quartz_brick_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_SLAB)));
     public static final RegistryObject<StairBlock> QUARTZ_BRICK_STAIRS = registerBlock("quartz_brick_stairs",
-            () -> new StairBlock(() -> BlocksRegistry.BRICKS_FANCY.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.QUARTZ_STAIRS)));
+            () -> new StairBlock(() -> Blocks.QUARTZ_STAIRS.defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.QUARTZ_STAIRS)));
     public static final RegistryObject<WallBlock> QUARTZ_BRICK_WALL = registerBlock("quartz_brick_wall",
             () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BLOCK)));
     public static final RegistryObject<WallBlock> SMOOTH_QUARTZ_WALL = registerBlock("smooth_quartz_wall",
@@ -230,16 +225,6 @@ public class BlocksRegistry
     public static final RegistryObject<Block> GILDED_BLACKSTONE_ARROWSLIT = registerBlock("gilded_blackstone_arrowslit",
             () -> new BlockArrowslit(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
 
-    public static final RegistryObject<SlabBlock> POLISHED_BASALT_SLAB = registerBlock("polished_basalt_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.POLISHED_BASALT)));
-    public static final RegistryObject<StairBlock> POLISHED_BASALT_STAIRS = registerBlock("polished_basalt_stairs",
-            () -> new StairBlock(() -> Blocks.POLISHED_BASALT.defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.BRICKS)));
-    public static final RegistryObject<WallBlock> POLISHED_BASALT_WALL = registerBlock("polished_basalt_wall",
-            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.POLISHED_BASALT)));
-
-    public static final RegistryObject<Block> SANDSTONE_COLUMN_SMALL = registerBlock("sandstone_column_small",
-            () -> new BlockColumnSmall(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
-
     public static final RegistryObject<Block> STONE_FINIAL = registerBlock("stone_finial",
             () -> new BlockFinial(BlockBehaviour.Properties.copy(Blocks.STONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
     public static final RegistryObject<Block> STONE_PEDESTAL = registerBlock("stone_pedestal",
@@ -261,6 +246,296 @@ public class BlocksRegistry
             () -> new BlockArrowslit(BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
     public static final RegistryObject<Block> STONE_BRICK_CROSS_ARROWSLIT = registerBlock("stone_brick_cross_arrowslit",
             () -> new BlockCrossArrowslit(BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+
+    public static final RegistryObject<Block> QUARTZ_DORIC_CAPITAL_SMALL = registerBlock("quartz_doric_capital_small",
+            () -> new BlockCapitalSmall(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> QUARTZ_FLUTED_COLUMN_MEDIUM = registerBlock("quartz_fluted_column_medium",
+            () -> new BlockColumn(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> QUARTZ_FLUTED_COLUMN_LARGE = registerBlock("quartz_fluted_column_large",
+            () -> new BlockColumnLarge(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> QUARTZ_FLUTED_COLUMN_GIANT = registerBlock("quartz_fluted_column_giant",
+            () -> new BlockColumnGiant(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> QUARTZ_IONIC_BASE_MEDIUM = registerBlock("quartz_ionic_base_medium",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> QUARTZ_IONIC_CAPITAL_MEDIUM = registerBlock("quartz_ionic_capital_medium",
+            () -> new BlockIonicCapital(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> QUARTZ_IONIC_CAPITAL_LARGE = registerBlock("quartz_ionic_capital_large",
+            () -> new BlockIonicCapital(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> QUARTZ_IONIC_BASE_LARGE = registerBlock("quartz_ionic_base_large",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> QUARTZ_CORNER_IONIC_CAPITAL_SMALL = registerBlock("quartz_corner_ionic_capital_small",
+            () -> new BlockIonicCapitalSmall(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> QUARTZ_ROMAN_IONIC_CAPITAL_SMALL = registerBlock("quartz_roman_ionic_capital_small",
+            () -> new BlockCapitalSmall(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> QUARTZ_SCAMOZZI_IONIC_CAPITAL_SMALL = registerBlock("quartz_scamozzi_ionic_capital_small",
+            () -> new BlockCapitalSmall(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+
+    public static final RegistryObject<Block> MULTICOLORED_CLINKER_BRICKS = registerBlock("multicolored_clinker_bricks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BRICKS)));
+    public static final RegistryObject<Block> CLINKER_BRICKS = registerBlock("clinker_bricks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BRICKS)));
+
+    public static final RegistryObject<Block> QUARTZ_GREEK_CORINTHIAN_CAPITAL_SMALL = registerBlock("quartz_greek_corinthian_capital_small",
+            () -> new BlockCapitalSmall(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+
+    public static final RegistryObject<SlabBlock> CLINKER_BRICK_SLAB = registerBlock("clinker_brick_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.BRICKS)));
+    public static final RegistryObject<StairBlock> CLINKER_BRICK_STAIRS = registerBlock("clinker_brick_stairs",
+            () -> new StairBlock(() -> Blocks.BRICK_STAIRS.defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.BRICKS)));
+    public static final RegistryObject<WallBlock> CLINKER_BRICK_WALL = registerBlock("clinker_brick__wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.BRICKS)));
+    public static final RegistryObject<Block> CLINKER_BRICK_FINIAL = registerBlock("clinker_brick_finial",
+            () -> new BlockFinial(BlockBehaviour.Properties.copy(Blocks.BRICKS).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> CLINKER_BRICK_PEDESTAL = registerBlock("clinker_brick_pedestal",
+            () -> new BlockPedestal(BlockBehaviour.Properties.copy(Blocks.BRICKS).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> CLINKER_BRICK_LAYER = registerBlock("clinker_brick_layer",
+            () -> new SnowLayerBlock(BlockBehaviour.Properties.copy(Blocks.BRICKS).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> CLINKER_BRICK_ARROWSLIT = registerBlock("clinker_brick_arrowslit",
+            () -> new BlockArrowslit(BlockBehaviour.Properties.copy(Blocks.BRICKS).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> CLINKER_BRICK_CROSS_ARROWSLIT = registerBlock("clinker_brick_cross_arrowslit",
+            () -> new BlockCrossArrowslit(BlockBehaviour.Properties.copy(Blocks.BRICKS).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+
+    public static final RegistryObject<Block> GILDED_BLACKSTONE_COLUMN_SMALL = registerBlock("gilded_blackstone_column_small",
+            () -> new BlockColumnSmall(BlockBehaviour.Properties.copy(Blocks.GILDED_BLACKSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+
+     public static final RegistryObject<Block> GOLD_GREEK_CORINTHIAN_CAPITAL_SMALL = registerBlock("gold_greek_corinthian_capital_small",
+            () -> new BlockCapitalSmall(BlockBehaviour.Properties.copy(Blocks.GOLD_BLOCK).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> GOLD_CORNER_IONIC_CAPITAL_SMALL = registerBlock("gold_corner_ionic_capital_small",
+            () -> new BlockIonicCapitalSmall(BlockBehaviour.Properties.copy(Blocks.GOLD_BLOCK).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> GOLD_ROMAN_IONIC_CAPITAL_SMALL = registerBlock("gold_roman_ionic_capital_small",
+            () -> new BlockCapitalSmall(BlockBehaviour.Properties.copy(Blocks.GOLD_BLOCK).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> GOLD_SCAMOZZI_IONIC_CAPITAL_SMALL = registerBlock("gold_scamozzi_ionic_capital_small",
+            () -> new BlockCapitalSmall(BlockBehaviour.Properties.copy(Blocks.GOLD_BLOCK).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> GOLD_IONIC_BASE_SMALL = registerBlock("gold_ionic_base_small",
+            () -> new BlockColumnBaseSmall(BlockBehaviour.Properties.copy(Blocks.GOLD_BLOCK).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> GOLD_IONIC_CAPITAL_SMALL = registerBlock("gold_ionic_capital_small",
+            () -> new BlockIonicCapitalSmall(BlockBehaviour.Properties.copy(Blocks.GOLD_BLOCK).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+
+    public static final RegistryObject<Block> GRANITE_FINIAL = registerBlock("granite_finial",
+            () -> new BlockFinial(BlockBehaviour.Properties.copy(Blocks.GRANITE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> GRANITE_PEDESTAL = registerBlock("granite_pedestal",
+            () -> new BlockPedestal(BlockBehaviour.Properties.copy(Blocks.GRANITE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> GRANITE_LAYER = registerBlock("granite_layer",
+            () -> new SnowLayerBlock(BlockBehaviour.Properties.copy(Blocks.GRANITE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> GRANITE_ARROWSLIT = registerBlock("granite_arrowslit",
+            () -> new BlockArrowslit(BlockBehaviour.Properties.copy(Blocks.GRANITE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> GRANITE_CROSS_ARROWSLIT = registerBlock("granite_cross_arrowslit",
+            () -> new BlockCrossArrowslit(BlockBehaviour.Properties.copy(Blocks.GRANITE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+
+    public static final RegistryObject<Block> POLISHED_GRANITE_FINIAL = registerBlock("polished_granite_finial",
+            () -> new BlockFinial(BlockBehaviour.Properties.copy(Blocks.POLISHED_GRANITE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> POLISHED_GRANITE_PEDESTAL = registerBlock("polished_granite_pedestal",
+            () -> new BlockPedestal(BlockBehaviour.Properties.copy(Blocks.POLISHED_GRANITE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> POLISHED_GRANITE_LAYER = registerBlock("polished_granite_layer",
+            () -> new SnowLayerBlock(BlockBehaviour.Properties.copy(Blocks.POLISHED_GRANITE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> POLISHED_GRANITE_ARROWSLIT = registerBlock("polished_granite_arrowslit",
+            () -> new BlockArrowslit(BlockBehaviour.Properties.copy(Blocks.POLISHED_GRANITE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> POLISHED_GRANITE_CROSS_ARROWSLIT = registerBlock("polished_granite_cross_arrowslit",
+            () -> new BlockCrossArrowslit(BlockBehaviour.Properties.copy(Blocks.POLISHED_GRANITE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+
+    public static final RegistryObject<Block> DIORITE_FINIAL = registerBlock("diorite_finial",
+            () -> new BlockFinial(BlockBehaviour.Properties.copy(Blocks.DIORITE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> DIORITE_PEDESTAL = registerBlock("diorite_pedestal",
+            () -> new BlockPedestal(BlockBehaviour.Properties.copy(Blocks.DIORITE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> DIORITE_LAYER = registerBlock("diorite_layer",
+            () -> new SnowLayerBlock(BlockBehaviour.Properties.copy(Blocks.DIORITE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> DIORITE_ARROWSLIT = registerBlock("diorite_arrowslit",
+            () -> new BlockArrowslit(BlockBehaviour.Properties.copy(Blocks.DIORITE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> DIORITE_CROSS_ARROWSLIT = registerBlock("diorite_cross_arrowslit",
+            () -> new BlockCrossArrowslit(BlockBehaviour.Properties.copy(Blocks.DIORITE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+
+    public static final RegistryObject<Block> POLISHED_DIORITE_FINIAL = registerBlock("polished_diorite_finial",
+            () -> new BlockFinial(BlockBehaviour.Properties.copy(Blocks.POLISHED_DIORITE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> POLISHED_DIORITE_PEDESTAL = registerBlock("polished_diorite_pedestal",
+            () -> new BlockPedestal(BlockBehaviour.Properties.copy(Blocks.POLISHED_DIORITE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> POLISHED_DIORITE_LAYER = registerBlock("polished_diorite_layer",
+            () -> new SnowLayerBlock(BlockBehaviour.Properties.copy(Blocks.POLISHED_DIORITE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> POLISHED_DIORITE_ARROWSLIT = registerBlock("polished_diorite_arrowslit",
+            () -> new BlockArrowslit(BlockBehaviour.Properties.copy(Blocks.POLISHED_DIORITE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> POLISHED_DIORITE_CROSS_ARROWSLIT = registerBlock("polished_diorite_cross_arrowslit",
+            () -> new BlockCrossArrowslit(BlockBehaviour.Properties.copy(Blocks.POLISHED_DIORITE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+
+    public static final RegistryObject<Block> ANDESITE_FINIAL = registerBlock("andesite_finial",
+            () -> new BlockFinial(BlockBehaviour.Properties.copy(Blocks.ANDESITE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> ANDESITE_PEDESTAL = registerBlock("andesite_pedestal",
+            () -> new BlockPedestal(BlockBehaviour.Properties.copy(Blocks.ANDESITE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> ANDESITE_LAYER = registerBlock("andesite_layer",
+            () -> new SnowLayerBlock(BlockBehaviour.Properties.copy(Blocks.ANDESITE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> ANDESITE_ARROWSLIT = registerBlock("andesite_arrowslit",
+            () -> new BlockArrowslit(BlockBehaviour.Properties.copy(Blocks.ANDESITE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> ANDESITE_CROSS_ARROWSLIT = registerBlock("andesite_cross_arrowslit",
+            () -> new BlockCrossArrowslit(BlockBehaviour.Properties.copy(Blocks.ANDESITE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+
+    public static final RegistryObject<Block> POLISHED_ANDESITE_FINIAL = registerBlock("polished_andesite_finial",
+            () -> new BlockFinial(BlockBehaviour.Properties.copy(Blocks.POLISHED_ANDESITE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> POLISHED_ANDESITE_PEDESTAL = registerBlock("polished_andesite_pedestal",
+            () -> new BlockPedestal(BlockBehaviour.Properties.copy(Blocks.POLISHED_ANDESITE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> POLISHED_ANDESITE_LAYER = registerBlock("polished_andesite_layer",
+            () -> new SnowLayerBlock(BlockBehaviour.Properties.copy(Blocks.POLISHED_ANDESITE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> POLISHED_ANDESITE_ARROWSLIT = registerBlock("polished_andesite_arrowslit",
+            () -> new BlockArrowslit(BlockBehaviour.Properties.copy(Blocks.POLISHED_ANDESITE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> POLISHED_ANDESITE_CROSS_ARROWSLIT = registerBlock("polished_andesite_cross_arrowslit",
+            () -> new BlockCrossArrowslit(BlockBehaviour.Properties.copy(Blocks.POLISHED_ANDESITE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+
+
+
+    public static final RegistryObject<Block> SANDSTONE_COLUMN_SMALL = registerBlock("sandstone_column_small",
+            () -> new BlockColumnSmall(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> SANDSTONE_COLUMN_MEDIUM = registerBlock("sandstone_column_medium",
+            () -> new BlockColumn(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> SANDSTONE_COLUMN_LARGE = registerBlock("sandstone_column_large",
+            () -> new BlockColumnLarge(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> SANDSTONE_COLUMN_GIANT = registerBlock("sandstone_column_giant",
+            () -> new BlockColumnGiant(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+
+    public static final RegistryObject<Block> SANDSTONE_FLUTED_COLUMN_SMALL = registerBlock("sandstone_fluted_column_small",
+            () -> new BlockColumnSmall(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> SANDSTONE_FLUTED_COLUMN_MEDIUM = registerBlock("sandstone_fluted_column_medium",
+            () -> new BlockColumn(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> SANDSTONE_FLUTED_COLUMN_LARGE = registerBlock("sandstone_fluted_column_large",
+            () -> new BlockColumnLarge(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> SANDSTONE_FLUTED_COLUMN_GIANT = registerBlock("sandstone_fluted_column_giant",
+            () -> new BlockColumnGiant(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+
+    public static final RegistryObject<Block> SANDSTONE_IONIC_BASE_SMALL = registerBlock("sandstone_ionic_base_small",
+            () -> new BlockColumnBaseSmall(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> SANDSTONE_IONIC_BASE_MEDIUM = registerBlock("sandstone_ionic_base_medium",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> SANDSTONE_IONIC_BASE_LARGE = registerBlock("sandstone_ionic_base_large",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> SANDSTONE_IONIC_BASE_GIANT = registerBlock("sandstone_ionic_base_giant",
+            () -> new BlockHorizontalDirectional(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+
+    public static final RegistryObject<Block> SANDSTONE_ROMAN_IONIC_BASE_SMALL = registerBlock("sandstone_roman_ionic_base_small",
+            () -> new BlockColumnBaseSmall(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> SANDSTONE_ROMAN_IONIC_BASE_MEDIUM = registerBlock("sandstone_roman_ionic_base_medium",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> SANDSTONE_ROMAN_IONIC_BASE_LARGE = registerBlock("sandstone_roman_ionic_base_large",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> SANDSTONE_ROMAN_IONIC_BASE_GIANT = registerBlock("sandstone_roman_ionic_base_giant",
+            () -> new BlockHorizontalDirectional(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+
+    public static final RegistryObject<Block> SANDSTONE_CORINTHIAN_BASE_SMALL = registerBlock("sandstone_corinthian_base_small",
+            () -> new BlockColumnBaseSmall(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> SANDSTONE_CORINTHIAN_BASE_MEDIUM = registerBlock("sandstone_corinthian_base_medium",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> SANDSTONE_CORINTHIAN_BASE_LARGE = registerBlock("sandstone_corinthian_base_large",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> SANDSTONE_CORINTHIAN_BASE_GIANT = registerBlock("sandstone_corinthian_base_giant",
+            () -> new BlockHorizontalDirectional(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+
+    public static final RegistryObject<Block> SANDSTONE_ROMAN_CORINTHIAN_BASE_SMALL = registerBlock("sandstone_roman_corinthian_base_small",
+            () -> new BlockColumnBaseSmall(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> SANDSTONE_ROMAN_CORINTHIAN_BASE_MEDIUM = registerBlock("sandstone_roman_corinthian_base_medium",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> SANDSTONE_ROMAN_CORINTHIAN_BASE_LARGE = registerBlock("sandstone_roman_corinthian_base_large",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> SANDSTONE_ROMAN_CORINTHIAN_BASE_GIANT = registerBlock("sandstone_roman_corinthian_base_giant",
+            () -> new BlockHorizontalDirectional(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+
+    public static final RegistryObject<Block> SANDSTONE_TUSCAN_BASE_SMALL = registerBlock("sandstone_tuscan_base_small",
+            () -> new BlockColumnBaseSmall(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> SANDSTONE_TUSCAN_BASE_MEDIUM = registerBlock("sandstone_tuscan_base_medium",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> SANDSTONE_TUSCAN_BASE_LARGE = registerBlock("sandstone_tuscan_base_large",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> SANDSTONE_TUSCAN_BASE_GIANT = registerBlock("sandstone_tuscan_base_giant",
+            () -> new BlockHorizontalDirectional(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+
+    public static final RegistryObject<Block> SANDSTONE_DORIC_CAPITAL_SMALL = registerBlock("sandstone_doric_capital_small",
+            () -> new BlockCapitalSmall(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> SANDSTONE_DORIC_CAPITAL_MEDIUM = registerBlock("sandstone_doric_capital_medium",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> SANDSTONE_DORIC_CAPITAL_LARGE = registerBlock("sandstone_doric_capital_large",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> SANDSTONE_DORIC_CAPITAL_GIANT = registerBlock("sandstone_doric_capital_giant",
+            () -> new BlockHorizontalDirectional(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+
+    public static final RegistryObject<Block> SANDSTONE_ROMAN_DORIC_CAPITAL_SMALL = registerBlock("sandstone_roman_doric_capital_small",
+            () -> new BlockCapitalSmall(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> SANDSTONE_ROMAN_DORIC_CAPITAL_MEDIUM = registerBlock("sandstone_roman_doric_capital_medium",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> SANDSTONE_ROMAN_DORIC_CAPITAL_LARGE = registerBlock("sandstone_roman_doric_capital_large",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> SANDSTONE_ROMAN_DORIC_CAPITAL_GIANT = registerBlock("sandstone_roman_doric_capital_giant",
+            () -> new BlockHorizontalDirectional(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+
+    public static final RegistryObject<Block> SANDSTONE_IONIC_CAPITAL_SMALL = registerBlock("sandstone_ionic_capital_small",
+            () -> new BlockIonicCapitalSmall(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> SANDSTONE_IONIC_CAPITAL_MEDIUM = registerBlock("sandstone_ionic_capital_medium",
+            () -> new BlockIonicCapital(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> SANDSTONE_IONIC_CAPITAL_LARGE = registerBlock("sandstone_ionic_capital_large",
+            () -> new BlockIonicCapital(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> SANDSTONE_IONIC_CAPITAL_GIANT = registerBlock("sandstone_ionic_capital_giant",
+            () -> new BlockIonicCapitalGiant(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+
+    public static final RegistryObject<Block> SANDSTONE_CORNER_IONIC_CAPITAL_SMALL = registerBlock("sandstone_corner_ionic_capital_small",
+            () -> new BlockIonicCapitalSmall(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> SANDSTONE_CORNER_IONIC_CAPITAL_MEDIUM = registerBlock("sandstone_corner_ionic_capital_medium",
+            () -> new BlockIonicCapital(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> SANDSTONE_CORNER_IONIC_CAPITAL_LARGE = registerBlock("sandstone_corner_ionic_capital_large",
+            () -> new BlockHorizontalDirectional(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+
+    public static final RegistryObject<Block> SANDSTONE_ROMAN_IONIC_CAPITAL_SMALL = registerBlock("sandstone_roman_ionic_capital_small",
+            () -> new BlockCapitalSmall(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> SANDSTONE_ROMAN_IONIC_CAPITAL_MEDIUM = registerBlock("sandstone_roman_ionic_capital_medium",
+            () -> new BlockIonicCapital(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> SANDSTONE_ROMAN_IONIC_CAPITAL_LARGE = registerBlock("sandstone_roman_ionic_capital_large",
+            () -> new BlockIonicCapital(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> SANDSTONE_ROMAN_IONIC_CAPITAL_GIANT = registerBlock("sandstone_roman_ionic_capital_giant",
+            () -> new BlockHorizontalDirectional(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+
+    public static final RegistryObject<Block> SANDSTONE_SCAMOZZI_IONIC_CAPITAL_SMALL = registerBlock("sandstone_scamozzi_ionic_capital_small",
+            () -> new BlockCapitalSmall(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> SANDSTONE_SCAMOZZI_IONIC_CAPITAL_MEDIUM = registerBlock("sandstone_scamozzi_ionic_capital_medium",
+            () -> new BlockIonicCapital(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> SANDSTONE_SCAMOZZI_IONIC_CAPITAL_LARGE = registerBlock("sandstone_scamozzi_ionic_capital_large",
+            () -> new BlockIonicCapital(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> SANDSTONE_SCAMOZZI_IONIC_CAPITAL_GIANT = registerBlock("sandstone_scamozzi_ionic_capital_giant",
+            () -> new BlockHorizontalDirectional(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+
+    public static final RegistryObject<Block> SANDSTONE_GREEK_CORINTHIAN_CAPITAL_SMALL = registerBlock("sandstone_greek_corinthian_capital_small",
+            () -> new BlockCapitalSmall(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> SANDSTONE_GREEK_CORINTHIAN_CAPITAL_MEDIUM = registerBlock("sandstone_greek_corinthian_capital_medium",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> SANDSTONE_GREEK_CORINTHIAN_CAPITAL_LARGE = registerBlock("sandstone_greek_corinthian_capital_large",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> SANDSTONE_GREEK_CORINTHIAN_CAPITAL_GIANT = registerBlock("sandstone_greek_corinthian_capital_giant",
+            () -> new BlockHorizontalDirectional(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+
+    public static final RegistryObject<Block> SANDSTONE_ROMAN_CORINTHIAN_CAPITAL_SMALL = registerBlock("sandstone_roman_corinthian_capital_small",
+            () -> new BlockCapitalSmall(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> SANDSTONE_ROMAN_CORINTHIAN_CAPITAL_MEDIUM = registerBlock("sandstone_roman_corinthian_capital_medium",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> SANDSTONE_ROMAN_CORINTHIAN_CAPITAL_LARGE = registerBlock("sandstone_roman_corinthian_capital_large",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> SANDSTONE_ROMAN_CORINTHIAN_CAPITAL_GIANT = registerBlock("sandstone_roman_corinthian_capital_giant",
+            () -> new BlockHorizontalDirectional(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+
+    public static final RegistryObject<Block> SANDSTONE_TUSCAN_CAPITAL_SMALL = registerBlock("sandstone_tuscan_capital_small",
+            () -> new BlockCapitalSmall(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> SANDSTONE_TUSCAN_CAPITAL_MEDIUM = registerBlock("sandstone_tuscan_capital_medium",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> SANDSTONE_TUSCAN_CAPITAL_LARGE = registerBlock("sandstone_tuscan_capital_large",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> SANDSTONE_TUSCAN_CAPITAL_GIANT = registerBlock("sandstone_tuscan_capital_giant",
+            () -> new BlockHorizontalDirectional(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+
+    public static final RegistryObject<Block> SANDSTONE_COMPOSITE_CAPITAL_SMALL = registerBlock("sandstone_composite_capital_small",
+            () -> new BlockCapitalSmall(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> SANDSTONE_COMPOSITE_CAPITAL_MEDIUM = registerBlock("sandstone_composite_capital_medium",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> SANDSTONE_COMPOSITE_CAPITAL_LARGE = registerBlock("sandstone_composite_capital_large",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> SANDSTONE_COMPOSITE_CAPITAL_GIANT = registerBlock("sandstone_composite_capital_giant",
+            () -> new BlockHorizontalDirectional(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+
+
+
+    public static final RegistryObject<Block> SANDSTONE_FLUTED_PILASTER_SMALL = registerBlock("sandstone_fluted_pilaster_small",
+            () -> new BlockHorizontalDirectional(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+
+
 
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block)

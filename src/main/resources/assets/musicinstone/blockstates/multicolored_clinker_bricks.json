@@ -1,0 +1,13 @@
+{
+  "variants":
+  {
+    "":
+      [
+        {"model": "musicinstone:block/clinker_bricks_0"},
+        {"model": "musicinstone:block/clinker_bricks_1"},
+        {"model": "musicinstone:block/clinker_bricks_2"},
+        {"model": "musicinstone:block/clinker_bricks_3"},
+        {"model": "musicinstone:block/clinker_bricks_4"}
+      ]
+  }
+}

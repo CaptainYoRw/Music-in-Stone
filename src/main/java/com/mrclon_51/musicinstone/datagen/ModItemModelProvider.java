@@ -10,6 +10,7 @@ import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.ForgeRegistries;
 
+@SuppressWarnings("removal")
 public class ModItemModelProvider extends ItemModelProvider
 {
     public ModItemModelProvider(PackOutput output, ExistingFileHelper existingFileHelper)
@@ -20,7 +21,7 @@ public class ModItemModelProvider extends ItemModelProvider
     @Override
     protected void registerModels() {
 
-        // 2. Use your new helper for walls (It handles the texturePath for you!)
+
         registerWallItem(BlocksRegistry.BRICK_TILES_WALL.get(), BlocksRegistry.BRICKS_TILES.get());
         registerWallItem(BlocksRegistry.BRICK_TILES_STACK_WALL.get(), BlocksRegistry.BRICKS_TILES_STACK.get());
         registerWallItem(BlocksRegistry.DARK_PRISMARINE_WALL.get(), Blocks.DARK_PRISMARINE);
@@ -33,9 +34,9 @@ public class ModItemModelProvider extends ItemModelProvider
         registerWallItem(BlocksRegistry.BRICK_ROMAN_STACK_WALL.get(), BlocksRegistry.BRICKS_ROMAN_STACK.get());
         registerWallItem(BlocksRegistry.BRICK_LONG_WALL.get(), BlocksRegistry.BRICKS_LONG.get());
         registerWallItem(BlocksRegistry.BRICK_LONG_STACK_WALL.get(), BlocksRegistry.BRICKS_LONG_STACK.get());
+        registerWallItem(BlocksRegistry.CLINKER_BRICK_WALL.get(), BlocksRegistry.CLINKER_BRICKS.get());
 
 
-        // 3. Use your registerBlockItem for everything else
         registerBlockItem(BlocksRegistry.BRICK_TILES_SLAB.get());
         registerBlockItem(BlocksRegistry.BRICK_TILES_STAIRS.get());
         registerBlockItem(BlocksRegistry.BRICK_TILES_PEDESTAL.get());
@@ -90,7 +91,7 @@ public class ModItemModelProvider extends ItemModelProvider
         registerObjItemModel(BlocksRegistry.COBBLESTONE_CROSS_ARROWSLIT.get());
 
         registerObjItemModel(BlocksRegistry.SANDSTONE_IONIC_BASE_SMALL.get());
-        registerObjItemModel(BlocksRegistry.SANDSTONE_COLUMN_SMALL.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_FLUTED_COLUMN_SMALL.get());
         registerObjItemModel(BlocksRegistry.SANDSTONE_IONIC_CAPITAL_SMALL.get());
 
         registerBlockItem(BlocksRegistry.STONE_FINIAL.get());
@@ -104,11 +105,119 @@ public class ModItemModelProvider extends ItemModelProvider
         registerLayerItem(BlocksRegistry.STONE_BRICK_LAYER.get());
         registerObjItemModel(BlocksRegistry.STONE_BRICK_ARROWSLIT.get());
         registerObjItemModel(BlocksRegistry.STONE_BRICK_CROSS_ARROWSLIT.get());
+
+        registerObjItemModel(BlocksRegistry.QUARTZ_DORIC_CAPITAL_SMALL.get());
+
+        registerObjItemModel(BlocksRegistry.QUARTZ_FLUTED_COLUMN_MEDIUM.get());
+        registerObjItemModel(BlocksRegistry.QUARTZ_FLUTED_COLUMN_LARGE.get());
+        registerObjItemModel(BlocksRegistry.QUARTZ_FLUTED_COLUMN_GIANT.get());
+
+        registerObjItemModel(BlocksRegistry.QUARTZ_IONIC_BASE_MEDIUM.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_IONIC_BASE_MEDIUM.get());
+
+        registerObjItemModel(BlocksRegistry.QUARTZ_IONIC_CAPITAL_MEDIUM.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_IONIC_CAPITAL_MEDIUM.get());
+
+        registerObjItemModel(BlocksRegistry.SANDSTONE_FLUTED_COLUMN_MEDIUM.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_FLUTED_COLUMN_LARGE.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_FLUTED_COLUMN_GIANT.get());
+
+        registerObjItemModel(BlocksRegistry.SANDSTONE_DORIC_CAPITAL_SMALL.get());
+
+        registerObjItemModel(BlocksRegistry.QUARTZ_IONIC_BASE_LARGE.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_IONIC_BASE_LARGE.get());
+
+        registerObjItemModel(BlocksRegistry.QUARTZ_IONIC_CAPITAL_LARGE.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_IONIC_CAPITAL_LARGE.get());
+
+        registerObjItemModel(BlocksRegistry.QUARTZ_CORNER_IONIC_CAPITAL_SMALL.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_CORNER_IONIC_CAPITAL_SMALL.get());
+        registerObjItemModel(BlocksRegistry.QUARTZ_ROMAN_IONIC_CAPITAL_SMALL.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_ROMAN_IONIC_CAPITAL_SMALL.get());
+        registerObjItemModel(BlocksRegistry.QUARTZ_SCAMOZZI_IONIC_CAPITAL_SMALL.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_SCAMOZZI_IONIC_CAPITAL_SMALL.get());
+
+        registerObjItemModel(BlocksRegistry.QUARTZ_GREEK_CORINTHIAN_CAPITAL_SMALL.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_GREEK_CORINTHIAN_CAPITAL_SMALL.get());
+
+        registerBlockItem(BlocksRegistry.CLINKER_BRICK_STAIRS.get());
+        registerBlockItem(BlocksRegistry.CLINKER_BRICK_SLAB.get());
+        registerBlockItem(BlocksRegistry.CLINKER_BRICK_FINIAL.get());
+        registerBlockItem(BlocksRegistry.CLINKER_BRICK_PEDESTAL.get());
+        registerLayerItem(BlocksRegistry.CLINKER_BRICK_LAYER.get());
+        registerObjItemModel(BlocksRegistry.CLINKER_BRICK_ARROWSLIT.get());
+        registerObjItemModel(BlocksRegistry.CLINKER_BRICK_CROSS_ARROWSLIT.get());
+
+        registerObjItemModel(BlocksRegistry.GILDED_BLACKSTONE_COLUMN_SMALL.get());
+
+        registerObjItemModel(BlocksRegistry.GOLD_CORNER_IONIC_CAPITAL_SMALL.get());
+        registerObjItemModel(BlocksRegistry.GOLD_GREEK_CORINTHIAN_CAPITAL_SMALL.get());
+        registerObjItemModel(BlocksRegistry.GOLD_IONIC_BASE_SMALL.get());
+        registerObjItemModel(BlocksRegistry.GOLD_IONIC_CAPITAL_SMALL.get());
+        registerObjItemModel(BlocksRegistry.GOLD_ROMAN_IONIC_CAPITAL_SMALL.get());
+        registerObjItemModel(BlocksRegistry.GOLD_SCAMOZZI_IONIC_CAPITAL_SMALL.get());
+
+        registerBlockItem(BlocksRegistry.GRANITE_FINIAL.get());
+        registerBlockItem(BlocksRegistry.GRANITE_PEDESTAL.get());
+        registerLayerItem(BlocksRegistry.GRANITE_LAYER.get());
+        registerObjItemModel(BlocksRegistry.GRANITE_ARROWSLIT.get());
+        registerObjItemModel(BlocksRegistry.GRANITE_CROSS_ARROWSLIT.get());
+
+        registerBlockItem(BlocksRegistry.POLISHED_GRANITE_FINIAL.get());
+        registerBlockItem(BlocksRegistry.POLISHED_GRANITE_PEDESTAL.get());
+        registerLayerItem(BlocksRegistry.POLISHED_GRANITE_LAYER.get());
+        registerObjItemModel(BlocksRegistry.POLISHED_GRANITE_ARROWSLIT.get());
+        registerObjItemModel(BlocksRegistry.POLISHED_GRANITE_CROSS_ARROWSLIT.get());
+
+        registerBlockItem(BlocksRegistry.DIORITE_FINIAL.get());
+        registerBlockItem(BlocksRegistry.DIORITE_PEDESTAL.get());
+        registerLayerItem(BlocksRegistry.DIORITE_LAYER.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_ARROWSLIT.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_CROSS_ARROWSLIT.get());
+
+        registerBlockItem(BlocksRegistry.POLISHED_DIORITE_FINIAL.get());
+        registerBlockItem(BlocksRegistry.POLISHED_DIORITE_PEDESTAL.get());
+        registerLayerItem(BlocksRegistry.POLISHED_DIORITE_LAYER.get());
+        registerObjItemModel(BlocksRegistry.POLISHED_DIORITE_ARROWSLIT.get());
+        registerObjItemModel(BlocksRegistry.POLISHED_DIORITE_CROSS_ARROWSLIT.get());
+
+        registerBlockItem(BlocksRegistry.ANDESITE_FINIAL.get());
+        registerBlockItem(BlocksRegistry.ANDESITE_PEDESTAL.get());
+        registerLayerItem(BlocksRegistry.ANDESITE_LAYER.get());
+        registerObjItemModel(BlocksRegistry.ANDESITE_ARROWSLIT.get());
+        registerObjItemModel(BlocksRegistry.ANDESITE_CROSS_ARROWSLIT.get());
+
+        registerBlockItem(BlocksRegistry.POLISHED_ANDESITE_FINIAL.get());
+        registerBlockItem(BlocksRegistry.POLISHED_ANDESITE_PEDESTAL.get());
+        registerLayerItem(BlocksRegistry.POLISHED_ANDESITE_LAYER.get());
+        registerObjItemModel(BlocksRegistry.POLISHED_ANDESITE_ARROWSLIT.get());
+        registerObjItemModel(BlocksRegistry.POLISHED_ANDESITE_CROSS_ARROWSLIT.get());
+
+        registerObjItemModelLeft(BlocksRegistry.SANDSTONE_IONIC_CAPITAL_GIANT.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_IONIC_BASE_GIANT.get());
+
+        registerObjItemModel(BlocksRegistry.SANDSTONE_COLUMN_SMALL.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_COLUMN_MEDIUM.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_COLUMN_LARGE.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_COLUMN_GIANT.get());
+
+        registerObjItemModel(BlocksRegistry.SANDSTONE_ROMAN_IONIC_BASE_SMALL.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_ROMAN_IONIC_BASE_MEDIUM.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_ROMAN_IONIC_BASE_LARGE.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_ROMAN_IONIC_BASE_GIANT.get());
+
+        registerObjItemModel(BlocksRegistry.SANDSTONE_GREEK_CORINTHIAN_CAPITAL_MEDIUM.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_GREEK_CORINTHIAN_CAPITAL_LARGE.get());
     }
 
     public void registerObjItemModel(Block block) {
         String name = ForgeRegistries.BLOCKS.getKey(block).getPath();
         withExistingParent(name, modLoc("block/" + name));
+    }
+
+    public void registerObjItemModelLeft(Block block) {
+        String name = ForgeRegistries.BLOCKS.getKey(block).getPath();
+        withExistingParent(name, modLoc("block/" + name + "_left"));
     }
 
     private void registerWallItem(Block wallBlock, Block textureSource)
@@ -118,6 +227,7 @@ public class ModItemModelProvider extends ItemModelProvider
         ResourceLocation wallKey = ForgeRegistries.BLOCKS.getKey(wallBlock);
 
         // This part makes it universal: it uses the source's own namespace (minecraft or yours)
+        //noinspection removal
         ResourceLocation texturePath = new ResourceLocation(sourceKey.getNamespace(), "block/" + sourceKey.getPath());
 
         // Registers the wall inventory model using that dynamic path

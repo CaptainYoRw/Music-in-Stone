@@ -1,10 +1,16 @@
 package com.mrclon_51.musicinstone.block;
 
+import com.mrclon_51.musicinstone.TagsRegistry;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.StateDefinition;
+import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
@@ -32,4 +38,16 @@ public class BlockColumnSmall extends BlockColumn
         return SHAPE;
     }
 
+    @Override
+    protected boolean isBase(LevelReader level, BlockPos pos)
+    {
+        return level.getBlockState(pos.below()).is(TagsRegistry.Blocks.COLUMN_BASE_SMALL);
+    }
+
+    @Override
+    protected boolean isCapital(LevelReader level, BlockPos pos)
+    {
+        return level.getBlockState(pos.above()).is(TagsRegistry.Blocks.COLUMN_CAPITAL_SMALL);
+    }
 }
+

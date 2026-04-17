@@ -1,0 +1,9 @@
+{
+  "variants":
+  {
+    "down=false,up=false": { "model": "musicinstone:block/quartz_fluted_column_small" },
+    "down=true,up=false":  { "model": "musicinstone:block/quartz_fluted_column_small_bottom" },
+    "down=false,up=true":  { "model": "musicinstone:block/quartz_fluted_column_small_top" },
+    "down=true,up=true":   { "model": "musicinstone:block/quartz_fluted_column_small_both" }
+  }
+}

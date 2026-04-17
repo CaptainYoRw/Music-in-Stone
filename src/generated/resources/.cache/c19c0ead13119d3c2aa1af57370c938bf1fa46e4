@@ -1,2 +1,9 @@
-// 1.20.1	2026-04-01T14:29:10.8895466	Tags for minecraft:block mod id musicinstone
+// 1.20.1	2026-04-15T17:35:37.4269085	Tags for minecraft:block mod id musicinstone
 60cb88144cee1cac1eaf2f41e3b81c3b744bd7a4 data/minecraft/tags/blocks/walls.json
+3b9be81ea8234346693837004f555fce8925dc33 data/musicinstone/tags/blocks/giant_capitals.json
+f1b80fdbd80aecc050e7bd9bfa1a0610d6b544c3 data/musicinstone/tags/blocks/large_bases.json
+79180bd1a90f8f49fd82b39d5affc467a47c9b8b data/musicinstone/tags/blocks/large_capitals.json
+9ecff72669b5b41a70f7c725b56b97134c7e3547 data/musicinstone/tags/blocks/medium_bases.json
+425d8fbe1bca374be590c214f5fc8ccb2bc9ceab data/musicinstone/tags/blocks/medium_capitals.json
+dc0f9c7c2406830771a8246282ad916cc8002c1d data/musicinstone/tags/blocks/small_bases.json
+cd74eaad911e7eee8cae3431e260c8e4300f61dd data/musicinstone/tags/blocks/small_capitals.json

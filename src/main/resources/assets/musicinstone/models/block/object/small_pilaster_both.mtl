@@ -1,0 +1,22 @@
+# Blender 5.1.1 MTL File: 'small_pilaster_both.blend'
+# www.blender.org
+
+newmtl column_mat_side
+Ns 0.000000
+Ka 0.000000 0.000000 0.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 0.000000
+d 1.000000
+illum 1
+map_Kd #column_side
+
+newmtl column_mat_top
+Ns 0.000000
+Ka 0.000000 0.000000 0.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 0.000000
+d 1.000000
+illum 1
+map_Kd #column_top
