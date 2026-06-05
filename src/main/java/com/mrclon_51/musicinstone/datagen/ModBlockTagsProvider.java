@@ -129,6 +129,7 @@ public class ModBlockTagsProvider extends BlockTagsProvider
                 .add(BlocksRegistry.SANDSTONE_ROMAN_DORIC_CAPITAL_MEDIUM.get())
                 .add(BlocksRegistry.SANDSTONE_ROMAN_CORINTHIAN_CAPITAL_MEDIUM.get())
                 .add(BlocksRegistry.SANDSTONE_ROMAN_IONIC_CAPITAL_MEDIUM.get())
+                .add(BlocksRegistry.SANDSTONE_CORNER_IONIC_CAPITAL_MEDIUM.get())
 
                 .add(BlocksRegistry.DIORITE_IONIC_CAPITAL_MEDIUM.get())
                 .add(BlocksRegistry.DIORITE_SCAMOZZI_IONIC_CAPITAL_MEDIUM.get())
@@ -137,7 +138,9 @@ public class ModBlockTagsProvider extends BlockTagsProvider
                 .add(BlocksRegistry.DIORITE_TUSCAN_CAPITAL_MEDIUM.get())
                 .add(BlocksRegistry.DIORITE_ROMAN_DORIC_CAPITAL_MEDIUM.get())
                 .add(BlocksRegistry.DIORITE_ROMAN_CORINTHIAN_CAPITAL_MEDIUM.get())
-                .add(BlocksRegistry.DIORITE_ROMAN_IONIC_CAPITAL_MEDIUM.get());
+                .add(BlocksRegistry.DIORITE_ROMAN_IONIC_CAPITAL_MEDIUM.get())
+                .add(BlocksRegistry.DIORITE_CORNER_IONIC_CAPITAL_MEDIUM.get());
+
 
         this.tag(TagsRegistry.Blocks.COLUMN_BASE_LARGE)
                 .add(BlocksRegistry.QUARTZ_IONIC_BASE_LARGE.get())
@@ -165,6 +168,7 @@ public class ModBlockTagsProvider extends BlockTagsProvider
                 .add(BlocksRegistry.SANDSTONE_ROMAN_DORIC_CAPITAL_LARGE.get())
                 .add(BlocksRegistry.SANDSTONE_ROMAN_CORINTHIAN_CAPITAL_LARGE.get())
                 .add(BlocksRegistry.SANDSTONE_ROMAN_IONIC_BASE_LARGE.get())
+                .add(BlocksRegistry.SANDSTONE_CORNER_IONIC_CAPITAL_LARGE.get())
 
                 .add(BlocksRegistry.DIORITE_IONIC_CAPITAL_LARGE.get())
                 .add(BlocksRegistry.DIORITE_SCAMOZZI_IONIC_CAPITAL_LARGE.get())
@@ -173,7 +177,8 @@ public class ModBlockTagsProvider extends BlockTagsProvider
                 .add(BlocksRegistry.DIORITE_TUSCAN_CAPITAL_LARGE.get())
                 .add(BlocksRegistry.DIORITE_ROMAN_DORIC_CAPITAL_LARGE.get())
                 .add(BlocksRegistry.DIORITE_ROMAN_CORINTHIAN_CAPITAL_LARGE.get())
-                .add(BlocksRegistry.DIORITE_ROMAN_IONIC_CAPITAL_LARGE.get());
+                .add(BlocksRegistry.DIORITE_ROMAN_IONIC_CAPITAL_LARGE.get())
+                .add(BlocksRegistry.DIORITE_CORNER_IONIC_CAPITAL_LARGE.get());
 
         this.tag(TagsRegistry.Blocks.COLUMN_BASE_GIANT)
                 .add(BlocksRegistry.SANDSTONE_IONIC_BASE_GIANT.get())

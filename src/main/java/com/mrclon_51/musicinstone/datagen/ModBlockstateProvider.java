@@ -239,6 +239,8 @@ public class ModBlockstateProvider extends BlockStateProvider
         generateSplitFacingBlock(BlocksRegistry.DIORITE_IONIC_CAPITAL_GIANT, "template_ionic_capital_giant_left", "template_ionic_capital_giant_right", modLoc("block/diorite_seamless"), modLoc("block/diorite_ionic"), modLoc("block/diorite_volute"));
 
         generateCornerIonicCustomShape(BlocksRegistry.DIORITE_CORNER_IONIC_CAPITAL_SMALL, "template_corner_ionic_capital_small", modLoc("block/diorite_seamless"), modLoc("block/diorite_ionic"), modLoc("block/diorite_volute"));
+        generateCornerIonicCustomShape(BlocksRegistry.DIORITE_CORNER_IONIC_CAPITAL_MEDIUM, "template_corner_ionic_capital_medium", modLoc("block/diorite_seamless"), modLoc("block/diorite_ionic"), modLoc("block/diorite_volute"));
+        generateCornerIonicCustomShape(BlocksRegistry.DIORITE_CORNER_IONIC_CAPITAL_LARGE, "template_corner_ionic_capital_large", modLoc("block/diorite_seamless"), modLoc("block/diorite_ionic"), modLoc("block/diorite_volute"));
 
 
         generateFixedIonicShape(BlocksRegistry.DIORITE_SCAMOZZI_IONIC_CAPITAL_SMALL, "template_scamozzi_ionic_capital_small", modLoc("block/diorite_seamless"), modLoc("block/diorite_ionic"), modLoc("block/diorite_volute"));
@@ -348,6 +350,8 @@ public class ModBlockstateProvider extends BlockStateProvider
         generateSplitFacingBlock(BlocksRegistry.SANDSTONE_IONIC_CAPITAL_GIANT, "template_ionic_capital_giant_left", "template_ionic_capital_giant_right", mcLoc("block/sandstone_top"), modLoc("block/sandstone_ionic"), modLoc("block/sandstone_volute"));
 
         generateCornerIonicCustomShape(BlocksRegistry.SANDSTONE_CORNER_IONIC_CAPITAL_SMALL, "template_corner_ionic_capital_small", mcLoc("block/sandstone_top"), modLoc("block/sandstone_ionic"), modLoc("block/sandstone_volute"));
+        generateCornerIonicCustomShape(BlocksRegistry.SANDSTONE_CORNER_IONIC_CAPITAL_MEDIUM, "template_corner_ionic_capital_medium", mcLoc("block/sandstone_top"), modLoc("block/sandstone_ionic"), modLoc("block/sandstone_volute"));
+        generateCornerIonicCustomShape(BlocksRegistry.SANDSTONE_CORNER_IONIC_CAPITAL_LARGE, "template_corner_ionic_capital_large", mcLoc("block/sandstone_top"), modLoc("block/sandstone_ionic"), modLoc("block/sandstone_volute"));
 
 
         generateFixedIonicShape(BlocksRegistry.SANDSTONE_SCAMOZZI_IONIC_CAPITAL_SMALL, "template_scamozzi_ionic_capital_small", mcLoc("block/sandstone_top"), modLoc("block/sandstone_ionic"), modLoc("block/sandstone_volute"));

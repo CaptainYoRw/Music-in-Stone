@@ -24,3 +24,9 @@ run-data
 
 # Files from Forge MDK
 forge*changelog.txt
+/libs/createdeco-2.0.3-1.20.1-forge.jar
+/libs/dawnoftimebuilder-forge-1.20.1-1.5.51.jar
+/embeddium-0.3.31+mc1.20.1.jar
+/oculus-mc1.20.1-1.8.0.jar
+/libs/Quark-4.0-462.jar
+/libs/Zeta-1.0-31.jar

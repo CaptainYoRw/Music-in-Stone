@@ -285,6 +285,9 @@ public class ModItemModelProvider extends ItemModelProvider
         registerObjItemModel(BlocksRegistry.SANDSTONE_ROMAN_IONIC_CAPITAL_LARGE.get());
         registerObjItemModel(BlocksRegistry.SANDSTONE_ROMAN_IONIC_CAPITAL_GIANT.get());
 
+        registerObjItemModel(BlocksRegistry.SANDSTONE_CORNER_IONIC_CAPITAL_MEDIUM.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_CORNER_IONIC_CAPITAL_LARGE.get());
+
         //registerObjItemModel(BlocksRegistry.SANDSTONE_RUSTICATED_COLUMN_SMALL.get());
 
         registerObjItemModel(BlocksRegistry.DIORITE_IONIC_BASE_SMALL.get());
@@ -362,6 +365,11 @@ public class ModItemModelProvider extends ItemModelProvider
         registerObjItemModel(BlocksRegistry.DIORITE_ROMAN_CORINTHIAN_CAPITAL_MEDIUM.get());
         registerObjItemModel(BlocksRegistry.DIORITE_ROMAN_CORINTHIAN_CAPITAL_LARGE.get());
         registerObjItemModel(BlocksRegistry.DIORITE_ROMAN_CORINTHIAN_CAPITAL_GIANT.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_COMPOSITE_CAPITAL_MEDIUM.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_COMPOSITE_CAPITAL_LARGE.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_COMPOSITE_CAPITAL_GIANT.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_CORNER_IONIC_CAPITAL_MEDIUM.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_CORNER_IONIC_CAPITAL_LARGE.get());
     }
 
     public void registerObjItemModel(Block block)
