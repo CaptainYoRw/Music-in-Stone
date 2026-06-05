@@ -1,6 +1,21 @@
 {
   "values": [
     "musicinstone:quartz_ionic_capital_medium",
-    "musicinstone:sandstone_ionic_capital_medium"
+    "musicinstone:sandstone_ionic_capital_medium",
+    "musicinstone:sandstone_scamozzi_ionic_capital_medium",
+    "musicinstone:sandstone_doric_capital_medium",
+    "musicinstone:sandstone_doric_capital_small",
+    "musicinstone:sandstone_tuscan_capital_medium",
+    "musicinstone:sandstone_roman_doric_capital_medium",
+    "musicinstone:sandstone_roman_corinthian_capital_medium",
+    "musicinstone:sandstone_roman_ionic_capital_medium",
+    "musicinstone:diorite_ionic_capital_medium",
+    "musicinstone:diorite_scamozzi_ionic_capital_medium",
+    "musicinstone:diorite_doric_capital_medium",
+    "musicinstone:diorite_doric_capital_small",
+    "musicinstone:diorite_tuscan_capital_medium",
+    "musicinstone:diorite_roman_doric_capital_medium",
+    "musicinstone:diorite_roman_corinthian_capital_medium",
+    "musicinstone:diorite_roman_ionic_capital_medium"
   ]
 }

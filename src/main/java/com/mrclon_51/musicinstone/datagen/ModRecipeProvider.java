@@ -78,6 +78,7 @@ public class ModRecipeProvider extends RecipeProvider
         makeStonecutter(consumer, Blocks.BRICKS, BlocksRegistry.BRICK_LAYER.get(), 8);
         makeStonecutter(consumer, BlocksRegistry.BRICKS_FANCY.get(), BlocksRegistry.BRICK_FANCY_LAYER.get(), 8);
 
+
     }
 
     private void makeStonecutter(Consumer<FinishedRecipe> consumer, ItemLike input, ItemLike output, int count) {

@@ -208,14 +208,170 @@ public class ModItemModelProvider extends ItemModelProvider
 
         registerObjItemModel(BlocksRegistry.SANDSTONE_GREEK_CORINTHIAN_CAPITAL_MEDIUM.get());
         registerObjItemModel(BlocksRegistry.SANDSTONE_GREEK_CORINTHIAN_CAPITAL_LARGE.get());
+
+        registerObjItemModel(BlocksRegistry.SANDSTONE_FLUTED_PILASTER_SMALL.get());
+
+        registerObjItemModel(BlocksRegistry.SANDSTONE_IONIC_PILASTER_BASE_SMALL.get());
+
+        registerObjItemModel(BlocksRegistry.SANDSTONE_SCAMOZZI_IONIC_PILASTER_CAPITAL_SMALL.get());
+
+        registerObjItemModel(BlocksRegistry.SANDSTONE_GREEK_CORINTHIAN_CAPITAL_GIANT.get());
+
+        registerObjItemModel(BlocksRegistry.SANDSTONE_SCAMOZZI_IONIC_CAPITAL_MEDIUM.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_SCAMOZZI_IONIC_CAPITAL_LARGE.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_SCAMOZZI_IONIC_CAPITAL_GIANT.get());
+
+        registerObjItemModel(BlocksRegistry.SANDSTONE_ROMAN_CORINTHIAN_CAPITAL_SMALL.get());
+
+        registerObjItemModel(BlocksRegistry.SANDSTONE_CORINTHIAN_BASE_SMALL.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_CORINTHIAN_BASE_MEDIUM.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_CORINTHIAN_BASE_LARGE.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_CORINTHIAN_BASE_GIANT.get());
+
+        registerObjItemModel(BlocksRegistry.SANDSTONE_ROMAN_CORINTHIAN_BASE_SMALL.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_ROMAN_CORINTHIAN_BASE_MEDIUM.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_ROMAN_CORINTHIAN_BASE_LARGE.get());
+
+        registerObjItemModel(BlocksRegistry.SANDSTONE_DORIC_CAPITAL_MEDIUM.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_DORIC_CAPITAL_LARGE.get());
+
+        registerObjItemModel(BlocksRegistry.SANDSTONE_TUSCAN_CAPITAL_SMALL.get());
+
+        registerObjItemModel(BlocksRegistry.SANDSTONE_TUSCAN_BASE_SMALL.get());
+
+        registerObjItemModel(BlocksRegistry.SANDSTONE_DORIC_CAPITAL_GIANT.get());
+
+        registerObjItemModel(BlocksRegistry.SANDSTONE_ROMAN_CORINTHIAN_BASE_GIANT.get());
+
+        registerObjItemModel(BlocksRegistry.SANDSTONE_DORIC_COLUMN_SMALL.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_DORIC_COLUMN_MEDIUM.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_DORIC_COLUMN_LARGE.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_DORIC_COLUMN_GIANT.get());
+
+        registerObjItemModel(BlocksRegistry.SANDSTONE_TUSCAN_BASE_REGULAR.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_TUSCAN_BASE_MEDIUM.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_TUSCAN_BASE_LARGE.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_TUSCAN_BASE_GIANT.get());
+
+        registerObjItemModel(BlocksRegistry.SANDSTONE_TUSCAN_CAPITAL_REGULAR.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_TUSCAN_CAPITAL_MEDIUM.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_TUSCAN_CAPITAL_LARGE.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_TUSCAN_CAPITAL_GIANT.get());
+
+        registerObjItemModel(BlocksRegistry.SANDSTONE_ROMAN_DORIC_CAPITAL_SMALL.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_ROMAN_DORIC_CAPITAL_MEDIUM.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_ROMAN_DORIC_CAPITAL_LARGE.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_ROMAN_DORIC_CAPITAL_GIANT.get());
+
+        registerObjItemModel(BlocksRegistry.SANDSTONE_ROMAN_DORIC_BASE_SMALL.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_ROMAN_DORIC_BASE_MEDIUM.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_ROMAN_DORIC_BASE_LARGE.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_ROMAN_DORIC_BASE_GIANT.get());
+
+        registerObjItemModel(BlocksRegistry.SANDSTONE_COMPOSITE_CAPITAL_SMALL.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_COMPOSITE_CAPITAL_MEDIUM.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_COMPOSITE_CAPITAL_LARGE.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_COMPOSITE_CAPITAL_GIANT.get());
+
+        registerObjItemModel(BlocksRegistry.SANDSTONE_COLUMN_REGULAR.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_DORIC_COLUMN_REGULAR.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_FLUTED_COLUMN_REGULAR.get());
+
+        registerObjItemModel(BlocksRegistry.SANDSTONE_ROMAN_CORINTHIAN_CAPITAL_MEDIUM.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_ROMAN_CORINTHIAN_CAPITAL_LARGE.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_ROMAN_CORINTHIAN_CAPITAL_GIANT.get());
+
+        registerObjItemModel(BlocksRegistry.SANDSTONE_ROMAN_IONIC_CAPITAL_MEDIUM.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_ROMAN_IONIC_CAPITAL_LARGE.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_ROMAN_IONIC_CAPITAL_GIANT.get());
+
+        //registerObjItemModel(BlocksRegistry.SANDSTONE_RUSTICATED_COLUMN_SMALL.get());
+
+        registerObjItemModel(BlocksRegistry.DIORITE_IONIC_BASE_SMALL.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_IONIC_BASE_MEDIUM.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_IONIC_CAPITAL_SMALL.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_IONIC_CAPITAL_MEDIUM.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_FLUTED_COLUMN_SMALL.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_FLUTED_COLUMN_MEDIUM.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_FLUTED_COLUMN_LARGE.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_FLUTED_COLUMN_GIANT.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_DORIC_CAPITAL_SMALL.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_IONIC_BASE_LARGE.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_IONIC_CAPITAL_LARGE.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_CORNER_IONIC_CAPITAL_SMALL.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_ROMAN_IONIC_CAPITAL_SMALL.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_ROMAN_IONIC_CAPITAL_MEDIUM.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_ROMAN_IONIC_CAPITAL_LARGE.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_ROMAN_IONIC_CAPITAL_GIANT.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_SCAMOZZI_IONIC_CAPITAL_SMALL.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_GREEK_CORINTHIAN_CAPITAL_SMALL.get());
+        registerObjItemModelLeft(BlocksRegistry.DIORITE_IONIC_CAPITAL_GIANT.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_IONIC_BASE_GIANT.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_COLUMN_SMALL.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_COLUMN_MEDIUM.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_COLUMN_LARGE.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_COLUMN_GIANT.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_ROMAN_IONIC_BASE_SMALL.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_ROMAN_IONIC_BASE_MEDIUM.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_ROMAN_IONIC_BASE_LARGE.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_ROMAN_IONIC_BASE_GIANT.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_GREEK_CORINTHIAN_CAPITAL_MEDIUM.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_GREEK_CORINTHIAN_CAPITAL_LARGE.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_GREEK_CORINTHIAN_CAPITAL_GIANT.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_SCAMOZZI_IONIC_CAPITAL_MEDIUM.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_SCAMOZZI_IONIC_CAPITAL_LARGE.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_SCAMOZZI_IONIC_CAPITAL_GIANT.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_ROMAN_CORINTHIAN_CAPITAL_SMALL.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_CORINTHIAN_BASE_SMALL.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_CORINTHIAN_BASE_MEDIUM.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_CORINTHIAN_BASE_LARGE.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_CORINTHIAN_BASE_GIANT.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_ROMAN_CORINTHIAN_BASE_SMALL.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_ROMAN_CORINTHIAN_BASE_MEDIUM.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_ROMAN_CORINTHIAN_BASE_LARGE.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_DORIC_CAPITAL_MEDIUM.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_DORIC_CAPITAL_LARGE.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_TUSCAN_CAPITAL_SMALL.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_TUSCAN_BASE_SMALL.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_DORIC_CAPITAL_GIANT.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_ROMAN_CORINTHIAN_BASE_GIANT.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_DORIC_COLUMN_SMALL.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_DORIC_COLUMN_MEDIUM.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_DORIC_COLUMN_LARGE.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_DORIC_COLUMN_GIANT.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_TUSCAN_BASE_REGULAR.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_TUSCAN_BASE_MEDIUM.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_TUSCAN_BASE_LARGE.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_TUSCAN_BASE_GIANT.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_TUSCAN_CAPITAL_REGULAR.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_TUSCAN_CAPITAL_MEDIUM.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_TUSCAN_CAPITAL_LARGE.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_TUSCAN_CAPITAL_GIANT.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_ROMAN_DORIC_CAPITAL_SMALL.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_ROMAN_DORIC_CAPITAL_MEDIUM.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_ROMAN_DORIC_CAPITAL_LARGE.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_ROMAN_DORIC_CAPITAL_GIANT.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_ROMAN_DORIC_BASE_SMALL.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_ROMAN_DORIC_BASE_MEDIUM.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_ROMAN_DORIC_BASE_LARGE.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_ROMAN_DORIC_BASE_GIANT.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_COMPOSITE_CAPITAL_SMALL.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_COLUMN_REGULAR.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_DORIC_COLUMN_REGULAR.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_FLUTED_COLUMN_REGULAR.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_ROMAN_CORINTHIAN_CAPITAL_MEDIUM.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_ROMAN_CORINTHIAN_CAPITAL_LARGE.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_ROMAN_CORINTHIAN_CAPITAL_GIANT.get());
     }
 
-    public void registerObjItemModel(Block block) {
+    public void registerObjItemModel(Block block)
+    {
         String name = ForgeRegistries.BLOCKS.getKey(block).getPath();
         withExistingParent(name, modLoc("block/" + name));
     }
 
-    public void registerObjItemModelLeft(Block block) {
+    public void registerObjItemModelLeft(Block block)
+    {
         String name = ForgeRegistries.BLOCKS.getKey(block).getPath();
         withExistingParent(name, modLoc("block/" + name + "_left"));
     }

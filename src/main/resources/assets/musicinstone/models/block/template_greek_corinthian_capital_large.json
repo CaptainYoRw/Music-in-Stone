@@ -2,6 +2,7 @@
   "loader": "forge:obj",
   "gui_light": "front",
   "flip_v": true,
+  "ambientocclusion": false,
   "model": "musicinstone:models/block/object/large_greek_corinthian_capital.obj",
   "textures":
   {

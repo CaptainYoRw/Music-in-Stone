@@ -1,6 +1,7 @@
 {
   "parent": "musicinstone:block/template_pilaster_small",
   "textures": {
-    "texture": "musicinstone:block/sandstone_pillar_top"
+    "side": "musicinstone:block/sandstone_pillar",
+    "top": "musicinstone:block/sandstone_pillar_top"
   }
 }

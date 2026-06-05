@@ -1,5 +1,16 @@
 {
   "values": [
-    "musicinstone:sandstone_ionic_capital_giant"
+    "musicinstone:sandstone_doric_capital_giant",
+    "musicinstone:sandstone_ionic_capital_giant",
+    "musicinstone:sandstone_scamozzi_ionic_capital_giant",
+    "musicinstone:sandstone_tuscan_capital_giant",
+    "musicinstone:sandstone_roman_doric_capital_giant",
+    "musicinstone:sandstone_roman_ionic_capital_giant",
+    "musicinstone:diorite_doric_capital_giant",
+    "musicinstone:diorite_ionic_capital_giant",
+    "musicinstone:diorite_scamozzi_ionic_capital_giant",
+    "musicinstone:diorite_tuscan_capital_giant",
+    "musicinstone:diorite_roman_doric_capital_giant",
+    "musicinstone:diorite_roman_ionic_capital_giant"
   ]
 }

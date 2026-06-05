@@ -1,0 +1,7 @@
+{
+  "parent": "musicinstone:block/template_column_regular_top",
+  "textures": {
+    "side": "musicinstone:block/diorite_pillar_doric",
+    "top": "musicinstone:block/diorite_pillar_top"
+  }
+}

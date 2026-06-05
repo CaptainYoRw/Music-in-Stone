@@ -2,7 +2,7 @@
   "parent": "musicinstone:block/template_ionic_capital_small",
   "textures": {
     "ionic": "musicinstone:block/gold_ionic",
-    "texture": "musicinstone:block/seamless_gold_block",
+    "texture": "musicinstone:block/gold_block_seamless",
     "volute": "musicinstone:block/gold_volute"
   }
 }

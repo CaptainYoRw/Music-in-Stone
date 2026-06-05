@@ -1,0 +1,9 @@
+{
+  "parent": "musicinstone:block/template_composite_capital_giant",
+  "textures": {
+    "corinthian": "musicinstone:block/sandstone_volute",
+    "ionic": "musicinstone:block/sandstone_ionic",
+    "texture": "minecraft:block/sandstone_top",
+    "volute": "musicinstone:block/sandstone_corinthian"
+  }
+}

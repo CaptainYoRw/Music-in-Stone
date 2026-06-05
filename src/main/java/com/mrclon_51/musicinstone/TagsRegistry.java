@@ -11,8 +11,28 @@ public class TagsRegistry
 {
        public static class Blocks
        {
+           public static final TagKey<Block> PILASTER_BASE_SMALL = tag("small_pilaster_bases");
+           public static final TagKey<Block> PILASTER_CAPITAL_SMALL = tag("small_pilaster_capitals");
+           public static final TagKey<Block> PILASTER_BASE_MEDIUM = tag("medium_pilaster_bases");
+           public static final TagKey<Block> PILASTER_CAPITAL_MEDIUM = tag("medium_pilaster_capitals");
+           public static final TagKey<Block> PILASTER_BASE_LARGE = tag("large_pilaster_bases");
+           public static final TagKey<Block> PILASTER_CAPITAL_LARGE = tag("large_pilaster_capitals");
+           public static final TagKey<Block> PILASTER_BASE_GIANT = tag("giant_pilaster_bases");
+           public static final TagKey<Block> PILASTER_CAPITAL_GIANT = tag("giant_pilaster_capitals");
+
+           public static final TagKey<Block> HALF_COLUMN_BASE_SMALL = tag("small_half_column_bases");
+           public static final TagKey<Block> HALF_COLUMN_CAPITAL_SMALL = tag("small_half_column_capitals");
+           public static final TagKey<Block> HALF_COLUMN_BASE_MEDIUM = tag("medium_half_column_bases");
+           public static final TagKey<Block> HALF_COLUMN_CAPITAL_MEDIUM = tag("medium_half_column_capitals");
+           public static final TagKey<Block> HALF_COLUMN_BASE_LARGE = tag("large_half_column_bases");
+           public static final TagKey<Block> HALF_COLUMN_CAPITAL_LARGE = tag("large_half_column_capitals");
+           public static final TagKey<Block> HALF_COLUMN_BASE_GIANT = tag("giant_half_column_bases");
+           public static final TagKey<Block> HALF_COLUMN_CAPITAL_GIANT = tag("giant_half_column_capitals");
+
            public static final TagKey<Block> COLUMN_BASE_SMALL = tag("small_bases");
            public static final TagKey<Block> COLUMN_CAPITAL_SMALL = tag("small_capitals");
+           public static final TagKey<Block> COLUMN_BASE_REGULAR = tag("regular_bases");
+           public static final TagKey<Block> COLUMN_CAPITAL_REGULAR = tag("regular_capitals");
            public static final TagKey<Block> COLUMN_BASE_MEDIUM = tag("medium_bases");
            public static final TagKey<Block> COLUMN_CAPITAL_MEDIUM = tag("medium_capitals");
            public static final TagKey<Block> COLUMN_BASE_LARGE = tag("large_bases");

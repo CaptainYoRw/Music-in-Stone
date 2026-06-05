@@ -1,0 +1,6 @@
+{
+  "parent": "musicinstone:block/template_doric_capital_large",
+  "textures": {
+    "texture": "musicinstone:block/diorite_seamless"
+  }
+}

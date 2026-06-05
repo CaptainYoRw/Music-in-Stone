@@ -1,34 +1,64 @@
 {
   "variants": {
-    "facing=east,waterlogged=false": {
-      "model": "musicinstone:block/sandstone_fluted_pilaster_small",
-      "y": 90
-    },
-    "facing=east,waterlogged=true": {
-      "model": "musicinstone:block/sandstone_fluted_pilaster_small",
-      "y": 90
-    },
-    "facing=north,waterlogged=false": {
-      "model": "musicinstone:block/sandstone_fluted_pilaster_small"
-    },
-    "facing=north,waterlogged=true": {
-      "model": "musicinstone:block/sandstone_fluted_pilaster_small"
-    },
-    "facing=south,waterlogged=false": {
-      "model": "musicinstone:block/sandstone_fluted_pilaster_small",
-      "y": 180
-    },
-    "facing=south,waterlogged=true": {
-      "model": "musicinstone:block/sandstone_fluted_pilaster_small",
-      "y": 180
-    },
-    "facing=west,waterlogged=false": {
+    "down=false,facing=east,up=false": {
       "model": "musicinstone:block/sandstone_fluted_pilaster_small",
       "y": 270
     },
-    "facing=west,waterlogged=true": {
-      "model": "musicinstone:block/sandstone_fluted_pilaster_small",
+    "down=false,facing=east,up=true": {
+      "model": "musicinstone:block/sandstone_fluted_pilaster_small_top",
       "y": 270
+    },
+    "down=false,facing=north,up=false": {
+      "model": "musicinstone:block/sandstone_fluted_pilaster_small",
+      "y": 180
+    },
+    "down=false,facing=north,up=true": {
+      "model": "musicinstone:block/sandstone_fluted_pilaster_small_top",
+      "y": 180
+    },
+    "down=false,facing=south,up=false": {
+      "model": "musicinstone:block/sandstone_fluted_pilaster_small"
+    },
+    "down=false,facing=south,up=true": {
+      "model": "musicinstone:block/sandstone_fluted_pilaster_small_top"
+    },
+    "down=false,facing=west,up=false": {
+      "model": "musicinstone:block/sandstone_fluted_pilaster_small",
+      "y": 90
+    },
+    "down=false,facing=west,up=true": {
+      "model": "musicinstone:block/sandstone_fluted_pilaster_small_top",
+      "y": 90
+    },
+    "down=true,facing=east,up=false": {
+      "model": "musicinstone:block/sandstone_fluted_pilaster_small_bottom",
+      "y": 270
+    },
+    "down=true,facing=east,up=true": {
+      "model": "musicinstone:block/sandstone_fluted_pilaster_small_both",
+      "y": 270
+    },
+    "down=true,facing=north,up=false": {
+      "model": "musicinstone:block/sandstone_fluted_pilaster_small_bottom",
+      "y": 180
+    },
+    "down=true,facing=north,up=true": {
+      "model": "musicinstone:block/sandstone_fluted_pilaster_small_both",
+      "y": 180
+    },
+    "down=true,facing=south,up=false": {
+      "model": "musicinstone:block/sandstone_fluted_pilaster_small_bottom"
+    },
+    "down=true,facing=south,up=true": {
+      "model": "musicinstone:block/sandstone_fluted_pilaster_small_both"
+    },
+    "down=true,facing=west,up=false": {
+      "model": "musicinstone:block/sandstone_fluted_pilaster_small_bottom",
+      "y": 90
+    },
+    "down=true,facing=west,up=true": {
+      "model": "musicinstone:block/sandstone_fluted_pilaster_small_both",
+      "y": 90
     }
   }
 }

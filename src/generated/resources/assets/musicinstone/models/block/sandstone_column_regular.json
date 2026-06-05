@@ -1,0 +1,7 @@
+{
+  "parent": "musicinstone:block/template_column_regular",
+  "textures": {
+    "side": "minecraft:block/sandstone_top",
+    "top": "musicinstone:block/sandstone_pillar_top"
+  }
+}

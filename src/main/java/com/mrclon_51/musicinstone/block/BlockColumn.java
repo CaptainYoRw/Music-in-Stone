@@ -44,7 +44,7 @@ public class BlockColumn extends Block implements SimpleWaterloggedBlock
         return this.defaultBlockState()
                 .setValue(CONNECTED_UP, isCapital(context.getLevel(), context.getClickedPos()))
                 .setValue(CONNECTED_DOWN, isBase(context.getLevel(), context.getClickedPos()))
-                .setValue(WATERLOGGED, fluidState.getType() == Fluids.WATER); // Handle placing IN water
+                .setValue(WATERLOGGED, fluidState.getType() == Fluids.WATER);
     }
 
     @Override

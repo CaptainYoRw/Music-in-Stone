@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "down=false,up=false": {
+      "model": "musicinstone:block/diorite_fluted_column_medium"
+    },
+    "down=false,up=true": {
+      "model": "musicinstone:block/diorite_fluted_column_medium_top"
+    },
+    "down=true,up=false": {
+      "model": "musicinstone:block/diorite_fluted_column_medium_bottom"
+    },
+    "down=true,up=true": {
+      "model": "musicinstone:block/diorite_fluted_column_medium_both"
+    }
+  }
+}

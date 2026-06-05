@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "facing=east,waterlogged=false": {
+      "model": "musicinstone:block/diorite_ionic_base_giant",
+      "y": 90
+    },
+    "facing=east,waterlogged=true": {
+      "model": "musicinstone:block/diorite_ionic_base_giant",
+      "y": 90
+    },
+    "facing=north,waterlogged=false": {
+      "model": "musicinstone:block/diorite_ionic_base_giant"
+    },
+    "facing=north,waterlogged=true": {
+      "model": "musicinstone:block/diorite_ionic_base_giant"
+    },
+    "facing=south,waterlogged=false": {
+      "model": "musicinstone:block/diorite_ionic_base_giant",
+      "y": 180
+    },
+    "facing=south,waterlogged=true": {
+      "model": "musicinstone:block/diorite_ionic_base_giant",
+      "y": 180
+    },
+    "facing=west,waterlogged=false": {
+      "model": "musicinstone:block/diorite_ionic_base_giant",
+      "y": 270
+    },
+    "facing=west,waterlogged=true": {
+      "model": "musicinstone:block/diorite_ionic_base_giant",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "musicinstone:block/template_roman_doric_capital_giant",
+  "textures": {
+    "texture": "minecraft:block/sandstone_top"
+  }
+}

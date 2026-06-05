@@ -1,0 +1,6 @@
+{
+  "parent": "musicinstone:block/template_roman_corinthian_base_large",
+  "textures": {
+    "texture": "musicinstone:block/diorite_seamless"
+  }
+}

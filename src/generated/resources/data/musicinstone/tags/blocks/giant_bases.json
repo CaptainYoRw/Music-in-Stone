@@ -1,0 +1,16 @@
+{
+  "values": [
+    "musicinstone:sandstone_ionic_base_giant",
+    "musicinstone:sandstone_roman_ionic_base_giant",
+    "musicinstone:sandstone_roman_corinthian_base_giant",
+    "musicinstone:sandstone_corinthian_base_giant",
+    "musicinstone:sandstone_tuscan_base_giant",
+    "musicinstone:sandstone_roman_doric_base_giant",
+    "musicinstone:diorite_ionic_base_giant",
+    "musicinstone:diorite_roman_ionic_base_giant",
+    "musicinstone:diorite_roman_corinthian_base_giant",
+    "musicinstone:diorite_corinthian_base_giant",
+    "musicinstone:diorite_tuscan_base_giant",
+    "musicinstone:diorite_roman_doric_base_giant"
+  ]
+}

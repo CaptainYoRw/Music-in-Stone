@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "down=false,up=false": {
+      "model": "musicinstone:block/diorite_column_regular"
+    },
+    "down=false,up=true": {
+      "model": "musicinstone:block/diorite_column_regular_top"
+    },
+    "down=true,up=false": {
+      "model": "musicinstone:block/diorite_column_regular_bottom"
+    },
+    "down=true,up=true": {
+      "model": "musicinstone:block/diorite_column_regular_both"
+    }
+  }
+}

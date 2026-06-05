@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "down=false,up=false": {
+      "model": "musicinstone:block/sandstone_doric_column_small"
+    },
+    "down=false,up=true": {
+      "model": "musicinstone:block/sandstone_doric_column_small_top"
+    },
+    "down=true,up=false": {
+      "model": "musicinstone:block/sandstone_doric_column_small_bottom"
+    },
+    "down=true,up=true": {
+      "model": "musicinstone:block/sandstone_doric_column_small_both"
+    }
+  }
+}

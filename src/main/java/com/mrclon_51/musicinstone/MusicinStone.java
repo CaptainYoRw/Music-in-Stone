@@ -37,6 +37,7 @@ public class MusicinStone
         IEventBus modEventBus = context.getModEventBus();
 
         CreativeTabRegistry.register(modEventBus);
+        CreativeTabOrdersRegistry.register(modEventBus);
 
         BlocksRegistry.register(modEventBus);
         ItemsRegistry.register(modEventBus);
@@ -78,7 +79,7 @@ public class MusicinStone
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-            //ItemBlockRenderTypes.setRenderLayer(BlocksRegistry.SANDSTONE_GREEK_CORINTHIAN_CAPITAL_SMALL.get(), RenderType.translucent());
+
         }
     }
 

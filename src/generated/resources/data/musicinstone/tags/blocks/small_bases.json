@@ -3,6 +3,18 @@
     "musicinstone:quartz_ionic_base_small",
     "musicinstone:sandstone_ionic_base_small",
     "musicinstone:gold_ionic_base_small",
-    "musicinstone:sandstone_roman_ionic_base_small"
+    "musicinstone:sandstone_roman_ionic_base_small",
+    "musicinstone:sandstone_corinthian_base_small",
+    "musicinstone:sandstone_roman_corinthian_base_small",
+    "musicinstone:sandstone_tuscan_base_small",
+    "musicinstone:sandstone_roman_doric_base_small",
+    "musicinstone:sandstone_tuscan_base_regular",
+    "musicinstone:diorite_ionic_base_small",
+    "musicinstone:diorite_roman_ionic_base_small",
+    "musicinstone:diorite_corinthian_base_small",
+    "musicinstone:diorite_roman_corinthian_base_small",
+    "musicinstone:diorite_tuscan_base_small",
+    "musicinstone:diorite_roman_doric_base_small",
+    "musicinstone:diorite_tuscan_base_regular"
   ]
 }

@@ -1,0 +1,9 @@
+{
+  "parent": "musicinstone:block/template_composite_capital_large",
+  "textures": {
+    "corinthian": "musicinstone:block/diorite_corinthian",
+    "ionic": "musicinstone:block/diorite_ionic",
+    "texture": "musicinstone:block/diorite_seamless",
+    "volute": "musicinstone:block/diorite_volute"
+  }
+}

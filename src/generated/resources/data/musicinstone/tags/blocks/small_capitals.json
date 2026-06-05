@@ -13,6 +13,19 @@
     "musicinstone:gold_ionic_capital_small",
     "musicinstone:gold_corner_ionic_capital_small",
     "musicinstone:gold_roman_ionic_capital_small",
-    "musicinstone:gold_scamozzi_ionic_capital_small"
+    "musicinstone:gold_scamozzi_ionic_capital_small",
+    "musicinstone:sandstone_roman_corinthian_capital_small",
+    "musicinstone:sandstone_tuscan_capital_small",
+    "musicinstone:sandstone_roman_doric_capital_small",
+    "musicinstone:sandstone_composite_capital_small",
+    "musicinstone:diorite_ionic_capital_small",
+    "musicinstone:diorite_doric_capital_small",
+    "musicinstone:diorite_corner_ionic_capital_small",
+    "musicinstone:diorite_roman_ionic_capital_small",
+    "musicinstone:diorite_scamozzi_ionic_capital_small",
+    "musicinstone:diorite_roman_corinthian_capital_small",
+    "musicinstone:diorite_tuscan_capital_small",
+    "musicinstone:diorite_roman_doric_capital_small",
+    "musicinstone:diorite_composite_capital_small"
   ]
 }
