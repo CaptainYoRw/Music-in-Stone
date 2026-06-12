@@ -1,5 +1,6 @@
 package com.mrclon_51.musicinstone;
 
+import com.mrclon_51.musicinstone.item.ItemArchitectTools;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -11,7 +12,7 @@ public class ItemsRegistry
     public static final DeferredRegister<Item> ITEMS=
                 DeferredRegister.create(ForgeRegistries.ITEMS, MusicinStone.MODID);
 
-    public static final RegistryObject<Item> TEST_ITEM = ITEMS.register("test_item", ()-> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ARCHITECT_TOOLS = ITEMS.register("test_item", ()-> new ItemArchitectTools(new Item.Properties()));
 
     public static void register(IEventBus eventBus)
     {

@@ -1,0 +1,22 @@
+# Blender 5.1.2 MTL File: 'window_greek_frame_left.blend'
+# www.blender.org
+
+newmtl front
+Ns 0.000000
+Ka 0.000000 0.000000 0.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 0.000000
+d 1.000000
+illum 1
+map_Kd #frame
+
+newmtl sides.056
+Ns 0.000000
+Ka 0.000000 0.000000 0.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 0.000000
+d 1.000000
+illum 1
+map_Kd #texture_all

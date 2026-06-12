@@ -2,6 +2,7 @@ package com.mrclon_51.musicinstone.block;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.util.StringRepresentable;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.LevelAccessor;
@@ -18,6 +19,25 @@ import net.minecraft.world.level.material.Fluids;
 
 public class BlockSideChangeable extends BlockOffsettable
 {
+    public class ModBlockProperties
+    {
+        public enum SideHalf implements StringRepresentable {
+            LEFT("left"),
+            RIGHT("right");
+
+            private final String name;
+
+            SideHalf(String name) {
+                this.name = name;
+            }
+
+            @Override
+            public String getSerializedName() {
+                return this.name;
+            }
+        }
+    }
+
     public static final EnumProperty<StairsShape> SHAPE = BlockStateProperties.STAIRS_SHAPE;
     public static final EnumProperty<ModBlockProperties.SideHalf> SIDE = EnumProperty.create("side", ModBlockProperties.SideHalf.class);
 

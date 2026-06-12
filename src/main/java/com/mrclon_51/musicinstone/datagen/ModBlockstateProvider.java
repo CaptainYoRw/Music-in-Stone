@@ -2,10 +2,7 @@ package com.mrclon_51.musicinstone.datagen;
 
 import com.mrclon_51.musicinstone.MusicinStone;
 import com.mrclon_51.musicinstone.BlocksRegistry;
-import com.mrclon_51.musicinstone.block.BlockIonicCapitalGiant;
-import com.mrclon_51.musicinstone.block.BlockIonicCapitalSmall;
-import com.mrclon_51.musicinstone.block.BlockColumnSmall;
-import com.mrclon_51.musicinstone.block.ModBlockProperties;
+import com.mrclon_51.musicinstone.block.*;
 import net.minecraft.core.Direction;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
@@ -396,7 +393,108 @@ public class ModBlockstateProvider extends BlockStateProvider
         generateCornerIonicCustomShape(BlocksRegistry.SANDSTONE_SCAMOZZI_IONIC_PILASTER_CAPITAL_SMALL, "template_scamozzi_ionic_pilaster_capital_small", mcLoc("block/sandstone_top"), modLoc("block/sandstone_ionic"), modLoc("block/sandstone_volute"));
 
 
+        generateWindowFrame(BlocksRegistry.SANDSTONE_WINDOW_FRAME, "template_window_frame", modLoc("block/sandstone_pillar"), mcLoc("block/sandstone_top"));
+
+        generateWindowPediment(BlocksRegistry.SANDSTONE_WINDOW_UPPER_FRAME, "template_window_upper_frame", modLoc("block/sandstone_frame"), mcLoc("block/sandstone_top"));
+        generateWindowPediment(BlocksRegistry.SANDSTONE_WINDOW_KEYSTONE, "template_window_keystone", modLoc("block/sandstone_frame"), mcLoc("block/sandstone_top"));
+
+        generateComplexPediment(BlocksRegistry.SANDSTONE_WINDOW_GREEK_PEDIMENT, "block/pediment/", mcLoc("block/sandstone_top"), modLoc("block/sandstone_frame"), modLoc("block/sandstone_volute"));
     }
+
+    private void generateComplexPediment(RegistryObject<Block> blockRegistryObject, String templatePath, ResourceLocation tex, ResourceLocation frameTex, ResourceLocation volute){
+
+        Block block = blockRegistryObject.get();
+        MultiPartBlockStateBuilder builder = getMultipartBuilder(block);
+
+        Direction[] facings = { Direction.NORTH, Direction.EAST, Direction.SOUTH, Direction.WEST };
+        Boolean[] bools = { false, true };
+        String blockName = blockRegistryObject.getId().getPath();
+
+        for (Direction facing : facings) {
+            int rotationY = ((int) facing.get2DDataValue() * 90 + 180) % 360;
+
+            for (boolean left : bools) {
+                for (boolean right : bools) {
+                    String connection = getConnectionName(left, right);
+
+                    // Генерируем модели ОДИН РАЗ, чтобы не плодить дубликаты
+                    var pedimentModel = createLayerModel(blockName + "_pediment_" + connection, templatePath + "template_window_greek_pediment_" + connection, tex, frameTex, volute);
+                    var frameModel = createLayerModel(blockName + "_frame_" + connection, templatePath + "template_window_greek_frame_" + connection, tex, frameTex, volute);
+                    var bracketsModel = connection.equals("both") ? null : createLayerModel(blockName + "_brackets_" + connection, templatePath + "template_window_greek_brackets_" + connection, tex, frameTex, volute);
+                    var supportModel = createLayerModel(blockName + "_support_" + connection, templatePath + "template_window_greek_support_" + connection, tex, frameTex, volute);
+                    var dentilsModel = createLayerModel(blockName + "_dentils_" + connection, templatePath + "template_window_greek_dentils_" + connection, tex, frameTex, volute);
+
+                    // ==================== [ КОСТЫЛЬ ДЛЯ TYPE0 ] ====================
+                    // Принудительно создаем пустышки-модели на диске, чтобы обмануть кэш Forge DataGen.
+                    // В сам Multipart мы их не пихаем, просто создаем файлы, чтобы датген не паниковал.
+                    createLayerModel(blockName + "_type0_" + connection, templatePath + "template_window_greek_pediment_" + connection, tex, frameTex, volute);
+                    // ===============================================================
+
+                    // ТЕПЕРЬ ДЛЯ КАЖДОГО СУЩЕСТВУЮЩЕГО ТИПА МЫ ЯВНО ПРОПИСЫВАЕМ ПЕДИМЕНТ
+                    // Это закроет wildcard-проблему, из-за которой лезет type0!
+                    for (BlockWindowPedimentComplex.Type typeVal : BlockWindowPedimentComplex.Type.values()) {
+
+                        // 1. Базовый педимент должен быть при ВСЕХ типах
+                        builder.part().modelFile(pedimentModel).rotationY(rotationY).addModel()
+                                .condition(BlockStateProperties.HORIZONTAL_FACING, facing)
+                                .condition(BlockWindowPedimentComplex.CONNECTED_LEFT, left)
+                                .condition(BlockWindowPedimentComplex.CONNECTED_RIGHT, right)
+                                .condition(BlockWindowPedimentComplex.TYPE, typeVal); // ЯВНО УКАЗАЛИ
+                    }
+
+                    // 2. Слой фрейма (Только при Type.NONE)
+                    builder.part().modelFile(frameModel).rotationY(rotationY).addModel()
+                            .condition(BlockStateProperties.HORIZONTAL_FACING, facing)
+                            .condition(BlockWindowPedimentComplex.CONNECTED_LEFT, left)
+                            .condition(BlockWindowPedimentComplex.CONNECTED_RIGHT, right)
+                            .condition(BlockWindowPedimentComplex.FRAME, BlockWindowPedimentComplex.Frame.FRAMED);
+                    // 3. Слой кронштейнов (Только при Type.BRACKETS)
+                    if (bracketsModel != null) {
+                        builder.part().modelFile(bracketsModel).rotationY(rotationY).addModel()
+                                .condition(BlockStateProperties.HORIZONTAL_FACING, facing)
+                                .condition(BlockWindowPedimentComplex.TYPE, BlockWindowPedimentComplex.Type.BRACKETS)
+                                .condition(BlockWindowPedimentComplex.CONNECTED_LEFT, left)
+                                .condition(BlockWindowPedimentComplex.CONNECTED_RIGHT, right);
+                    }
+
+                    // 4. Слой опоры (Только при Type.SUPPORT)
+                    builder.part().modelFile(supportModel).rotationY(rotationY).addModel()
+                            .condition(BlockStateProperties.HORIZONTAL_FACING, facing)
+                            .condition(BlockWindowPedimentComplex.TYPE, BlockWindowPedimentComplex.Type.SUPPORT)
+                            .condition(BlockWindowPedimentComplex.CONNECTED_LEFT, left)
+                            .condition(BlockWindowPedimentComplex.CONNECTED_RIGHT, right);
+
+                    // 5. Слой дентикул (Независим от типа, но зависит от DENTILS)
+                    builder.part().modelFile(dentilsModel).rotationY(rotationY).addModel()
+                            .condition(BlockStateProperties.HORIZONTAL_FACING, facing)
+                            .condition(BlockWindowPedimentComplex.DENTILS, true)
+                            .condition(BlockWindowPedimentComplex.CONNECTED_LEFT, left)
+                            .condition(BlockWindowPedimentComplex.CONNECTED_RIGHT, right);
+                }
+            }
+        }
+    }
+
+        // Вспомогательный метод определения суффикса модели на основе коннектов
+        private String getConnectionName(boolean left, boolean right)
+        {
+            if (left && right) return "both";
+            if (left) return "left";
+            if (right) return "right";
+            return "single";
+        }
+
+    private BlockModelBuilder createLayerModel(String newModelName, String templatePath, ResourceLocation tex, ResourceLocation frame, ResourceLocation volute)
+    {
+        return models().withExistingParent(newModelName, modLoc(templatePath))
+                .texture("texture", tex)
+                .texture("frame", frame)
+                .texture("volute", volute);
+    }
+
+
+
+
 
     //Вращающийся блок по горизонтали но с заданным путём текстуры. Четыре текстуры
     private void generateHorizontalCustomShape(RegistryObject<Block> block, String templateName, ResourceLocation tex, ResourceLocation ionic, ResourceLocation volute, ResourceLocation corinthian)
@@ -452,13 +550,13 @@ public class ModBlockstateProvider extends BlockStateProvider
             //Левая сторона
             builder.partialState()
                     .with(BlockStateProperties.HORIZONTAL_FACING, dir)
-                    .with(BlockIonicCapitalGiant.SIDE, ModBlockProperties.SideHalf.LEFT) // Replace with your actual property name
+                    .with(BlockIonicCapitalGiant.SIDE, BlockIonicCapitalGiant.ModBlockProperties.SideHalf.LEFT) // Replace with your actual property name
                     .setModels(new ConfiguredModel(modelLeft, 0, rotationY, false));
 
             //Правая сторона
             builder.partialState()
                     .with(BlockStateProperties.HORIZONTAL_FACING, dir)
-                    .with(BlockIonicCapitalGiant.SIDE, ModBlockProperties.SideHalf.RIGHT) // Replace with your actual property name
+                    .with(BlockIonicCapitalGiant.SIDE, BlockIonicCapitalGiant.ModBlockProperties.SideHalf.RIGHT) // Replace with your actual property name
                     .setModels(new ConfiguredModel(modelRight, 0, rotationY, false));
         }
     }
@@ -489,7 +587,7 @@ public class ModBlockstateProvider extends BlockStateProvider
             wallBlock((WallBlock) variantBlock, texture);
         }
     }
-    //Сразу несколько блоков их исходного - полублок, ступеньки и стена
+    //Сразу несколько блоков из исходного - полублок, ступеньки и стена
     private void generateBlockVariants(Block baseBlock, RegistryObject<SlabBlock> slab, RegistryObject<StairBlock> stairs, RegistryObject<WallBlock> wall)
     {
         ResourceLocation tex = blockTexture(baseBlock);
@@ -709,6 +807,128 @@ public class ModBlockstateProvider extends BlockStateProvider
 
     }
 
+
+    public void generateWindowFrame(RegistryObject<Block> block, String templateName, ResourceLocation front, ResourceLocation side)
+    {
+
+        ModelFile modelLeft = models().withExistingParent(block.getId().getPath() + "_left", modLoc("block/" + templateName + "_left"))
+                .texture("1", side)
+                .texture("2", front);
+
+        ModelFile modelMiddle = models().withExistingParent(block.getId().getPath() + "_middle", modLoc("block/" + templateName + "_middle"))
+                .texture("1", side)
+                .texture("2", front);
+
+        ModelFile modelRight = models().withExistingParent(block.getId().getPath() + "_right", modLoc("block/" + templateName + "_right"))
+                .texture("1", side)
+                .texture("2", front);
+
+        getVariantBuilder(block.get()).forAllStates(state -> {
+            Direction facing = state.getValue(BlockWindowFrame.FACING);
+            BlockWindowFrame.ClickZone zone = state.getValue(BlockWindowFrame.ZONE);
+
+            ModelFile chosenModel = switch (zone)
+            {
+                case LEFT -> modelLeft;
+                case MIDDLE -> modelMiddle;
+                case RIGHT -> modelRight;
+            };
+
+            int rotationY = switch (facing)
+            {
+                case SOUTH -> 180;
+                case WEST -> 270;
+                case EAST -> 90;
+                default -> 0; // NORTH
+            };
+
+            return ConfiguredModel.builder()
+                    .modelFile(chosenModel)
+                    .rotationY(rotationY)
+                    .build();
+        });
+    }
+
+
+
+    private void generateWindowPediment(RegistryObject<Block> block, String templateName, ResourceLocation front, ResourceLocation side)
+    {
+
+            // Генерируем базовые модели для TYPE = 0 (Normal) и сразу биндим к ним текстуры "1" и "2"
+            ModelFile normalSingle = models().withExistingParent(block.getId().getPath() + "_type0_single", modLoc("block/" + templateName + "_type0_single"))
+                    .texture("1", side)
+                    .texture("2", front);
+
+            ModelFile normalLeft   = models().withExistingParent(block.getId().getPath() + "_type0_left",   modLoc("block/" + templateName + "_type0_left"))
+                    .texture("1", side)
+                    .texture("2", front);
+
+            ModelFile normalRight  = models().withExistingParent(block.getId().getPath() + "_type0_right",  modLoc("block/" + templateName + "_type0_right"))
+                    .texture("1", side)
+                    .texture("2", front);
+
+            ModelFile normalFull   = models().withExistingParent(block.getId().getPath() + "_type0_both",   modLoc("block/" + templateName + "_type0_both"))
+                    .texture("1", side)
+                    .texture("2", front);
+
+            // Генерируем базовые модели для TYPE = 1 (Alternative) и биндим те же (или другие) текстуры
+            ModelFile altSingle = models().withExistingParent(block.getId().getPath() + "_type1_single", modLoc("block/" + templateName + "_type1_single"))
+                    .texture("1", side)
+                    .texture("2", front);
+
+            ModelFile altLeft   = models().withExistingParent(block.getId().getPath() + "_type1_left",   modLoc("block/" + templateName + "_type1_left"))
+                    .texture("1", side)
+                    .texture("2", front);
+
+            ModelFile altRight  = models().withExistingParent(block.getId().getPath() + "_type1_right",  modLoc("block/" + templateName + "_type1_right"))
+                    .texture("1", side)
+                    .texture("2", front);
+
+            ModelFile altFull   = models().withExistingParent(block.getId().getPath() + "_type1_both",   modLoc("block/" + templateName + "_type1_both"))
+                    .texture("1", side)
+                    .texture("2", front);
+
+            // Строим все 32 комбинации состояний
+            getVariantBuilder(block.get()).forAllStates(state ->
+            {
+                Direction facing = state.getValue(BlockWindowPediment.FACING);
+                boolean left = state.getValue(BlockWindowPediment.CONNECTED_LEFT);
+                boolean right = state.getValue(BlockWindowPediment.CONNECTED_RIGHT);
+                BlockWindowPediment.Frame type = state.getValue(BlockWindowPediment.FRAME);
+
+                // Выбираем уже текстурированную модель
+                ModelFile chosenModel;
+                if (type == BlockWindowPediment.Frame.FRAMELESS)
+                {
+                    if (left && right) chosenModel = normalFull;
+                    else if (left)      chosenModel = normalLeft;
+                    else if (right)     chosenModel = normalRight;
+                    else                chosenModel = normalSingle;
+                } else
+                {
+                    if (left && right) chosenModel = altFull;
+                    else if (left)      chosenModel = altLeft;
+                    else if (right)     chosenModel = altRight;
+                    else                chosenModel = altSingle;
+                }
+
+                // Рассчитываем вращение
+                int rotationY = switch (facing)
+                {
+                    case SOUTH -> 180;
+                    case WEST -> 270;
+                    case EAST -> 90;
+                    default -> 0; // NORTH
+                };
+
+                return ConfiguredModel.builder()
+                        .modelFile(chosenModel)
+                        .rotationY(rotationY)
+                        .build();
+            });
+        }
+
+
     private void generateRotatingColumn(RegistryObject<Block> block, String templateName,
                 ResourceLocation sideTex, ResourceLocation topTex)
     {
@@ -730,31 +950,32 @@ public class ModBlockstateProvider extends BlockStateProvider
 
         VariantBlockStateBuilder builder = getVariantBuilder(block.get());
 
-        for (Direction dir : BlockStateProperties.HORIZONTAL_FACING.getPossibleValues()) {
-            int rotationY = (int) dir.toYRot(); // North=0, East=90, South=180, West=270//
+        for (Direction dir : BlockStateProperties.HORIZONTAL_FACING.getPossibleValues())
+        {
+            int rotationY = (int) dir.toYRot();
 
-            // Connection: None
+
             builder.partialState()
                     .with(BlockColumnSmall.CONNECTED_UP, false)
                     .with(BlockColumnSmall.CONNECTED_DOWN, false)
                     .with(BlockStateProperties.HORIZONTAL_FACING, dir)
                     .setModels(new ConfiguredModel(modelNone, 0, rotationY, false));
 
-            // Connection: Down Only
+
             builder.partialState()
                     .with(BlockColumnSmall.CONNECTED_UP, false)
                     .with(BlockColumnSmall.CONNECTED_DOWN, true)
                     .with(BlockStateProperties.HORIZONTAL_FACING, dir)
                     .setModels(new ConfiguredModel(modelBottom, 0, rotationY, false));
 
-            // Connection: Up Only
+
             builder.partialState()
                     .with(BlockColumnSmall.CONNECTED_UP, true)
                     .with(BlockColumnSmall.CONNECTED_DOWN, false)
                     .with(BlockStateProperties.HORIZONTAL_FACING, dir)
                     .setModels(new ConfiguredModel(modelTop, 0, rotationY, false));
 
-            // Connection: Both
+
             builder.partialState()
                     .with(BlockColumnSmall.CONNECTED_UP, true)
                     .with(BlockColumnSmall.CONNECTED_DOWN, true)

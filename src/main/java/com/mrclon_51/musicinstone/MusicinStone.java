@@ -2,11 +2,8 @@ package com.mrclon_51.musicinstone;
 
 import com.mojang.logging.LogUtils;
 import com.mrclon_51.musicinstone.datagen.ModBlockstateProvider;
-import net.minecraft.client.renderer.ItemBlockRenderTypes;
-import net.minecraft.client.renderer.RenderType;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
-import net.minecraft.world.level.block.Block;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -21,8 +18,6 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
-import static com.mrclon_51.musicinstone.BlocksRegistry.BLOCKS;
-
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(MusicinStone.MODID)
 public class MusicinStone
@@ -36,7 +31,7 @@ public class MusicinStone
     {
         IEventBus modEventBus = context.getModEventBus();
 
-        CreativeTabRegistry.register(modEventBus);
+        CreativeTabExteriorRegistry.register(modEventBus);
         CreativeTabOrdersRegistry.register(modEventBus);
 
         BlocksRegistry.register(modEventBus);

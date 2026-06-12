@@ -1,6 +1,7 @@
 package com.mrclon_51.musicinstone.block;
 
 import net.minecraft.core.Direction;
+import net.minecraft.util.StringRepresentable;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
@@ -9,6 +10,25 @@ import net.minecraft.world.level.block.state.properties.EnumProperty;
 
 public class BlockIonicCapitalGiant extends BlockHorizontalDirectional
 {
+    public class ModBlockProperties
+    {
+        public enum SideHalf implements StringRepresentable {
+            LEFT("left"),
+            RIGHT("right");
+
+            private final String name;
+
+            SideHalf(String name) {
+                this.name = name;
+            }
+
+            @Override
+            public String getSerializedName() {
+                return this.name;
+            }
+        }
+    }
+
     public static final EnumProperty<ModBlockProperties.SideHalf> SIDE = EnumProperty.create("side", ModBlockProperties.SideHalf.class);
 
     public BlockIonicCapitalGiant(Properties properties)
@@ -34,7 +54,8 @@ public class BlockIonicCapitalGiant extends BlockHorizontalDirectional
         boolean isRightSide = false;
 
         // Determine "Right" vs "Left" based on which way the player faces
-        switch (facing) {
+        switch (facing)
+        {
             case NORTH -> isRightSide = hitX < 0.5;
             case SOUTH -> isRightSide = hitX > 0.5;
             case WEST ->  isRightSide = hitZ > 0.5;

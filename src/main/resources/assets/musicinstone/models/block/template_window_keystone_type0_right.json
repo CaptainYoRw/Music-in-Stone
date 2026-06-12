@@ -1,0 +1,12 @@
+{
+  "loader": "forge:obj",
+  "gui_light": "front",
+  "flip_v": true,
+  "model": "musicinstone:models/block/object/window_keystone_type0_right.obj",
+  "textures":
+  {
+    "1": "#texture",
+    "2": "#texture_front",
+    "particle": "#1"
+  }
+}

@@ -50,7 +50,7 @@ public class BlockOffsettable extends Block implements SimpleWaterloggedBlock
     {
         ItemStack stack = player.getItemInHand(hand);
         // Replaces Items.STICK with my own item
-        if (stack.getItem() == ItemsRegistry.TEST_ITEM.get() && !level.isClientSide)
+        if (stack.getItem() == ItemsRegistry.ARCHITECT_TOOLS.get() && !level.isClientSide && hand == InteractionHand.MAIN_HAND)
         {
             int current = state.getValue(OFFSET);
             int next = (current + 1) % 3; // Cycle 0->1->2->0

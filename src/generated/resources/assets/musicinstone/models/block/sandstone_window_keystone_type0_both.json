@@ -1,0 +1,7 @@
+{
+  "parent": "musicinstone:block/template_window_keystone_type0_both",
+  "textures": {
+    "1": "minecraft:block/sandstone_top",
+    "2": "musicinstone:block/sandstone_frame"
+  }
+}

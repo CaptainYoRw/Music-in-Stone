@@ -1,0 +1,94 @@
+{
+  "variants": {
+    "facing=east,waterlogged=false,zone=left": {
+      "model": "musicinstone:block/sandstone_window_frame_left",
+      "y": 90
+    },
+    "facing=east,waterlogged=false,zone=middle": {
+      "model": "musicinstone:block/sandstone_window_frame_middle",
+      "y": 90
+    },
+    "facing=east,waterlogged=false,zone=right": {
+      "model": "musicinstone:block/sandstone_window_frame_right",
+      "y": 90
+    },
+    "facing=east,waterlogged=true,zone=left": {
+      "model": "musicinstone:block/sandstone_window_frame_left",
+      "y": 90
+    },
+    "facing=east,waterlogged=true,zone=middle": {
+      "model": "musicinstone:block/sandstone_window_frame_middle",
+      "y": 90
+    },
+    "facing=east,waterlogged=true,zone=right": {
+      "model": "musicinstone:block/sandstone_window_frame_right",
+      "y": 90
+    },
+    "facing=north,waterlogged=false,zone=left": {
+      "model": "musicinstone:block/sandstone_window_frame_left"
+    },
+    "facing=north,waterlogged=false,zone=middle": {
+      "model": "musicinstone:block/sandstone_window_frame_middle"
+    },
+    "facing=north,waterlogged=false,zone=right": {
+      "model": "musicinstone:block/sandstone_window_frame_right"
+    },
+    "facing=north,waterlogged=true,zone=left": {
+      "model": "musicinstone:block/sandstone_window_frame_left"
+    },
+    "facing=north,waterlogged=true,zone=middle": {
+      "model": "musicinstone:block/sandstone_window_frame_middle"
+    },
+    "facing=north,waterlogged=true,zone=right": {
+      "model": "musicinstone:block/sandstone_window_frame_right"
+    },
+    "facing=south,waterlogged=false,zone=left": {
+      "model": "musicinstone:block/sandstone_window_frame_left",
+      "y": 180
+    },
+    "facing=south,waterlogged=false,zone=middle": {
+      "model": "musicinstone:block/sandstone_window_frame_middle",
+      "y": 180
+    },
+    "facing=south,waterlogged=false,zone=right": {
+      "model": "musicinstone:block/sandstone_window_frame_right",
+      "y": 180
+    },
+    "facing=south,waterlogged=true,zone=left": {
+      "model": "musicinstone:block/sandstone_window_frame_left",
+      "y": 180
+    },
+    "facing=south,waterlogged=true,zone=middle": {
+      "model": "musicinstone:block/sandstone_window_frame_middle",
+      "y": 180
+    },
+    "facing=south,waterlogged=true,zone=right": {
+      "model": "musicinstone:block/sandstone_window_frame_right",
+      "y": 180
+    },
+    "facing=west,waterlogged=false,zone=left": {
+      "model": "musicinstone:block/sandstone_window_frame_left",
+      "y": 270
+    },
+    "facing=west,waterlogged=false,zone=middle": {
+      "model": "musicinstone:block/sandstone_window_frame_middle",
+      "y": 270
+    },
+    "facing=west,waterlogged=false,zone=right": {
+      "model": "musicinstone:block/sandstone_window_frame_right",
+      "y": 270
+    },
+    "facing=west,waterlogged=true,zone=left": {
+      "model": "musicinstone:block/sandstone_window_frame_left",
+      "y": 270
+    },
+    "facing=west,waterlogged=true,zone=middle": {
+      "model": "musicinstone:block/sandstone_window_frame_middle",
+      "y": 270
+    },
+    "facing=west,waterlogged=true,zone=right": {
+      "model": "musicinstone:block/sandstone_window_frame_right",
+      "y": 270
+    }
+  }
+}

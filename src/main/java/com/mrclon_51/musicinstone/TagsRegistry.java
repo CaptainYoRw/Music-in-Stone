@@ -40,6 +40,8 @@ public class TagsRegistry
            public static final TagKey<Block> COLUMN_BASE_GIANT = tag("giant_bases");
            public static final TagKey<Block> COLUMN_CAPITAL_GIANT = tag("giant_capitals");
 
+           public static final TagKey<Block> LEFT_CLICKABLE = tag("left_clickable");
+
            private static TagKey<Block> tag(String name)
            {
                return TagKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath("musicinstone", name));

@@ -370,12 +370,30 @@ public class ModItemModelProvider extends ItemModelProvider
         registerObjItemModel(BlocksRegistry.DIORITE_COMPOSITE_CAPITAL_GIANT.get());
         registerObjItemModel(BlocksRegistry.DIORITE_CORNER_IONIC_CAPITAL_MEDIUM.get());
         registerObjItemModel(BlocksRegistry.DIORITE_CORNER_IONIC_CAPITAL_LARGE.get());
+
+        registerObjItemModelMiddle(BlocksRegistry.SANDSTONE_WINDOW_FRAME.get());
+
+        registerObjItemModelSingle(BlocksRegistry.SANDSTONE_WINDOW_UPPER_FRAME.get());
+        registerObjItemModelSingle(BlocksRegistry.SANDSTONE_WINDOW_KEYSTONE.get());
+        registerObjItemModelSingle(BlocksRegistry.SANDSTONE_WINDOW_GREEK_PEDIMENT.get());
     }
 
     public void registerObjItemModel(Block block)
     {
         String name = ForgeRegistries.BLOCKS.getKey(block).getPath();
         withExistingParent(name, modLoc("block/" + name));
+    }
+
+    public void registerObjItemModelSingle(Block block)
+    {
+        String name = ForgeRegistries.BLOCKS.getKey(block).getPath();
+        withExistingParent(name, modLoc("block/" + name + "_type0_single"));
+    }
+
+    public void registerObjItemModelMiddle(Block block)
+    {
+        String name = ForgeRegistries.BLOCKS.getKey(block).getPath();
+        withExistingParent(name, modLoc("block/" + name + "_middle"));
     }
 
     public void registerObjItemModelLeft(Block block)

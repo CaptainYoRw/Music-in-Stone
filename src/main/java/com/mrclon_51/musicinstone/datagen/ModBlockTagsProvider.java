@@ -7,6 +7,7 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.level.block.Block;
+import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 
@@ -215,6 +216,11 @@ public class ModBlockTagsProvider extends BlockTagsProvider
 
         this.tag(TagsRegistry.Blocks.PILASTER_CAPITAL_SMALL)
                 .add(BlocksRegistry.SANDSTONE_SCAMOZZI_IONIC_PILASTER_CAPITAL_SMALL.get());
+
+        this.tag(TagsRegistry.Blocks.LEFT_CLICKABLE)
+                .add(BlocksRegistry.SANDSTONE_WINDOW_GREEK_PEDIMENT.get());
+
+
 
         //this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
            //     .add()

@@ -1,0 +1,244 @@
+{
+  "variants": {
+    "connected_left=false,connected_right=false,facing=east,frame=frame,waterlogged=false": {
+      "model": "musicinstone:block/sandstone_window_upper_frame_type1_single",
+      "y": 90
+    },
+    "connected_left=false,connected_right=false,facing=east,frame=frame,waterlogged=true": {
+      "model": "musicinstone:block/sandstone_window_upper_frame_type1_single",
+      "y": 90
+    },
+    "connected_left=false,connected_right=false,facing=east,frame=frameless,waterlogged=false": {
+      "model": "musicinstone:block/sandstone_window_upper_frame_type0_single",
+      "y": 90
+    },
+    "connected_left=false,connected_right=false,facing=east,frame=frameless,waterlogged=true": {
+      "model": "musicinstone:block/sandstone_window_upper_frame_type0_single",
+      "y": 90
+    },
+    "connected_left=false,connected_right=false,facing=north,frame=frame,waterlogged=false": {
+      "model": "musicinstone:block/sandstone_window_upper_frame_type1_single"
+    },
+    "connected_left=false,connected_right=false,facing=north,frame=frame,waterlogged=true": {
+      "model": "musicinstone:block/sandstone_window_upper_frame_type1_single"
+    },
+    "connected_left=false,connected_right=false,facing=north,frame=frameless,waterlogged=false": {
+      "model": "musicinstone:block/sandstone_window_upper_frame_type0_single"
+    },
+    "connected_left=false,connected_right=false,facing=north,frame=frameless,waterlogged=true": {
+      "model": "musicinstone:block/sandstone_window_upper_frame_type0_single"
+    },
+    "connected_left=false,connected_right=false,facing=south,frame=frame,waterlogged=false": {
+      "model": "musicinstone:block/sandstone_window_upper_frame_type1_single",
+      "y": 180
+    },
+    "connected_left=false,connected_right=false,facing=south,frame=frame,waterlogged=true": {
+      "model": "musicinstone:block/sandstone_window_upper_frame_type1_single",
+      "y": 180
+    },
+    "connected_left=false,connected_right=false,facing=south,frame=frameless,waterlogged=false": {
+      "model": "musicinstone:block/sandstone_window_upper_frame_type0_single",
+      "y": 180
+    },
+    "connected_left=false,connected_right=false,facing=south,frame=frameless,waterlogged=true": {
+      "model": "musicinstone:block/sandstone_window_upper_frame_type0_single",
+      "y": 180
+    },
+    "connected_left=false,connected_right=false,facing=west,frame=frame,waterlogged=false": {
+      "model": "musicinstone:block/sandstone_window_upper_frame_type1_single",
+      "y": 270
+    },
+    "connected_left=false,connected_right=false,facing=west,frame=frame,waterlogged=true": {
+      "model": "musicinstone:block/sandstone_window_upper_frame_type1_single",
+      "y": 270
+    },
+    "connected_left=false,connected_right=false,facing=west,frame=frameless,waterlogged=false": {
+      "model": "musicinstone:block/sandstone_window_upper_frame_type0_single",
+      "y": 270
+    },
+    "connected_left=false,connected_right=false,facing=west,frame=frameless,waterlogged=true": {
+      "model": "musicinstone:block/sandstone_window_upper_frame_type0_single",
+      "y": 270
+    },
+    "connected_left=false,connected_right=true,facing=east,frame=frame,waterlogged=false": {
+      "model": "musicinstone:block/sandstone_window_upper_frame_type1_right",
+      "y": 90
+    },
+    "connected_left=false,connected_right=true,facing=east,frame=frame,waterlogged=true": {
+      "model": "musicinstone:block/sandstone_window_upper_frame_type1_right",
+      "y": 90
+    },
+    "connected_left=false,connected_right=true,facing=east,frame=frameless,waterlogged=false": {
+      "model": "musicinstone:block/sandstone_window_upper_frame_type0_right",
+      "y": 90
+    },
+    "connected_left=false,connected_right=true,facing=east,frame=frameless,waterlogged=true": {
+      "model": "musicinstone:block/sandstone_window_upper_frame_type0_right",
+      "y": 90
+    },
+    "connected_left=false,connected_right=true,facing=north,frame=frame,waterlogged=false": {
+      "model": "musicinstone:block/sandstone_window_upper_frame_type1_right"
+    },
+    "connected_left=false,connected_right=true,facing=north,frame=frame,waterlogged=true": {
+      "model": "musicinstone:block/sandstone_window_upper_frame_type1_right"
+    },
+    "connected_left=false,connected_right=true,facing=north,frame=frameless,waterlogged=false": {
+      "model": "musicinstone:block/sandstone_window_upper_frame_type0_right"
+    },
+    "connected_left=false,connected_right=true,facing=north,frame=frameless,waterlogged=true": {
+      "model": "musicinstone:block/sandstone_window_upper_frame_type0_right"
+    },
+    "connected_left=false,connected_right=true,facing=south,frame=frame,waterlogged=false": {
+      "model": "musicinstone:block/sandstone_window_upper_frame_type1_right",
+      "y": 180
+    },
+    "connected_left=false,connected_right=true,facing=south,frame=frame,waterlogged=true": {
+      "model": "musicinstone:block/sandstone_window_upper_frame_type1_right",
+      "y": 180
+    },
+    "connected_left=false,connected_right=true,facing=south,frame=frameless,waterlogged=false": {
+      "model": "musicinstone:block/sandstone_window_upper_frame_type0_right",
+      "y": 180
+    },
+    "connected_left=false,connected_right=true,facing=south,frame=frameless,waterlogged=true": {
+      "model": "musicinstone:block/sandstone_window_upper_frame_type0_right",
+      "y": 180
+    },
+    "connected_left=false,connected_right=true,facing=west,frame=frame,waterlogged=false": {
+      "model": "musicinstone:block/sandstone_window_upper_frame_type1_right",
+      "y": 270
+    },
+    "connected_left=false,connected_right=true,facing=west,frame=frame,waterlogged=true": {
+      "model": "musicinstone:block/sandstone_window_upper_frame_type1_right",
+      "y": 270
+    },
+    "connected_left=false,connected_right=true,facing=west,frame=frameless,waterlogged=false": {
+      "model": "musicinstone:block/sandstone_window_upper_frame_type0_right",
+      "y": 270
+    },
+    "connected_left=false,connected_right=true,facing=west,frame=frameless,waterlogged=true": {
+      "model": "musicinstone:block/sandstone_window_upper_frame_type0_right",
+      "y": 270
+    },
+    "connected_left=true,connected_right=false,facing=east,frame=frame,waterlogged=false": {
+      "model": "musicinstone:block/sandstone_window_upper_frame_type1_left",
+      "y": 90
+    },
+    "connected_left=true,connected_right=false,facing=east,frame=frame,waterlogged=true": {
+      "model": "musicinstone:block/sandstone_window_upper_frame_type1_left",
+      "y": 90
+    },
+    "connected_left=true,connected_right=false,facing=east,frame=frameless,waterlogged=false": {
+      "model": "musicinstone:block/sandstone_window_upper_frame_type0_left",
+      "y": 90
+    },
+    "connected_left=true,connected_right=false,facing=east,frame=frameless,waterlogged=true": {
+      "model": "musicinstone:block/sandstone_window_upper_frame_type0_left",
+      "y": 90
+    },
+    "connected_left=true,connected_right=false,facing=north,frame=frame,waterlogged=false": {
+      "model": "musicinstone:block/sandstone_window_upper_frame_type1_left"
+    },
+    "connected_left=true,connected_right=false,facing=north,frame=frame,waterlogged=true": {
+      "model": "musicinstone:block/sandstone_window_upper_frame_type1_left"
+    },
+    "connected_left=true,connected_right=false,facing=north,frame=frameless,waterlogged=false": {
+      "model": "musicinstone:block/sandstone_window_upper_frame_type0_left"
+    },
+    "connected_left=true,connected_right=false,facing=north,frame=frameless,waterlogged=true": {
+      "model": "musicinstone:block/sandstone_window_upper_frame_type0_left"
+    },
+    "connected_left=true,connected_right=false,facing=south,frame=frame,waterlogged=false": {
+      "model": "musicinstone:block/sandstone_window_upper_frame_type1_left",
+      "y": 180
+    },
+    "connected_left=true,connected_right=false,facing=south,frame=frame,waterlogged=true": {
+      "model": "musicinstone:block/sandstone_window_upper_frame_type1_left",
+      "y": 180
+    },
+    "connected_left=true,connected_right=false,facing=south,frame=frameless,waterlogged=false": {
+      "model": "musicinstone:block/sandstone_window_upper_frame_type0_left",
+      "y": 180
+    },
+    "connected_left=true,connected_right=false,facing=south,frame=frameless,waterlogged=true": {
+      "model": "musicinstone:block/sandstone_window_upper_frame_type0_left",
+      "y": 180
+    },
+    "connected_left=true,connected_right=false,facing=west,frame=frame,waterlogged=false": {
+      "model": "musicinstone:block/sandstone_window_upper_frame_type1_left",
+      "y": 270
+    },
+    "connected_left=true,connected_right=false,facing=west,frame=frame,waterlogged=true": {
+      "model": "musicinstone:block/sandstone_window_upper_frame_type1_left",
+      "y": 270
+    },
+    "connected_left=true,connected_right=false,facing=west,frame=frameless,waterlogged=false": {
+      "model": "musicinstone:block/sandstone_window_upper_frame_type0_left",
+      "y": 270
+    },
+    "connected_left=true,connected_right=false,facing=west,frame=frameless,waterlogged=true": {
+      "model": "musicinstone:block/sandstone_window_upper_frame_type0_left",
+      "y": 270
+    },
+    "connected_left=true,connected_right=true,facing=east,frame=frame,waterlogged=false": {
+      "model": "musicinstone:block/sandstone_window_upper_frame_type1_both",
+      "y": 90
+    },
+    "connected_left=true,connected_right=true,facing=east,frame=frame,waterlogged=true": {
+      "model": "musicinstone:block/sandstone_window_upper_frame_type1_both",
+      "y": 90
+    },
+    "connected_left=true,connected_right=true,facing=east,frame=frameless,waterlogged=false": {
+      "model": "musicinstone:block/sandstone_window_upper_frame_type0_both",
+      "y": 90
+    },
+    "connected_left=true,connected_right=true,facing=east,frame=frameless,waterlogged=true": {
+      "model": "musicinstone:block/sandstone_window_upper_frame_type0_both",
+      "y": 90
+    },
+    "connected_left=true,connected_right=true,facing=north,frame=frame,waterlogged=false": {
+      "model": "musicinstone:block/sandstone_window_upper_frame_type1_both"
+    },
+    "connected_left=true,connected_right=true,facing=north,frame=frame,waterlogged=true": {
+      "model": "musicinstone:block/sandstone_window_upper_frame_type1_both"
+    },
+    "connected_left=true,connected_right=true,facing=north,frame=frameless,waterlogged=false": {
+      "model": "musicinstone:block/sandstone_window_upper_frame_type0_both"
+    },
+    "connected_left=true,connected_right=true,facing=north,frame=frameless,waterlogged=true": {
+      "model": "musicinstone:block/sandstone_window_upper_frame_type0_both"
+    },
+    "connected_left=true,connected_right=true,facing=south,frame=frame,waterlogged=false": {
+      "model": "musicinstone:block/sandstone_window_upper_frame_type1_both",
+      "y": 180
+    },
+    "connected_left=true,connected_right=true,facing=south,frame=frame,waterlogged=true": {
+      "model": "musicinstone:block/sandstone_window_upper_frame_type1_both",
+      "y": 180
+    },
+    "connected_left=true,connected_right=true,facing=south,frame=frameless,waterlogged=false": {
+      "model": "musicinstone:block/sandstone_window_upper_frame_type0_both",
+      "y": 180
+    },
+    "connected_left=true,connected_right=true,facing=south,frame=frameless,waterlogged=true": {
+      "model": "musicinstone:block/sandstone_window_upper_frame_type0_both",
+      "y": 180
+    },
+    "connected_left=true,connected_right=true,facing=west,frame=frame,waterlogged=false": {
+      "model": "musicinstone:block/sandstone_window_upper_frame_type1_both",
+      "y": 270
+    },
+    "connected_left=true,connected_right=true,facing=west,frame=frame,waterlogged=true": {
+      "model": "musicinstone:block/sandstone_window_upper_frame_type1_both",
+      "y": 270
+    },
+    "connected_left=true,connected_right=true,facing=west,frame=frameless,waterlogged=false": {
+      "model": "musicinstone:block/sandstone_window_upper_frame_type0_both",
+      "y": 270
+    },
+    "connected_left=true,connected_right=true,facing=west,frame=frameless,waterlogged=true": {
+      "model": "musicinstone:block/sandstone_window_upper_frame_type0_both",
+      "y": 270
+    }
+  }
+}

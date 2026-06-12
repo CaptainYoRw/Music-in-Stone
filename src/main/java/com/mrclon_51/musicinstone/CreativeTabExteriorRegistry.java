@@ -9,15 +9,15 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 
-public class CreativeTabRegistry
+public class CreativeTabExteriorRegistry
 {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MusicinStone.MODID);
 
-    public static final RegistryObject<CreativeModeTab> MUSICINSTONE_TAB = CREATIVE_MODE_TABS.register("musicinstone_main",
+    public static final RegistryObject<CreativeModeTab> MUSICINSTONE_EXTERIOR = CREATIVE_MODE_TABS.register("musicinstone_exterior",
             () -> CreativeModeTab.builder()
                     .icon(() -> new ItemStack(Blocks.BRICKS))
-                    .title(Component.translatable("creativetab.musicinstone_main"))
+                    .title(Component.translatable("creativetab.musicinstone_exterior"))
                     .displayItems((parameters, output) ->
                     {
 
@@ -218,6 +218,11 @@ public class CreativeTabRegistry
                         output.accept(Blocks.SMOOTH_SANDSTONE_STAIRS);
                         output.accept(Blocks.SMOOTH_SANDSTONE_SLAB);
 
+                        output.accept(BlocksRegistry.SANDSTONE_WINDOW_FRAME.get());
+                        output.accept(BlocksRegistry.SANDSTONE_WINDOW_UPPER_FRAME.get());
+                        output.accept(BlocksRegistry.SANDSTONE_WINDOW_KEYSTONE.get());
+                        output.accept(BlocksRegistry.SANDSTONE_WINDOW_GREEK_PEDIMENT.get());
+
                         output.accept(Blocks.SMOOTH_RED_SANDSTONE);
                         output.accept(Blocks.SMOOTH_RED_SANDSTONE_STAIRS);
                         output.accept(Blocks.SMOOTH_RED_SANDSTONE_SLAB);
@@ -298,7 +303,7 @@ public class CreativeTabRegistry
                         output.accept(BlocksRegistry.CLINKER_BRICK_ARROWSLIT.get());
                         output.accept(BlocksRegistry.CLINKER_BRICK_CROSS_ARROWSLIT.get());
 
-                        output.accept(ItemsRegistry.TEST_ITEM.get());
+                        output.accept(ItemsRegistry.ARCHITECT_TOOLS.get());
                     })
                     .build());
 

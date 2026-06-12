@@ -1071,6 +1071,23 @@ public class BlocksRegistry
 
 
 
+
+
+
+
+    public static final RegistryObject<Block> SANDSTONE_WINDOW_FRAME = registerBlock("sandstone_window_frame",
+            () -> new BlockWindowFrame(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+
+    public static final RegistryObject<Block> SANDSTONE_WINDOW_UPPER_FRAME = registerBlock("sandstone_window_upper_frame",
+            () -> new BlockWindowPediment(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+    public static final RegistryObject<Block> SANDSTONE_WINDOW_KEYSTONE = registerBlock("sandstone_window_keystone",
+            () -> new BlockWindowPediment(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+
+    public static final RegistryObject<Block> SANDSTONE_WINDOW_GREEK_PEDIMENT = registerBlock("sandstone_window_greek_pediment",
+            () -> new BlockWindowPedimentComplex(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion().isValidSpawn((state, level, pos, entityType) -> false)));
+
+
+
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block)
     {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
