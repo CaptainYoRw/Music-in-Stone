@@ -1,0 +1,13 @@
+{
+  "loader": "forge:obj",
+  "gui_light": "front",
+  "flip_v": true,
+  "model": "musicinstone:models/block/object/window_straight_dentils_both.obj",
+  "textures":
+  {
+    "texture_all": "#texture",
+    "frame": "#frame",
+    "volute": "#volute",
+    "particle": "#texture"
+  }
+}

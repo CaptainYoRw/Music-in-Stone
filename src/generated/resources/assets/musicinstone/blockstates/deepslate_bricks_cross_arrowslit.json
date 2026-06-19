@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "musicinstone:block/deepslate_bricks_cross_arrowslit",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "musicinstone:block/deepslate_bricks_cross_arrowslit"
+    },
+    "facing=south": {
+      "model": "musicinstone:block/deepslate_bricks_cross_arrowslit",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "musicinstone:block/deepslate_bricks_cross_arrowslit",
+      "y": 270
+    }
+  }
+}

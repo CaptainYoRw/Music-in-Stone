@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "minecraft:sandstone"
+  },
+  "result": "musicinstone:sandstone_corinthian_pilaster_capital_large"
+}

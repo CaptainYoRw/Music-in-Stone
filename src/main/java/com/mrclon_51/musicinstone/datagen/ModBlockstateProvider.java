@@ -184,11 +184,6 @@ public class ModBlockstateProvider extends BlockStateProvider
         generateColumn(BlocksRegistry.DIORITE_FLUTED_COLUMN_LARGE, "template_column_large", modLoc("block/diorite_pillar"), modLoc("block/diorite_seamless"));
         generateRotatingColumn(BlocksRegistry.DIORITE_FLUTED_COLUMN_GIANT, "template_column_giant", modLoc("block/diorite_pillar"), modLoc("block/diorite_seamless"));
 
-        //generateColumn(BlocksRegistry.DIORITE_RUSTICATED_COLUMN_SMALL, "template_rusticated_column_small", modLoc("block/diorite_seamless"), modLoc("block/diorite_pillar_top"));
-        //generateColumn(BlocksRegistry.DIORITE_RUSTICATED_COLUMN_REGULAR, "template_rusticated_column_regular", modLoc("block/diorite_seamless"), modLoc("block/diorite_pillar_top"));
-        //generateColumn(BlocksRegistry.DIORITE_RUSTICATED_COLUMN_MEDIUM, "template_rusticated_column_medium", modLoc("block/diorite_seamless"), modLoc("block/diorite_pillar_top"));
-        //generateColumn(BlocksRegistry.DIORITE_RUSTICATED_COLUMN_LARGE, "template_rusticated_column_large", modLoc("block/diorite_seamless"), modLoc("block/diorite_seamless"));
-
         generateDefaultCustomShape(BlocksRegistry.DIORITE_ROMAN_DORIC_BASE_SMALL, "template_roman_doric_base_small", modLoc("block/diorite_seamless"));
         generateDefaultCustomShape(BlocksRegistry.DIORITE_ROMAN_DORIC_BASE_MEDIUM, "template_roman_doric_base_medium", modLoc("block/diorite_seamless"));
         generateDefaultCustomShape(BlocksRegistry.DIORITE_ROMAN_DORIC_BASE_LARGE, "template_roman_doric_base_large", modLoc("block/diorite_seamless"));
@@ -238,7 +233,7 @@ public class ModBlockstateProvider extends BlockStateProvider
         generateCornerIonicCustomShape(BlocksRegistry.DIORITE_CORNER_IONIC_CAPITAL_SMALL, "template_corner_ionic_capital_small", modLoc("block/diorite_seamless"), modLoc("block/diorite_ionic"), modLoc("block/diorite_volute"));
         generateCornerIonicCustomShape(BlocksRegistry.DIORITE_CORNER_IONIC_CAPITAL_MEDIUM, "template_corner_ionic_capital_medium", modLoc("block/diorite_seamless"), modLoc("block/diorite_ionic"), modLoc("block/diorite_volute"));
         generateCornerIonicCustomShape(BlocksRegistry.DIORITE_CORNER_IONIC_CAPITAL_LARGE, "template_corner_ionic_capital_large", modLoc("block/diorite_seamless"), modLoc("block/diorite_ionic"), modLoc("block/diorite_volute"));
-
+        generateHorizontalCustomShape(BlocksRegistry.DIORITE_CORNER_IONIC_CAPITAL_GIANT, "template_corner_ionic_capital_giant", modLoc("block/diorite_seamless"), modLoc("block/diorite_ionic"), modLoc("block/diorite_volute"));
 
         generateFixedIonicShape(BlocksRegistry.DIORITE_SCAMOZZI_IONIC_CAPITAL_SMALL, "template_scamozzi_ionic_capital_small", modLoc("block/diorite_seamless"), modLoc("block/diorite_ionic"), modLoc("block/diorite_volute"));
         generateFixedIonicShape(BlocksRegistry.DIORITE_SCAMOZZI_IONIC_CAPITAL_MEDIUM, "template_scamozzi_ionic_capital_medium", modLoc("block/diorite_seamless"), modLoc("block/diorite_ionic"), modLoc("block/diorite_volute"));
@@ -248,8 +243,7 @@ public class ModBlockstateProvider extends BlockStateProvider
         generateFixedIonicShape(BlocksRegistry.DIORITE_ROMAN_IONIC_CAPITAL_SMALL, "template_roman_ionic_capital_small", modLoc("block/diorite_seamless"), modLoc("block/diorite_ionic"), modLoc("block/diorite_volute"));
         generateFixedIonicShape(BlocksRegistry.DIORITE_ROMAN_IONIC_CAPITAL_MEDIUM, "template_roman_ionic_capital_medium", modLoc("block/diorite_seamless"), modLoc("block/diorite_ionic"), modLoc("block/diorite_volute"));
         generateFixedIonicShape(BlocksRegistry.DIORITE_ROMAN_IONIC_CAPITAL_LARGE, "template_roman_ionic_capital_large", modLoc("block/diorite_seamless"), modLoc("block/diorite_ionic"), modLoc("block/diorite_volute"));
-        generateHorizontalCustomShape(BlocksRegistry.DIORITE_ROMAN_IONIC_CAPITAL_GIANT, "template_roman_ionic_capital_giant", modLoc("block/diorite_seamless"), modLoc("block/diorite_ionic"), modLoc("block/diorite_volute"));
-
+        generateFixedIonicShape(BlocksRegistry.DIORITE_ROMAN_IONIC_CAPITAL_GIANT, "template_roman_ionic_capital_giant", modLoc("block/diorite_seamless"), modLoc("block/diorite_ionic"), modLoc("block/diorite_volute"));
 
         generateDefaultCorinthianShape(BlocksRegistry.DIORITE_GREEK_CORINTHIAN_CAPITAL_SMALL, "template_greek_corinthian_capital_small", modLoc("block/diorite_seamless"), modLoc("block/diorite_corinthian"), modLoc("block/diorite_volute"));
         generateDefaultCorinthianShape(BlocksRegistry.DIORITE_GREEK_CORINTHIAN_CAPITAL_MEDIUM, "template_greek_corinthian_capital_medium", modLoc("block/diorite_seamless"), modLoc("block/diorite_corinthian"), modLoc("block/diorite_volute"));
@@ -260,7 +254,6 @@ public class ModBlockstateProvider extends BlockStateProvider
         generateDefaultCorinthianShape(BlocksRegistry.DIORITE_ROMAN_CORINTHIAN_CAPITAL_MEDIUM, "template_roman_corinthian_capital_medium", modLoc("block/diorite_seamless"), modLoc("block/diorite_corinthian"), modLoc("block/diorite_volute"));
         generateDefaultCorinthianShape(BlocksRegistry.DIORITE_ROMAN_CORINTHIAN_CAPITAL_LARGE, "template_roman_corinthian_capital_large", modLoc("block/diorite_seamless"), modLoc("block/diorite_corinthian"), modLoc("block/diorite_volute"));
         generateHorizontalCustomShape(BlocksRegistry.DIORITE_ROMAN_CORINTHIAN_CAPITAL_GIANT, "template_roman_corinthian_capital_giant", modLoc("block/diorite_seamless"), modLoc("block/diorite_corinthian"), modLoc("block/diorite_volute"));
-
 
         generateDefaultCustomShape(BlocksRegistry.DIORITE_TUSCAN_CAPITAL_SMALL, "template_tuscan_capital_small", modLoc("block/diorite_seamless"));
         generateDefaultCustomShape(BlocksRegistry.DIORITE_TUSCAN_CAPITAL_REGULAR, "template_tuscan_capital_regular", modLoc("block/diorite_seamless"));
@@ -294,11 +287,6 @@ public class ModBlockstateProvider extends BlockStateProvider
         generateColumn(BlocksRegistry.SANDSTONE_FLUTED_COLUMN_MEDIUM, "template_column_medium", modLoc("block/sandstone_pillar"), modLoc("block/sandstone_pillar_top"));
         generateColumn(BlocksRegistry.SANDSTONE_FLUTED_COLUMN_LARGE, "template_column_large", modLoc("block/sandstone_pillar"), mcLoc("block/sandstone_top"));
         generateRotatingColumn(BlocksRegistry.SANDSTONE_FLUTED_COLUMN_GIANT, "template_column_giant", modLoc("block/sandstone_pillar"), mcLoc("block/sandstone_top"));
-
-        //generateColumn(BlocksRegistry.SANDSTONE_RUSTICATED_COLUMN_SMALL, "template_rusticated_column_small", mcLoc("block/sandstone_top"), modLoc("block/sandstone_pillar_top"));
-        //generateColumn(BlocksRegistry.SANDSTONE_RUSTICATED_COLUMN_REGULAR, "template_rusticated_column_regular", mcLoc("block/sandstone_top"), modLoc("block/sandstone_pillar_top"));
-        //generateColumn(BlocksRegistry.SANDSTONE_RUSTICATED_COLUMN_MEDIUM, "template_rusticated_column_medium", mcLoc("block/sandstone_top"), modLoc("block/sandstone_pillar_top"));
-        //generateColumn(BlocksRegistry.SANDSTONE_RUSTICATED_COLUMN_LARGE, "template_rusticated_column_large", mcLoc("block/sandstone_top"), mcLoc("block/sandstone_top"));
 
         generateDefaultCustomShape(BlocksRegistry.SANDSTONE_ROMAN_DORIC_BASE_SMALL, "template_roman_doric_base_small", mcLoc("block/sandstone_top"));
         generateDefaultCustomShape(BlocksRegistry.SANDSTONE_ROMAN_DORIC_BASE_MEDIUM, "template_roman_doric_base_medium", mcLoc("block/sandstone_top"));
@@ -349,7 +337,7 @@ public class ModBlockstateProvider extends BlockStateProvider
         generateCornerIonicCustomShape(BlocksRegistry.SANDSTONE_CORNER_IONIC_CAPITAL_SMALL, "template_corner_ionic_capital_small", mcLoc("block/sandstone_top"), modLoc("block/sandstone_ionic"), modLoc("block/sandstone_volute"));
         generateCornerIonicCustomShape(BlocksRegistry.SANDSTONE_CORNER_IONIC_CAPITAL_MEDIUM, "template_corner_ionic_capital_medium", mcLoc("block/sandstone_top"), modLoc("block/sandstone_ionic"), modLoc("block/sandstone_volute"));
         generateCornerIonicCustomShape(BlocksRegistry.SANDSTONE_CORNER_IONIC_CAPITAL_LARGE, "template_corner_ionic_capital_large", mcLoc("block/sandstone_top"), modLoc("block/sandstone_ionic"), modLoc("block/sandstone_volute"));
-
+        generateHorizontalCustomShape(BlocksRegistry.SANDSTONE_CORNER_IONIC_CAPITAL_GIANT, "template_corner_ionic_capital_giant", mcLoc("block/sandstone_top"), modLoc("block/sandstone_ionic"), modLoc("block/sandstone_volute"));
 
         generateFixedIonicShape(BlocksRegistry.SANDSTONE_SCAMOZZI_IONIC_CAPITAL_SMALL, "template_scamozzi_ionic_capital_small", mcLoc("block/sandstone_top"), modLoc("block/sandstone_ionic"), modLoc("block/sandstone_volute"));
         generateFixedIonicShape(BlocksRegistry.SANDSTONE_SCAMOZZI_IONIC_CAPITAL_MEDIUM, "template_scamozzi_ionic_capital_medium", mcLoc("block/sandstone_top"), modLoc("block/sandstone_ionic"), modLoc("block/sandstone_volute"));
@@ -361,10 +349,10 @@ public class ModBlockstateProvider extends BlockStateProvider
         generateFixedIonicShape(BlocksRegistry.SANDSTONE_ROMAN_IONIC_CAPITAL_LARGE, "template_roman_ionic_capital_large", mcLoc("block/sandstone_top"), modLoc("block/sandstone_ionic"), modLoc("block/sandstone_volute"));
         generateHorizontalCustomShape(BlocksRegistry.SANDSTONE_ROMAN_IONIC_CAPITAL_GIANT, "template_roman_ionic_capital_giant", mcLoc("block/sandstone_top"), modLoc("block/sandstone_ionic"), modLoc("block/sandstone_volute"));
 
-        generateDefaultCorinthianShape(BlocksRegistry.SANDSTONE_GREEK_CORINTHIAN_CAPITAL_SMALL, "template_greek_corinthian_capital_small", mcLoc("block/sandstone_top"), modLoc("block/sandstone_corinthian"), modLoc("block/sandstone_volute"));
-        generateDefaultCorinthianShape(BlocksRegistry.SANDSTONE_GREEK_CORINTHIAN_CAPITAL_MEDIUM, "template_greek_corinthian_capital_medium", mcLoc("block/sandstone_top"), modLoc("block/sandstone_corinthian"), modLoc("block/sandstone_volute"));
-        generateDefaultCorinthianShape(BlocksRegistry.SANDSTONE_GREEK_CORINTHIAN_CAPITAL_LARGE, "template_greek_corinthian_capital_large", mcLoc("block/sandstone_top"), modLoc("block/sandstone_corinthian"), modLoc("block/sandstone_volute"));
-        generateHorizontalCustomShape(BlocksRegistry.SANDSTONE_GREEK_CORINTHIAN_CAPITAL_GIANT, "template_greek_corinthian_capital_giant", mcLoc("block/sandstone_top"), modLoc("block/sandstone_corinthian"), modLoc("block/sandstone_volute"));
+        generateDefaultCorinthianShape(BlocksRegistry.SANDSTONE_CORINTHIAN_CAPITAL_SMALL, "template_greek_corinthian_capital_small", mcLoc("block/sandstone_top"), modLoc("block/sandstone_corinthian"), modLoc("block/sandstone_volute"));
+        generateDefaultCorinthianShape(BlocksRegistry.SANDSTONE_CORINTHIAN_CAPITAL_MEDIUM, "template_greek_corinthian_capital_medium", mcLoc("block/sandstone_top"), modLoc("block/sandstone_corinthian"), modLoc("block/sandstone_volute"));
+        generateDefaultCorinthianShape(BlocksRegistry.SANDSTONE_CORINTHIAN_CAPITAL_LARGE, "template_greek_corinthian_capital_large", mcLoc("block/sandstone_top"), modLoc("block/sandstone_corinthian"), modLoc("block/sandstone_volute"));
+        generateHorizontalCustomShape(BlocksRegistry.SANDSTONE_CORINTHIAN_CAPITAL_GIANT, "template_greek_corinthian_capital_giant", mcLoc("block/sandstone_top"), modLoc("block/sandstone_corinthian"), modLoc("block/sandstone_volute"));
 
         generateDefaultCorinthianShape(BlocksRegistry.SANDSTONE_ROMAN_CORINTHIAN_CAPITAL_SMALL, "template_roman_corinthian_capital_small", mcLoc("block/sandstone_top"), modLoc("block/sandstone_corinthian"), modLoc("block/sandstone_volute"));
         generateDefaultCorinthianShape(BlocksRegistry.SANDSTONE_ROMAN_CORINTHIAN_CAPITAL_MEDIUM, "template_roman_corinthian_capital_medium", mcLoc("block/sandstone_top"), modLoc("block/sandstone_corinthian"), modLoc("block/sandstone_volute"));
@@ -385,23 +373,83 @@ public class ModBlockstateProvider extends BlockStateProvider
 
 
         generateRotatingColumn(BlocksRegistry.SANDSTONE_FLUTED_PILASTER_SMALL, "template_pilaster_small", modLoc("block/sandstone_pillar"), modLoc("block/sandstone_pillar_top"));
-
-
         generateHorizontalCustomShape(BlocksRegistry.SANDSTONE_IONIC_PILASTER_BASE_SMALL, "template_ionic_pilaster_base_small", mcLoc("block/sandstone_top"));
-
-
         generateCornerIonicCustomShape(BlocksRegistry.SANDSTONE_SCAMOZZI_IONIC_PILASTER_CAPITAL_SMALL, "template_scamozzi_ionic_pilaster_capital_small", mcLoc("block/sandstone_top"), modLoc("block/sandstone_ionic"), modLoc("block/sandstone_volute"));
 
 
-        generateWindowFrame(BlocksRegistry.SANDSTONE_WINDOW_FRAME, "template_window_frame", modLoc("block/sandstone_pillar"), mcLoc("block/sandstone_top"));
+        generateRotatingHalfColumn(BlocksRegistry.SANDSTONE_FLUTED_HALF_COLUMN_SMALL, "template_half_column_small", modLoc("block/sandstone_pillar"), modLoc("block/sandstone_pillar_top"));
+        generateRotatingHalfColumn(BlocksRegistry.SANDSTONE_HALF_COLUMN_SMALL, "template_half_column_small", modLoc("block/sandstone_pillar_doric"), modLoc("block/sandstone_pillar_top"));
+        generateRotatingHalfColumn(BlocksRegistry.SANDSTONE_DORIC_HALF_COLUMN_SMALL, "template_half_column_small", mcLoc("block/sandstone_top"), modLoc("block/sandstone_pillar_top"));
+        generateHorizontalHalfColumnCustomShape(BlocksRegistry.SANDSTONE_DORIC_HALF_COLUMN_CAPITAL_SMALL, "template_half_doric_capital_small", mcLoc("block/sandstone_top"));
+        generateHorizontalHalfColumnCustomShape(BlocksRegistry.SANDSTONE_ROMAN_DORIC_HALF_COLUMN_CAPITAL_SMALL, "template_half_roman_doric_capital_small", mcLoc("block/sandstone_top"));
+        generateHorizontalHalfColumnCustomShape(BlocksRegistry.SANDSTONE_ROMAN_DORIC_HALF_COLUMN_BASE_SMALL, "template_half_roman_doric_base_small", mcLoc("block/sandstone_top"));
+        generateHorizontalHalfColumnCustomShape(BlocksRegistry.SANDSTONE_IONIC_HALF_COLUMN_CAPITAL_SMALL, "template_half_ionic_capital_small", mcLoc("block/sandstone_top"), modLoc("block/sandstone_ionic"), modLoc("block/sandstone_volute"));
+        generateHorizontalHalfColumnCustomShape(BlocksRegistry.SANDSTONE_ROMAN_IONIC_HALF_COLUMN_CAPITAL_SMALL, "template_half_roman_ionic_capital_small", mcLoc("block/sandstone_top"), modLoc("block/sandstone_ionic"), modLoc("block/sandstone_volute"));
+        generateHorizontalHalfColumnCustomShape(BlocksRegistry.SANDSTONE_IONIC_HALF_COLUMN_BASE_SMALL, "template_half_roman_ionic_base_small", mcLoc("block/sandstone_top"));
+        generateHorizontalHalfColumnCustomShape(BlocksRegistry.SANDSTONE_ROMAN_IONIC_HALF_COLUMN_BASE_SMALL, "template_half_roman_ionic_base_small", mcLoc("block/sandstone_top"));
+        generateHorizontalHalfColumnCustomShape(BlocksRegistry.SANDSTONE_SCAMOZZI_IONIC_HALF_COLUMN_CAPITAL_SMALL, "template_half_scamozzi_ionic_capital_small", mcLoc("block/sandstone_top"), modLoc("block/sandstone_ionic"), modLoc("block/sandstone_volute"));
+        generateHorizontalHalfCorinthianColumnCustomShape(BlocksRegistry.SANDSTONE_CORINTHIAN_HALF_COLUMN_CAPITAL_SMALL, "template_half_greek_corinthian_capital_small", mcLoc("block/sandstone_top"), modLoc("block/sandstone_corinthian"), modLoc("block/sandstone_volute"));
+        generateHorizontalHalfCorinthianColumnCustomShape(BlocksRegistry.SANDSTONE_ROMAN_CORINTHIAN_HALF_COLUMN_CAPITAL_SMALL, "template_half_roman_corinthian_capital_small", mcLoc("block/sandstone_top"), modLoc("block/sandstone_corinthian"), modLoc("block/sandstone_volute"));
+        generateHorizontalHalfColumnCustomShape(BlocksRegistry.SANDSTONE_CORINTHIAN_HALF_COLUMN_BASE_SMALL, "template_half_roman_corinthian_base_small", mcLoc("block/sandstone_top"));
+        generateHorizontalHalfColumnCustomShape(BlocksRegistry.SANDSTONE_ROMAN_CORINTHIAN_HALF_COLUMN_BASE_SMALL, "template_half_roman_ionic_base_small", mcLoc("block/sandstone_top"));
+        generateHorizontalHalfColumnCustomShape(BlocksRegistry.SANDSTONE_COMPOSITE_HALF_COLUMN_CAPITAL_SMALL, "template_half_composite_capital_small", mcLoc("block/sandstone_top"), modLoc("block/sandstone_ionic"), modLoc("block/sandstone_volute"), modLoc("block/sandstone_corinthian"));
+        generateHorizontalHalfColumnCustomShape(BlocksRegistry.SANDSTONE_TUSCAN_HALF_COLUMN_CAPITAL_SMALL, "template_half_tuscan_capital_small", mcLoc("block/sandstone_top"));
+        generateHorizontalHalfColumnCustomShape(BlocksRegistry.SANDSTONE_TUSCAN_HALF_COLUMN_BASE_SMALL, "template_half_tuscan_base_small", mcLoc("block/sandstone_top"));
+        generateRotatingHalfColumn(BlocksRegistry.SANDSTONE_FLUTED_HALF_COLUMN_REGULAR, "template_half_column_regular", modLoc("block/sandstone_pillar"), modLoc("block/sandstone_pillar_top"));
+        generateRotatingHalfColumn(BlocksRegistry.SANDSTONE_HALF_COLUMN_REGULAR, "template_half_column_regular", modLoc("block/sandstone_pillar_doric"), modLoc("block/sandstone_pillar_top"));
+        generateRotatingHalfColumn(BlocksRegistry.SANDSTONE_DORIC_HALF_COLUMN_REGULAR, "template_half_column_regular", mcLoc("block/sandstone_top"), modLoc("block/sandstone_pillar_top"));
+        generateHorizontalHalfColumnCustomShape(BlocksRegistry.SANDSTONE_TUSCAN_HALF_COLUMN_CAPITAL_REGULAR, "template_half_tuscan_capital_regular", mcLoc("block/sandstone_top"));
+        generateHorizontalHalfColumnCustomShape(BlocksRegistry.SANDSTONE_TUSCAN_HALF_COLUMN_BASE_REGULAR, "template_half_tuscan_base_regular", mcLoc("block/sandstone_top"));
+        generateRotatingHalfColumn(BlocksRegistry.SANDSTONE_FLUTED_HALF_COLUMN_MEDIUM, "template_half_column_medium", modLoc("block/sandstone_pillar"), modLoc("block/sandstone_pillar_top"));
+        generateRotatingHalfColumn(BlocksRegistry.SANDSTONE_HALF_COLUMN_MEDIUM, "template_half_column_medium", modLoc("block/sandstone_pillar_doric"), modLoc("block/sandstone_pillar_top"));
+        generateRotatingHalfColumn(BlocksRegistry.SANDSTONE_DORIC_HALF_COLUMN_MEDIUM, "template_half_column_medium", mcLoc("block/sandstone_top"), modLoc("block/sandstone_pillar_top"));
+        generateHorizontalHalfColumnCustomShape(BlocksRegistry.SANDSTONE_DORIC_HALF_COLUMN_CAPITAL_MEDIUM, "template_half_doric_capital_medium", mcLoc("block/sandstone_top"));
+        generateHorizontalHalfColumnCustomShape(BlocksRegistry.SANDSTONE_ROMAN_DORIC_HALF_COLUMN_CAPITAL_MEDIUM, "template_half_roman_doric_capital_medium", mcLoc("block/sandstone_top"));
+        generateHorizontalHalfColumnCustomShape(BlocksRegistry.SANDSTONE_ROMAN_DORIC_HALF_COLUMN_BASE_MEDIUM, "template_half_roman_doric_base_medium", mcLoc("block/sandstone_top"));
+        generateHorizontalHalfColumnCustomShape(BlocksRegistry.SANDSTONE_IONIC_HALF_COLUMN_CAPITAL_MEDIUM, "template_half_ionic_capital_medium", mcLoc("block/sandstone_top"), modLoc("block/sandstone_ionic"), modLoc("block/sandstone_volute"));
+        generateHorizontalHalfColumnCustomShape(BlocksRegistry.SANDSTONE_ROMAN_IONIC_HALF_COLUMN_CAPITAL_MEDIUM, "template_half_roman_ionic_capital_medium", mcLoc("block/sandstone_top"), modLoc("block/sandstone_ionic"), modLoc("block/sandstone_volute"));
+        generateHorizontalHalfColumnCustomShape(BlocksRegistry.SANDSTONE_IONIC_HALF_COLUMN_BASE_MEDIUM, "template_half_roman_ionic_base_medium", mcLoc("block/sandstone_top"));
+        generateHorizontalHalfColumnCustomShape(BlocksRegistry.SANDSTONE_ROMAN_IONIC_HALF_COLUMN_BASE_MEDIUM, "template_half_roman_ionic_base_medium", mcLoc("block/sandstone_top"));
+        generateHorizontalHalfColumnCustomShape(BlocksRegistry.SANDSTONE_SCAMOZZI_IONIC_HALF_COLUMN_CAPITAL_MEDIUM, "template_half_scamozzi_ionic_capital_medium", mcLoc("block/sandstone_top"), modLoc("block/sandstone_ionic"), modLoc("block/sandstone_volute"));
+        generateHorizontalHalfCorinthianColumnCustomShape(BlocksRegistry.SANDSTONE_CORINTHIAN_HALF_COLUMN_CAPITAL_MEDIUM, "template_half_greek_corinthian_capital_medium", mcLoc("block/sandstone_top"), modLoc("block/sandstone_corinthian"), modLoc("block/sandstone_volute"));
+        generateHorizontalHalfCorinthianColumnCustomShape(BlocksRegistry.SANDSTONE_ROMAN_CORINTHIAN_HALF_COLUMN_CAPITAL_MEDIUM, "template_half_roman_corinthian_capital_medium", mcLoc("block/sandstone_top"), modLoc("block/sandstone_corinthian"), modLoc("block/sandstone_volute"));
+        generateHorizontalHalfColumnCustomShape(BlocksRegistry.SANDSTONE_CORINTHIAN_HALF_COLUMN_BASE_MEDIUM, "template_half_roman_corinthian_base_medium", mcLoc("block/sandstone_top"));
+        generateHorizontalHalfColumnCustomShape(BlocksRegistry.SANDSTONE_ROMAN_CORINTHIAN_HALF_COLUMN_BASE_MEDIUM, "template_half_roman_ionic_base_medium", mcLoc("block/sandstone_top"));
+        generateHorizontalHalfColumnCustomShape(BlocksRegistry.SANDSTONE_COMPOSITE_HALF_COLUMN_CAPITAL_MEDIUM, "template_half_composite_capital_medium", mcLoc("block/sandstone_top"), modLoc("block/sandstone_ionic"), modLoc("block/sandstone_volute"), modLoc("block/sandstone_corinthian"));
+        generateHorizontalHalfColumnCustomShape(BlocksRegistry.SANDSTONE_TUSCAN_HALF_COLUMN_CAPITAL_MEDIUM, "template_half_tuscan_capital_medium", mcLoc("block/sandstone_top"));
+        generateHorizontalHalfColumnCustomShape(BlocksRegistry.SANDSTONE_TUSCAN_HALF_COLUMN_BASE_MEDIUM, "template_half_tuscan_base_medium", mcLoc("block/sandstone_top"));
 
+
+
+        generateWindowFrame(BlocksRegistry.SANDSTONE_WINDOW_FRAME, "template_window_frame", modLoc("block/sandstone_pillar"), mcLoc("block/sandstone_top"));
         generateWindowPediment(BlocksRegistry.SANDSTONE_WINDOW_UPPER_FRAME, "template_window_upper_frame", modLoc("block/sandstone_frame"), mcLoc("block/sandstone_top"));
         generateWindowPediment(BlocksRegistry.SANDSTONE_WINDOW_KEYSTONE, "template_window_keystone", modLoc("block/sandstone_frame"), mcLoc("block/sandstone_top"));
+        generateComplexPediment(BlocksRegistry.SANDSTONE_WINDOW_STRAIGHT_PEDIMENT, "block/pediment/", "straight", mcLoc("block/sandstone_top"), modLoc("block/sandstone_frame"), modLoc("block/sandstone_volute"));
+        generateComplexPediment(BlocksRegistry.SANDSTONE_WINDOW_GREEK_PEDIMENT, "block/pediment/", "greek", mcLoc("block/sandstone_top"), modLoc("block/sandstone_frame"), modLoc("block/sandstone_volute"));
 
-        generateComplexPediment(BlocksRegistry.SANDSTONE_WINDOW_GREEK_PEDIMENT, "block/pediment/", mcLoc("block/sandstone_top"), modLoc("block/sandstone_frame"), modLoc("block/sandstone_volute"));
+
+
+        generateDefaultCustomShape(BlocksRegistry.COBBLED_DEEPSLATE_FINIAL, "template_finial", Blocks.COBBLED_DEEPSLATE);
+        generateHorizontalCustomShape(BlocksRegistry.COBBLED_DEEPSLATE_PEDESTAL, "template_pedestal", Blocks.COBBLED_DEEPSLATE);
+        generateLayerCustomShape(BlocksRegistry.COBBLED_DEEPSLATE_LAYER.get(), Blocks.COBBLED_DEEPSLATE);
+        generateHorizontalCustomShape(BlocksRegistry.COBBLED_DEEPSLATE_ARROWSLIT, "template_arrowslit", Blocks.COBBLED_DEEPSLATE);
+        generateHorizontalCustomShape(BlocksRegistry.COBBLED_DEEPSLATE_CROSS_ARROWSLIT, "template_cross_arrowslit", Blocks.COBBLED_DEEPSLATE);
+
+        generateDefaultCustomShape(BlocksRegistry.DEEPSLATE_TILES_FINIAL, "template_finial", Blocks.DEEPSLATE_TILES);
+        generateHorizontalCustomShape(BlocksRegistry.DEEPSLATE_TILES_PEDESTAL, "template_pedestal", Blocks.DEEPSLATE_TILES);
+        generateLayerCustomShape(BlocksRegistry.DEEPSLATE_TILES_LAYER.get(), Blocks.DEEPSLATE_TILES);
+        generateHorizontalCustomShape(BlocksRegistry.DEEPSLATE_TILES_ARROWSLIT, "template_arrowslit", Blocks.DEEPSLATE_TILES);
+        generateHorizontalCustomShape(BlocksRegistry.DEEPSLATE_TILES_CROSS_ARROWSLIT, "template_cross_arrowslit", Blocks.DEEPSLATE_TILES);
+
+        generateDefaultCustomShape(BlocksRegistry.DEEPSLATE_BRICKS_FINIAL, "template_finial", Blocks.DEEPSLATE_BRICKS);
+        generateHorizontalCustomShape(BlocksRegistry.DEEPSLATE_BRICKS_PEDESTAL, "template_pedestal", Blocks.DEEPSLATE_BRICKS);
+        generateLayerCustomShape(BlocksRegistry.DEEPSLATE_BRICKS_LAYER.get(), Blocks.DEEPSLATE_BRICKS);
+        generateHorizontalCustomShape(BlocksRegistry.DEEPSLATE_BRICKS_ARROWSLIT, "template_arrowslit", Blocks.DEEPSLATE_BRICKS);
+        generateHorizontalCustomShape(BlocksRegistry.DEEPSLATE_BRICKS_CROSS_ARROWSLIT, "template_cross_arrowslit", Blocks.DEEPSLATE_BRICKS);
     }
 
-    private void generateComplexPediment(RegistryObject<Block> blockRegistryObject, String templatePath, ResourceLocation tex, ResourceLocation frameTex, ResourceLocation volute){
+    private void generateComplexPediment(RegistryObject<Block> blockRegistryObject, String templatePath, String templateName, ResourceLocation tex, ResourceLocation frame, ResourceLocation volute)
+    {
 
         Block block = blockRegistryObject.get();
         MultiPartBlockStateBuilder builder = getMultipartBuilder(block);
@@ -417,19 +465,18 @@ public class ModBlockstateProvider extends BlockStateProvider
                 for (boolean right : bools) {
                     String connection = getConnectionName(left, right);
 
-                    // Генерируем модели ОДИН РАЗ, чтобы не плодить дубликаты
-                    var pedimentModel = createLayerModel(blockName + "_pediment_" + connection, templatePath + "template_window_greek_pediment_" + connection, tex, frameTex, volute);
-                    var frameModel = createLayerModel(blockName + "_frame_" + connection, templatePath + "template_window_greek_frame_" + connection, tex, frameTex, volute);
-                    var bracketsModel = connection.equals("both") ? null : createLayerModel(blockName + "_brackets_" + connection, templatePath + "template_window_greek_brackets_" + connection, tex, frameTex, volute);
-                    var supportModel = createLayerModel(blockName + "_support_" + connection, templatePath + "template_window_greek_support_" + connection, tex, frameTex, volute);
-                    var dentilsModel = createLayerModel(blockName + "_dentils_" + connection, templatePath + "template_window_greek_dentils_" + connection, tex, frameTex, volute);
+                    String baseTemplate = templatePath + "template_window_" + templateName + "_";
+
+                    // Теперь у ВСЕХ моделей пути генерируются строго симметрично
+                    var pedimentModel = createLayerModel(blockName + "_pediment_" + connection, baseTemplate + "pediment_" + connection, tex, frame, volute);
+                    var frameModel    = createLayerModel(blockName + "_frame_" + connection,    baseTemplate + "frame_" + connection,    tex, frame, volute);
+                    var bracketsModel = connection.equals("both") ? null : createLayerModel(blockName + "_brackets_" + connection, baseTemplate + "brackets_" + connection, tex, frame, volute);
+                    var supportModel  = createLayerModel(blockName + "_support_" + connection,   baseTemplate + "support_" + connection,  tex, frame, volute);
+                    var dentilsModel  = createLayerModel(blockName + "_dentils_" + connection,   baseTemplate + "dentils_" + connection,  tex, frame, volute);
 
                     // ==================== [ КОСТЫЛЬ ДЛЯ TYPE0 ] ====================
-                    // Принудительно создаем пустышки-модели на диске, чтобы обмануть кэш Forge DataGen.
-                    // В сам Multipart мы их не пихаем, просто создаем файлы, чтобы датген не паниковал.
-                    createLayerModel(blockName + "_type0_" + connection, templatePath + "template_window_greek_pediment_" + connection, tex, frameTex, volute);
+                    createLayerModel(blockName + "_type0_" + connection, baseTemplate + "pediment_" + connection, tex, frame, volute);
                     // ===============================================================
-
                     // ТЕПЕРЬ ДЛЯ КАЖДОГО СУЩЕСТВУЮЩЕГО ТИПА МЫ ЯВНО ПРОПИСЫВАЕМ ПЕДИМЕНТ
                     // Это закроет wildcard-проблему, из-за которой лезет type0!
                     for (BlockWindowPedimentComplex.Type typeVal : BlockWindowPedimentComplex.Type.values()) {
@@ -682,6 +729,101 @@ public class ModBlockstateProvider extends BlockStateProvider
 
         //Применение вращения
         horizontalBlock(block.get(), model);
+    }
+
+    //Вращающийся блок по горизонтали но с заданным путём текстуры и отражением на 180
+    private void generateHorizontalHalfColumnCustomShape(RegistryObject<Block> block, String templateName, ResourceLocation tex)
+    {
+        // Создание модели
+        var model = models().withExistingParent(block.getId().getPath(),
+                        new ResourceLocation(MusicinStone.MODID, "block/half_column/" + templateName))
+                .texture("texture", tex);
+
+
+        getVariantBuilder(block.get()).forAllStates(state ->
+        {
+            Direction dir = state.getValue(BlockStateProperties.HORIZONTAL_FACING);
+
+            int rotationY = (int) (dir.toYRot()) % 360;
+
+            return ConfiguredModel.builder()
+                    .modelFile(model)
+                    .rotationY(rotationY)
+                    .build();
+        });
+    }
+
+    //Вращающийся блок по горизонтали но с заданными трёмя текстурами ы и отражением на 180
+    private void generateHorizontalHalfColumnCustomShape(RegistryObject<Block> block, String templateName, ResourceLocation tex, ResourceLocation ionic, ResourceLocation volute)
+    {
+        // Создание модели
+        var model = models().withExistingParent(block.getId().getPath(),
+                        new ResourceLocation(MusicinStone.MODID, "block/half_column/" + templateName))
+                .texture("texture", tex)
+                .texture("ionic", ionic)
+                .texture("volute", volute);
+
+
+        getVariantBuilder(block.get()).forAllStates(state ->
+        {
+            Direction dir = state.getValue(BlockStateProperties.HORIZONTAL_FACING);
+
+            int rotationY = (int) (dir.toYRot()) % 360;
+
+            return ConfiguredModel.builder()
+                    .modelFile(model)
+                    .rotationY(rotationY)
+                    .build();
+        });
+    }
+
+    //Вращающийся блок по горизонтали но с заданными трёмя текстурами ы и отражением на 180
+    private void generateHorizontalHalfCorinthianColumnCustomShape(RegistryObject<Block> block, String templateName, ResourceLocation tex, ResourceLocation corinthian, ResourceLocation volute)
+    {
+        // Создание модели
+        var model = models().withExistingParent(block.getId().getPath(),
+                        new ResourceLocation(MusicinStone.MODID, "block/half_column/" + templateName))
+                .texture("texture", tex)
+                .texture("corinthian", corinthian)
+                .texture("volute", volute);
+
+
+        getVariantBuilder(block.get()).forAllStates(state ->
+        {
+            Direction dir = state.getValue(BlockStateProperties.HORIZONTAL_FACING);
+
+            int rotationY = (int) (dir.toYRot()) % 360;
+
+            return ConfiguredModel.builder()
+                    .modelFile(model)
+                    .rotationY(rotationY)
+                    .build();
+        });
+    }
+
+    //Вращающийся блок по горизонтали но с заданными четырьмя текстурами и отражением на 180
+    private void generateHorizontalHalfColumnCustomShape(RegistryObject<Block> block, String templateName, ResourceLocation tex, ResourceLocation ionic, ResourceLocation volute, ResourceLocation corinthian)
+    {
+        // Создание модели
+        var model = models().withExistingParent(block.getId().getPath(),
+                        new ResourceLocation(MusicinStone.MODID, "block/half_column/" + templateName))
+                .texture("texture", tex)
+                .texture("ionic", ionic)
+                .texture("volute", volute)
+                .texture("corinthian", corinthian);
+
+
+        getVariantBuilder(block.get()).forAllStates(state ->
+        {
+            Direction dir = state.getValue(BlockStateProperties.HORIZONTAL_FACING);
+
+            int rotationY = (int) (dir.toYRot()) % 360;
+
+            return ConfiguredModel.builder()
+                    .modelFile(model)
+                    .rotationY(rotationY)
+                    .build();
+        });
     }
 
     //Берёт с уже существующих блоков текстуры
@@ -947,6 +1089,116 @@ public class ModBlockstateProvider extends BlockStateProvider
         ModelFile modelBoth = models().withExistingParent(block.getId().getPath() + "_both",
                             modLoc("block/" + templateName + "_both"))
                     .texture("side", sideTex).texture("top", topTex);
+
+        VariantBlockStateBuilder builder = getVariantBuilder(block.get());
+
+        for (Direction dir : BlockStateProperties.HORIZONTAL_FACING.getPossibleValues())
+        {
+            int rotationY = (int) dir.toYRot();
+
+
+            builder.partialState()
+                    .with(BlockColumnSmall.CONNECTED_UP, false)
+                    .with(BlockColumnSmall.CONNECTED_DOWN, false)
+                    .with(BlockStateProperties.HORIZONTAL_FACING, dir)
+                    .setModels(new ConfiguredModel(modelNone, 0, rotationY, false));
+
+
+            builder.partialState()
+                    .with(BlockColumnSmall.CONNECTED_UP, false)
+                    .with(BlockColumnSmall.CONNECTED_DOWN, true)
+                    .with(BlockStateProperties.HORIZONTAL_FACING, dir)
+                    .setModels(new ConfiguredModel(modelBottom, 0, rotationY, false));
+
+
+            builder.partialState()
+                    .with(BlockColumnSmall.CONNECTED_UP, true)
+                    .with(BlockColumnSmall.CONNECTED_DOWN, false)
+                    .with(BlockStateProperties.HORIZONTAL_FACING, dir)
+                    .setModels(new ConfiguredModel(modelTop, 0, rotationY, false));
+
+
+            builder.partialState()
+                    .with(BlockColumnSmall.CONNECTED_UP, true)
+                    .with(BlockColumnSmall.CONNECTED_DOWN, true)
+                    .with(BlockStateProperties.HORIZONTAL_FACING, dir)
+                    .setModels(new ConfiguredModel(modelBoth, 0, rotationY, false));
+        }
+    }
+
+    private void generateRotatingPilaster(RegistryObject<Block> block, String templateName,
+                                        ResourceLocation sideTex, ResourceLocation topTex)
+    {
+        ModelFile modelNone = models().withExistingParent(block.getId().getPath(),
+                        modLoc("block/pilaster/" + templateName))
+                .texture("side", sideTex).texture("top", topTex);
+
+        ModelFile modelBottom = models().withExistingParent(block.getId().getPath() + "_bottom",
+                        modLoc("block/pilaster/" + templateName + "_bottom"))
+                .texture("side", sideTex).texture("top", topTex);
+
+        ModelFile modelTop = models().withExistingParent(block.getId().getPath() + "_top",
+                        modLoc("block/pilaster/" + templateName + "_top"))
+                .texture("side", sideTex).texture("top", topTex);
+
+        ModelFile modelBoth = models().withExistingParent(block.getId().getPath() + "_both",
+                        modLoc("block/pilaster/" + templateName + "_both"))
+                .texture("side", sideTex).texture("top", topTex);
+
+        VariantBlockStateBuilder builder = getVariantBuilder(block.get());
+
+        for (Direction dir : BlockStateProperties.HORIZONTAL_FACING.getPossibleValues())
+        {
+            int rotationY = (int) dir.toYRot();
+
+
+            builder.partialState()
+                    .with(BlockColumnSmall.CONNECTED_UP, false)
+                    .with(BlockColumnSmall.CONNECTED_DOWN, false)
+                    .with(BlockStateProperties.HORIZONTAL_FACING, dir)
+                    .setModels(new ConfiguredModel(modelNone, 0, rotationY, false));
+
+
+            builder.partialState()
+                    .with(BlockColumnSmall.CONNECTED_UP, false)
+                    .with(BlockColumnSmall.CONNECTED_DOWN, true)
+                    .with(BlockStateProperties.HORIZONTAL_FACING, dir)
+                    .setModels(new ConfiguredModel(modelBottom, 0, rotationY, false));
+
+
+            builder.partialState()
+                    .with(BlockColumnSmall.CONNECTED_UP, true)
+                    .with(BlockColumnSmall.CONNECTED_DOWN, false)
+                    .with(BlockStateProperties.HORIZONTAL_FACING, dir)
+                    .setModels(new ConfiguredModel(modelTop, 0, rotationY, false));
+
+
+            builder.partialState()
+                    .with(BlockColumnSmall.CONNECTED_UP, true)
+                    .with(BlockColumnSmall.CONNECTED_DOWN, true)
+                    .with(BlockStateProperties.HORIZONTAL_FACING, dir)
+                    .setModels(new ConfiguredModel(modelBoth, 0, rotationY, false));
+        }
+    }
+
+    private void generateRotatingHalfColumn(RegistryObject<Block> block, String templateName,
+                                          ResourceLocation sideTex, ResourceLocation topTex)
+    {
+        ModelFile modelNone = models().withExistingParent(block.getId().getPath(),
+                        modLoc("block/half_column/" + templateName))
+                .texture("side", sideTex).texture("top", topTex);
+
+        ModelFile modelBottom = models().withExistingParent(block.getId().getPath() + "_bottom",
+                        modLoc("block/half_column/" + templateName + "_bottom"))
+                .texture("side", sideTex).texture("top", topTex);
+
+        ModelFile modelTop = models().withExistingParent(block.getId().getPath() + "_top",
+                        modLoc("block/half_column/" + templateName + "_top"))
+                .texture("side", sideTex).texture("top", topTex);
+
+        ModelFile modelBoth = models().withExistingParent(block.getId().getPath() + "_both",
+                        modLoc("block/half_column/" + templateName + "_both"))
+                .texture("side", sideTex).texture("top", topTex);
 
         VariantBlockStateBuilder builder = getVariantBuilder(block.get());
 

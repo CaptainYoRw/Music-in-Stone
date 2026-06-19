@@ -1,0 +1,6 @@
+{
+  "parent": "musicinstone:block/half_column/template_half_roman_doric_base_small",
+  "textures": {
+    "texture": "minecraft:block/sandstone_top"
+  }
+}

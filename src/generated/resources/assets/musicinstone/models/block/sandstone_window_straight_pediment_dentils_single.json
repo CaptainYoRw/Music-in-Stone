@@ -1,0 +1,8 @@
+{
+  "parent": "musicinstone:block/pediment/template_window_straight_dentils_single",
+  "textures": {
+    "frame": "musicinstone:block/sandstone_frame",
+    "texture": "minecraft:block/sandstone_top",
+    "volute": "musicinstone:block/sandstone_volute"
+  }
+}

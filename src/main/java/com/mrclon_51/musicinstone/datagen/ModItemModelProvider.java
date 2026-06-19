@@ -138,7 +138,7 @@ public class ModItemModelProvider extends ItemModelProvider
         registerObjItemModel(BlocksRegistry.SANDSTONE_SCAMOZZI_IONIC_CAPITAL_SMALL.get());
 
         registerObjItemModel(BlocksRegistry.QUARTZ_GREEK_CORINTHIAN_CAPITAL_SMALL.get());
-        registerObjItemModel(BlocksRegistry.SANDSTONE_GREEK_CORINTHIAN_CAPITAL_SMALL.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_CORINTHIAN_CAPITAL_SMALL.get());
 
         registerBlockItem(BlocksRegistry.CLINKER_BRICK_STAIRS.get());
         registerBlockItem(BlocksRegistry.CLINKER_BRICK_SLAB.get());
@@ -206,8 +206,8 @@ public class ModItemModelProvider extends ItemModelProvider
         registerObjItemModel(BlocksRegistry.SANDSTONE_ROMAN_IONIC_BASE_LARGE.get());
         registerObjItemModel(BlocksRegistry.SANDSTONE_ROMAN_IONIC_BASE_GIANT.get());
 
-        registerObjItemModel(BlocksRegistry.SANDSTONE_GREEK_CORINTHIAN_CAPITAL_MEDIUM.get());
-        registerObjItemModel(BlocksRegistry.SANDSTONE_GREEK_CORINTHIAN_CAPITAL_LARGE.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_CORINTHIAN_CAPITAL_MEDIUM.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_CORINTHIAN_CAPITAL_LARGE.get());
 
         registerObjItemModel(BlocksRegistry.SANDSTONE_FLUTED_PILASTER_SMALL.get());
 
@@ -215,7 +215,7 @@ public class ModItemModelProvider extends ItemModelProvider
 
         registerObjItemModel(BlocksRegistry.SANDSTONE_SCAMOZZI_IONIC_PILASTER_CAPITAL_SMALL.get());
 
-        registerObjItemModel(BlocksRegistry.SANDSTONE_GREEK_CORINTHIAN_CAPITAL_GIANT.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_CORINTHIAN_CAPITAL_GIANT.get());
 
         registerObjItemModel(BlocksRegistry.SANDSTONE_SCAMOZZI_IONIC_CAPITAL_MEDIUM.get());
         registerObjItemModel(BlocksRegistry.SANDSTONE_SCAMOZZI_IONIC_CAPITAL_LARGE.get());
@@ -288,7 +288,60 @@ public class ModItemModelProvider extends ItemModelProvider
         registerObjItemModel(BlocksRegistry.SANDSTONE_CORNER_IONIC_CAPITAL_MEDIUM.get());
         registerObjItemModel(BlocksRegistry.SANDSTONE_CORNER_IONIC_CAPITAL_LARGE.get());
 
-        //registerObjItemModel(BlocksRegistry.SANDSTONE_RUSTICATED_COLUMN_SMALL.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_CORNER_IONIC_CAPITAL_GIANT.get());
+
+        registerObjItemModel(BlocksRegistry.SANDSTONE_HALF_COLUMN_SMALL.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_DORIC_HALF_COLUMN_SMALL.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_FLUTED_HALF_COLUMN_SMALL.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_DORIC_HALF_COLUMN_CAPITAL_SMALL.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_ROMAN_DORIC_HALF_COLUMN_CAPITAL_SMALL.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_ROMAN_DORIC_HALF_COLUMN_BASE_SMALL.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_IONIC_HALF_COLUMN_CAPITAL_SMALL.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_ROMAN_IONIC_HALF_COLUMN_CAPITAL_SMALL.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_SCAMOZZI_IONIC_HALF_COLUMN_CAPITAL_SMALL.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_CORINTHIAN_HALF_COLUMN_CAPITAL_SMALL.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_ROMAN_CORINTHIAN_HALF_COLUMN_CAPITAL_SMALL.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_COMPOSITE_HALF_COLUMN_CAPITAL_SMALL.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_TUSCAN_HALF_COLUMN_CAPITAL_SMALL.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_IONIC_HALF_COLUMN_BASE_SMALL.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_ROMAN_IONIC_HALF_COLUMN_BASE_SMALL.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_CORINTHIAN_HALF_COLUMN_BASE_SMALL.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_ROMAN_CORINTHIAN_HALF_COLUMN_BASE_SMALL.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_TUSCAN_HALF_COLUMN_BASE_SMALL.get());
+
+        registerObjItemModel(BlocksRegistry.SANDSTONE_TUSCAN_HALF_COLUMN_CAPITAL_REGULAR.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_TUSCAN_HALF_COLUMN_BASE_REGULAR.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_HALF_COLUMN_REGULAR.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_DORIC_HALF_COLUMN_REGULAR.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_FLUTED_HALF_COLUMN_REGULAR.get());
+
+        registerObjItemModel(BlocksRegistry.SANDSTONE_HALF_COLUMN_MEDIUM.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_DORIC_HALF_COLUMN_MEDIUM.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_FLUTED_HALF_COLUMN_MEDIUM.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_DORIC_HALF_COLUMN_CAPITAL_MEDIUM.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_ROMAN_DORIC_HALF_COLUMN_CAPITAL_MEDIUM.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_ROMAN_DORIC_HALF_COLUMN_BASE_MEDIUM.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_IONIC_HALF_COLUMN_CAPITAL_MEDIUM.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_ROMAN_IONIC_HALF_COLUMN_CAPITAL_MEDIUM.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_SCAMOZZI_IONIC_HALF_COLUMN_CAPITAL_MEDIUM.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_CORINTHIAN_HALF_COLUMN_CAPITAL_MEDIUM.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_ROMAN_CORINTHIAN_HALF_COLUMN_CAPITAL_MEDIUM.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_COMPOSITE_HALF_COLUMN_CAPITAL_MEDIUM.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_TUSCAN_HALF_COLUMN_CAPITAL_MEDIUM.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_IONIC_HALF_COLUMN_BASE_MEDIUM.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_ROMAN_IONIC_HALF_COLUMN_BASE_MEDIUM.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_CORINTHIAN_HALF_COLUMN_BASE_MEDIUM.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_ROMAN_CORINTHIAN_HALF_COLUMN_BASE_MEDIUM.get());
+        registerObjItemModel(BlocksRegistry.SANDSTONE_TUSCAN_HALF_COLUMN_BASE_MEDIUM.get());
+
+        registerObjItemModelMiddle(BlocksRegistry.SANDSTONE_WINDOW_FRAME.get());
+        registerObjItemModelSingle(BlocksRegistry.SANDSTONE_WINDOW_UPPER_FRAME.get());
+        registerObjItemModelSingle(BlocksRegistry.SANDSTONE_WINDOW_KEYSTONE.get());
+        registerObjItemModelSingle(BlocksRegistry.SANDSTONE_WINDOW_GREEK_PEDIMENT.get());
+        registerObjItemModelSingle(BlocksRegistry.SANDSTONE_WINDOW_STRAIGHT_PEDIMENT.get());
+
+
+
 
         registerObjItemModel(BlocksRegistry.DIORITE_IONIC_BASE_SMALL.get());
         registerObjItemModel(BlocksRegistry.DIORITE_IONIC_BASE_MEDIUM.get());
@@ -370,12 +423,30 @@ public class ModItemModelProvider extends ItemModelProvider
         registerObjItemModel(BlocksRegistry.DIORITE_COMPOSITE_CAPITAL_GIANT.get());
         registerObjItemModel(BlocksRegistry.DIORITE_CORNER_IONIC_CAPITAL_MEDIUM.get());
         registerObjItemModel(BlocksRegistry.DIORITE_CORNER_IONIC_CAPITAL_LARGE.get());
+        registerObjItemModel(BlocksRegistry.DIORITE_CORNER_IONIC_CAPITAL_GIANT.get());
 
-        registerObjItemModelMiddle(BlocksRegistry.SANDSTONE_WINDOW_FRAME.get());
 
-        registerObjItemModelSingle(BlocksRegistry.SANDSTONE_WINDOW_UPPER_FRAME.get());
-        registerObjItemModelSingle(BlocksRegistry.SANDSTONE_WINDOW_KEYSTONE.get());
-        registerObjItemModelSingle(BlocksRegistry.SANDSTONE_WINDOW_GREEK_PEDIMENT.get());
+
+
+
+
+        registerBlockItem(BlocksRegistry.COBBLED_DEEPSLATE_FINIAL.get());
+        registerBlockItem(BlocksRegistry.COBBLED_DEEPSLATE_PEDESTAL.get());
+        registerLayerItem(BlocksRegistry.COBBLED_DEEPSLATE_LAYER.get());
+        registerObjItemModel(BlocksRegistry.COBBLED_DEEPSLATE_ARROWSLIT.get());
+        registerObjItemModel(BlocksRegistry.COBBLED_DEEPSLATE_CROSS_ARROWSLIT.get());
+
+        registerBlockItem(BlocksRegistry.DEEPSLATE_BRICKS_FINIAL.get());
+        registerBlockItem(BlocksRegistry.DEEPSLATE_BRICKS_PEDESTAL.get());
+        registerLayerItem(BlocksRegistry.DEEPSLATE_BRICKS_LAYER.get());
+        registerObjItemModel(BlocksRegistry.DEEPSLATE_BRICKS_ARROWSLIT.get());
+        registerObjItemModel(BlocksRegistry.DEEPSLATE_BRICKS_CROSS_ARROWSLIT.get());
+
+        registerBlockItem(BlocksRegistry.DEEPSLATE_TILES_FINIAL.get());
+        registerBlockItem(BlocksRegistry.DEEPSLATE_TILES_PEDESTAL.get());
+        registerLayerItem(BlocksRegistry.DEEPSLATE_TILES_LAYER.get());
+        registerObjItemModel(BlocksRegistry.DEEPSLATE_TILES_ARROWSLIT.get());
+        registerObjItemModel(BlocksRegistry.DEEPSLATE_TILES_CROSS_ARROWSLIT.get());
     }
 
     public void registerObjItemModel(Block block)

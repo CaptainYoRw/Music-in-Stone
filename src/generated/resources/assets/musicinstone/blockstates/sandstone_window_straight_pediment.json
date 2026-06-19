@@ -1,0 +1,1273 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_pediment_single"
+      },
+      "when": {
+        "type": "none",
+        "connected_left": "false",
+        "connected_right": "false",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_pediment_single"
+      },
+      "when": {
+        "type": "brackets",
+        "connected_left": "false",
+        "connected_right": "false",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_pediment_single"
+      },
+      "when": {
+        "type": "support",
+        "connected_left": "false",
+        "connected_right": "false",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_frame_single"
+      },
+      "when": {
+        "connected_left": "false",
+        "connected_right": "false",
+        "facing": "north",
+        "frame": "framed"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_brackets_single"
+      },
+      "when": {
+        "type": "brackets",
+        "connected_left": "false",
+        "connected_right": "false",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_support_single"
+      },
+      "when": {
+        "type": "support",
+        "connected_left": "false",
+        "connected_right": "false",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_dentils_single"
+      },
+      "when": {
+        "connected_left": "false",
+        "connected_right": "false",
+        "dentils": "true",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_pediment_right"
+      },
+      "when": {
+        "type": "none",
+        "connected_left": "false",
+        "connected_right": "true",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_pediment_right"
+      },
+      "when": {
+        "type": "brackets",
+        "connected_left": "false",
+        "connected_right": "true",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_pediment_right"
+      },
+      "when": {
+        "type": "support",
+        "connected_left": "false",
+        "connected_right": "true",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_frame_right"
+      },
+      "when": {
+        "connected_left": "false",
+        "connected_right": "true",
+        "facing": "north",
+        "frame": "framed"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_brackets_right"
+      },
+      "when": {
+        "type": "brackets",
+        "connected_left": "false",
+        "connected_right": "true",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_support_right"
+      },
+      "when": {
+        "type": "support",
+        "connected_left": "false",
+        "connected_right": "true",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_dentils_right"
+      },
+      "when": {
+        "connected_left": "false",
+        "connected_right": "true",
+        "dentils": "true",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_pediment_left"
+      },
+      "when": {
+        "type": "none",
+        "connected_left": "true",
+        "connected_right": "false",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_pediment_left"
+      },
+      "when": {
+        "type": "brackets",
+        "connected_left": "true",
+        "connected_right": "false",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_pediment_left"
+      },
+      "when": {
+        "type": "support",
+        "connected_left": "true",
+        "connected_right": "false",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_frame_left"
+      },
+      "when": {
+        "connected_left": "true",
+        "connected_right": "false",
+        "facing": "north",
+        "frame": "framed"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_brackets_left"
+      },
+      "when": {
+        "type": "brackets",
+        "connected_left": "true",
+        "connected_right": "false",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_support_left"
+      },
+      "when": {
+        "type": "support",
+        "connected_left": "true",
+        "connected_right": "false",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_dentils_left"
+      },
+      "when": {
+        "connected_left": "true",
+        "connected_right": "false",
+        "dentils": "true",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_pediment_both"
+      },
+      "when": {
+        "type": "none",
+        "connected_left": "true",
+        "connected_right": "true",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_pediment_both"
+      },
+      "when": {
+        "type": "brackets",
+        "connected_left": "true",
+        "connected_right": "true",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_pediment_both"
+      },
+      "when": {
+        "type": "support",
+        "connected_left": "true",
+        "connected_right": "true",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_frame_both"
+      },
+      "when": {
+        "connected_left": "true",
+        "connected_right": "true",
+        "facing": "north",
+        "frame": "framed"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_support_both"
+      },
+      "when": {
+        "type": "support",
+        "connected_left": "true",
+        "connected_right": "true",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_dentils_both"
+      },
+      "when": {
+        "connected_left": "true",
+        "connected_right": "true",
+        "dentils": "true",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_pediment_single",
+        "y": 90
+      },
+      "when": {
+        "type": "none",
+        "connected_left": "false",
+        "connected_right": "false",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_pediment_single",
+        "y": 90
+      },
+      "when": {
+        "type": "brackets",
+        "connected_left": "false",
+        "connected_right": "false",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_pediment_single",
+        "y": 90
+      },
+      "when": {
+        "type": "support",
+        "connected_left": "false",
+        "connected_right": "false",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_frame_single",
+        "y": 90
+      },
+      "when": {
+        "connected_left": "false",
+        "connected_right": "false",
+        "facing": "east",
+        "frame": "framed"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_brackets_single",
+        "y": 90
+      },
+      "when": {
+        "type": "brackets",
+        "connected_left": "false",
+        "connected_right": "false",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_support_single",
+        "y": 90
+      },
+      "when": {
+        "type": "support",
+        "connected_left": "false",
+        "connected_right": "false",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_dentils_single",
+        "y": 90
+      },
+      "when": {
+        "connected_left": "false",
+        "connected_right": "false",
+        "dentils": "true",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_pediment_right",
+        "y": 90
+      },
+      "when": {
+        "type": "none",
+        "connected_left": "false",
+        "connected_right": "true",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_pediment_right",
+        "y": 90
+      },
+      "when": {
+        "type": "brackets",
+        "connected_left": "false",
+        "connected_right": "true",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_pediment_right",
+        "y": 90
+      },
+      "when": {
+        "type": "support",
+        "connected_left": "false",
+        "connected_right": "true",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_frame_right",
+        "y": 90
+      },
+      "when": {
+        "connected_left": "false",
+        "connected_right": "true",
+        "facing": "east",
+        "frame": "framed"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_brackets_right",
+        "y": 90
+      },
+      "when": {
+        "type": "brackets",
+        "connected_left": "false",
+        "connected_right": "true",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_support_right",
+        "y": 90
+      },
+      "when": {
+        "type": "support",
+        "connected_left": "false",
+        "connected_right": "true",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_dentils_right",
+        "y": 90
+      },
+      "when": {
+        "connected_left": "false",
+        "connected_right": "true",
+        "dentils": "true",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_pediment_left",
+        "y": 90
+      },
+      "when": {
+        "type": "none",
+        "connected_left": "true",
+        "connected_right": "false",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_pediment_left",
+        "y": 90
+      },
+      "when": {
+        "type": "brackets",
+        "connected_left": "true",
+        "connected_right": "false",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_pediment_left",
+        "y": 90
+      },
+      "when": {
+        "type": "support",
+        "connected_left": "true",
+        "connected_right": "false",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_frame_left",
+        "y": 90
+      },
+      "when": {
+        "connected_left": "true",
+        "connected_right": "false",
+        "facing": "east",
+        "frame": "framed"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_brackets_left",
+        "y": 90
+      },
+      "when": {
+        "type": "brackets",
+        "connected_left": "true",
+        "connected_right": "false",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_support_left",
+        "y": 90
+      },
+      "when": {
+        "type": "support",
+        "connected_left": "true",
+        "connected_right": "false",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_dentils_left",
+        "y": 90
+      },
+      "when": {
+        "connected_left": "true",
+        "connected_right": "false",
+        "dentils": "true",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_pediment_both",
+        "y": 90
+      },
+      "when": {
+        "type": "none",
+        "connected_left": "true",
+        "connected_right": "true",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_pediment_both",
+        "y": 90
+      },
+      "when": {
+        "type": "brackets",
+        "connected_left": "true",
+        "connected_right": "true",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_pediment_both",
+        "y": 90
+      },
+      "when": {
+        "type": "support",
+        "connected_left": "true",
+        "connected_right": "true",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_frame_both",
+        "y": 90
+      },
+      "when": {
+        "connected_left": "true",
+        "connected_right": "true",
+        "facing": "east",
+        "frame": "framed"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_support_both",
+        "y": 90
+      },
+      "when": {
+        "type": "support",
+        "connected_left": "true",
+        "connected_right": "true",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_dentils_both",
+        "y": 90
+      },
+      "when": {
+        "connected_left": "true",
+        "connected_right": "true",
+        "dentils": "true",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_pediment_single",
+        "y": 180
+      },
+      "when": {
+        "type": "none",
+        "connected_left": "false",
+        "connected_right": "false",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_pediment_single",
+        "y": 180
+      },
+      "when": {
+        "type": "brackets",
+        "connected_left": "false",
+        "connected_right": "false",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_pediment_single",
+        "y": 180
+      },
+      "when": {
+        "type": "support",
+        "connected_left": "false",
+        "connected_right": "false",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_frame_single",
+        "y": 180
+      },
+      "when": {
+        "connected_left": "false",
+        "connected_right": "false",
+        "facing": "south",
+        "frame": "framed"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_brackets_single",
+        "y": 180
+      },
+      "when": {
+        "type": "brackets",
+        "connected_left": "false",
+        "connected_right": "false",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_support_single",
+        "y": 180
+      },
+      "when": {
+        "type": "support",
+        "connected_left": "false",
+        "connected_right": "false",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_dentils_single",
+        "y": 180
+      },
+      "when": {
+        "connected_left": "false",
+        "connected_right": "false",
+        "dentils": "true",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_pediment_right",
+        "y": 180
+      },
+      "when": {
+        "type": "none",
+        "connected_left": "false",
+        "connected_right": "true",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_pediment_right",
+        "y": 180
+      },
+      "when": {
+        "type": "brackets",
+        "connected_left": "false",
+        "connected_right": "true",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_pediment_right",
+        "y": 180
+      },
+      "when": {
+        "type": "support",
+        "connected_left": "false",
+        "connected_right": "true",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_frame_right",
+        "y": 180
+      },
+      "when": {
+        "connected_left": "false",
+        "connected_right": "true",
+        "facing": "south",
+        "frame": "framed"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_brackets_right",
+        "y": 180
+      },
+      "when": {
+        "type": "brackets",
+        "connected_left": "false",
+        "connected_right": "true",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_support_right",
+        "y": 180
+      },
+      "when": {
+        "type": "support",
+        "connected_left": "false",
+        "connected_right": "true",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_dentils_right",
+        "y": 180
+      },
+      "when": {
+        "connected_left": "false",
+        "connected_right": "true",
+        "dentils": "true",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_pediment_left",
+        "y": 180
+      },
+      "when": {
+        "type": "none",
+        "connected_left": "true",
+        "connected_right": "false",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_pediment_left",
+        "y": 180
+      },
+      "when": {
+        "type": "brackets",
+        "connected_left": "true",
+        "connected_right": "false",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_pediment_left",
+        "y": 180
+      },
+      "when": {
+        "type": "support",
+        "connected_left": "true",
+        "connected_right": "false",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_frame_left",
+        "y": 180
+      },
+      "when": {
+        "connected_left": "true",
+        "connected_right": "false",
+        "facing": "south",
+        "frame": "framed"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_brackets_left",
+        "y": 180
+      },
+      "when": {
+        "type": "brackets",
+        "connected_left": "true",
+        "connected_right": "false",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_support_left",
+        "y": 180
+      },
+      "when": {
+        "type": "support",
+        "connected_left": "true",
+        "connected_right": "false",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_dentils_left",
+        "y": 180
+      },
+      "when": {
+        "connected_left": "true",
+        "connected_right": "false",
+        "dentils": "true",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_pediment_both",
+        "y": 180
+      },
+      "when": {
+        "type": "none",
+        "connected_left": "true",
+        "connected_right": "true",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_pediment_both",
+        "y": 180
+      },
+      "when": {
+        "type": "brackets",
+        "connected_left": "true",
+        "connected_right": "true",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_pediment_both",
+        "y": 180
+      },
+      "when": {
+        "type": "support",
+        "connected_left": "true",
+        "connected_right": "true",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_frame_both",
+        "y": 180
+      },
+      "when": {
+        "connected_left": "true",
+        "connected_right": "true",
+        "facing": "south",
+        "frame": "framed"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_support_both",
+        "y": 180
+      },
+      "when": {
+        "type": "support",
+        "connected_left": "true",
+        "connected_right": "true",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_dentils_both",
+        "y": 180
+      },
+      "when": {
+        "connected_left": "true",
+        "connected_right": "true",
+        "dentils": "true",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_pediment_single",
+        "y": 270
+      },
+      "when": {
+        "type": "none",
+        "connected_left": "false",
+        "connected_right": "false",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_pediment_single",
+        "y": 270
+      },
+      "when": {
+        "type": "brackets",
+        "connected_left": "false",
+        "connected_right": "false",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_pediment_single",
+        "y": 270
+      },
+      "when": {
+        "type": "support",
+        "connected_left": "false",
+        "connected_right": "false",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_frame_single",
+        "y": 270
+      },
+      "when": {
+        "connected_left": "false",
+        "connected_right": "false",
+        "facing": "west",
+        "frame": "framed"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_brackets_single",
+        "y": 270
+      },
+      "when": {
+        "type": "brackets",
+        "connected_left": "false",
+        "connected_right": "false",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_support_single",
+        "y": 270
+      },
+      "when": {
+        "type": "support",
+        "connected_left": "false",
+        "connected_right": "false",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_dentils_single",
+        "y": 270
+      },
+      "when": {
+        "connected_left": "false",
+        "connected_right": "false",
+        "dentils": "true",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_pediment_right",
+        "y": 270
+      },
+      "when": {
+        "type": "none",
+        "connected_left": "false",
+        "connected_right": "true",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_pediment_right",
+        "y": 270
+      },
+      "when": {
+        "type": "brackets",
+        "connected_left": "false",
+        "connected_right": "true",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_pediment_right",
+        "y": 270
+      },
+      "when": {
+        "type": "support",
+        "connected_left": "false",
+        "connected_right": "true",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_frame_right",
+        "y": 270
+      },
+      "when": {
+        "connected_left": "false",
+        "connected_right": "true",
+        "facing": "west",
+        "frame": "framed"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_brackets_right",
+        "y": 270
+      },
+      "when": {
+        "type": "brackets",
+        "connected_left": "false",
+        "connected_right": "true",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_support_right",
+        "y": 270
+      },
+      "when": {
+        "type": "support",
+        "connected_left": "false",
+        "connected_right": "true",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_dentils_right",
+        "y": 270
+      },
+      "when": {
+        "connected_left": "false",
+        "connected_right": "true",
+        "dentils": "true",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_pediment_left",
+        "y": 270
+      },
+      "when": {
+        "type": "none",
+        "connected_left": "true",
+        "connected_right": "false",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_pediment_left",
+        "y": 270
+      },
+      "when": {
+        "type": "brackets",
+        "connected_left": "true",
+        "connected_right": "false",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_pediment_left",
+        "y": 270
+      },
+      "when": {
+        "type": "support",
+        "connected_left": "true",
+        "connected_right": "false",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_frame_left",
+        "y": 270
+      },
+      "when": {
+        "connected_left": "true",
+        "connected_right": "false",
+        "facing": "west",
+        "frame": "framed"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_brackets_left",
+        "y": 270
+      },
+      "when": {
+        "type": "brackets",
+        "connected_left": "true",
+        "connected_right": "false",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_support_left",
+        "y": 270
+      },
+      "when": {
+        "type": "support",
+        "connected_left": "true",
+        "connected_right": "false",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_dentils_left",
+        "y": 270
+      },
+      "when": {
+        "connected_left": "true",
+        "connected_right": "false",
+        "dentils": "true",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_pediment_both",
+        "y": 270
+      },
+      "when": {
+        "type": "none",
+        "connected_left": "true",
+        "connected_right": "true",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_pediment_both",
+        "y": 270
+      },
+      "when": {
+        "type": "brackets",
+        "connected_left": "true",
+        "connected_right": "true",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_pediment_both",
+        "y": 270
+      },
+      "when": {
+        "type": "support",
+        "connected_left": "true",
+        "connected_right": "true",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_frame_both",
+        "y": 270
+      },
+      "when": {
+        "connected_left": "true",
+        "connected_right": "true",
+        "facing": "west",
+        "frame": "framed"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_support_both",
+        "y": 270
+      },
+      "when": {
+        "type": "support",
+        "connected_left": "true",
+        "connected_right": "true",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "musicinstone:block/sandstone_window_straight_pediment_dentils_both",
+        "y": 270
+      },
+      "when": {
+        "connected_left": "true",
+        "connected_right": "true",
+        "dentils": "true",
+        "facing": "west"
+      }
+    }
+  ]
+}

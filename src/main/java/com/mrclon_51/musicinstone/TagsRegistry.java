@@ -13,6 +13,8 @@ public class TagsRegistry
        {
            public static final TagKey<Block> PILASTER_BASE_SMALL = tag("small_pilaster_bases");
            public static final TagKey<Block> PILASTER_CAPITAL_SMALL = tag("small_pilaster_capitals");
+           public static final TagKey<Block> PILASTER_BASE_REGULAR = tag("regular_pilaster_bases");
+           public static final TagKey<Block> PILASTER_CAPITAL_REGULAR = tag("regular_pilaster_capitals");
            public static final TagKey<Block> PILASTER_BASE_MEDIUM = tag("medium_pilaster_bases");
            public static final TagKey<Block> PILASTER_CAPITAL_MEDIUM = tag("medium_pilaster_capitals");
            public static final TagKey<Block> PILASTER_BASE_LARGE = tag("large_pilaster_bases");
@@ -22,6 +24,8 @@ public class TagsRegistry
 
            public static final TagKey<Block> HALF_COLUMN_BASE_SMALL = tag("small_half_column_bases");
            public static final TagKey<Block> HALF_COLUMN_CAPITAL_SMALL = tag("small_half_column_capitals");
+           public static final TagKey<Block> HALF_COLUMN_BASE_REGULAR = tag("regular_half_column_bases");
+           public static final TagKey<Block> HALF_COLUMN_CAPITAL_REGULAR = tag("regular_half_column_capitals");
            public static final TagKey<Block> HALF_COLUMN_BASE_MEDIUM = tag("medium_half_column_bases");
            public static final TagKey<Block> HALF_COLUMN_CAPITAL_MEDIUM = tag("medium_half_column_capitals");
            public static final TagKey<Block> HALF_COLUMN_BASE_LARGE = tag("large_half_column_bases");

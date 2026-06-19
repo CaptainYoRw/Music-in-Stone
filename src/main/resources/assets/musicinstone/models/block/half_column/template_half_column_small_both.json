@@ -1,0 +1,12 @@
+{
+  "loader": "forge:obj",
+  "gui_light": "front",
+  "flip_v": true,
+  "model": "musicinstone:models/block/object/small_half_column_both.obj",
+  "textures":
+  {
+    "particle": "#side",
+    "column_side": "#side",
+    "column_top": "#top"
+  }
+}

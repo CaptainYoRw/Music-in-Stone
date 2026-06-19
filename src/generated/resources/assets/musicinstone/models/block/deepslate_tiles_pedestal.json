@@ -1,0 +1,6 @@
+{
+  "parent": "musicinstone:block/template_pedestal",
+  "textures": {
+    "texture": "minecraft:block/deepslate_tiles"
+  }
+}

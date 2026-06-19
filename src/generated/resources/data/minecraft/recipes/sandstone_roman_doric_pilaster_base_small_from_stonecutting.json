@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 8,
+  "ingredient": {
+    "item": "minecraft:sandstone"
+  },
+  "result": "musicinstone:sandstone_roman_doric_pilaster_base_small"
+}

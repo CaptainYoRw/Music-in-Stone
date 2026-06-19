@@ -115,16 +115,31 @@ public class CreativeTabExteriorRegistry
                         output.accept(Blocks.COBBLED_DEEPSLATE_STAIRS);
                         output.accept(Blocks.COBBLED_DEEPSLATE_SLAB);
                         output.accept(Blocks.COBBLED_DEEPSLATE_WALL);
+                        output.accept(BlocksRegistry.COBBLED_DEEPSLATE_FINIAL.get());
+                        output.accept(BlocksRegistry.COBBLED_DEEPSLATE_PEDESTAL.get());
+                        output.accept(BlocksRegistry.COBBLED_DEEPSLATE_LAYER.get());
+                        output.accept(BlocksRegistry.COBBLED_DEEPSLATE_ARROWSLIT.get());
+                        output.accept(BlocksRegistry.COBBLED_DEEPSLATE_CROSS_ARROWSLIT.get());
 
                         output.accept(Blocks.DEEPSLATE_BRICKS);
                         output.accept(Blocks.DEEPSLATE_BRICK_STAIRS);
                         output.accept(Blocks.DEEPSLATE_BRICK_SLAB);
                         output.accept(Blocks.DEEPSLATE_BRICK_WALL);
+                        output.accept(BlocksRegistry.DEEPSLATE_BRICKS_FINIAL.get());
+                        output.accept(BlocksRegistry.DEEPSLATE_BRICKS_PEDESTAL.get());
+                        output.accept(BlocksRegistry.DEEPSLATE_BRICKS_LAYER.get());
+                        output.accept(BlocksRegistry.DEEPSLATE_BRICKS_ARROWSLIT.get());
+                        output.accept(BlocksRegistry.DEEPSLATE_BRICKS_CROSS_ARROWSLIT.get());
 
                         output.accept(Blocks.DEEPSLATE_TILES);
                         output.accept(Blocks.DEEPSLATE_TILE_STAIRS);
                         output.accept(Blocks.DEEPSLATE_TILE_SLAB);
                         output.accept(Blocks.DEEPSLATE_TILE_WALL);
+                        output.accept(BlocksRegistry.DEEPSLATE_TILES_FINIAL.get());
+                        output.accept(BlocksRegistry.DEEPSLATE_TILES_PEDESTAL.get());
+                        output.accept(BlocksRegistry.DEEPSLATE_TILES_LAYER.get());
+                        output.accept(BlocksRegistry.DEEPSLATE_TILES_ARROWSLIT.get());
+                        output.accept(BlocksRegistry.DEEPSLATE_TILES_CROSS_ARROWSLIT.get());
 
                         output.accept(Blocks.BRICKS);
                         output.accept(Blocks.BRICK_STAIRS);
@@ -221,6 +236,7 @@ public class CreativeTabExteriorRegistry
                         output.accept(BlocksRegistry.SANDSTONE_WINDOW_FRAME.get());
                         output.accept(BlocksRegistry.SANDSTONE_WINDOW_UPPER_FRAME.get());
                         output.accept(BlocksRegistry.SANDSTONE_WINDOW_KEYSTONE.get());
+                        output.accept(BlocksRegistry.SANDSTONE_WINDOW_STRAIGHT_PEDIMENT.get());
                         output.accept(BlocksRegistry.SANDSTONE_WINDOW_GREEK_PEDIMENT.get());
 
                         output.accept(Blocks.SMOOTH_RED_SANDSTONE);

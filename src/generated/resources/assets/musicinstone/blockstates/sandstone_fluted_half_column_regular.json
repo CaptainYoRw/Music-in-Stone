@@ -1,0 +1,64 @@
+{
+  "variants": {
+    "down=false,facing=east,up=false": {
+      "model": "musicinstone:block/sandstone_fluted_half_column_regular",
+      "y": 270
+    },
+    "down=false,facing=east,up=true": {
+      "model": "musicinstone:block/sandstone_fluted_half_column_regular_top",
+      "y": 270
+    },
+    "down=false,facing=north,up=false": {
+      "model": "musicinstone:block/sandstone_fluted_half_column_regular",
+      "y": 180
+    },
+    "down=false,facing=north,up=true": {
+      "model": "musicinstone:block/sandstone_fluted_half_column_regular_top",
+      "y": 180
+    },
+    "down=false,facing=south,up=false": {
+      "model": "musicinstone:block/sandstone_fluted_half_column_regular"
+    },
+    "down=false,facing=south,up=true": {
+      "model": "musicinstone:block/sandstone_fluted_half_column_regular_top"
+    },
+    "down=false,facing=west,up=false": {
+      "model": "musicinstone:block/sandstone_fluted_half_column_regular",
+      "y": 90
+    },
+    "down=false,facing=west,up=true": {
+      "model": "musicinstone:block/sandstone_fluted_half_column_regular_top",
+      "y": 90
+    },
+    "down=true,facing=east,up=false": {
+      "model": "musicinstone:block/sandstone_fluted_half_column_regular_bottom",
+      "y": 270
+    },
+    "down=true,facing=east,up=true": {
+      "model": "musicinstone:block/sandstone_fluted_half_column_regular_both",
+      "y": 270
+    },
+    "down=true,facing=north,up=false": {
+      "model": "musicinstone:block/sandstone_fluted_half_column_regular_bottom",
+      "y": 180
+    },
+    "down=true,facing=north,up=true": {
+      "model": "musicinstone:block/sandstone_fluted_half_column_regular_both",
+      "y": 180
+    },
+    "down=true,facing=south,up=false": {
+      "model": "musicinstone:block/sandstone_fluted_half_column_regular_bottom"
+    },
+    "down=true,facing=south,up=true": {
+      "model": "musicinstone:block/sandstone_fluted_half_column_regular_both"
+    },
+    "down=true,facing=west,up=false": {
+      "model": "musicinstone:block/sandstone_fluted_half_column_regular_bottom",
+      "y": 90
+    },
+    "down=true,facing=west,up=true": {
+      "model": "musicinstone:block/sandstone_fluted_half_column_regular_both",
+      "y": 90
+    }
+  }
+}

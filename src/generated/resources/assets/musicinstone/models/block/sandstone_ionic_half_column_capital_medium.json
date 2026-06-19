@@ -1,0 +1,8 @@
+{
+  "parent": "musicinstone:block/half_column/template_half_ionic_capital_medium",
+  "textures": {
+    "ionic": "musicinstone:block/sandstone_ionic",
+    "texture": "minecraft:block/sandstone_top",
+    "volute": "musicinstone:block/sandstone_volute"
+  }
+}

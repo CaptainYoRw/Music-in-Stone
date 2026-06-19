@@ -1,0 +1,7 @@
+{
+  "parent": "musicinstone:block/half_column/template_half_column_medium_bottom",
+  "textures": {
+    "side": "minecraft:block/sandstone_top",
+    "top": "musicinstone:block/sandstone_pillar_top"
+  }
+}

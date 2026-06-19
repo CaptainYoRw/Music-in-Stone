@@ -203,13 +203,15 @@ public class ModBlockTagsProvider extends BlockTagsProvider
                 .add(BlocksRegistry.SANDSTONE_TUSCAN_CAPITAL_GIANT.get())
                 .add(BlocksRegistry.SANDSTONE_ROMAN_DORIC_CAPITAL_GIANT.get())
                 .add(BlocksRegistry.SANDSTONE_ROMAN_IONIC_CAPITAL_GIANT.get())
+                .add(BlocksRegistry.SANDSTONE_CORNER_IONIC_CAPITAL_GIANT.get())
 
                 .add(BlocksRegistry.DIORITE_DORIC_CAPITAL_GIANT.get())
                 .add(BlocksRegistry.DIORITE_IONIC_CAPITAL_GIANT.get())
                 .add(BlocksRegistry.DIORITE_SCAMOZZI_IONIC_CAPITAL_GIANT.get())
                 .add(BlocksRegistry.DIORITE_TUSCAN_CAPITAL_GIANT.get())
                 .add(BlocksRegistry.DIORITE_ROMAN_DORIC_CAPITAL_GIANT.get())
-                .add(BlocksRegistry.DIORITE_ROMAN_IONIC_CAPITAL_GIANT.get());;
+                .add(BlocksRegistry.DIORITE_ROMAN_IONIC_CAPITAL_GIANT.get())
+                .add(BlocksRegistry.DIORITE_CORNER_IONIC_CAPITAL_GIANT.get());
 
         this.tag(TagsRegistry.Blocks.PILASTER_BASE_SMALL)
                 .add(BlocksRegistry.SANDSTONE_IONIC_PILASTER_BASE_SMALL.get());
@@ -218,8 +220,53 @@ public class ModBlockTagsProvider extends BlockTagsProvider
                 .add(BlocksRegistry.SANDSTONE_SCAMOZZI_IONIC_PILASTER_CAPITAL_SMALL.get());
 
         this.tag(TagsRegistry.Blocks.LEFT_CLICKABLE)
-                .add(BlocksRegistry.SANDSTONE_WINDOW_GREEK_PEDIMENT.get());
+                .add(BlocksRegistry.SANDSTONE_WINDOW_GREEK_PEDIMENT.get())
+                .add(BlocksRegistry.SANDSTONE_WINDOW_STRAIGHT_PEDIMENT.get());
 
+        this.tag(TagsRegistry.Blocks.HALF_COLUMN_CAPITAL_SMALL)
+                .add(BlocksRegistry.SANDSTONE_DORIC_HALF_COLUMN_CAPITAL_SMALL.get())
+                .add(BlocksRegistry.SANDSTONE_ROMAN_DORIC_HALF_COLUMN_CAPITAL_SMALL.get())
+                .add(BlocksRegistry.SANDSTONE_IONIC_HALF_COLUMN_CAPITAL_SMALL.get())
+                .add(BlocksRegistry.SANDSTONE_ROMAN_IONIC_HALF_COLUMN_CAPITAL_SMALL.get())
+                .add(BlocksRegistry.SANDSTONE_SCAMOZZI_IONIC_HALF_COLUMN_CAPITAL_SMALL.get())
+                .add(BlocksRegistry.SANDSTONE_CORINTHIAN_HALF_COLUMN_CAPITAL_SMALL.get())
+                .add(BlocksRegistry.SANDSTONE_ROMAN_CORINTHIAN_HALF_COLUMN_CAPITAL_SMALL.get())
+                .add(BlocksRegistry.SANDSTONE_COMPOSITE_HALF_COLUMN_CAPITAL_SMALL.get())
+                .add(BlocksRegistry.SANDSTONE_TUSCAN_HALF_COLUMN_CAPITAL_SMALL.get());
+
+        this.tag(TagsRegistry.Blocks.HALF_COLUMN_BASE_SMALL)
+                .add(BlocksRegistry.SANDSTONE_ROMAN_DORIC_HALF_COLUMN_BASE_SMALL.get())
+                .add(BlocksRegistry.SANDSTONE_IONIC_HALF_COLUMN_BASE_SMALL.get())
+                .add(BlocksRegistry.SANDSTONE_ROMAN_IONIC_HALF_COLUMN_BASE_SMALL.get())
+                .add(BlocksRegistry.SANDSTONE_CORINTHIAN_HALF_COLUMN_BASE_SMALL.get())
+                .add(BlocksRegistry.SANDSTONE_ROMAN_CORINTHIAN_HALF_COLUMN_BASE_SMALL.get())
+                .add(BlocksRegistry.SANDSTONE_TUSCAN_HALF_COLUMN_BASE_SMALL.get());
+
+        this.tag(TagsRegistry.Blocks.HALF_COLUMN_CAPITAL_REGULAR)
+                .add(BlocksRegistry.SANDSTONE_DORIC_HALF_COLUMN_CAPITAL_SMALL.get())
+                .add(BlocksRegistry.SANDSTONE_TUSCAN_HALF_COLUMN_CAPITAL_REGULAR.get());
+
+        this.tag(TagsRegistry.Blocks.HALF_COLUMN_BASE_REGULAR)
+                .add(BlocksRegistry.SANDSTONE_TUSCAN_HALF_COLUMN_BASE_REGULAR.get());
+
+        this.tag(TagsRegistry.Blocks.HALF_COLUMN_CAPITAL_MEDIUM)
+                .add(BlocksRegistry.SANDSTONE_DORIC_HALF_COLUMN_CAPITAL_MEDIUM.get())
+                .add(BlocksRegistry.SANDSTONE_ROMAN_DORIC_HALF_COLUMN_CAPITAL_MEDIUM.get())
+                .add(BlocksRegistry.SANDSTONE_IONIC_HALF_COLUMN_CAPITAL_MEDIUM.get())
+                .add(BlocksRegistry.SANDSTONE_ROMAN_IONIC_HALF_COLUMN_CAPITAL_MEDIUM.get())
+                .add(BlocksRegistry.SANDSTONE_SCAMOZZI_IONIC_HALF_COLUMN_CAPITAL_MEDIUM.get())
+                .add(BlocksRegistry.SANDSTONE_CORINTHIAN_HALF_COLUMN_CAPITAL_MEDIUM.get())
+                .add(BlocksRegistry.SANDSTONE_ROMAN_CORINTHIAN_HALF_COLUMN_CAPITAL_MEDIUM.get())
+                .add(BlocksRegistry.SANDSTONE_COMPOSITE_HALF_COLUMN_CAPITAL_MEDIUM.get())
+                .add(BlocksRegistry.SANDSTONE_TUSCAN_HALF_COLUMN_CAPITAL_MEDIUM.get());
+
+        this.tag(TagsRegistry.Blocks.HALF_COLUMN_BASE_MEDIUM)
+                .add(BlocksRegistry.SANDSTONE_ROMAN_DORIC_HALF_COLUMN_BASE_MEDIUM.get())
+                .add(BlocksRegistry.SANDSTONE_IONIC_HALF_COLUMN_BASE_MEDIUM.get())
+                .add(BlocksRegistry.SANDSTONE_ROMAN_IONIC_HALF_COLUMN_BASE_MEDIUM.get())
+                .add(BlocksRegistry.SANDSTONE_CORINTHIAN_HALF_COLUMN_BASE_MEDIUM.get())
+                .add(BlocksRegistry.SANDSTONE_ROMAN_CORINTHIAN_HALF_COLUMN_BASE_MEDIUM.get())
+                .add(BlocksRegistry.SANDSTONE_TUSCAN_HALF_COLUMN_BASE_MEDIUM.get());
 
 
         //this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
